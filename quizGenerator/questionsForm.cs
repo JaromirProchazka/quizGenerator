@@ -1,14 +1,9 @@
-﻿using System;
+﻿using FileManager;
+using System;
 using System.Collections.Generic;
-using System.ComponentModel;
-using System.Data;
 using System.Drawing;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-using System.Windows.Forms;
-using FileManager;
 using System.IO;
+using System.Windows.Forms;
 
 namespace quizGenerator
 {
@@ -63,15 +58,17 @@ namespace quizGenerator
 
         private void webBrowser2_DocumentCompleted(object sender, WebBrowserDocumentCompletedEventArgs e)
         {
+            webBrowser2.Navigating += webBrowser2_Navigating;
             if (questionIndex != null)
             {
                 showCurrentQuestion();
             }
         }
 
-        private void webBrowser2_Navigated(object sender, WebBrowserNavigatedEventArgs e)
+        private void webBrowser2_Navigating (object sender, WebBrowserNavigatingEventArgs e)
         {
-
+            e.Cancel = true;
+            System.Diagnostics.Process.Start(e.Url.ToString());
         }
 
         /// <summary>
@@ -191,6 +188,7 @@ namespace quizGenerator
         private static Color badColor = Color.Red;
         private static Color goodColor = Color.Green;
         private static Color defaultColor = Color.Tomato;
+
 
         public static void goodButtonStyle(Button gButton)
         {
