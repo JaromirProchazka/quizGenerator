@@ -8,7 +8,6 @@ using HtmlAgilityPack;
 using System.Security.Policy;
 using FileManager;
 using System.Collections;
-using static System.Windows.Forms.VisualStyles.VisualStyleElement;
 using quizGenerator;
 using System.Threading;
 
@@ -108,9 +107,9 @@ namespace FileManager
         public static string stylesFileName = "styles.css";
         public static string questionsScriptName = "questionsScript.js";
 
-        static string baseMarkdown = "<!DOCTYPE html><html lang=\"en\" xmlns=\"http://www.w3.org/1999/xhtml\"><head><meta charset=\"utf-8\" /><title></title><script type=\"text/javascript\" language=\"javascript\"> function ShowAnswear(id) { n = document.querySelector(\"#\" + id); if (n.classList.contains(\"heading_sections\")) { qs = n.querySelectorAll(\".question_box\"); for (let i = 0; i < qs.length; i++) { qs[i].style.display = \"block\"; qs[i].querySelector(\".question_answer\").style.display = \"block\"; } } else { n.querySelector(\".question_answer\").style.display = \"block\"; } } function ShowQuestion(id) { n = document.querySelector(\"#\" + id); if (n.classList.contains(\"heading_sections\")) { n = n.querySelector(\".section_heading\"); } n.style.display = \"block\"; } function HideQuestion(id) { n = document.querySelector(\"#\" + id); if (n.classList.contains(\"heading_sections\")) { qs = n.querySelectorAll(\".question_box\"); for (let i = 0; i < qs.length; i++) { qs[i].style.display = \"none\"; qs[i].querySelector(\".question_answer\").style.display = \"none\"; } n = n.querySelector(\".section_heading\"); } else { n.querySelector(\".question_answer\").style.display = \"none\"; console.log(\"problem\"); } n.style.display = \"none\"; }</script></head><body></body><link rel=\"stylesheet\" href=\".\\..\\" + stylesFileName + "\" /></html>";
+        static string baseMarkdown = "<!DOCTYPE html><html lang=\"en\" xmlns=\"http://www.w3.org/1999/xhtml\"><head><meta charset=\"utf-8\" /><title></title><script type=\"text/javascript\" language=\"javascript\"> function ShowAnswear(id) { n = document.querySelector(\"#\" + id); if (n.classList.contains(\"heading_sections\")) { n.querySelector('.heading_section_contents').style.display = \"block\"; qs = n.querySelectorAll(\".question_box\"); for (let i = 0; i < qs.length; i++) { qs[i].style.display = \"block\"; qs[i].querySelector(\".question_answer\").style.display = \"block\"; } } else { n.querySelector(\".question_answer\").style.display = \"block\"; } } function ShowQuestion(id) { n = document.querySelector(\"#\" + id); if (n.classList.contains(\"heading_sections\")) { n = n.querySelector(\".section_heading\"); } n.style.display = \"block\"; } function HideQuestion(id) { n = document.querySelector(\"#\" + id); if (n.classList.contains(\"heading_sections\")) { n.querySelector('.heading_section_contents').style.display = \"none\"; qs = n.querySelectorAll(\".question_box\"); for (let i = 0; i < qs.length; i++) { qs[i].style.display = \"none\"; qs[i].querySelector(\".question_answer\").style.display = \"none\"; } n = n.querySelector(\".section_heading\"); } else { n.querySelector(\".question_answer\").style.display = \"none\"; console.log(\"problem\"); } n.style.display = \"none\"; }</script></head><body></body><link rel=\"stylesheet\" href=\".\\..\\" + stylesFileName + "\" /></html>";
         static string questionTemplate = "<div class=\"question_box\" id=\"question_0\" style=\"display: none\"><h1 class=\"question_name\"></h1><div class=\"question_answer\" style=\"display: none\"></div></div>";
-        static string headingTemplate = "<div class=\"heading_sections\"><h1 class=\"section_heading\" style=\"display: none\"></h1></div>";
+        static string headingTemplate = "<div class=\"heading_sections\"><h1 class=\"section_heading\" style=\"display: none\"></h1><div class=\"heading_section_contents\" style=\"display: none\"></div></div>";
 
 
         /// <summary>
@@ -158,6 +157,7 @@ namespace FileManager
         {
             int idCounter = 1;
             int currentParentHeadingRank = 0;
+            bool noQuestionInHeadingYet = true;
 
             HtmlDocument notes = new HtmlDocument();
             HtmlDocument result = new HtmlDocument();
@@ -175,6 +175,7 @@ namespace FileManager
             {
                 HtmlNodeCollection children = node.ChildNodes;
                 bool areInHeading = false;
+                HtmlNode currentHeadingAnswer = null;
                 foreach (HtmlNode child in children)
                 {
                     areInHeading = false;
@@ -186,17 +187,27 @@ namespace FileManager
                     if (child.Name == "header") {
                         continue;
                     }
+
                     if (isHeading(child)) {
                         addHeading(child);
                         areInHeading = true;
-                    }
-                    if (child.Name == "em") {
+                        noQuestionInHeadingYet = true;
+                        currentHeadingAnswer = resultCurrentPosition.SelectSingleNode("//*[contains(@class, 'heading_section_contents')]");
+                    } else if (child.Name == "em") {
+                        noQuestionInHeadingYet = false;
                         addQuestion(child);
                     }
-                    if (!areInHeading) {
+
+                    if (!areInHeading && child.Name != "em") {
                         goThrowNodes(child);
                     }
+
+                    if (currentParentHeadingRank != 0 && noQuestionInHeadingYet && !areInHeading && currentHeadingAnswer != null)
+                    {
+                        currentHeadingAnswer.AppendChild(child);
+                    }
                 }
+
 
                 void addQuestion(HtmlNode question)
                 {

@@ -27,6 +27,7 @@ namespace FileManager.Tests
             string message = areHtmlsEquivalent(File.ReadAllText(@"..\..\..\basicQuestions.html", Encoding.UTF8), questions);
             Assert.IsTrue(message == "", message);
         }
+
         [TestMethod()]
         public void createQuestionsFileText_RedundantText()
         {
@@ -35,6 +36,7 @@ namespace FileManager.Tests
             string message = areHtmlsEquivalent(File.ReadAllText(@"..\..\..\basicQuestions.html", Encoding.UTF8), questions);
             Assert.IsTrue(message == "", message);
         }
+
         [TestMethod()]
         public void createQuestionsFileText_IncludesHeadings()
         {
@@ -43,6 +45,16 @@ namespace FileManager.Tests
             string message = areHtmlsEquivalent(File.ReadAllText(@"..\..\..\headingQuestions.html", Encoding.UTF8), questions);
             Assert.IsTrue(message == "", message);
         }
+
+        [TestMethod()]
+        public void createQuestionsFileText_HeadingsAnswers()
+        {
+            string questions = cleanUp(QuestionsFile.CreateQuestionsFileText(File.ReadAllText(@"..\..\..\headingAnswersNotes.html")));
+
+            string message = areHtmlsEquivalent(File.ReadAllText(@"..\..\..\headingAnswersQuestions.html", Encoding.UTF8), questions);
+            Assert.IsTrue(message == "", message);
+        }
+
         [TestMethod()]
         public void createQuestionsFileText_NoNotes()
         {
