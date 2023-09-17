@@ -163,12 +163,15 @@ namespace quizGenerator
         }
         private void showAnswear()
         {
-            webBrowser2
-            .Document
-            .InvokeScript(
-                "ShowAnswear",
-                new object[] { questionIds[questionIndex] }
-            );
+            if (questionIndex >= 0 && questionIndex < questionIds.Count)
+            {
+                webBrowser2
+                .Document
+                .InvokeScript(
+                    "ShowAnswear",
+                    new object[] { questionIds[questionIndex] }
+                );
+            }
         }
 
         private void movePreviousAnswearedForward(int distance)
