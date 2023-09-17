@@ -8,7 +8,6 @@ using HtmlAgilityPack;
 using System.Security.Policy;
 using FileManager;
 using System.Collections;
-using static System.Windows.Forms.VisualStyles.VisualStyleElement;
 using quizGenerator;
 using System.Threading;
 
@@ -188,6 +187,7 @@ namespace FileManager
                     if (child.Name == "header") {
                         continue;
                     }
+
                     if (isHeading(child)) {
                         addHeading(child);
                         areInHeading = true;
@@ -197,9 +197,11 @@ namespace FileManager
                         noQuestionInHeadingYet = false;
                         addQuestion(child);
                     }
+
                     if (!areInHeading && child.Name != "em") {
                         goThrowNodes(child);
                     }
+
                     if (currentParentHeadingRank != 0 && noQuestionInHeadingYet && !areInHeading && currentHeadingAnswer != null)
                     {
                         currentHeadingAnswer.AppendChild(child);
