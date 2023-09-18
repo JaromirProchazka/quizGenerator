@@ -1,15 +1,6 @@
-﻿using System;
-using System.Collections.Generic;
-using System.ComponentModel;
-using System.Data;
-using System.Drawing;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+﻿using FileManager;
+using System;
 using System.Windows.Forms;
-using FileManager;
-using quizGenerator;
-using System.IO;
 
 namespace quizGenerator
 {
@@ -22,18 +13,8 @@ namespace quizGenerator
 
         private void mainPage_Load(object sender, EventArgs e)
         {
-            button1.Text = "Create New Topic";
             Topics.Text = "List Of Topics";
             populateListElement();
-        }
-
-        private void listBoxLinks_SelectedIndexChanged(object sender, EventArgs e)
-        {
-            if (Topics.SelectedIndex != -1)
-            {
-                HyperLink selectedItem = (HyperLink)Topics.SelectedItem;
-                FileManager.Topics.OpenQuizPage(selectedItem.Link);
-            }
         }
 
         private void populateListElement()
@@ -43,7 +24,6 @@ namespace quizGenerator
             {
                 Topics.Items.Add(link);
             }
-            
         }
 
         private void newTopicBtn_Click(object sender, EventArgs e)
@@ -59,12 +39,16 @@ namespace quizGenerator
             }
         }
 
-        private void listBox1_SelectedIndexChanged(object sender, EventArgs e)
+        private void Topics_SelectedIndexChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void openBtn_Click(object sender, EventArgs e)
         {
             if (Topics.SelectedIndex != -1)
             {
                 HyperLink selectedItem = (HyperLink)Topics.SelectedItem;
-                Console.WriteLine(selectedItem.Link);
                 FileManager.Topics.OpenQuizPage(
                     selectedItem.Link
                 );
