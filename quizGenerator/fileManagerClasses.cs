@@ -190,12 +190,7 @@ namespace FileManager
                 foreach (HtmlNode child in children)
                 {
                     areInHeading = false;
-                    if (child.NodeType != HtmlNodeType.Element)
-                    {
-                        continue;
-                    }
-
-                    if (child.Name == "header")
+                    if (child.NodeType != HtmlNodeType.Element || child.Name == "header" || child.Name == "nav")
                     {
                         continue;
                     }
