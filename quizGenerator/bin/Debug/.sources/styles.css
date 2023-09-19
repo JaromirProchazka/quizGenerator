@@ -18,6 +18,12 @@ a:hover {
     color: rgb(195, 60, 45);
 }
 
+mark {
+    text-decoration: none;
+    background: none;
+    color: tomato;
+}
+
 #good-btn {
     color: white;
     padding: 0.5rem;

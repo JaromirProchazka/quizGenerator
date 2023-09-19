@@ -39,8 +39,6 @@ namespace quizGenerator
         {
             string uriPath = @"file:///" + Path.GetFullPath(currentQuestionsPath).Replace(@"\", "/").Replace("#", "%23");
             webBrowser2.Url = new Uri(uriPath);
-            // webBrowser2.Navigate(new Uri(uriPath));
-            Console.WriteLine(uriPath);
 
             button1.Text = "Next 👍";
             Stylings.goodButtonStyle(button1);

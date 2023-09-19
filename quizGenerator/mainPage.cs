@@ -1,15 +1,6 @@
-﻿using System;
-using System.Collections.Generic;
-using System.ComponentModel;
-using System.Data;
-using System.Drawing;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+﻿using FileManager;
+using System;
 using System.Windows.Forms;
-using FileManager;
-using quizGenerator;
-using System.IO;
 
 namespace quizGenerator
 {
@@ -23,27 +14,27 @@ namespace quizGenerator
         private void mainPage_Load(object sender, EventArgs e)
         {
             button1.Text = "Create New Topic";
-            Topics.Text = "List Of Topics";
-            populateListElement();
+            TopicsList.Text = "List Of Topics";
+            populateListElement(TopicsList);
         }
 
         private void listBoxLinks_SelectedIndexChanged(object sender, EventArgs e)
         {
-            if (Topics.SelectedIndex != -1)
+            if (TopicsList.SelectedIndex != -1)
             {
-                HyperLink selectedItem = (HyperLink)Topics.SelectedItem;
-                FileManager.Topics.OpenQuizPage(selectedItem.Link);
+                HyperLink selectedItem = (HyperLink)TopicsList.SelectedItem;
+                Topics.OpenQuizPage(selectedItem.LinkToQuestions);
             }
         }
 
-        private void populateListElement()
+        private static void populateListElement(ListBox listToBePopulated)
         {
-            HyperLink[] topics = FileManager.Topics.getListOfTopics();
+            HyperLink[] topics = Topics.getListOfTopics();
             foreach (HyperLink link in topics)
             {
-                Topics.Items.Add(link);
+                listToBePopulated.Items.Add(link);
             }
-            
+
         }
 
         private void newTopicBtn_Click(object sender, EventArgs e)
@@ -53,21 +44,38 @@ namespace quizGenerator
                 string notesPath = openFileDialog1.FileName;
                 QuestionsFile.CreateNewTopic(notesPath);
 
-                // Updates list of topics
-                Topics.Items.Clear();
-                populateListElement();
+                updateList(TopicsList);
             }
         }
 
-        private void listBox1_SelectedIndexChanged(object sender, EventArgs e)
+        private void Topics_SelectedIndexChanged(object sender, EventArgs e)
         {
-            if (Topics.SelectedIndex != -1)
+
+        }
+
+        private void openBtn_Click(object sender, EventArgs e)
+        {
+            if (TopicsList.SelectedIndex != -1)
             {
-                HyperLink selectedItem = (HyperLink)Topics.SelectedItem;
-                Console.WriteLine(selectedItem.Link);
-                FileManager.Topics.OpenQuizPage(
-                    selectedItem.Link
+                HyperLink selectedItem = (HyperLink)TopicsList.SelectedItem;
+                Topics.OpenQuizPage(
+                    selectedItem.LinkToQuestions
                 );
+            }
+        }
+
+        public static void updateList(ListBox listToBeUpdated)
+        {
+            listToBeUpdated.Items.Clear();
+            populateListElement(listToBeUpdated);
+        }
+
+        private void editBtn_Click(object sender, EventArgs e)
+        {
+            if (TopicsList.SelectedIndex != -1)
+            {
+                HyperLink selectedItem = (HyperLink)TopicsList.SelectedItem;
+                new topicEditBox(TopicsList, selectedItem).Show();
             }
         }
     }

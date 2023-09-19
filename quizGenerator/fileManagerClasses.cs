@@ -8,6 +8,7 @@ using HtmlAgilityPack;
 using System.Security.Policy;
 using FileManager;
 using System.Collections;
+using static System.Windows.Forms.VisualStyles.VisualStyleElement;
 using quizGenerator;
 using System.Threading;
 
@@ -91,6 +92,7 @@ namespace FileManager
     /// main_script.exe
     /// .sources\
     ///         |---------- styles.css
+    ///         |---------- script.js
     ///         |
     ///         |---------- *general topic folder\
     ///         |                   |---------- notes.html
@@ -105,9 +107,10 @@ namespace FileManager
         public static string questionsFileName = "questions.html";
         public static string notesFileName = "notes.html";
         public static string stylesFileName = "styles.css";
+        public static string scriptFileName = "script.js";
         public static string questionsScriptName = "questionsScript.js";
 
-        static string baseMarkdown = "<!DOCTYPE html><html lang=\"en\" xmlns=\"http://www.w3.org/1999/xhtml\"><head><meta charset=\"utf-8\" /><title></title><script type=\"text/javascript\" language=\"javascript\" src=\".\\..\\script.js\" ></script></head><body></body><link rel=\"stylesheet\" href=\".\\..\\" + stylesFileName + "\" /></html>";
+        static string baseMarkdown = "<!DOCTYPE html><html lang=\"en\" xmlns=\"http://www.w3.org/1999/xhtml\"><head><meta charset=\"utf-8\" /><title></title><script type=\"text/javascript\" language=\"javascript\" src=\".\\..\\" + scriptFileName + "\"></script></head><body></body><link rel=\"stylesheet\" href=\".\\..\\" + stylesFileName + "\" /></html>";
         static string questionTemplate = "<div class=\"question_box\" id=\"question_0\" style=\"display: none\"><h1 class=\"question_name\"></h1><div class=\"question_answer\" style=\"display: none\"></div></div>";
         static string headingTemplate = "<div class=\"heading_sections\"><h1 class=\"section_heading\" style=\"display: none\"></h1><div class=\"heading_section_contents\" style=\"display: none\"></div></div>";
 
@@ -120,11 +123,14 @@ namespace FileManager
             HtmlDocument htmlFile = new HtmlDocument();
             htmlFile.Load(notesPath);
 
-            string topicTitle = getHtmlTitle(htmlFile).Replace(" ", "_");
-            string topicName = Path.GetFileNameWithoutExtension(notesPath).Replace(" ", "_");
-            string topicFolderPath = Path.Combine(utilFolderPath, (topicTitle.Any()) ? topicTitle : topicName);
+            string topicTitle = getHtmlTitle(htmlFile);
+            string topicName = Path.GetFileNameWithoutExtension(notesPath);
+            string topicFolderPath = Path.Combine(
+                utilFolderPath,
+                QuestionsFile.toTopicFileName((topicTitle.Any()) ? topicTitle : topicName)
+            );
 
-            if (Directory.Exists(topicFolderPath)) 
+            if (Directory.Exists(topicFolderPath))
             {
                 File.WriteAllText(Path.Combine(topicFolderPath, notesFileName), topicTitle);
             }
@@ -139,6 +145,11 @@ namespace FileManager
                 Path.Combine(topicFolderPath, questionsFileName),
                 CreateQuestionsFileText(notesMarkdown)
             );
+        }
+
+        public static string toTopicFileName(string title)
+        {
+            return title.Replace(" ", "_");
         }
 
         /// <summary>
@@ -184,21 +195,26 @@ namespace FileManager
                         continue;
                     }
 
-                    if (child.Name == "header") {
+                    if (child.Name == "header")
+                    {
                         continue;
                     }
 
-                    if (isHeading(child)) {
+                    if (isHeading(child))
+                    {
                         addHeading(child);
                         areInHeading = true;
                         noQuestionInHeadingYet = true;
                         currentHeadingAnswer = resultCurrentPosition.SelectSingleNode("//*[contains(@class, 'heading_section_contents')]");
-                    } else if (child.Name == "em") {
+                    }
+                    else if (child.Name == "em")
+                    {
                         noQuestionInHeadingYet = false;
                         addQuestion(child);
                     }
 
-                    if (!areInHeading && child.Name != "em") {
+                    if (!areInHeading && child.Name != "em")
+                    {
                         goThrowNodes(child);
                     }
 
@@ -219,7 +235,7 @@ namespace FileManager
                     HtmlNode latestQuestionBox = questionBoxTemplate
                         .DocumentNode
                         .SelectSingleNode("//*[contains(@class, 'question_box')]");
-                    HtmlNode questionBox =  resultCurrentPosition
+                    HtmlNode questionBox = resultCurrentPosition
                         .AppendChild(latestQuestionBox);
 
                     HtmlNode questionName = questionBox.SelectSingleNode("//*[contains(@class, 'question_name')]");
@@ -240,11 +256,11 @@ namespace FileManager
                     addIdCounterToNodeInDoc(headingBoxTemplate);
                     int headingRank = getHeadingRank(heading);
 
-                    if (headingRank <= currentParentHeadingRank) 
+                    if (headingRank <= currentParentHeadingRank)
                     {
                         HtmlNode currentParentHeading = resultCurrentPosition.ParentNode;
                         int parentHeadingRank = currentParentHeadingRank - 1;
-                        while(parentHeadingRank >= headingRank)
+                        while (parentHeadingRank >= headingRank)
                         {
                             currentParentHeading = currentParentHeading.ParentNode;
                             parentHeadingRank--;
@@ -300,7 +316,8 @@ namespace FileManager
         {
             string[] blockElements = { "p", "ul", "ol", "pre", "div", "blockquote", "dl", "figure", "hr" };
             HtmlNode parent = keySegment;
-            while (!blockElements.Contains(parent.Name) && !isHeading(parent)) {
+            while (!blockElements.Contains(parent.Name) && !isHeading(parent))
+            {
                 parent = parent.ParentNode;
             }
             return parent;
@@ -309,7 +326,8 @@ namespace FileManager
         private static string getHtmlTitle(HtmlDocument htmlFile)
         {
             HtmlNode title = htmlFile.DocumentNode.SelectSingleNode("//title");
-            if (title != null) {
+            if (title != null)
+            {
                 return title.InnerText;
             }
             return "";
@@ -326,7 +344,7 @@ namespace FileManager
         {
             string[] topics = Directory.GetDirectories(QuestionsFile.utilFolderPath);
             HyperLink[] links = new HyperLink[topics.Length];
-            
+
             for (int i = 0; i < topics.Length; i++)
             {
                 links[i] = new HyperLink(Path.GetFileNameWithoutExtension(topics[i]), getLinkForTopic(topics[i]));
@@ -342,12 +360,6 @@ namespace FileManager
 
         public static void OpenMainPage()
         {
-            const int IE11EmulationMode = 11001;
-            var appName = System.IO.Path.GetFileName(System.Diagnostics.Process.GetCurrentProcess().MainModule.FileName);
-            Microsoft.Win32.Registry.SetValue(@"HKEY_CURRENT_USER\Software\Microsoft\Internet Explorer\Main\FeatureControl\FEATURE_BROWSER_EMULATION", appName, IE11EmulationMode, Microsoft.Win32.RegistryValueKind.DWord);
-
-            System.Windows.Forms.Application.EnableVisualStyles();
-            System.Windows.Forms.Application.SetCompatibleTextRenderingDefault(false);
             System.Windows.Forms.Application.Run(new mainPage());
         }
 
@@ -361,12 +373,12 @@ namespace FileManager
     public class HyperLink
     {
         public string LinkLabel;
-        public string Link;
+        public string LinkToQuestions;
 
         public HyperLink(string label, string link)
         {
             LinkLabel = label;
-            Link = link;
+            LinkToQuestions = link;
         }
 
         public override string ToString()
