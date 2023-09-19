@@ -29,7 +29,7 @@
         private void InitializeComponent()
         {
             this.button1 = new System.Windows.Forms.Button();
-            this.Topics = new System.Windows.Forms.ListBox();
+            this.TopicsList = new System.Windows.Forms.ListBox();
             this.openFileDialog1 = new System.Windows.Forms.OpenFileDialog();
             this.button2 = new System.Windows.Forms.Button();
             this.button3 = new System.Windows.Forms.Button();
@@ -46,17 +46,17 @@
             this.button1.UseVisualStyleBackColor = true;
             this.button1.Click += new System.EventHandler(this.newTopicBtn_Click);
             // 
-            // Topics
+            // TopicsList
             // 
-            this.Topics.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            this.TopicsList.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.Topics.FormattingEnabled = true;
-            this.Topics.Location = new System.Drawing.Point(12, 12);
-            this.Topics.Name = "Topics";
-            this.Topics.Size = new System.Drawing.Size(776, 368);
-            this.Topics.TabIndex = 1;
-            this.Topics.SelectedIndexChanged += new System.EventHandler(this.Topics_SelectedIndexChanged);
+            this.TopicsList.FormattingEnabled = true;
+            this.TopicsList.Location = new System.Drawing.Point(12, 12);
+            this.TopicsList.Name = "TopicsList";
+            this.TopicsList.Size = new System.Drawing.Size(776, 368);
+            this.TopicsList.TabIndex = 1;
+            this.TopicsList.SelectedIndexChanged += new System.EventHandler(this.Topics_SelectedIndexChanged);
             // 
             // openFileDialog1
             // 
@@ -82,6 +82,7 @@
             this.button3.TabIndex = 3;
             this.button3.Text = "Edit";
             this.button3.UseVisualStyleBackColor = true;
+            this.button3.Click += new System.EventHandler(this.editBtn_Click);
             // 
             // mainPage
             // 
@@ -90,7 +91,7 @@
             this.ClientSize = new System.Drawing.Size(800, 450);
             this.Controls.Add(this.button3);
             this.Controls.Add(this.button2);
-            this.Controls.Add(this.Topics);
+            this.Controls.Add(this.TopicsList);
             this.Controls.Add(this.button1);
             this.Name = "mainPage";
             this.Text = "Quiz";
@@ -102,7 +103,7 @@
         #endregion
 
         private System.Windows.Forms.Button button1;
-        private System.Windows.Forms.ListBox Topics;
+        private System.Windows.Forms.ListBox TopicsList;
         private System.Windows.Forms.OpenFileDialog openFileDialog1;
         private System.Windows.Forms.Button button2;
         private System.Windows.Forms.Button button3;

@@ -46,3 +46,4 @@ C:\Users\jarom\Desktop\PG_CVIČENÍ\C#\quizGenerator\quizGenerator\obj\Debug\Fil
 C:\Users\jarom\Desktop\PG_CVIČENÍ\C#\quizGenerator\quizGenerator\obj\Debug\FileManager.csproj.CopyComplete
 C:\Users\jarom\Desktop\PG_CVIČENÍ\C#\quizGenerator\quizGenerator\obj\Debug\quizGenerator.exe
 C:\Users\jarom\Desktop\PG_CVIČENÍ\C#\quizGenerator\quizGenerator\obj\Debug\quizGenerator.pdb
+C:\Users\jarom\Desktop\PG_CVIČENÍ\C#\quizGenerator\quizGenerator\obj\Debug\quizGenerator.topicEditBox.resources
