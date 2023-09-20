@@ -51,3 +51,7 @@ mark {
 .heading_section_contents {
     color: gray;
 }
+
+.question_prerequisites {
+    display: none;
+}
