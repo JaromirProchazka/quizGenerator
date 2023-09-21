@@ -8,6 +8,7 @@
 <body>
     <div class="question_box" id="question_1" style="display: none">
         <h1 class="question_name">question a</h1>
+        <div class="question_prerequisites"></div>
         <div class="question_answer" style="display: none">
             <ul id="0de6786c-ab33-4f03-829f-3a9fad6f6097" class="bulleted-list">
                 <li style="list-style-type:disc">
@@ -22,6 +23,7 @@
 
     <div class="question_box" id="question_2" style="display: none">
         <h1 class="question_name">question b</h1>
+        <div class="question_prerequisites"></div>
         <div class="question_answer" style="display: none">
             <ul id="74cf7dec-5eaf-4847-acca-18695f202ae6" class="bulleted-list">
                 <li style="list-style-type:disc">
@@ -36,6 +38,7 @@
 
     <div class="question_box" id="question_3" style="display: none">
         <h1 class="question_name">question c</h1>
+        <div class="question_prerequisites"></div>
         <div class="question_answer" style="display: none">
             <ul id="0b9a8272-4c19-4621-9179-993c596870e3" class="bulleted-list">
                 <li style="list-style-type:disc">
@@ -49,12 +52,3 @@
     </div>
 </body>
 </html>
-
-
-
-
-<script type="text/javascript" language="javascript">
-    function ShowAnswear(id) { document.querySelector('#' + id).querySelector('.question_answer').style.display = 'block'; }
-    function ShowQuestion(id) { document.querySelector('#' + id).style.display = 'block'; }
-    function HideQuestion(id) { n = document.querySelector('#' + id); n.style.display = 'none'; n.querySelector('.question_answer').style.display = 'none'; }
-</script>

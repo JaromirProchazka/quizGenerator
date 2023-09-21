@@ -8,7 +8,6 @@ using HtmlAgilityPack;
 using System.Security.Policy;
 using FileManager;
 using System.Collections;
-using static System.Windows.Forms.VisualStyles.VisualStyleElement;
 using quizGenerator;
 using System.Threading;
 
@@ -27,14 +26,13 @@ namespace FileManager
     public class sequenceOfQuestions
     {
         Dag questionSequence = new Dag();
-        List<string> questionsObjects = new List<string>();
 
         public sequenceOfQuestions(string questionsMarkdown)
         {
             HtmlDocument questions = new HtmlDocument();
             questions.LoadHtml(questionsMarkdown);
-            insertChildren(questions.DocumentNode.
-                SelectSingleNode("//body")
+            insertChildren(
+                questions.DocumentNode.SelectSingleNode("//body")
             );
         }
 
@@ -72,16 +70,6 @@ namespace FileManager
             if (node.HasClass("heading_sections"))
             {
                 questionSequence.insert(node.Id, putInNodes.ToArray());
-            }
-        }
-
-        private void puloutQuestionsObjects(string questionName)
-        {
-            int substringStart = questionName.IndexOf('[');
-            int substringEnd = questionName.IndexOf("]");
-            if (substringStart != -1 && substringEnd != -1)
-            {
-
             }
         }
     }
