@@ -26,7 +26,6 @@ namespace FileManager
     /// </summary>
     public class Dag
     {
-        private enum State { Unreached, Opened, Closed }
         // node_id: List_of_neighbours_ids
         private Dictionary<uint, List<uint>> neighbours = new Dictionary<uint, List<uint>>();
         // node_id: nodes_tier
