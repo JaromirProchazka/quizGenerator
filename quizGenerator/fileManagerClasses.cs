@@ -157,6 +157,7 @@ namespace FileManager
             int idCounter = 1;
             int currentParentHeadingRank = 0;
             bool noQuestionInHeadingYet = true;
+            List<Touple<string, string>> listOfPrerequisitesIds = new List<Touple<string, string>>();
 
             HtmlDocument notes = new HtmlDocument();
             HtmlDocument result = new HtmlDocument();
@@ -193,6 +194,7 @@ namespace FileManager
                     else if (child.Name == "em")
                     {
                         noQuestionInHeadingYet = false;
+                        lookForPrerequisites(child.InnerHtml);
                         addQuestion(child);
                     }
 
@@ -265,7 +267,21 @@ namespace FileManager
                     idCounter++;
                 }
             }
+
+            void lookForPrerequisites(string question)
+            {
+                int firstIndex = question.IndexOf('[');
+                int secondIndex = question.IndexOf(']');
+
+                if (firstIndex != -1 && secondIndex != -1 && secondIndex > firstIndex && (secondIndex - firstIndex) > 3) 
+                {
+                    listOfPrerequisitesIds.Add(
+                        new Touple<string, string>(question.Substring(firstIndex+1, secondIndex-firstIndex-1), $"question_{idCounter}")
+                    );
+                }
+            }
         }
+
 
         /// <summary>
         /// Takes a HtmlNode and if it is a heading like 'h3', returns it's rank, in our situation '3' or it returns '0', if it isn't a heading node.
@@ -367,6 +383,18 @@ namespace FileManager
         public override string ToString()
         {
             return LinkLabel.Replace("_", " ");
+        }
+    }
+
+    public class Touple<T, L>
+    {
+        public T item1;
+        public L item2;
+
+        public Touple(T _item1, L _item2)
+        {
+            this.item1 = _item1;
+            this.item2 = _item2;
         }
     }
 }
