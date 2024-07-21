@@ -47,17 +47,17 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="questionsForm.cs">
+    <Compile Include="UIComponents\questionsForm.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="questionsForm.Designer.cs">
+    <Compile Include="UIComponents\questionsForm.Designer.cs">
       <DependentUpon>questionsForm.cs</DependentUpon>
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Compile>
-    <Compile Include="mainPage.cs">
+    <Compile Include="UIComponents\mainPage.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="mainPage.Designer.cs">
+    <Compile Include="UIComponents\mainPage.Designer.cs">
       <DependentUpon>mainPage.cs</DependentUpon>
     </Compile>
     <Compile Include="quiz_generator.cs" />
@@ -65,10 +65,10 @@
     <Compile Include="DataStructures\DAG.cs" />
     <Compile Include="fileManagerClasses.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="topicEditBox.cs">
+    <Compile Include="UIComponents\topicEditBox.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="topicEditBox.Designer.cs">
+    <Compile Include="UIComponents\topicEditBox.Designer.cs">
       <DependentUpon>topicEditBox.cs</DependentUpon>
     </Compile>
   </ItemGroup>
@@ -80,13 +80,13 @@
     <WCFMetadata Include="Connected Services\" />
   </ItemGroup>
   <ItemGroup>
-    <EmbeddedResource Include="mainPage.resx">
+    <EmbeddedResource Include="UIComponents\mainPage.resx">
       <DependentUpon>mainPage.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="questionsForm.resx">
+    <EmbeddedResource Include="UIComponents\questionsForm.resx">
       <DependentUpon>questionsForm.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="topicEditBox.resx">
+    <EmbeddedResource Include="UIComponents\topicEditBox.resx">
       <DependentUpon>topicEditBox.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
