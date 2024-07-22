@@ -1,0 +1,30 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <OutputType>WinExe</OutputType>
+    <TargetFramework>net8.0-windows</TargetFramework>
+    <Nullable>enable</Nullable>
+    <UseWindowsForms>true</UseWindowsForms>
+    <ImplicitUsings>enable</ImplicitUsings>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\FileManagers\FileManager.csproj" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Compile Update="UIComponents\mainPage.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="UIComponents\questionsForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="UIComponents\questionsForm.Designer.cs">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Compile>
+    <Compile Update="UIComponents\topicEditBox.cs">
+      <SubType>Form</SubType>
+    </Compile>
+  </ItemGroup>
+
+</Project>
