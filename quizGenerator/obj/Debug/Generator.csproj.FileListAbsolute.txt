@@ -1,0 +1,8 @@
+C:\Users\jarom\Desktop\PG_CVIČENÍ\quizGenerator\quizGenerator\obj\Debug\Generator.csproj.AssemblyReference.cache
+C:\Users\jarom\Desktop\PG_CVIČENÍ\quizGenerator\quizGenerator\obj\Debug\quizGenerator.mainPage.resources
+C:\Users\jarom\Desktop\PG_CVIČENÍ\quizGenerator\quizGenerator\obj\Debug\quizGenerator.questionsForm.resources
+C:\Users\jarom\Desktop\PG_CVIČENÍ\quizGenerator\quizGenerator\obj\Debug\quizGenerator.topicEditBox.resources
+C:\Users\jarom\Desktop\PG_CVIČENÍ\quizGenerator\quizGenerator\obj\Debug\Generator.csproj.GenerateResource.cache
+C:\Users\jarom\Desktop\PG_CVIČENÍ\quizGenerator\quizGenerator\obj\Debug\Generator.csproj.CoreCompileInputs.cache
+C:\Users\jarom\Desktop\PG_CVIČENÍ\quizGenerator\quizGenerator\obj\Debug\quizGenerator.exe
+C:\Users\jarom\Desktop\PG_CVIČENÍ\quizGenerator\quizGenerator\obj\Debug\quizGenerator.pdb

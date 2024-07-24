@@ -59,9 +59,13 @@
     <Compile Include="QuestionsFileTests.cs" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\quizGenerator\FileManager.csproj">
-      <Project>{CCE43A51-ED87-400B-98DE-C814D3D61CFA}</Project>
+    <ProjectReference Include="..\FileManagers\FileManager.csproj">
+      <Project>{84d0d301-01e6-4820-a815-f3968c794f9b}</Project>
       <Name>FileManager</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\quizGenerator\Generator.csproj">
+      <Project>{CCE43A51-ED87-400B-98DE-C814D3D61CFA}</Project>
+      <Name>Generator</Name>
     </ProjectReference>
   </ItemGroup>
   <ItemGroup>

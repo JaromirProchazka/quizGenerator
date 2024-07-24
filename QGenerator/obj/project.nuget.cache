@@ -1,0 +1,10 @@
+{
+  "version": 2,
+  "dgSpecHash": "0yTLDPYMLSB1QdPOUDfaCquVz6SjBPgIg2GY36U7heFThM/j8zzO9ReQVZXIpnVFqDcj2yiIlrtgiyLvScAJ4A==",
+  "success": true,
+  "projectFilePath": "C:\\Users\\jarom\\Desktop\\PG_CVIČENÍ\\quizGenerator\\QGenerator\\QGenerator.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\jarom\\.nuget\\packages\\htmlagilitypack\\1.11.61\\htmlagilitypack.1.11.61.nupkg.sha512"
+  ],
+  "logs": []
+}

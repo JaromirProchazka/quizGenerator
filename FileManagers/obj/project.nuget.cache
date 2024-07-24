@@ -1,0 +1,10 @@
+{
+  "version": 2,
+  "dgSpecHash": "zql/MDrmBYEWCN1Y52c0so90szZ7T7tNtjPWpN9iC7RUeC0112lIxdJjiE1hg2hAbNiSXiy1U5NZ3iXJLhlXtQ==",
+  "success": true,
+  "projectFilePath": "C:\\Users\\jarom\\Desktop\\PG_CVIČENÍ\\quizGenerator\\FileManagers\\FileManager.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\jarom\\.nuget\\packages\\htmlagilitypack\\1.11.61\\htmlagilitypack.1.11.61.nupkg.sha512"
+  ],
+  "logs": []
+}
