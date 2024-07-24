@@ -1,0 +1,60 @@
+﻿<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+    <title></title>
+</head>
+<body>
+    <div class="question_box" id="question_1" style="display: none">
+        <h1 class="question_name">question a</h1>
+        <div class="question_answer" style="display: none">
+            <ul id="0de6786c-ab33-4f03-829f-3a9fad6f6097" class="bulleted-list">
+                <li style="list-style-type:disc">
+                    <em>question a</em>
+                    <ul id="426ddd97-8967-4793-8a59-d57f7e262114" class="bulleted-list">
+                        <li style="list-style-type:circle">answer a</li>
+                    </ul>
+                </li>
+            </ul>
+        </div>
+    </div>
+
+    <div class="question_box" id="question_2" style="display: none">
+        <h1 class="question_name">question b</h1>
+        <div class="question_answer" style="display: none">
+            <ul id="74cf7dec-5eaf-4847-acca-18695f202ae6" class="bulleted-list">
+                <li style="list-style-type:disc">
+                    <em><strong>question b</strong></em>
+                    <ul id="324e94d8-0a1d-483f-b75c-92c4ca6d9d1d" class="bulleted-list">
+                        <li style="list-style-type:circle">answer b</li>
+                    </ul>
+                </li>
+            </ul>
+        </div>
+    </div>
+
+    <div class="question_box" id="question_3" style="display: none">
+        <h1 class="question_name">question c</h1>
+        <div class="question_answer" style="display: none">
+            <ul id="0b9a8272-4c19-4621-9179-993c596870e3" class="bulleted-list">
+                <li style="list-style-type:disc">
+                    <em><mark class="highlight-blue">question c</mark></em>
+                    <ul id="a7ae4017-cef6-4397-8efc-5ffd02b0d49b" class="bulleted-list">
+                        <li style="list-style-type:circle">answer c</li>
+                    </ul>
+                </li>
+            </ul>
+        </div>
+    </div>
+</body>
+</html>
+
+
+
+
+<script type="text/javascript" language="javascript">
+    function ShowAnswear(id) { document.querySelector('#' + id).querySelector('.question_answer').style.display = 'block'; }
+    function ShowQuestion(id) { document.querySelector('#' + id).style.display = 'block'; }
+    function HideQuestion(id) { n = document.querySelector('#' + id); n.style.display = 'none'; n.querySelector('.question_answer').style.display = 'none'; }
+</script>

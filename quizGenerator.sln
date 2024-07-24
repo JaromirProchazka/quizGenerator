@@ -19,9 +19,9 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "src", "src", "{FEAAC08F-846
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "FileManager", "FileManagers\FileManager.csproj", "{84D0D301-01E6-4820-A815-F3968C794F9B}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "QGenerator", "QGenerator\QGenerator.csproj", "{9E8079CF-B75D-4E96-80DB-AFEF46CAB156}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "QGenerator", "QGenerator\QGenerator.csproj", "{9E8079CF-B75D-4E96-80DB-AFEF46CAB156}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FileManagerTests1", "FileManagerTests1\FileManagerTests1.csproj", "{244F2DBC-DBCA-4A25-8795-693E2E5EE3D1}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "FileManagerTests", "FileManagerTests1\FileManagerTests.csproj", "{244F2DBC-DBCA-4A25-8795-693E2E5EE3D1}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
