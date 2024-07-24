@@ -15,3 +15,7 @@
 
 # Ignore .vs directory
 .vs/
+
+# Compiled binaries
+**/bin/Debug/**
+**/bin/Release/**

@@ -27,3 +27,5 @@ C:\Users\jarom\Desktop\PG_CVIČENÍ\quizGenerator\QGenerator\obj\Debug\net8.0-wi
 C:\Users\jarom\Desktop\PG_CVIČENÍ\quizGenerator\QGenerator\obj\Debug\net8.0-windows\QGenerator.pdb
 C:\Users\jarom\Desktop\PG_CVIČENÍ\quizGenerator\QGenerator\obj\Debug\net8.0-windows\QGenerator.genruntimeconfig.cache
 C:\Users\jarom\Desktop\PG_CVIČENÍ\quizGenerator\QGenerator\obj\Debug\net8.0-windows\ref\QGenerator.dll
+C:\Users\jarom\Desktop\PG_CVIČENÍ\quizGenerator\QGenerator\bin\Debug\net8.0-windows\.sources\script.js
+C:\Users\jarom\Desktop\PG_CVIČENÍ\quizGenerator\QGenerator\bin\Debug\net8.0-windows\.sources\styles.css

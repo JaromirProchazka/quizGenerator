@@ -5,6 +5,7 @@ using System.IO;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using System.Windows.Forms;
 
 namespace quizGenerator
 {
@@ -16,7 +17,7 @@ namespace quizGenerator
         /// <returns></returns>
         public static HyperLink[] getListOfTopics()
         {
-            string[] topics = Directory.GetDirectories(QuestionsFile.utilFolderPath);
+            string[] topics = QuestionsFile.GetTopics();
             HyperLink[] links = new HyperLink[topics.Length];
 
             for (int i = 0; i < topics.Length; i++)
@@ -34,7 +35,7 @@ namespace quizGenerator
 
         public static void OpenMainPage()
         {
-            System.Windows.Forms.Application.Run(new mainPage());
+            Application.Run(new mainPage());
         }
 
         [STAThread]

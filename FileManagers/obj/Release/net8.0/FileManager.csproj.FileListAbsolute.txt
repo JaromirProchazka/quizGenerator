@@ -16,3 +16,5 @@ C:\Users\jarom\Desktop\PG_CVIČENÍ\quizGenerator\FileManagers\obj\Release\net8.
 C:\Users\jarom\Desktop\PG_CVIČENÍ\quizGenerator\FileManagers\obj\Release\net8.0\FileManager.pdb
 C:\Users\jarom\Desktop\PG_CVIČENÍ\quizGenerator\FileManagers\obj\Release\net8.0\FileManager.genruntimeconfig.cache
 C:\Users\jarom\Desktop\PG_CVIČENÍ\quizGenerator\FileManagers\obj\Release\net8.0\ref\FileManager.dll
+C:\Users\jarom\Desktop\PG_CVIČENÍ\quizGenerator\FileManagers\bin\Release\net8.0\.sources\script.js
+C:\Users\jarom\Desktop\PG_CVIČENÍ\quizGenerator\FileManagers\bin\Release\net8.0\.sources\styles.css

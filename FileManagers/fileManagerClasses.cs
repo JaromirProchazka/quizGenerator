@@ -8,6 +8,7 @@ using HtmlAgilityPack;
 using System.Security.Policy;
 using System.Collections;
 using System.Threading;
+using System.Runtime.InteropServices;
 
 namespace FileManager
 {
@@ -84,7 +85,7 @@ namespace FileManager
     }
 
     /// <summary>
-    /// Containes methods and constants, to manage the 'quizGenerator' backend. It follows this file structure:
+    /// Singleton containing methods and constants, to manage the 'quizGenerator' backend. It follows this file structure:
     /// <code>
     /// main_script.exe
     /// .sources\
@@ -98,7 +99,7 @@ namespace FileManager
     ///         |---------- ... more topic folders\
     /// </code>
     /// </summary>
-    public class QuestionsFile
+    public static class QuestionsFile
     {
         public static string utilFolderPath = @".\.sources\";
         public static string questionsFileName = "questions.html";
@@ -111,6 +112,7 @@ namespace FileManager
         static string questionTemplate = "<div class=\"question_box\" id=\"question_0\" style=\"display: none\"><h1 class=\"question_name\"></h1><div class=\"question_answer\" style=\"display: none\"></div></div>";
         static string headingTemplate = "<div class=\"heading_sections\"><h1 class=\"section_heading\" style=\"display: none\"></h1><div class=\"heading_section_contents\" style=\"display: none\"></div></div>";
 
+        static string templateSourcesPath = Path.Combine(AppDomain.CurrentDomain.BaseDirectory, "FileManagers", Path.GetDirectoryName(utilFolderPath));
 
         /// <summary>
         /// Creates new topic folder with questions file to be later opened as quiz.
@@ -142,6 +144,36 @@ namespace FileManager
                 Path.Combine(topicFolderPath, questionsFileName),
                 CreateQuestionsFileText(notesMarkdown)
             );
+        }
+
+        /// <summary>
+        /// Initializes the sources folder for the Topics (Quizes data).
+        /// </summary>
+        /// <returns>Path to the created folder</returns>
+        private static string createSourcesFolder()
+        {
+            var currentDir = Directory.GetCurrentDirectory();
+            // Directory.CreateDirectory(utilFolderPath);
+            var sourcesCopyer = new RecursiveFolderCopy(templateSourcesPath);
+            sourcesCopyer.CopyTo(Directory.GetCurrentDirectory(), recursive: true);
+
+            return Path.Combine(currentDir, Path.GetFileName(templateSourcesPath));
+        }
+
+        private static string GetDataFilePath()
+        {
+            if (Directory.Exists(utilFolderPath)) return utilFolderPath;
+
+            return createSourcesFolder();
+        }
+
+        /// <summary>
+        /// Gives a collection of Topics in History.
+        /// </summary>
+        /// <returns>an array of names</returns>
+        public static string[] GetTopics()
+        {
+            return Directory.GetDirectories(GetDataFilePath());
         }
 
         public static string toTopicFileName(string title)
