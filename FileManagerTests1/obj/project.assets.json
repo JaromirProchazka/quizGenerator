@@ -1083,9 +1083,9 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\jarom\\Desktop\\PG_CVIČENÍ\\quizGenerator\\FileManagerTests1\\FileManagerTests1.csproj",
-      "projectName": "FileManagerTests1",
-      "projectPath": "C:\\Users\\jarom\\Desktop\\PG_CVIČENÍ\\quizGenerator\\FileManagerTests1\\FileManagerTests1.csproj",
+      "projectUniqueName": "C:\\Users\\jarom\\Desktop\\PG_CVIČENÍ\\quizGenerator\\FileManagerTests1\\FileManagerTests.csproj",
+      "projectName": "FileManagerTests",
+      "projectPath": "C:\\Users\\jarom\\Desktop\\PG_CVIČENÍ\\quizGenerator\\FileManagerTests1\\FileManagerTests.csproj",
       "packagesPath": "C:\\Users\\jarom\\.nuget\\packages\\",
       "outputPath": "C:\\Users\\jarom\\Desktop\\PG_CVIČENÍ\\quizGenerator\\FileManagerTests1\\obj\\",
       "projectStyle": "PackageReference",

@@ -17,49 +17,60 @@ namespace FileManagerTests1
     [TestClass()]
     public class QuestionsFileTests
     {
+        /// <summary>
+        /// Fetch the Test Data from a given file.
+        /// </summary>
+        /// <param name="fileName">Name of the test file including the extension</param>
+        /// <returns>Returns the Expected result data from the file given in parameter</returns>
+        public static string tData(string fileName)
+        {
+            var p = Path.Combine(AppDomain.CurrentDomain.BaseDirectory, "src", fileName);
+            return File.ReadAllText(p, Encoding.UTF8);
+        }
+
         // createQuestionsFile
         [TestMethod()]
         public void createQuestionsFileText_onlyQuestions()
         {
-            string questions = cleanUp(QuestionsFile.CreateQuestionsFileText(File.ReadAllText(@"..\..\..\basicNotes.html")));
+            string questions = cleanUp(QuestionsFile.CreateQuestionsFileText(tData("basicNotes.html")));
 
-            string message = areHtmlsEquivalent(File.ReadAllText(@"..\..\..\basicQuestions.html", Encoding.UTF8), questions);
+            string message = areHtmlsEquivalent(tData(@"basicQuestions.html"), questions);
             Assert.IsTrue(message == "", message);
         }
 
         [TestMethod()]
         public void createQuestionsFileText_RedundantText()
         {
-            string questions = cleanUp(QuestionsFile.CreateQuestionsFileText(File.ReadAllText(@"..\..\..\redundantNotes.html")));
+            string questions = cleanUp(QuestionsFile.CreateQuestionsFileText(tData("redundantNotes.html")));
 
-            string message = areHtmlsEquivalent(File.ReadAllText(@"..\..\..\basicQuestions.html", Encoding.UTF8), questions);
+            string message = areHtmlsEquivalent(tData("basicQuestions.html"), questions);
             Assert.IsTrue(message == "", message);
         }
 
         [TestMethod()]
         public void createQuestionsFileText_IncludesHeadings()
         {
-            string questions = cleanUp(QuestionsFile.CreateQuestionsFileText(File.ReadAllText(@"..\..\..\headingsNotes.html")));
+            string questions = cleanUp(QuestionsFile.CreateQuestionsFileText(tData("headingsNotes.html")));
 
-            string message = areHtmlsEquivalent(File.ReadAllText(@"..\..\..\headingQuestions.html", Encoding.UTF8), questions);
+            string message = areHtmlsEquivalent(tData("headingQuestions.html"), questions);
             Assert.IsTrue(message == "", message);
         }
 
         [TestMethod()]
         public void createQuestionsFileText_HeadingsAnswers()
         {
-            string questions = cleanUp(QuestionsFile.CreateQuestionsFileText(File.ReadAllText(@"..\..\..\headingAnswersNotes.html")));
+            string questions = cleanUp(QuestionsFile.CreateQuestionsFileText(tData("headingAnswersNotes.html")));
 
-            string message = areHtmlsEquivalent(File.ReadAllText(@"..\..\..\headingAnswersQuestions.html", Encoding.UTF8), questions);
+            string message = areHtmlsEquivalent(tData("headingAnswersQuestions.html"), questions);
             Assert.IsTrue(message == "", message);
         }
 
         [TestMethod()]
         public void createQuestionsFileText_NoNotes()
         {
-            string questions = cleanUp(QuestionsFile.CreateQuestionsFileText(File.ReadAllText(@"..\..\..\noNotes.html")));
+            string questions = cleanUp(QuestionsFile.CreateQuestionsFileText(tData("noNotes.html")));
 
-            string message = areHtmlsEquivalent(File.ReadAllText(@"..\..\..\noQuestions.html", Encoding.UTF8), questions);
+            string message = areHtmlsEquivalent(tData("noQuestions.html"), questions);
             Assert.IsTrue(message == "", message);
         }
 
@@ -210,6 +221,75 @@ namespace FileManagerTests1
                 }
             }
             return "";
+        }
+    }
+
+    [TestClass()]
+    public class SequenceOfQuestionsTests
+    {
+        [TestMethod()]
+        public void buildQuestionDag_onlyBasicQuestions()
+        {
+            sequenceOfQuestions questions = new sequenceOfQuestions(QuestionsFileTests.tData("basicQuestions.html"));
+            List<string> sequence = questions.getSequence();
+            int checkCounter = 0;
+            string dagS = "";
+            foreach (string s in sequence)
+            {
+                dagS += s + " ";
+            }
+
+            if (sequence.Count != 3)
+            {
+                Assert.Fail($"More or Less questions than neccesary (is {sequence.Count} but should be 3).");
+            }
+            foreach (string s in new string[] { "question_1", "question_2", "question_3" })
+            {
+                checkCounter += (sequence.Contains(s)) ? 1 : 0;
+            }
+
+            if (checkCounter != 3)
+            {
+                Assert.Fail($"Missing item, ({dagS})");
+            }
+        }
+
+        [TestMethod()]
+        public void buildQuestionDag_headingsQuestions()
+        {
+            sequenceOfQuestions questions = new sequenceOfQuestions(QuestionsFileTests.tData("shortHeadingQuestion.html"));
+            List<string> sequence = questions.getSequence();
+            string[] dagIds = new string[] { "question_1", "question_2", "question_3", "question_4" };
+            if (sequence.Count != 4)
+            {
+                Assert.Fail($"The sequence must have 4 items, but has {sequence.Count}.");
+            }
+            foreach (string s in dagIds)
+            {
+                if (!sequence.Contains(s))
+                {
+                    Assert.Fail($"Question {s} is missing.");
+                }
+            }
+
+            if (sequence.Last() == "question_4")
+            {
+                Assert.Fail("BAD ordering, last must not be 'question_4'.");
+            }
+            sequence.Remove("question_4");
+            if (!sequence.SequenceEqual(new List<string>(new string[] { "question_3", "question_2", "question_1", })))
+            {
+                Assert.Fail($"BAD ordering, first three must be 'question_3, question_2, question_1' but us '{sequence[0]}, {sequence[1]}, {sequence[2]}'.");
+            }
+        }
+
+        [TestMethod()]
+        public void buildQuestionsDag_NoQuestions()
+        {
+            sequenceOfQuestions questions = new sequenceOfQuestions(QuestionsFileTests.tData("noQuestions.html"));
+            List<string> sequence = questions.getSequence();
+
+            Assert.IsTrue(sequence.Count == 0, $"Should be empty, but is {sequence}");
         }
     }
 }

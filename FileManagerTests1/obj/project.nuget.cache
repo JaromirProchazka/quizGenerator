@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "wo/6ZrIuyQiM5XS34zqlfVwEi7Ajc8NaPpa/45h5CT0kJnhYfvAkvTVHNY/N2hPhsHHYsK7SiwrYHCepFxfIsA==",
+  "dgSpecHash": "UTm4SS+vS+SV+W89MAPXKqg1hPPA1m4Lm4dkwYDO2jDfZIv7DLBRwTK4djzqhJi69Jq6sgOUX5C0Gni8CqoVfA==",
   "success": true,
-  "projectFilePath": "C:\\Users\\jarom\\Desktop\\PG_CVIČENÍ\\quizGenerator\\FileManagerTests1\\FileManagerTests1.csproj",
+  "projectFilePath": "C:\\Users\\jarom\\Desktop\\PG_CVIČENÍ\\quizGenerator\\FileManagerTests1\\FileManagerTests.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\jarom\\.nuget\\packages\\coverlet.collector\\6.0.0\\coverlet.collector.6.0.0.nupkg.sha512",
     "C:\\Users\\jarom\\.nuget\\packages\\htmlagilitypack\\1.11.61\\htmlagilitypack.1.11.61.nupkg.sha512",
