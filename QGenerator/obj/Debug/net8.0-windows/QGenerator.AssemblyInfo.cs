@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("QGenerator")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+dd32a55d53ead95845388c6237746c00b85bc4a4")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+5b00b29518e122fb96d9512a1a8788223ee79a73")]
 [assembly: System.Reflection.AssemblyProductAttribute("QGenerator")]
 [assembly: System.Reflection.AssemblyTitleAttribute("QGenerator")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
