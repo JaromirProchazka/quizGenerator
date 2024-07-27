@@ -363,9 +363,18 @@ namespace FileManager
         }
     }
 
+    /// <summary>
+    /// A class containing data necessary for linking Quizzes.
+    /// </summary>
     public class HyperLink
     {
+        /// <summary>
+        /// The label, of the hyperling, what user sees before clicking
+        /// </summary>
         public string LinkLabel;
+        /// <summary>
+        /// The actual link to the quiz.
+        /// </summary>
         public string LinkToQuestions;
 
         public HyperLink(string label, string link)
