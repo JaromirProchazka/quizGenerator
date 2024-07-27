@@ -6,4 +6,8 @@
     <Nullable>enable</Nullable>
   </PropertyGroup>
 
+  <ItemGroup>
+    <ProjectReference Include="..\FileManagers\FileManager.csproj" />
+  </ItemGroup>
+
 </Project>

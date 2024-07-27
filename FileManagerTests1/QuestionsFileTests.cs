@@ -230,7 +230,7 @@ namespace FileManagerTests1
         [TestMethod()]
         public void buildQuestionDag_onlyBasicQuestions()
         {
-            sequenceOfQuestions questions = new sequenceOfQuestions(QuestionsFileTests.tData("basicQuestions.html"));
+            SequenceOfQuestions questions = new SequenceOfQuestions(QuestionsFileTests.tData("basicQuestions.html"));
             List<string> sequence = questions.getSequence();
             int checkCounter = 0;
             string dagS = "";
@@ -257,7 +257,7 @@ namespace FileManagerTests1
         [TestMethod()]
         public void buildQuestionDag_headingsQuestions()
         {
-            sequenceOfQuestions questions = new sequenceOfQuestions(QuestionsFileTests.tData("shortHeadingQuestion.html"));
+            SequenceOfQuestions questions = new SequenceOfQuestions(QuestionsFileTests.tData("shortHeadingQuestion.html"));
             List<string> sequence = questions.getSequence();
             string[] dagIds = new string[] { "question_1", "question_2", "question_3", "question_4" };
             if (sequence.Count != 4)
@@ -286,7 +286,7 @@ namespace FileManagerTests1
         [TestMethod()]
         public void buildQuestionsDag_NoQuestions()
         {
-            sequenceOfQuestions questions = new sequenceOfQuestions(QuestionsFileTests.tData("noQuestions.html"));
+            SequenceOfQuestions questions = new SequenceOfQuestions(QuestionsFileTests.tData("noQuestions.html"));
             List<string> sequence = questions.getSequence();
 
             Assert.IsTrue(sequence.Count == 0, $"Should be empty, but is {sequence}");

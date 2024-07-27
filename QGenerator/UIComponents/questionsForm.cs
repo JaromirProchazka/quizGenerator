@@ -4,6 +4,7 @@ using System.Collections.Generic;
 using System.Drawing;
 using System.IO;
 using System.Windows.Forms;
+using QuizLogicalComponents;
 
 namespace quizGenerator
 {
@@ -12,32 +13,30 @@ namespace quizGenerator
     /// </summary>
     public partial class questionsForm : Form
     {
-        string currentQuestionsPath;
-        sequenceOfQuestions sequenceFinder;
-        List<string> questionIds;
-        int questionIndex;
-
-        public static int movingDistaneceOnBadAnswear = 10;
+        QuizState state;
+        public static int movingDistanceOnBadAnswear = 10;
 
         /// <summary>
-        /// Initiates the Form of a quiz.
+        /// Initiates the Form of a quiz from the start (from default).
         /// </summary>
         /// <param name="questionsFilePath">The path to the questions file in the ".sources" folder.</param>
         public questionsForm(string questionsFilePath)
         {
-            currentQuestionsPath = questionsFilePath;
-            InitializeComponent();
-            sequenceFinder = new sequenceOfQuestions(File.ReadAllText(currentQuestionsPath));
-            questionIds = sequenceFinder.getSequence();
-            if (questionIds.Count != 0) 
-            {
-                questionIndex = 0;
-            }
+            state = new QuizState(questionsFilePath);
+        }
+
+        /// <summary>
+        /// Initiates the Form of a quiz from a given State (history).
+        /// </summary>
+        /// <param name="givenState">The state of the quiz</param>
+        public questionsForm(QuizState givenState) 
+        { 
+            state = givenState;
         }
 
         private void questionsForm_Load(object sender, EventArgs e)
         {
-            string uriPath = @"file:///" + Path.GetFullPath(currentQuestionsPath).Replace(@"\", "/").Replace("#", "%23");
+            string uriPath = @"file:///" + Path.GetFullPath(state.CurrentQuestionsPath).Replace(@"\", "/").Replace("#", "%23");
             webBrowser2.Url = new Uri(uriPath);
 
             button1.Text = "Next 👍";
@@ -57,7 +56,7 @@ namespace quizGenerator
         private void webBrowser2_DocumentCompleted(object sender, WebBrowserDocumentCompletedEventArgs e)
         {
             webBrowser2.Navigating += webBrowser2_Navigating;
-            if (questionIndex != null)
+            if (state.QuestionIndex != null)
             {
                 showCurrentQuestion();
             }
@@ -83,7 +82,7 @@ namespace quizGenerator
         private void badNext_Click(object sender, EventArgs e)
         {
             NextQuestion();
-            movePreviousAnswearedForward(movingDistaneceOnBadAnswear);
+            state.MovePreviousAnswearedForward(movingDistanceOnBadAnswear);
             updateScore();
         }
 
@@ -105,8 +104,8 @@ namespace quizGenerator
 
         private void updateScore()
         {
-            textBox1.Text = questionIndex + " / " + questionIds.Count;
-            if (questionIndex == questionIds.Count)
+            textBox1.Text = state.QuestionIndex + " / " + state.GetQuestionsCount();
+            if (state.QuestionIndex == state.GetQuestionsCount())
             {
                 Stylings.maxScoreStyle(textBox1);
             }
@@ -117,20 +116,23 @@ namespace quizGenerator
 
         private void NextQuestion()
         {
-            if (questionIndex < questionIds.Count)
+            if (state.QuestionIndex < state.GetQuestionsCount())
             {
                 hideCurrentQuestion();
             }
-            questionIndex++;
-            if (questionIndex > questionIds.Count) 
+            state.SetNextQuestion();
+
+            if (state.QuestionIndex > state.GetQuestionsCount()) 
             {
-                questionIds = sequenceFinder.getSequence();
-                questionIndex = 0;
-            } if (questionIndex == questionIds.Count)
+                state.ResetQuestions();
+            } 
+
+            if (state.QuestionIndex == state.GetQuestionsCount())
             {
                 updateScore();
-                questionIndex++;
-            } else {
+                state.SetNextQuestion();
+            } 
+            else {
                 showCurrentQuestion();
             }
         }
@@ -141,7 +143,7 @@ namespace quizGenerator
             .Document
             .InvokeScript(
                 "ShowQuestion",
-                new object[] { questionIds[questionIndex] }
+                new object[] { state.GetCurrentQuestion() }
             );
 
             updateScore();
@@ -153,31 +155,20 @@ namespace quizGenerator
             .Document
             .InvokeScript(
                 "HideQuestion",
-                new object[] { questionIds[questionIndex] }
+                new object[] { state.GetCurrentQuestion() }
             );
         }
         private void showAnswear()
         {
-            if (questionIndex >= 0 && questionIndex < questionIds.Count)
+            if (state.QuestionIndex >= 0 && state.QuestionIndex < state.GetQuestionsCount())
             {
                 webBrowser2
                 .Document
                 .InvokeScript(
                     "ShowAnswear",
-                    new object[] { questionIds[questionIndex] }
+                    new object[] { state.GetCurrentQuestion() }
                 );
             }
-        }
-
-        private void movePreviousAnswearedForward(int distance)
-        {
-            string previousQuestionId = questionIds[questionIndex-1];
-            questionIds.RemoveAt(questionIndex-1);
-            questionIds.Insert(
-                (questionIndex + distance < questionIds.Count) ? questionIndex + distance : questionIds.Count,
-                previousQuestionId
-            );
-            questionIndex--;
         }
     }
 

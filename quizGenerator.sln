@@ -9,6 +9,8 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "QGenerator", "QGenerator\QG
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "FileManagerTests", "FileManagerTests1\FileManagerTests.csproj", "{244F2DBC-DBCA-4A25-8795-693E2E5EE3D1}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "QuizLogicalComponents", "QuizLogicalComponents\QuizLogicalComponents.csproj", "{83BDC551-3E45-4C81-B64A-200014C89664}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -27,6 +29,10 @@ Global
 		{244F2DBC-DBCA-4A25-8795-693E2E5EE3D1}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{244F2DBC-DBCA-4A25-8795-693E2E5EE3D1}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{244F2DBC-DBCA-4A25-8795-693E2E5EE3D1}.Release|Any CPU.Build.0 = Release|Any CPU
+		{83BDC551-3E45-4C81-B64A-200014C89664}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{83BDC551-3E45-4C81-B64A-200014C89664}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{83BDC551-3E45-4C81-B64A-200014C89664}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{83BDC551-3E45-4C81-B64A-200014C89664}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
