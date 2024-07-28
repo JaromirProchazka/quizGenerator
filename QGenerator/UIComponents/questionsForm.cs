@@ -13,7 +13,7 @@ namespace quizGenerator
     /// </summary>
     public partial class questionsForm : Form
     {
-        QuizState state;
+        IQuizState state;
         public static int movingDistanceOnBadAnswear = 10;
 
         /// <summary>
@@ -57,10 +57,7 @@ namespace quizGenerator
         private void webBrowser2_DocumentCompleted(object sender, WebBrowserDocumentCompletedEventArgs e)
         {
             webBrowser2.Navigating += webBrowser2_Navigating;
-            if (state.QuestionIndex != null)
-            {
-                showCurrentQuestion();
-            }
+            showCurrentQuestion();
         }
 
         private void webBrowser2_Navigating (object sender, WebBrowserNavigatingEventArgs e)

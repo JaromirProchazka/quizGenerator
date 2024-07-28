@@ -5,32 +5,67 @@ using System.IO;
 
 namespace QuizLogicalComponents
 {
-    //public abstract record class IQuizState 
-    //{
-    //    public string CurrentQuestionsPath;
-    //    public List<string> QuestionIds;
-    //    public int QuestionIndex;
-
-    //    public static abstract IQuizState GetState();
-    //}
-
-    /// <summary>
-    /// Represents the state of the quiz in a given time.
-    /// </summary>
-    public record class QuizState // : IQuizState
+    public abstract record class IQuizState 
     {
         /// <summary>
         /// Path to the questions file.
         /// </summary>
         public string CurrentQuestionsPath;
         /// <summary>
-        /// List of question Id, by which the questions are identified.
-        /// </summary>
-        public List<string> QuestionIds;
-        /// <summary>
         /// Index into the @QuestionIds.
         /// </summary>
         public int QuestionIndex;
+
+        /// <summary>
+        /// Moves the previous in the sequence forward in the questions.
+        /// </summary>
+        /// <param name="distance">The number of spaces in sequence, by which the questions Id is moved forward.</param>
+        public abstract void MovePreviousAnswearedForward(int distance);
+
+        /// <summary>
+        /// Gives the number of questions.
+        /// </summary>
+        /// <returns>Positive number</returns>
+        public abstract int GetQuestionsCount();
+
+        /// <summary>
+        /// Get's the next questions Id without changing the state (Peek). If we are at the sequences end, It resets the sequence using the @ISequenceOfQuestions and resets state to the sequences beginning.
+        /// </summary>
+        /// <returns>Questions Id</returns>
+        public abstract string GetNextQuestion();
+
+        /// <summary>
+        /// Sets State to the next question in the Sequence of questions
+        /// </summary>
+        public abstract void SetNextQuestion();
+
+        /// <summary>
+        /// Uses @ISequenceOfQuestions to create new sequence of questions and resets the state such that it points to the sequences beginning. 
+        /// </summary>
+        public abstract void ResetQuestions();
+
+        /// <summary>
+        /// Gets the previous questions id without changing the state (Peek). If we are at the sequences start, it returns the first in the sequence.
+        /// </summary>
+        /// <returns>Questions Id</returns>
+        public abstract string GetPreviousQuestion();
+
+        /// <summary>
+        /// Gets Question Id, the state currentaly points to
+        /// </summary>
+        /// <returns>Questions Id</returns>
+        public abstract string GetCurrentQuestion();
+    }
+
+    /// <summary>
+    /// Represents the state of the quiz in a given time.
+    /// </summary>
+    public record class QuizState : IQuizState
+    {
+        /// <summary>
+        /// List of question Id, by which the questions are identified.
+        /// </summary>
+        public List<string> QuestionIds;
 
         /// <summary>
         /// Used for generating random sequence.
@@ -62,26 +97,15 @@ namespace QuizLogicalComponents
                 new RandomDagSequence(QuestionsFile.GetMarkDown(currentQuestionsPath))
             ) { }
 
-        /// <summary>
-        /// Gets Question Id, the state currentaly points to
-        /// </summary>
-        /// <returns>Questions Id</returns>
-        public string GetCurrentQuestion() {
+        public override string GetCurrentQuestion() {
             return QuestionIds[QuestionIndex]; 
         }
 
-        /// <summary>
-        /// Sets State to the next question in the Sequence of questions
-        /// </summary>
-        public void SetNextQuestion() {
+        public override void SetNextQuestion() {
             QuestionIndex++;
         }
 
-        /// <summary>
-        /// Get's the next questions Id without changing the state (Peek). If we are at the sequences end, It resets the sequence using the @ISequenceOfQuestions and resets state to the sequences beginning.
-        /// </summary>
-        /// <returns>Questions Id</returns>
-        public string GetNextQuestion()
+        public override string GetNextQuestion()
         {
             if (QuestionIndex == GetQuestionsCount() - 1)
             {
@@ -92,22 +116,14 @@ namespace QuizLogicalComponents
             return QuestionIds[QuestionIndex + 1];
         }
 
-        /// <summary>
-        /// Gets the previous questions id without changing the state (Peek). If we are at the sequences start, it returns the first in the sequence.
-        /// </summary>
-        /// <returns>Questions Id</returns>
-        public string GetPreviousQuestion()
+        public override string GetPreviousQuestion()
         {
             if (QuestionIndex == 0) return QuestionIds[0];
             
             return QuestionIds[QuestionIndex - 1];
         }
 
-        /// <summary>
-        /// Moves the previous in the sequence forward in the questions.
-        /// </summary>
-        /// <param name="distance">The number of spaces in sequence, by which the questions Id is moved forward.</param>
-        public void MovePreviousAnswearedForward(int distance)
+        public override void MovePreviousAnswearedForward(int distance)
         {
             string previousQuestionId = GetPreviousQuestion();
             QuestionIds.RemoveAt(QuestionIndex - 1);
@@ -118,19 +134,12 @@ namespace QuizLogicalComponents
             QuestionIndex--;
         }
 
-        /// <summary>
-        /// Uses @ISequenceOfQuestions to create new sequence of questions and resets the state such that it points to the sequences beginning. 
-        /// </summary>
-        public void ResetQuestions()
+        public override void ResetQuestions()
         {
             QuestionIds = sequenceFinder.getSequence();
             QuestionIndex = 0;
         }
 
-        /// <summary>
-        /// Gives the number of questions.
-        /// </summary>
-        /// <returns>Positive number</returns>
-        public int GetQuestionsCount() => QuestionIds.Count;
+        public override int GetQuestionsCount() => QuestionIds.Count;
     }
 }
