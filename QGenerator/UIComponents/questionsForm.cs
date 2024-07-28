@@ -22,6 +22,7 @@ namespace quizGenerator
         /// <param name="questionsFilePath">The path to the questions file in the ".sources" folder.</param>
         public questionsForm(string questionsFilePath)
         {
+            InitializeComponent();
             state = new QuizState(questionsFilePath);
         }
 

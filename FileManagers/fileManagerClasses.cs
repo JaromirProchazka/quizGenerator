@@ -111,7 +111,7 @@ namespace FileManager
 
         public static string GetMarkDown(string markdownPath)
         {
-            if (!File.Exists(markdownPath)) return "";
+            if (!File.Exists(markdownPath)) throw new Exception("Markdow questions not found!");
             return File.ReadAllText(markdownPath);
         }
 
