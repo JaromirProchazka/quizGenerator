@@ -9,16 +9,25 @@ namespace QuizLogicalComponents.QuizStates
     public abstract record class IQuizState
     {
         /// <summary>
-        /// Path to the questions file.
+        /// Path to the questions file (Json Included on Serialization).
         /// </summary>
         [JsonInclude]
         public string CurrentQuestionsPath;
 
         /// <summary>
-        /// Current questions ID
+        /// Current questions ID (Json Included on Serialization).
         /// </summary>
         [JsonInclude]
         public int QuestionIndex;
+
+        /// <summary>
+        /// Says, if the score is in the Won state (Json Included on Serialization). 
+        /// Default is false.
+        /// </summary>
+        [JsonInclude]
+        public bool ScoreWonState { get; private set; } = false;
+
+        public void SetScoreAsWinning() { ScoreWonState = true; }
 
         /// <summary>
         /// Moves the previous in the sequence forward in the questions.
@@ -66,6 +75,11 @@ namespace QuizLogicalComponents.QuizStates
         /// </summary>
         /// <returns>Questions Id</returns>
         public abstract string GetCurrentQuestion();
+
+        /// <summary>
+        /// After @JsonSerializer.Deserialize, it initializes the field, that were not Serialized.
+        /// </summary>
+        public virtual IQuizState InitUntrackedFields() { return this; }
     }
 
     /// <summary>
@@ -74,19 +88,19 @@ namespace QuizLogicalComponents.QuizStates
     public record class ResetAroundState() : IQuizState
     {
         /// <summary>
-        /// List of question Id, by which the questions are identified.
+        /// List of question Id, by which the questions are identified (Json Included on Serialization).
         /// </summary>
         [JsonInclude]
         public List<string> QuestionIds = new List<string>();
 
-        [JsonIgnore]
         /// <summary>
         /// Used for generating random sequence.
         /// </summary>
+        [JsonIgnore]
         private ISequenceOfQuestions sequenceFinder;
 
         /// <summary>
-        /// Returns the random sequence generator.
+        /// Returns the random sequence generator (Untracked by Json Serializer).
         /// </summary>
         /// <returns></returns>
         public ISequenceOfQuestions GetSequence() => sequenceFinder;
@@ -115,6 +129,7 @@ namespace QuizLogicalComponents.QuizStates
 
         public override string GetCurrentQuestion()
         {
+            if (QuestionIndex >= GetQuestionsCount() || QuestionIndex < 0 ) QuestionIndex = 0;
             return QuestionIds[QuestionIndex];
         }
 
@@ -159,5 +174,11 @@ namespace QuizLogicalComponents.QuizStates
         }
 
         public override int GetQuestionsCount() => QuestionIds.Count;
+
+        public override ResetAroundState InitUntrackedFields()
+        {
+            sequenceFinder = new RandomDagSequence(new FileInfo(CurrentQuestionsPath));
+            return this;
+        }
     }
 }

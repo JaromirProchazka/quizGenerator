@@ -108,9 +108,10 @@ namespace quizGenerator
         private void updateScore()
         {
             textBox1.Text = state.QuestionIndex + " / " + state.GetQuestionsCount();
-            if (state.QuestionIndex == state.GetQuestionsCount())
+            if (state.ScoreWonState || state.QuestionIndex == state.GetQuestionsCount())
             {
                 Stylings.maxScoreStyle(textBox1);
+                state.SetScoreAsWinning();
             }
         }
 

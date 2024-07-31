@@ -43,7 +43,8 @@ namespace QuizLogicalComponents.QuizStates
             var loadedData = QuestionsFile.LoadQuizStateData(Name);
             if (loadedData.State == QuestionsFile.LoadedState.NotFound) 
                 return new QST().NewState(Path);
-            return JsonSerializer.Deserialize<QST>(loadedData.Data);
+            return JsonSerializer.Deserialize<QST>(loadedData.Data)
+                .InitUntrackedFields();
         }
 
         public bool StoreState(QST state)
