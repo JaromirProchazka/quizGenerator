@@ -140,7 +140,6 @@ namespace quizGenerator
                 showCurrentQuestion();
             }
 
-            //TODO: remove after test
             serializer.StoreState((ResetAroundState)state);
         }
 
