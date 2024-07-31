@@ -8,7 +8,7 @@ var searchData=
   ['mainpage_2edesigner_2ecs_5',['mainPage.Designer.cs',['../main_page_8_designer_8cs.html',1,'']]],
   ['mainpage_5fload_6',['mainPage_Load',['../classquiz_generator_1_1main_page.html#a4a28a9de06464989a42d06fe32dd7991',1,'quizGenerator::mainPage']]],
   ['mainpagelistbox_7',['mainPageListBox',['../classquiz_generator_1_1topic_edit_box.html#a6b5ab7ca0576e81f66bd12cb5ab188f7',1,'quizGenerator::topicEditBox']]],
-  ['menu_8',['Quiz Menu',['../index.html#autotoc_md7',1,'']]],
+  ['menu_8',['Quiz Menu',['../index.html#autotoc_md8',1,'']]],
   ['menu_2ejs_9',['menu.js',['../menu_8js.html',1,'']]],
   ['menudata_2ejs_10',['menudata.js',['../menudata_8js.html',1,'']]],
   ['min_11',['Min',['../class_file_manager_1_1_priority_queue.html#a2771ff0d5d979b39332bb596982f6833',1,'FileManager::PriorityQueue']]],

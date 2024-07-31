@@ -1,6 +1,5 @@
 var hierarchy =
 [
-    [ "QuizLogicalComponentsTests.BaseStateSerializerTests", "class_quiz_logical_components_tests_1_1_base_state_serializer_tests.html", null ],
     [ "FileManager.Dag.CounterDefault< T >", "class_file_manager_1_1_dag_1_1_counter_default.html", null ],
     [ "FileManager.Dag", "class_file_manager_1_1_dag.html", null ],
     [ "FileManager.FileManager", "class_file_manager_1_1_file_manager.html", null ],
@@ -19,6 +18,5 @@ var hierarchy =
     [ "FileManager.QuestionsFile", "class_file_manager_1_1_questions_file.html", null ],
     [ "quizGenerator.questionsForm", "classquiz_generator_1_1questions_form.html", null ],
     [ "quizGenerator.QuizGenerator", "classquiz_generator_1_1_quiz_generator.html", null ],
-    [ "QuizLogicalComponents.Tests.SequenceOfQuestionsTests", "class_quiz_logical_components_1_1_tests_1_1_sequence_of_questions_tests.html", null ],
     [ "quizGenerator.Topics", "classquiz_generator_1_1_topics.html", null ]
 ];

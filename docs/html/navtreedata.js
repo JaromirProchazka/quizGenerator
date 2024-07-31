@@ -25,15 +25,16 @@
 var NAVTREE =
 [
   [ "Quiz Generator", "index.html", [
-    [ "Basic Idea", "index.html#autotoc_md1", [
-      [ "What is Quiz?", "index.html#autotoc_md2", null ],
-      [ "What are Notes?", "index.html#autotoc_md3", null ]
+    [ "Dokumentatoin", "index.html#autotoc_md1", null ],
+    [ "Basic Idea", "index.html#autotoc_md2", [
+      [ "What is Quiz?", "index.html#autotoc_md3", null ],
+      [ "What are Notes?", "index.html#autotoc_md4", null ]
     ] ],
-    [ "Technologies", "index.html#autotoc_md4", [
-      [ "Advanced C# Tools", "index.html#autotoc_md5", null ],
-      [ "Basic UI design", "index.html#autotoc_md6", [
-        [ "Quiz Menu", "index.html#autotoc_md7", null ],
-        [ "Quiz Window", "index.html#autotoc_md8", null ]
+    [ "Technologies", "index.html#autotoc_md5", [
+      [ "Advanced C# Tools", "index.html#autotoc_md6", null ],
+      [ "Basic UI design", "index.html#autotoc_md7", [
+        [ "Quiz Menu", "index.html#autotoc_md8", null ],
+        [ "Quiz Window", "index.html#autotoc_md9", null ]
       ] ]
     ] ],
     [ "Namespaces", "namespaces.html", [
@@ -64,8 +65,8 @@ var NAVTREE =
 var NAVTREEINDEX =
 [
 "__d__a__g__8cs_8js.html",
-"class_quiz_logical_components_1_1_tests_1_1_sequence_of_questions_tests.html#a1232d8c44e9b315b57e43a76d4cf7866",
-"namespace_quiz_logical_components_1_1_tests.html"
+"class_quiz_logical_components_1_1_random_dag_sequence.html#ad14bc357a8e7f193e96a7873cb27eb89",
+"interface_quiz_logical_components_1_1_i_sequence_of_questions.html#a57ab78dc384f8eecf3137ae738d9770d"
 ];
 
 var SYNCONMSG = 'click to disable panel synchronisation';

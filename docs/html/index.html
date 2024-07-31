@@ -97,28 +97,31 @@ $(function(){initNavTree('index.html',''); initResizable(); });
 <div class="contents">
 <div class="textblock"><p><a class="anchor" id="md__c_1_2_users_2jarom_2_desktop_2_p_g___c_v_i_xC4_x8C_e_n_xC3_x8D_2quiz_generator_2_r_e_a_d_m_e"></a> </p>
 <h1><a class="anchor" id="autotoc_md1"></a>
+Dokumentatoin</h1>
+<p>Docs can be accessed <a href="https://jaromirprochazka.github.io/quizGenerator/">here</a>.</p>
+<h1><a class="anchor" id="autotoc_md2"></a>
 Basic Idea</h1>
 <p>This App is used for <b>building tests in form of quizzes from the input of digital notes</b> or other materials. These are intended as study aids, not a testing framework for teachers and the student decides, whether his answer is good enough. The user can <b>choose from multiple file formats for his notes or textbooks</b>. From these, the marked sections of the text are made quiz questions and mostly based on headings, keywords and so on, a logical ordering of the questions is created.</p>
 <p>For each quiz is than stored users score, history of answers, last state to be returned to and other quality of life features.</p>
-<h2><a class="anchor" id="autotoc_md2"></a>
+<h2><a class="anchor" id="autotoc_md3"></a>
 What is Quiz?</h2>
 <p>In our context, a quiz is a set of questions and answers. These are than iteratively gone throw by the student. Student tries to answer a question, that he is shown the answer. If he is satisfied, he can move on to the next, else the question is moved some number of questions ahead, so that the student can try again.</p>
 <p>The ordering is based around the dependence between questions, some questions can be asked only if some other has been already answered. Besides these restraints, there is random ordering.</p>
-<h2><a class="anchor" id="autotoc_md3"></a>
+<h2><a class="anchor" id="autotoc_md4"></a>
 What are Notes?</h2>
 <p>Notes are some text in a supported format containing the questions and answers. The questions are in some way marked. A way, that can be configured in the app before inputting the notes file. For instance, user could choose, that in his notes, each important topic is marked in italics, or in textbooks, all numbered statements and their proofs are selected as questions.</p>
 <p>From it, the app creates a quiz file, which will than be used to generate the quiz in UI, so the conversion expensive only occurs once and the quiz file can be reused.</p>
-<h1><a class="anchor" id="autotoc_md4"></a>
+<h1><a class="anchor" id="autotoc_md5"></a>
 Technologies</h1>
 <p>The App logic is primarily written in **<code>C#</code>**. I would also like the app to by accessible as website. The C# libraries are mostly heavily dependent on supported note file formats, but for start, the C# library <code>HtmlAgilityPack</code> is necessary. This covers the back end side, the application that creates the quizzes themselves.</p>
 <p>The view of front end will than either be implemented in <code>windows forms</code> for native app, or the <code>javascript</code> in case of the web application. <br  />
 </p>
-<h2><a class="anchor" id="autotoc_md5"></a>
+<h2><a class="anchor" id="autotoc_md6"></a>
 Advanced C# Tools</h2>
 <p>This App also support using notes from app <a href="https://www.notion.so/">Notion</a> using there API to fetch it. For that we will need <b>Asynchronous methods</b>. Furthermore, we use <b>Extension methods</b> in the design of the utility parts.</p>
-<h2><a class="anchor" id="autotoc_md6"></a>
+<h2><a class="anchor" id="autotoc_md7"></a>
 Basic UI design</h2>
-<h3><a class="anchor" id="autotoc_md7"></a>
+<h3><a class="anchor" id="autotoc_md8"></a>
 Quiz Menu</h3>
 <p>At the Start of the App, you will be greeted by a list of your Quiz on top, and a <code>Create New Topic</code> button at the bottom. If you want to add a new topic, press the button and select the notes file on your device, with your notes.</p>
 <p>After that a new topic is added to the topics list at the top, or a topic with the same name is updated. Than select topic in list, you can then either click <br  />
@@ -127,7 +130,7 @@ Quiz Menu</h3>
 <li><code>Open</code> button and start the quiz,</li>
 <li>or click <code>Edit</code> button and a edit window will appear. You can <b>Rename</b> the topic or <b>Delete</b> it</li>
 </ul>
-<h3><a class="anchor" id="autotoc_md8"></a>
+<h3><a class="anchor" id="autotoc_md9"></a>
 Quiz Window</h3>
 <p>When the quiz is started, user is greeted on bottom with the question and answers window and on top with 4 buttons.</p>
 <ul>

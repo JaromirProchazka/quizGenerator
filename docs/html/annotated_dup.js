@@ -19,13 +19,7 @@ var annotated_dup =
         [ "IQuizState", "class_quiz_logical_components_1_1_quiz_states_1_1_i_quiz_state.html", "class_quiz_logical_components_1_1_quiz_states_1_1_i_quiz_state" ],
         [ "IStateSerializer", "interface_quiz_logical_components_1_1_quiz_states_1_1_i_state_serializer.html", "interface_quiz_logical_components_1_1_quiz_states_1_1_i_state_serializer" ]
       ] ],
-      [ "Tests", "namespace_quiz_logical_components_1_1_tests.html", [
-        [ "SequenceOfQuestionsTests", "class_quiz_logical_components_1_1_tests_1_1_sequence_of_questions_tests.html", "class_quiz_logical_components_1_1_tests_1_1_sequence_of_questions_tests" ]
-      ] ],
       [ "ISequenceOfQuestions", "interface_quiz_logical_components_1_1_i_sequence_of_questions.html", "interface_quiz_logical_components_1_1_i_sequence_of_questions" ],
       [ "RandomDagSequence", "class_quiz_logical_components_1_1_random_dag_sequence.html", "class_quiz_logical_components_1_1_random_dag_sequence" ]
-    ] ],
-    [ "QuizLogicalComponentsTests", "namespace_quiz_logical_components_tests.html", [
-      [ "BaseStateSerializerTests", "class_quiz_logical_components_tests_1_1_base_state_serializer_tests.html", "class_quiz_logical_components_tests_1_1_base_state_serializer_tests" ]
     ] ]
 ];
