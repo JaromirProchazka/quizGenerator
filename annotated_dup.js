@@ -1,0 +1,25 @@
+var annotated_dup =
+[
+    [ "FileManager", "namespace_file_manager.html", [
+      [ "Dag", "class_file_manager_1_1_dag.html", "class_file_manager_1_1_dag" ],
+      [ "FileManager", "class_file_manager_1_1_file_manager.html", "class_file_manager_1_1_file_manager" ],
+      [ "HyperLink", "class_file_manager_1_1_hyper_link.html", "class_file_manager_1_1_hyper_link" ],
+      [ "PriorityQueue", "class_file_manager_1_1_priority_queue.html", "class_file_manager_1_1_priority_queue" ],
+      [ "QuestionsFile", "class_file_manager_1_1_questions_file.html", "class_file_manager_1_1_questions_file" ]
+    ] ],
+    [ "quizGenerator", "namespacequiz_generator.html", [
+      [ "mainPage", "classquiz_generator_1_1main_page.html", "classquiz_generator_1_1main_page" ],
+      [ "questionsForm", "classquiz_generator_1_1questions_form.html", "classquiz_generator_1_1questions_form" ],
+      [ "QuizGenerator", "classquiz_generator_1_1_quiz_generator.html", "classquiz_generator_1_1_quiz_generator" ],
+      [ "topicEditBox", "classquiz_generator_1_1topic_edit_box.html", "classquiz_generator_1_1topic_edit_box" ],
+      [ "Topics", "classquiz_generator_1_1_topics.html", "classquiz_generator_1_1_topics" ]
+    ] ],
+    [ "QuizLogicalComponents", "namespace_quiz_logical_components.html", [
+      [ "QuizStates", "namespace_quiz_logical_components_1_1_quiz_states.html", [
+        [ "IQuizState", "class_quiz_logical_components_1_1_quiz_states_1_1_i_quiz_state.html", "class_quiz_logical_components_1_1_quiz_states_1_1_i_quiz_state" ],
+        [ "IStateSerializer", "interface_quiz_logical_components_1_1_quiz_states_1_1_i_state_serializer.html", "interface_quiz_logical_components_1_1_quiz_states_1_1_i_state_serializer" ]
+      ] ],
+      [ "ISequenceOfQuestions", "interface_quiz_logical_components_1_1_i_sequence_of_questions.html", "interface_quiz_logical_components_1_1_i_sequence_of_questions" ],
+      [ "RandomDagSequence", "class_quiz_logical_components_1_1_random_dag_sequence.html", "class_quiz_logical_components_1_1_random_dag_sequence" ]
+    ] ]
+];

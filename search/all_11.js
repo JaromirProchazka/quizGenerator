@@ -1,0 +1,27 @@
+var searchData=
+[
+  ['qgenerator_2eassemblyinfo_2ecs_0',['QGenerator.AssemblyInfo.cs',['../_debug_2net8_80-windows_2_q_generator_8_assembly_info_8cs.html',1,'(Global Namespace)'],['../_release_2net8_80-windows_2_q_generator_8_assembly_info_8cs.html',1,'(Global Namespace)']]],
+  ['qgenerator_2eglobalusings_2eg_2ecs_1',['QGenerator.GlobalUsings.g.cs',['../_debug_2net8_80-windows_2_q_generator_8_global_usings_8g_8cs.html',1,'(Global Namespace)'],['../_release_2net8_80-windows_2_q_generator_8_global_usings_8g_8cs.html',1,'(Global Namespace)']]],
+  ['questionindex_2',['QuestionIndex',['../class_quiz_logical_components_1_1_quiz_states_1_1_i_quiz_state.html#adba9d90b02592d23d3b0095af835aff2',1,'QuizLogicalComponents::QuizStates::IQuizState']]],
+  ['questionsequence_3',['questionSequence',['../class_quiz_logical_components_1_1_random_dag_sequence.html#a8bef72fb9d09a3a1b769e3cc24c4dd1d',1,'QuizLogicalComponents::RandomDagSequence']]],
+  ['questionsfile_4',['QuestionsFile',['../class_file_manager_1_1_questions_file.html',1,'FileManager']]],
+  ['questionsform_5',['questionsForm',['../classquiz_generator_1_1questions_form.html',1,'quizGenerator']]],
+  ['questionsform_2ecs_6',['questionsForm.cs',['../questions_form_8cs.html',1,'']]],
+  ['questionsform_2edesigner_2ecs_7',['questionsForm.Designer.cs',['../bin_2_debug_2net8_80-windows_2_u_i_components_2questions_form_8_designer_8cs.html',1,'(Global Namespace)'],['../_u_i_components_2questions_form_8_designer_8cs.html',1,'(Global Namespace)']]],
+  ['questionsobjects_8',['questionsObjects',['../class_quiz_logical_components_1_1_random_dag_sequence.html#a9f00c603e8fee00c75c89452b0d14b0a',1,'QuizLogicalComponents::RandomDagSequence']]],
+  ['questionsscript_2ejs_9',['questionsScript.js',['../questions_script_8js.html',1,'']]],
+  ['questiontemplate_10',['questionTemplate',['../class_file_manager_1_1_questions_file.html#a6d52ca30f54264e49ed6b037dfd0a2b9',1,'FileManager::QuestionsFile']]],
+  ['quiz_11',['What is Quiz?',['../index.html#autotoc_md3',1,'']]],
+  ['quiz_20generator_12',['Quiz Generator',['../index.html',1,'']]],
+  ['quiz_20menu_13',['Quiz Menu',['../index.html#autotoc_md8',1,'']]],
+  ['quiz_20window_14',['Quiz Window',['../index.html#autotoc_md9',1,'']]],
+  ['quiz_5f_5fgenerator_5f8cs_2ejs_15',['quiz__generator_8cs.js',['../quiz____generator__8cs_8js.html',1,'']]],
+  ['quiz_5fgenerator_2ecs_16',['quiz_generator.cs',['../quiz__generator_8cs.html',1,'']]],
+  ['quizgenerator_17',['QuizGenerator',['../classquiz_generator_1_1_quiz_generator.html',1,'quizGenerator']]],
+  ['quizgenerator_18',['quizGenerator',['../namespacequiz_generator.html',1,'']]],
+  ['quizlogicalcomponents_19',['QuizLogicalComponents',['../namespace_quiz_logical_components.html',1,'']]],
+  ['quizlogicalcomponents_2eassemblyinfo_2ecs_20',['QuizLogicalComponents.AssemblyInfo.cs',['../_quiz_logical_components_8_assembly_info_8cs.html',1,'']]],
+  ['quizlogicalcomponents_2eglobalusings_2eg_2ecs_21',['QuizLogicalComponents.GlobalUsings.g.cs',['../_quiz_logical_components_8_global_usings_8g_8cs.html',1,'']]],
+  ['quizlogicalcomponents_3a_3aquizstates_22',['QuizStates',['../namespace_quiz_logical_components_1_1_quiz_states.html',1,'QuizLogicalComponents']]],
+  ['quizstate_2ecs_23',['QuizState.cs',['../_quiz_state_8cs.html',1,'']]]
+];
