@@ -6,6 +6,10 @@ This App is used for **building tests in form of quizzes from the input of digit
 
 For each quiz is than stored users score, history of answers, last state to be returned to and other quality of life features.
 
+## Dokumentatoin
+
+Docs can be accessed [here](https://jaromirprochazka.github.io/quizGenerator/).
+
 ### What is Quiz?
 
 In our context, a quiz is a set of questions and answers. These are than iteratively gone throw by the student. Student tries to answer a question, that he is shown the answer. If he is satisfied, he can move on to the next, else the question is moved some number of questions ahead, so that the student can try again.
