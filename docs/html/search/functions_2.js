@@ -1,5 +1,6 @@
 var searchData=
 [
-  ['editbtn_5fclick_0',['editBtn_Click',['../classquiz_generator_1_1main_page.html#a97789df90f93f7cd9352754ee9c270dc',1,'quizGenerator::mainPage']]],
-  ['enque_1',['Enque',['../class_file_manager_1_1_priority_queue.html#abe2e7feabae1cdf41f63e48998694193',1,'FileManager::PriorityQueue']]]
+  ['deletebtn_5fclick_0',['deleteBtn_Click',['../classquiz_generator_1_1topic_edit_box.html#afb61621b474b1e57b91fe1dfbfcbee9f',1,'quizGenerator::topicEditBox']]],
+  ['deletetopic_1',['DeleteTopic',['../class_file_manager_1_1_questions_file.html#a4bcde5078eb4ce52d70ff5d03150407b',1,'FileManager::QuestionsFile']]],
+  ['dispose_2',['Dispose',['../classquiz_generator_1_1questions_form.html#aa2657f3e106d2ed84193bc15449579da',1,'quizGenerator.questionsForm.Dispose()'],['../classquiz_generator_1_1main_page.html#a4e08c6d2791f004f93c444a1bf62b6b8',1,'quizGenerator.mainPage.Dispose()'],['../classquiz_generator_1_1questions_form.html#aa2657f3e106d2ed84193bc15449579da',1,'quizGenerator.questionsForm.Dispose()'],['../classquiz_generator_1_1topic_edit_box.html#ac825f72f7b9a99c94e0354d0ca4592ec',1,'quizGenerator.topicEditBox.Dispose()']]]
 ];

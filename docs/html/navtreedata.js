@@ -37,7 +37,11 @@ var NAVTREE =
       ] ]
     ] ],
     [ "Namespaces", "namespaces.html", [
-      [ "Namespace List", "namespaces.html", "namespaces_dup" ]
+      [ "Namespace List", "namespaces.html", "namespaces_dup" ],
+      [ "Namespace Members", "namespacemembers.html", [
+        [ "All", "namespacemembers.html", null ],
+        [ "Functions", "namespacemembers_func.html", null ]
+      ] ]
     ] ],
     [ "Classes", "annotated.html", [
       [ "Class List", "annotated.html", "annotated_dup" ],
@@ -59,8 +63,9 @@ var NAVTREE =
 
 var NAVTREEINDEX =
 [
-"_d_a_g_8cs.html",
-"classquiz_generator_1_1topic_edit_box.html#ac825f72f7b9a99c94e0354d0ca4592ec"
+"__d__a__g__8cs_8js.html",
+"class_quiz_logical_components_1_1_tests_1_1_sequence_of_questions_tests.html#a1232d8c44e9b315b57e43a76d4cf7866",
+"namespace_quiz_logical_components_1_1_tests.html"
 ];
 
 var SYNCONMSG = 'click to disable panel synchronisation';

@@ -1,5 +1,4 @@
 var searchData=
 [
-  ['mainpage_2ecs_0',['mainPage.cs',['../main_page_8cs.html',1,'']]],
-  ['mainpage_2edesigner_2ecs_1',['mainPage.Designer.cs',['../main_page_8_designer_8cs.html',1,'']]]
+  ['bin_5f2_5fdebug_5f2net8_5f80_2dwindows_5f2_5fu_5fi_5fcomponents_5f2questions_5fform_5f8_5fdesigner_5f8cs_2ejs_0',['bin_2_debug_2net8_80-windows_2_u_i_components_2questions_form_8_designer_8cs.js',['../bin__2__debug__2net8__80-windows__2__u__i__components__2questions__form__8__designer__8cs_8js.html',1,'']]]
 ];

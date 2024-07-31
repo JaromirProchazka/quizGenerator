@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['priorityqueue_0',['PriorityQueue',['../class_file_manager_1_1_priority_queue.html',1,'FileManager']]]
+  ['mainpage_0',['mainPage',['../classquiz_generator_1_1main_page.html',1,'quizGenerator']]]
 ];

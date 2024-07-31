@@ -1,5 +1,29 @@
 var searchData=
 [
-  ['editbtn_5fclick_0',['editBtn_Click',['../classquiz_generator_1_1main_page.html#a97789df90f93f7cd9352754ee9c270dc',1,'quizGenerator::mainPage']]],
-  ['enque_1',['Enque',['../class_file_manager_1_1_priority_queue.html#abe2e7feabae1cdf41f63e48998694193',1,'FileManager::PriorityQueue']]]
+  ['dag_0',['Dag',['../class_file_manager_1_1_dag.html',1,'FileManager']]],
+  ['dag_2ecs_1',['DAG.cs',['../_d_a_g_8cs.html',1,'']]],
+  ['default_2',['Default',['../class_file_manager_1_1_dag_1_1_counter_default.html#ad00b7a6342f6c6b9948809f648b98af8',1,'FileManager::Dag::CounterDefault']]],
+  ['deletebtn_5fclick_3',['deleteBtn_Click',['../classquiz_generator_1_1topic_edit_box.html#afb61621b474b1e57b91fe1dfbfcbee9f',1,'quizGenerator::topicEditBox']]],
+  ['deletetopic_4',['DeleteTopic',['../class_file_manager_1_1_questions_file.html#a4bcde5078eb4ce52d70ff5d03150407b',1,'FileManager::QuestionsFile']]],
+  ['design_5',['Basic UI design',['../index.html#autotoc_md6',1,'']]],
+  ['dir_5f0121ee0c056cac929b7a548f08c8b8e3_2ejs_6',['dir_0121ee0c056cac929b7a548f08c8b8e3.js',['../dir__0121ee0c056cac929b7a548f08c8b8e3_8js.html',1,'']]],
+  ['dir_5f044138b4876a2756e8ef6044ab4fd82c_2ejs_7',['dir_044138b4876a2756e8ef6044ab4fd82c.js',['../dir__044138b4876a2756e8ef6044ab4fd82c_8js.html',1,'']]],
+  ['dir_5f07d2fa0102e3c81141efdfcbc33b279d_2ejs_8',['dir_07d2fa0102e3c81141efdfcbc33b279d.js',['../dir__07d2fa0102e3c81141efdfcbc33b279d_8js.html',1,'']]],
+  ['dir_5f11fd137053be0ddbc94272a9e522f9f6_2ejs_9',['dir_11fd137053be0ddbc94272a9e522f9f6.js',['../dir__11fd137053be0ddbc94272a9e522f9f6_8js.html',1,'']]],
+  ['dir_5f1256f6e7494d3b22bf774b408adb4a6f_2ejs_10',['dir_1256f6e7494d3b22bf774b408adb4a6f.js',['../dir__1256f6e7494d3b22bf774b408adb4a6f_8js.html',1,'']]],
+  ['dir_5f13b79ba3e662c86fd7473983f02a6389_2ejs_11',['dir_13b79ba3e662c86fd7473983f02a6389.js',['../dir__13b79ba3e662c86fd7473983f02a6389_8js.html',1,'']]],
+  ['dir_5f1487cd54972e3b85ed1f94ff1045e31f_2ejs_12',['dir_1487cd54972e3b85ed1f94ff1045e31f.js',['../dir__1487cd54972e3b85ed1f94ff1045e31f_8js.html',1,'']]],
+  ['dir_5f55fa3b2edf6da33274d16b787c238426_2ejs_13',['dir_55fa3b2edf6da33274d16b787c238426.js',['../dir__55fa3b2edf6da33274d16b787c238426_8js.html',1,'']]],
+  ['dir_5f68f1ca54d2c32d3f3dea689c129beec0_2ejs_14',['dir_68f1ca54d2c32d3f3dea689c129beec0.js',['../dir__68f1ca54d2c32d3f3dea689c129beec0_8js.html',1,'']]],
+  ['dir_5f6ab612e8d11d895c86a9692186337a35_2ejs_15',['dir_6ab612e8d11d895c86a9692186337a35.js',['../dir__6ab612e8d11d895c86a9692186337a35_8js.html',1,'']]],
+  ['dir_5f7c94384dd05c1c7bcee406fda60ed2c7_2ejs_16',['dir_7c94384dd05c1c7bcee406fda60ed2c7.js',['../dir__7c94384dd05c1c7bcee406fda60ed2c7_8js.html',1,'']]],
+  ['dir_5f8a41699517d63f042fe5b47024ee22ee_2ejs_17',['dir_8a41699517d63f042fe5b47024ee22ee.js',['../dir__8a41699517d63f042fe5b47024ee22ee_8js.html',1,'']]],
+  ['dir_5f8dd50ec68cd4b005daec23ac98494a7e_2ejs_18',['dir_8dd50ec68cd4b005daec23ac98494a7e.js',['../dir__8dd50ec68cd4b005daec23ac98494a7e_8js.html',1,'']]],
+  ['dir_5f90fa234706a2341df0be9dd85f31662c_2ejs_19',['dir_90fa234706a2341df0be9dd85f31662c.js',['../dir__90fa234706a2341df0be9dd85f31662c_8js.html',1,'']]],
+  ['dir_5fc7d701acd60c95485e5b307318ad0776_2ejs_20',['dir_c7d701acd60c95485e5b307318ad0776.js',['../dir__c7d701acd60c95485e5b307318ad0776_8js.html',1,'']]],
+  ['dir_5ff176b9a89ae102d336876258762a8051_2ejs_21',['dir_f176b9a89ae102d336876258762a8051.js',['../dir__f176b9a89ae102d336876258762a8051_8js.html',1,'']]],
+  ['dir_5ff4c3833ecd436dbcb3f7a95ccf6c8c6e_2ejs_22',['dir_f4c3833ecd436dbcb3f7a95ccf6c8c6e.js',['../dir__f4c3833ecd436dbcb3f7a95ccf6c8c6e_8js.html',1,'']]],
+  ['dir_5ffc299922e68cd21d894b797227773362_2ejs_23',['dir_fc299922e68cd21d894b797227773362.js',['../dir__fc299922e68cd21d894b797227773362_8js.html',1,'']]],
+  ['dispose_24',['Dispose',['../classquiz_generator_1_1questions_form.html#aa2657f3e106d2ed84193bc15449579da',1,'quizGenerator.questionsForm.Dispose()'],['../classquiz_generator_1_1main_page.html#a4e08c6d2791f004f93c444a1bf62b6b8',1,'quizGenerator.mainPage.Dispose()'],['../classquiz_generator_1_1questions_form.html#aa2657f3e106d2ed84193bc15449579da',1,'quizGenerator.questionsForm.Dispose()'],['../classquiz_generator_1_1topic_edit_box.html#ac825f72f7b9a99c94e0354d0ca4592ec',1,'quizGenerator.topicEditBox.Dispose()']]],
+  ['dynsections_2ejs_25',['dynsections.js',['../dynsections_8js.html',1,'']]]
 ];

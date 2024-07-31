@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['state_0',['State',['../class_file_manager_1_1_dag.html#a76f52d8a90d8adc96cd39f76354b8d5b',1,'FileManager::Dag']]]
+  ['loadedstate_0',['LoadedState',['../class_file_manager_1_1_questions_file.html#a422c75c129b0319b855ec7f80ac854a3',1,'FileManager::QuestionsFile']]]
 ];

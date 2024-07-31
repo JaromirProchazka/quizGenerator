@@ -4,7 +4,6 @@ var classquiz_generator_1_1topic_edit_box =
     [ "deleteBtn_Click", "classquiz_generator_1_1topic_edit_box.html#afb61621b474b1e57b91fe1dfbfcbee9f", null ],
     [ "Dispose", "classquiz_generator_1_1topic_edit_box.html#ac825f72f7b9a99c94e0354d0ca4592ec", null ],
     [ "InitializeComponent", "classquiz_generator_1_1topic_edit_box.html#a302c0ae91680ae038d04c26c59f6ab78", null ],
-    [ "isTopicFolder", "classquiz_generator_1_1topic_edit_box.html#a6a40396de0027912cc752dd990aad0d7", null ],
     [ "renameBtn_Click", "classquiz_generator_1_1topic_edit_box.html#aaf8723ebb831d1f00a294307958f9d85", null ],
     [ "setTopicDirectoryPath", "classquiz_generator_1_1topic_edit_box.html#a6478b6d13af89d9a5ea8e42f13ce357b", null ],
     [ "topicEditBox_Load", "classquiz_generator_1_1topic_edit_box.html#ab43694da1452bbce5f6c21ed1e0752e4", null ],

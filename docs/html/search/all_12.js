@@ -1,19 +1,15 @@
 var searchData=
 [
-  ['technologies_0',['Technologies',['../index.html#autotoc_md4',1,'']]],
-  ['templatesourcespath_1',['templateSourcesPath',['../class_file_manager_1_1_questions_file.html#afbfe77a19b6ff12dc50c8e3f9b1ca6e1',1,'FileManager::QuestionsFile']]],
-  ['textbox1_2',['textBox1',['../classquiz_generator_1_1questions_form.html#a55785c39c641a609b96aff353002dded',1,'quizGenerator.questionsForm.textBox1'],['../classquiz_generator_1_1topic_edit_box.html#a373ddc7e3affbdc8cdf40b30138e4789',1,'quizGenerator.topicEditBox.textBox1']]],
-  ['tier_3',['tier',['../class_file_manager_1_1_dag.html#af029d7abbf5411d80ae938cffb6cac5e',1,'FileManager::Dag']]],
-  ['tierzero_4',['tierZero',['../class_file_manager_1_1_dag.html#a742bae635af475f0ed8fe7bd094bed5d',1,'FileManager::Dag']]],
-  ['tools_5',['Advanced C# Tools',['../index.html#autotoc_md5',1,'']]],
-  ['topiceditbox_6',['topicEditBox',['../classquiz_generator_1_1topic_edit_box.html',1,'quizGenerator.topicEditBox'],['../classquiz_generator_1_1topic_edit_box.html#a9e8ea6596bc978658c8979aa3d8f1d6b',1,'quizGenerator.topicEditBox.topicEditBox()']]],
-  ['topiceditbox_2ecs_7',['topicEditBox.cs',['../topic_edit_box_8cs.html',1,'']]],
-  ['topiceditbox_2edesigner_2ecs_8',['topicEditBox.Designer.cs',['../topic_edit_box_8_designer_8cs.html',1,'']]],
-  ['topiceditbox_5fload_9',['topicEditBox_Load',['../classquiz_generator_1_1topic_edit_box.html#ab43694da1452bbce5f6c21ed1e0752e4',1,'quizGenerator::topicEditBox']]],
-  ['topics_10',['Topics',['../classquiz_generator_1_1_topics.html',1,'quizGenerator']]],
-  ['topics_5fselectedindexchanged_11',['Topics_SelectedIndexChanged',['../classquiz_generator_1_1main_page.html#a9b74bd437a762aefdbe0f0b0b6041e7b',1,'quizGenerator::mainPage']]],
-  ['topicslist_12',['TopicsList',['../classquiz_generator_1_1main_page.html#a4974f0cb796c5f8f0f2074bb32454183',1,'quizGenerator::mainPage']]],
-  ['topicsloader_2ecs_13',['TopicsLoader.cs',['../_topics_loader_8cs.html',1,'']]],
-  ['tostring_14',['ToString',['../class_file_manager_1_1_hyper_link.html#aa81d918a59d27beaecca55f23cddc6fe',1,'FileManager::HyperLink']]],
-  ['totopicfilename_15',['toTopicFileName',['../class_file_manager_1_1_questions_file.html#ad907cfe8bc9efcda52c9ba8af462aab3',1,'FileManager::QuestionsFile']]]
+  ['randomdagsequence_0',['RandomDagSequence',['../class_quiz_logical_components_1_1_random_dag_sequence.html',1,'QuizLogicalComponents.RandomDagSequence'],['../class_quiz_logical_components_1_1_random_dag_sequence.html#ad14bc357a8e7f193e96a7873cb27eb89',1,'QuizLogicalComponents.RandomDagSequence.RandomDagSequence(string questionsMarkdown)'],['../class_quiz_logical_components_1_1_random_dag_sequence.html#a7aa0e363a7a07b00bc3b407216ad8108',1,'QuizLogicalComponents.RandomDagSequence.RandomDagSequence(FileInfo currentQuestionsPath)']]],
+  ['randomdagsequence_2ecs_1',['RandomDagSequence.cs',['../_random_dag_sequence_8cs.html',1,'']]],
+  ['randomdagsequencetests_2ecs_2',['RandomDagSequenceTests.cs',['../_random_dag_sequence_tests_8cs.html',1,'']]],
+  ['randomtopologicalorder_3',['randomTopologicalOrder',['../class_file_manager_1_1_dag.html#a60f874a3c637d0bb87d8285e8db55f27',1,'FileManager::Dag']]],
+  ['readme_2emd_4',['README.md',['../_r_e_a_d_m_e_8md.html',1,'']]],
+  ['recursivefoldercopy_2ecs_5',['RecursiveFolderCopy.cs',['../_recursive_folder_copy_8cs.html',1,'']]],
+  ['renamebtn_5fclick_6',['renameBtn_Click',['../classquiz_generator_1_1topic_edit_box.html#aaf8723ebb831d1f00a294307958f9d85',1,'quizGenerator::topicEditBox']]],
+  ['renametopic_7',['RenameTopic',['../class_file_manager_1_1_questions_file.html#a1d6ace537418191f3e081a3aca397f9e',1,'FileManager::QuestionsFile']]],
+  ['resetquestions_8',['ResetQuestions',['../class_quiz_logical_components_1_1_quiz_states_1_1_i_quiz_state.html#a80fb03e63cdc37f76c6f9e8a0748548a',1,'QuizLogicalComponents::QuizStates::IQuizState']]],
+  ['resettodefault_9',['ResetToDefault',['../class_file_manager_1_1_dag_1_1_counter_default.html#aa597e0ad6a0321c77fd39f4a8e03e236',1,'FileManager::Dag::CounterDefault']]],
+  ['resize_2ejs_10',['resize.js',['../resize_8js.html',1,'']]],
+  ['rn_11',['rn',['../class_file_manager_1_1_dag.html#a32430066c4bb46a2390ef5a3f46800fb',1,'FileManager::Dag']]]
 ];

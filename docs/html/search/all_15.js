@@ -1,8 +1,7 @@
 var searchData=
 [
-  ['webbrowser1_0',['webBrowser1',['../classquiz_generator_1_1questions_form.html#abdf76e34d6657624333e91622bcff65c',1,'quizGenerator::questionsForm']]],
-  ['webbrowser2_1',['webBrowser2',['../classquiz_generator_1_1questions_form.html#a65baf5b2d9d2718a64b27be4b82b199a',1,'quizGenerator::questionsForm']]],
-  ['what_20are_20notes_2',['What are Notes?',['../index.html#autotoc_md3',1,'']]],
-  ['what_20is_20quiz_3',['What is Quiz?',['../index.html#autotoc_md2',1,'']]],
-  ['window_4',['Quiz Window',['../index.html#autotoc_md8',1,'']]]
+  ['ui_20design_0',['Basic UI design',['../index.html#autotoc_md6',1,'']]],
+  ['unreached_1',['Unreached',['../class_file_manager_1_1_dag.html#a76f52d8a90d8adc96cd39f76354b8d5ba714c3e3ce954bde7d1439b60909485b6',1,'FileManager::Dag']]],
+  ['updatelist_2',['updateList',['../classquiz_generator_1_1main_page.html#a279fb711b4c0453daff32f34526c6769',1,'quizGenerator::mainPage']]],
+  ['utilfolderpath_3',['utilFolderPath',['../class_file_manager_1_1_questions_file.html#ac65e9ce50e4644e11e3d62cdb660083a',1,'FileManager::QuestionsFile']]]
 ];

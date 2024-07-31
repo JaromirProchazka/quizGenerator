@@ -93,6 +93,8 @@ $(function(){initNavTree('class_file_manager_1_1_questions_file.html',''); initR
 
 <div class="header">
   <div class="summary">
+<a href="#pub-types">Public Types</a> &#124;
+<a href="#pub-methods">Public Member Functions</a> &#124;
 <a href="#pub-static-methods">Static Public Member Functions</a> &#124;
 <a href="#pub-static-attribs">Static Public Attributes</a> &#124;
 <a href="#pri-static-methods">Static Private Member Functions</a> &#124;
@@ -105,16 +107,46 @@ $(function(){initNavTree('class_file_manager_1_1_questions_file.html',''); initR
 <p>Singleton containing methods and constants, to manage the '<a class="el" href="namespacequiz_generator.html">quizGenerator</a>' backend.  
  <a href="#details">More...</a></p>
 <table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-types" name="pub-types"></a>
+Public Types</h2></td></tr>
+<tr class="memitem:a422c75c129b0319b855ec7f80ac854a3" id="r_a422c75c129b0319b855ec7f80ac854a3"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a422c75c129b0319b855ec7f80ac854a3">LoadedState</a> { <a class="el" href="#a422c75c129b0319b855ec7f80ac854a3a3ac705f2acd51a4613f9188c05c91d0d">Valid</a>
+, <a class="el" href="#a422c75c129b0319b855ec7f80ac854a3a38c300f4fc9ce8a77aad4a30de05cad8">NotFound</a>
+ }</td></tr>
+<tr class="memdesc:a422c75c129b0319b855ec7f80ac854a3"><td class="mdescLeft">&#160;</td><td class="mdescRight">State of the loaded state data.  <a href="#a422c75c129b0319b855ec7f80ac854a3">More...</a><br /></td></tr>
+<tr class="separator:a422c75c129b0319b855ec7f80ac854a3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-methods" name="pub-methods"></a>
+Public Member Functions</h2></td></tr>
+<tr class="memitem:af47550affe24974f562705f71a517f61" id="r_af47550affe24974f562705f71a517f61"><td class="memItemLeft" align="right" valign="top">record struct&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#af47550affe24974f562705f71a517f61">LoadedStateToken</a> (<a class="el" href="#a422c75c129b0319b855ec7f80ac854a3">LoadedState</a> State, string Data)</td></tr>
+<tr class="memdesc:af47550affe24974f562705f71a517f61"><td class="mdescLeft">&#160;</td><td class="mdescRight">Holds data from loaded state File and a status field.  <br /></td></tr>
+<tr class="separator:af47550affe24974f562705f71a517f61"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-static-methods" name="pub-static-methods"></a>
 Static Public Member Functions</h2></td></tr>
 <tr class="memitem:a659b9d6ebcfaa31d4d8359f848d5ad5e" id="r_a659b9d6ebcfaa31d4d8359f848d5ad5e"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a659b9d6ebcfaa31d4d8359f848d5ad5e">CreateNewTopic</a> (string notesPath)</td></tr>
 <tr class="memdesc:a659b9d6ebcfaa31d4d8359f848d5ad5e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Creates new topic folder with questions file to be later opened as quiz.  <br /></td></tr>
 <tr class="separator:a659b9d6ebcfaa31d4d8359f848d5ad5e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4bcde5078eb4ce52d70ff5d03150407b" id="r_a4bcde5078eb4ce52d70ff5d03150407b"><td class="memItemLeft" align="right" valign="top">static bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a4bcde5078eb4ce52d70ff5d03150407b">DeleteTopic</a> (string notesPath)</td></tr>
+<tr class="memdesc:a4bcde5078eb4ce52d70ff5d03150407b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Deletes the whole topic folder.  <br /></td></tr>
+<tr class="separator:a4bcde5078eb4ce52d70ff5d03150407b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1d6ace537418191f3e081a3aca397f9e" id="r_a1d6ace537418191f3e081a3aca397f9e"><td class="memItemLeft" align="right" valign="top">static ? string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a1d6ace537418191f3e081a3aca397f9e">RenameTopic</a> (string currentTopicDirectoryPath, string newName)</td></tr>
+<tr class="separator:a1d6ace537418191f3e081a3aca397f9e"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a2bf62bc766853f8a98d3ffa1706c13f4" id="r_a2bf62bc766853f8a98d3ffa1706c13f4"><td class="memItemLeft" align="right" valign="top">static string[]&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a2bf62bc766853f8a98d3ffa1706c13f4">GetTopics</a> ()</td></tr>
 <tr class="memdesc:a2bf62bc766853f8a98d3ffa1706c13f4"><td class="mdescLeft">&#160;</td><td class="mdescRight">Gives a collection of Topics in History.  <br /></td></tr>
 <tr class="separator:a2bf62bc766853f8a98d3ffa1706c13f4"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ad907cfe8bc9efcda52c9ba8af462aab3" id="r_ad907cfe8bc9efcda52c9ba8af462aab3"><td class="memItemLeft" align="right" valign="top">static string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ad907cfe8bc9efcda52c9ba8af462aab3">toTopicFileName</a> (string title)</td></tr>
 <tr class="separator:ad907cfe8bc9efcda52c9ba8af462aab3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a89873b3d49a1840be3968c1a152a0265" id="r_a89873b3d49a1840be3968c1a152a0265"><td class="memItemLeft" align="right" valign="top">static string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a89873b3d49a1840be3968c1a152a0265">GetMarkDown</a> (string markdownPath)</td></tr>
+<tr class="separator:a89873b3d49a1840be3968c1a152a0265"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a28879806e05f535a18e6d94866fd3af1" id="r_a28879806e05f535a18e6d94866fd3af1"><td class="memItemLeft" align="right" valign="top">static bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a28879806e05f535a18e6d94866fd3af1">SaveQuizState</a> (string quizName, string jsonStateData)</td></tr>
+<tr class="memdesc:a28879806e05f535a18e6d94866fd3af1"><td class="mdescLeft">&#160;</td><td class="mdescRight">Stores Quiz State data of a given Quiz.  <br /></td></tr>
+<tr class="separator:a28879806e05f535a18e6d94866fd3af1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0dc74144620ae8cf9d5efc7de20510f6" id="r_a0dc74144620ae8cf9d5efc7de20510f6"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="#af47550affe24974f562705f71a517f61">LoadedStateToken</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a0dc74144620ae8cf9d5efc7de20510f6">LoadQuizStateData</a> (string quizName)</td></tr>
+<tr class="memdesc:a0dc74144620ae8cf9d5efc7de20510f6"><td class="mdescLeft">&#160;</td><td class="mdescRight">Load Quiz State data of a given Quiz.  <br /></td></tr>
+<tr class="separator:a0dc74144620ae8cf9d5efc7de20510f6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af292dfe0b1e09b7897d704918a6d1488" id="r_af292dfe0b1e09b7897d704918a6d1488"><td class="memItemLeft" align="right" valign="top">static string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#af292dfe0b1e09b7897d704918a6d1488">GetQuizName</a> (string pathToQuiz)</td></tr>
+<tr class="memdesc:af292dfe0b1e09b7897d704918a6d1488"><td class="mdescLeft">&#160;</td><td class="mdescRight">Given a path to quiz return it's name.  <br /></td></tr>
+<tr class="separator:af292dfe0b1e09b7897d704918a6d1488"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ab7597be5c0a26ccde66ed2914f16ed1f" id="r_ab7597be5c0a26ccde66ed2914f16ed1f"><td class="memItemLeft" align="right" valign="top">static string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ab7597be5c0a26ccde66ed2914f16ed1f">CreateQuestionsFileText</a> (string notesMarkdown)</td></tr>
 <tr class="memdesc:ab7597be5c0a26ccde66ed2914f16ed1f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Takes a html file with notes, and creates a corresponding html markdown contents of just the quiz parts of the notes in standartised format.  <br /></td></tr>
 <tr class="separator:ab7597be5c0a26ccde66ed2914f16ed1f"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -126,6 +158,9 @@ Static Public Attributes</h2></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pri-static-methods" name="pri-static-methods"></a>
 Static Private Member Functions</h2></td></tr>
+<tr class="memitem:afcdd9f7170cab4b591ae1fd03eb7f524" id="r_afcdd9f7170cab4b591ae1fd03eb7f524"><td class="memItemLeft" align="right" valign="top">static bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#afcdd9f7170cab4b591ae1fd03eb7f524">isTopicFolder</a> (string path)</td></tr>
+<tr class="memdesc:afcdd9f7170cab4b591ae1fd03eb7f524"><td class="mdescLeft">&#160;</td><td class="mdescRight">Determines, if the given path leads to valid topics folder.  <br /></td></tr>
+<tr class="separator:afcdd9f7170cab4b591ae1fd03eb7f524"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a40d9bf1d27c0d682903a13abe6747266" id="r_a40d9bf1d27c0d682903a13abe6747266"><td class="memItemLeft" align="right" valign="top">static string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a40d9bf1d27c0d682903a13abe6747266">createSourcesFolder</a> ()</td></tr>
 <tr class="memdesc:a40d9bf1d27c0d682903a13abe6747266"><td class="mdescLeft">&#160;</td><td class="mdescRight">Initializes the sources folder for the Topics (Quizes data).  <br /></td></tr>
 <tr class="separator:a40d9bf1d27c0d682903a13abe6747266"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -152,8 +187,29 @@ Static Private Attributes</h2></td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>Singleton containing methods and constants, to manage the '<a class="el" href="namespacequiz_generator.html">quizGenerator</a>' backend. </p>
-<p>It follows this file structure: <code> main_script.exe .sources\ |-------&mdash; styles.css |-------&mdash; script.js | |-------&mdash; *general topic folder\ | |-------&mdash; notes.html | |-------&mdash; questions.html | |-------&mdash; ... more topic folders\ </code> </p>
-</div><h2 class="groupheader">Member Function Documentation</h2>
+<p>It follows this file structure: <code> main_script.exe .sources\ |-------&mdash; styles.css |-------&mdash; script.js | |-------&mdash; *general topic folder\ | |-------&mdash; notes.html | |-------&mdash; questions.html | |-------&mdash; state.json | |-------&mdash; ... more topic folders\ </code> </p>
+</div><h2 class="groupheader">Member Enumeration Documentation</h2>
+<a id="a422c75c129b0319b855ec7f80ac854a3" name="a422c75c129b0319b855ec7f80ac854a3"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a422c75c129b0319b855ec7f80ac854a3">&#9670;&#160;</a></span>LoadedState</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">enum <a class="el" href="#a422c75c129b0319b855ec7f80ac854a3">FileManager.QuestionsFile.LoadedState</a></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>State of the loaded state data. </p>
+<table class="fieldtable">
+<tr><th colspan="2">Enumerator</th></tr><tr><td class="fieldname"><a id="a422c75c129b0319b855ec7f80ac854a3a3ac705f2acd51a4613f9188c05c91d0d" name="a422c75c129b0319b855ec7f80ac854a3a3ac705f2acd51a4613f9188c05c91d0d"></a>Valid&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="a422c75c129b0319b855ec7f80ac854a3a38c300f4fc9ce8a77aad4a30de05cad8" name="a422c75c129b0319b855ec7f80ac854a3a38c300f4fc9ce8a77aad4a30de05cad8"></a>NotFound&#160;</td><td class="fielddoc"></td></tr>
+</table>
+
+</div>
+</div>
+<h2 class="groupheader">Member Function Documentation</h2>
 <a id="a659b9d6ebcfaa31d4d8359f848d5ad5e" name="a659b9d6ebcfaa31d4d8359f848d5ad5e"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a659b9d6ebcfaa31d4d8359f848d5ad5e">&#9670;&#160;</a></span>CreateNewTopic()</h2>
 
@@ -210,7 +266,7 @@ Static Private Attributes</h2></td></tr>
 <div class="line">        System.IO.File.ReadAllText(<span class="stringliteral">&quot;..\\FileManagerTests\\src\\basicNotes.html&quot;</span>)</div>
 <div class="line">);</div>
 <div class="line">System.IO.File.WriteAllText(resultsFilePath, questionsMarkdown);</div>
-<div class="ttc" id="aclass_file_manager_1_1_questions_file_html"><div class="ttname"><a href="class_file_manager_1_1_questions_file.html">FileManager.QuestionsFile</a></div><div class="ttdoc">Singleton containing methods and constants, to manage the 'quizGenerator' backend.</div><div class="ttdef"><b>Definition</b> fileManagerClasses.cs:103</div></div>
+<div class="ttc" id="aclass_file_manager_1_1_questions_file_html"><div class="ttname"><a href="class_file_manager_1_1_questions_file.html">FileManager.QuestionsFile</a></div><div class="ttdoc">Singleton containing methods and constants, to manage the 'quizGenerator' backend.</div><div class="ttdef"><b>Definition</b> fileManagerClasses.cs:34</div></div>
 <div class="ttc" id="anamespace_file_manager_html"><div class="ttname"><a href="namespace_file_manager.html">FileManager</a></div><div class="ttdef"><b>Definition</b> DAG.cs:11</div></div>
 </div><!-- fragment --> 
 </div>
@@ -240,6 +296,40 @@ Static Private Attributes</h2></td></tr>
 
 <p>Initializes the sources folder for the Topics (Quizes data). </p>
 <dl class="section return"><dt>Returns</dt><dd>Path to the created folder</dd></dl>
+
+</div>
+</div>
+<a id="a4bcde5078eb4ce52d70ff5d03150407b" name="a4bcde5078eb4ce52d70ff5d03150407b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a4bcde5078eb4ce52d70ff5d03150407b">&#9670;&#160;</a></span>DeleteTopic()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static bool FileManager.QuestionsFile.DeleteTopic </td>
+          <td>(</td>
+          <td class="paramtype">string</td>          <td class="paramname"><span class="paramname"><em>notesPath</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Deletes the whole topic folder. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">notesPath</td><td>Path to the topics folder</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>If the folder was deleted</dd></dl>
 
 </div>
 </div>
@@ -320,6 +410,65 @@ Static Private Attributes</h2></td></tr>
 
 </div>
 </div>
+<a id="a89873b3d49a1840be3968c1a152a0265" name="a89873b3d49a1840be3968c1a152a0265"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a89873b3d49a1840be3968c1a152a0265">&#9670;&#160;</a></span>GetMarkDown()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static string FileManager.QuestionsFile.GetMarkDown </td>
+          <td>(</td>
+          <td class="paramtype">string</td>          <td class="paramname"><span class="paramname"><em>markdownPath</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="af292dfe0b1e09b7897d704918a6d1488" name="af292dfe0b1e09b7897d704918a6d1488"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af292dfe0b1e09b7897d704918a6d1488">&#9670;&#160;</a></span>GetQuizName()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static string FileManager.QuestionsFile.GetQuizName </td>
+          <td>(</td>
+          <td class="paramtype">string</td>          <td class="paramname"><span class="paramname"><em>pathToQuiz</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Given a path to quiz return it's name. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">pathToQuiz</td><td>Name of the quiz</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd></dd></dl>
+
+</div>
+</div>
 <a id="a2bf62bc766853f8a98d3ffa1706c13f4" name="a2bf62bc766853f8a98d3ffa1706c13f4"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a2bf62bc766853f8a98d3ffa1706c13f4">&#9670;&#160;</a></span>GetTopics()</h2>
 
@@ -373,6 +522,105 @@ Static Private Attributes</h2></td></tr>
 
 </div>
 </div>
+<a id="afcdd9f7170cab4b591ae1fd03eb7f524" name="afcdd9f7170cab4b591ae1fd03eb7f524"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#afcdd9f7170cab4b591ae1fd03eb7f524">&#9670;&#160;</a></span>isTopicFolder()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static bool FileManager.QuestionsFile.isTopicFolder </td>
+          <td>(</td>
+          <td class="paramtype">string</td>          <td class="paramname"><span class="paramname"><em>path</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">static</span><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Determines, if the given path leads to valid topics folder. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">path</td><td></td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd></dd></dl>
+
+</div>
+</div>
+<a id="af47550affe24974f562705f71a517f61" name="af47550affe24974f562705f71a517f61"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af47550affe24974f562705f71a517f61">&#9670;&#160;</a></span>LoadedStateToken()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">record struct FileManager.QuestionsFile.LoadedStateToken </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="#a422c75c129b0319b855ec7f80ac854a3">LoadedState</a></td>          <td class="paramname"><span class="paramname"><em>State</em>, </span></td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">string</td>          <td class="paramname"><span class="paramname"><em>Data</em></span>&#160;)</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Holds data from loaded state File and a status field. </p>
+
+</div>
+</div>
+<a id="a0dc74144620ae8cf9d5efc7de20510f6" name="a0dc74144620ae8cf9d5efc7de20510f6"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a0dc74144620ae8cf9d5efc7de20510f6">&#9670;&#160;</a></span>LoadQuizStateData()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static <a class="el" href="#af47550affe24974f562705f71a517f61">LoadedStateToken</a> FileManager.QuestionsFile.LoadQuizStateData </td>
+          <td>(</td>
+          <td class="paramtype">string</td>          <td class="paramname"><span class="paramname"><em>quizName</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Load Quiz State data of a given Quiz. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">quizName</td><td>Quiz name</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>JSON formatted State data</dd></dl>
+
+</div>
+</div>
 <a id="a3216225a94cae4e366e9074118c5d44d" name="a3216225a94cae4e366e9074118c5d44d"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a3216225a94cae4e366e9074118c5d44d">&#9670;&#160;</a></span>ParentTextNode()</h2>
 
@@ -395,6 +643,74 @@ Static Private Attributes</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
+
+</div>
+</div>
+<a id="a1d6ace537418191f3e081a3aca397f9e" name="a1d6ace537418191f3e081a3aca397f9e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a1d6ace537418191f3e081a3aca397f9e">&#9670;&#160;</a></span>RenameTopic()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static ? string FileManager.QuestionsFile.RenameTopic </td>
+          <td>(</td>
+          <td class="paramtype">string</td>          <td class="paramname"><span class="paramname"><em>currentTopicDirectoryPath</em>, </span></td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">string</td>          <td class="paramname"><span class="paramname"><em>newName</em></span>&#160;)</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a28879806e05f535a18e6d94866fd3af1" name="a28879806e05f535a18e6d94866fd3af1"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a28879806e05f535a18e6d94866fd3af1">&#9670;&#160;</a></span>SaveQuizState()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static bool FileManager.QuestionsFile.SaveQuizState </td>
+          <td>(</td>
+          <td class="paramtype">string</td>          <td class="paramname"><span class="paramname"><em>quizName</em>, </span></td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">string</td>          <td class="paramname"><span class="paramname"><em>jsonStateData</em></span>&#160;)</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Stores Quiz State data of a given Quiz. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">quizName</td><td>Quiz name</td></tr>
+    <tr><td class="paramname">jsonStateData</td><td>JSON state data to store</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>success status</dd></dl>
 
 </div>
 </div>
@@ -514,6 +830,7 @@ Static Private Attributes</h2></td></tr>
 <div class="line">        <span class="keyword">public</span> <span class="keyword">static</span> <span class="keywordtype">string</span> notesFileName = <span class="stringliteral">&quot;notes.html&quot;</span>;</div>
 <div class="line">        <span class="keyword">public</span> <span class="keyword">static</span> <span class="keywordtype">string</span> stylesFileName = <span class="stringliteral">&quot;styles.css&quot;</span>;</div>
 <div class="line">        <span class="keyword">public</span> <span class="keyword">static</span> <span class="keywordtype">string</span> scriptFileName = <span class="stringliteral">&quot;script.js&quot;</span>;</div>
+<div class="line">        <span class="keyword">public</span> <span class="keyword">static</span> <span class="keywordtype">string</span> quizState = <span class="stringliteral">&quot;state.json&quot;</span>;</div>
 <div class="line">        <span class="keyword">public</span> <span class="keyword">static</span> <span class="keywordtype">string</span> questionsScriptName = <span class="stringliteral">&quot;questionsScript.js&quot;</span>;</div>
 <div class="line"> </div>
 <div class="line">        <span class="keyword">static</span> <span class="keywordtype">string</span> baseMarkdown = <span class="stringliteral">&quot;&lt;!DOCTYPE html&gt;&lt;html lang=\&quot;en\&quot; xmlns=\&quot;http://www.w3.org/1999/xhtml\&quot;&gt;&lt;head&gt;&lt;meta charset=\&quot;utf-8\&quot; /&gt;&lt;title&gt;&lt;/title&gt;&lt;script type=\&quot;text/javascript\&quot; language=\&quot;javascript\&quot; src=\&quot;.\\..\\&quot;</span> + scriptFileName + <span class="stringliteral">&quot;\&quot;&gt;&lt;/script&gt;&lt;/head&gt;&lt;body&gt;&lt;/body&gt;&lt;link rel=\&quot;stylesheet\&quot; href=\&quot;.\\..\\&quot;</span> + stylesFileName + <span class="stringliteral">&quot;\&quot; /&gt;&lt;/html&gt;&quot;</span></div>

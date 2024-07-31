@@ -1,11 +1,19 @@
 var searchData=
 [
-  ['parentindex_0',['ParentIndex',['../class_file_manager_1_1_priority_queue.html#a777977d5832256b763449c0b21540fca',1,'FileManager::PriorityQueue']]],
-  ['parenttextnode_1',['ParentTextNode',['../class_file_manager_1_1_questions_file.html#a3216225a94cae4e366e9074118c5d44d',1,'FileManager::QuestionsFile']]],
-  ['pop_2',['Pop',['../class_file_manager_1_1_priority_queue.html#a5a03c2e882516051f40adf87fb771655',1,'FileManager::PriorityQueue']]],
-  ['populatelistelement_3',['populateListElement',['../classquiz_generator_1_1main_page.html#ac76fab2607c3f5a57a539f667ca3fa3c',1,'quizGenerator::mainPage']]],
-  ['priority_4',['Priority',['../class_file_manager_1_1_priority_queue_1_1_item.html#a93c321623a0f3618291375ddc66e99ca',1,'FileManager::PriorityQueue::Item']]],
-  ['priorityqueue_5',['PriorityQueue',['../class_file_manager_1_1_priority_queue.html',1,'FileManager.PriorityQueue&lt; T &gt;'],['../class_file_manager_1_1_priority_queue.html#abf8d2e50826d8aa9ec070d6344792bbe',1,'FileManager.PriorityQueue.PriorityQueue()']]],
-  ['priorityqueue_2ecs_6',['priorityQueue.cs',['../priority_queue_8cs.html',1,'']]],
-  ['puloutquestionsobjects_7',['puloutQuestionsObjects',['../class_file_manager_1_1sequence_of_questions.html#aad875949a68fa590f6a7ab195b2507ec',1,'FileManager::sequenceOfQuestions']]]
+  ['namespace_5ffile_5fmanager_2ejs_0',['namespace_file_manager.js',['../namespace__file__manager_8js.html',1,'']]],
+  ['namespacequiz_5fgenerator_2ejs_1',['namespacequiz_generator.js',['../namespacequiz__generator_8js.html',1,'']]],
+  ['namespaces_5f0_2ejs_2',['namespaces_0.js',['../namespaces__0_8js.html',1,'']]],
+  ['namespaces_5f1_2ejs_3',['namespaces_1.js',['../namespaces__1_8js.html',1,'']]],
+  ['namespaces_5fdup_2ejs_4',['namespaces_dup.js',['../namespaces__dup_8js.html',1,'']]],
+  ['navtree_2ejs_5',['navtree.js',['../navtree_8js.html',1,'']]],
+  ['navtreedata_2ejs_6',['navtreedata.js',['../navtreedata_8js.html',1,'']]],
+  ['navtreeindex0_2ejs_7',['navtreeindex0.js',['../navtreeindex0_8js.html',1,'']]],
+  ['navtreeindex1_2ejs_8',['navtreeindex1.js',['../navtreeindex1_8js.html',1,'']]],
+  ['neighbours_9',['neighbours',['../class_file_manager_1_1_dag.html#a2e691c2410b10c7f41c2af48fe73f3bf',1,'FileManager::Dag']]],
+  ['newstate_10',['NewState',['../class_quiz_logical_components_1_1_quiz_states_1_1_i_quiz_state.html#a40e6fcc3a6b51873ede1e0ce215090f6',1,'QuizLogicalComponents::QuizStates::IQuizState']]],
+  ['newtopicbtn_5fclick_11',['newTopicBtn_Click',['../classquiz_generator_1_1main_page.html#a6741d71687fb6042bf18c9d23e572a79',1,'quizGenerator::mainPage']]],
+  ['nodeidbyname_12',['nodeIdByName',['../class_file_manager_1_1_dag.html#afe2e2495bdde88bf6cdcb9c97f10138f',1,'FileManager::Dag']]],
+  ['nodename_13',['nodeName',['../class_file_manager_1_1_dag.html#ae5a05cbad2087f75df53666d8a8d40bc',1,'FileManager::Dag']]],
+  ['notes_14',['What are Notes?',['../index.html#autotoc_md3',1,'']]],
+  ['notfound_15',['NotFound',['../class_file_manager_1_1_questions_file.html#a422c75c129b0319b855ec7f80ac854a3a38c300f4fc9ce8a77aad4a30de05cad8',1,'FileManager::QuestionsFile']]]
 ];
