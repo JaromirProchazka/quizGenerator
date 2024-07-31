@@ -28,6 +28,10 @@ namespace QuizLogicalComponents
         Dag questionSequence = new Dag();
         List<string> questionsObjects = new List<string>();
 
+        /// <summary>
+        /// Initiates the questions to the Sequence from raw markdown.
+        /// </summary>
+        /// <param name="questionsMarkdown">the html markdown with the questions data</param>
         public RandomDagSequence(string questionsMarkdown)
         {
             HtmlDocument questions = new HtmlDocument();
@@ -36,6 +40,14 @@ namespace QuizLogicalComponents
                 SelectSingleNode("//body")
             );
         }
+
+        /// <summary>
+        /// Initiates the questions to the Sequence from file with a markdown.
+        /// </summary>
+        /// <param name="currentQuestionsPath">FileInfo to the .html markdown with the questions data</param>
+        public RandomDagSequence(FileInfo currentQuestionsPath) :
+            this(QuestionsFile.GetMarkDown(currentQuestionsPath.FullName))
+        { }
 
         /// <summary>
         /// takes the Processed notes html file (output of FileManager.QuestionsFile.createQuestionsFile) and outputs a JSON file contents with a DAG represented as the List of neighbours.

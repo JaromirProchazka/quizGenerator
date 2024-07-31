@@ -9,6 +9,8 @@ using System.Security.Policy;
 using System.Collections;
 using System.Threading;
 using System.Runtime.InteropServices;
+using System.Runtime;
+using Microsoft.VisualBasic.FileIO;
 
 namespace FileManager
 {
@@ -23,6 +25,7 @@ namespace FileManager
     ///         |---------- *general topic folder\
     ///         |                   |---------- notes.html
     ///         |                   |---------- questions.html
+    ///         |                   |---------- state.json
     ///         |
     ///         |---------- ... more topic folders\
     /// </code>
@@ -34,6 +37,7 @@ namespace FileManager
         public static string notesFileName = "notes.html";
         public static string stylesFileName = "styles.css";
         public static string scriptFileName = "script.js";
+        public static string quizState = "state.json";
         public static string questionsScriptName = "questionsScript.js";
 
         static string baseMarkdown = "<!DOCTYPE html><html lang=\"en\" xmlns=\"http://www.w3.org/1999/xhtml\"><head><meta charset=\"utf-8\" /><title></title><script type=\"text/javascript\" language=\"javascript\" src=\".\\..\\" + scriptFileName + "\"></script></head><body></body><link rel=\"stylesheet\" href=\".\\..\\" + stylesFileName + "\" /></html>";
@@ -75,6 +79,53 @@ namespace FileManager
         }
 
         /// <summary>
+        /// Deletes the whole topic folder
+        /// </summary>
+        /// <param name="notesPath">Path to the topics folder</param>
+        /// <returns>If the folder was deleted</returns>
+        public static bool DeleteTopic(string notesPath)
+        {
+            if (isTopicFolder(notesPath))
+            {
+                Directory.Delete(notesPath, true);
+                return true;
+            }
+
+            return false;
+        }
+
+        public static string? RenameTopic(string currentTopicDirectoryPath, string newName)
+        {
+            if (isTopicFolder(currentTopicDirectoryPath))
+            {
+                string newPath = Path.Combine(Path.GetDirectoryName(currentTopicDirectoryPath), QuestionsFile.toTopicFileName(newName));
+                Directory.Move(
+                    currentTopicDirectoryPath,
+                    newPath
+                );
+
+                return newPath;
+            }
+
+            return null;
+        }
+
+        /// <summary>
+        /// Determines, if the given path leads to valid topics folder
+        /// </summary>
+        /// <param name="path"></param>
+        /// <returns></returns>
+        private static bool isTopicFolder(string path)
+        {
+            string fullPath = Path.GetFullPath(path);
+            string fullSourcesPath = Path.GetFullPath(QuestionsFile.utilFolderPath);
+            string fullParentPath = Path.GetFullPath(Path.GetDirectoryName(fullPath));
+            return Directory.Exists(path) &&
+                    fullPath.Contains(fullSourcesPath) &&
+                    fullSourcesPath.Contains(fullParentPath);
+        }
+
+        /// <summary>
         /// Initializes the sources folder for the Topics (Quizes data).
         /// </summary>
         /// <returns>Path to the created folder</returns>
@@ -113,6 +164,61 @@ namespace FileManager
         {
             if (!File.Exists(markdownPath)) throw new Exception("Markdow questions not found!");
             return File.ReadAllText(markdownPath);
+        }
+
+        /// <summary>
+        /// Stores Quiz State data of a given Quiz.
+        /// </summary>
+        /// <param name="quizName">Quiz name</param>
+        /// <param name="jsonStateData">JSON state data to store</param>
+        /// <returns>success status</returns>
+        public static bool SaveQuizState(string quizName, string jsonStateData)
+        {
+            try
+            {
+                string stateFilePath = Path.Combine(utilFolderPath, quizName, quizState);
+                File.WriteAllText(stateFilePath, jsonStateData);
+            }
+            catch (Exception ex)
+            {
+                Console.WriteLine(ex.Message);
+                return false;
+            }
+
+            return true;
+        }
+
+        /// <summary>
+        /// Load Quiz State data of a given Quiz.
+        /// </summary>
+        /// <param name="quizName">Quiz name</param>
+        /// <returns>JSON formatted State data</returns>
+        public static LoadedStateToken LoadQuizStateData(string quizName)
+        {
+            string stateFilePath = Path.Combine(utilFolderPath, quizName, quizState);
+            if (!File.Exists(stateFilePath)) 
+                return new LoadedStateToken(LoadedState.NotFound, "");
+            return new LoadedStateToken(LoadedState.Valid, File.ReadAllText(stateFilePath));
+        }
+
+        /// <summary>
+        /// State of the loaded state data.
+        /// </summary>
+        public enum LoadedState { Valid, NotFound };
+        /// <summary>
+        /// Holds data from loaded state File and a status field.
+        /// </summary>
+        public record struct LoadedStateToken(LoadedState State, string Data) { }
+
+        /// <summary>
+        /// Given a path to quiz return it's name
+        /// </summary>
+        /// <param name="pathToQuiz">Name of the quiz</param>
+        /// <returns></returns>
+        public static string GetQuizName(string pathToQuiz)
+        {
+            var dirInfo = new DirectoryInfo(pathToQuiz);
+            return dirInfo.Parent.Name;
         }
 
         /// <summary>

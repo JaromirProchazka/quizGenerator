@@ -35,42 +35,28 @@ namespace quizGenerator
 
         private void renameBtn_Click(object sender, EventArgs e)
         {
-            if (textBox1.Text.Length > 0 && isTopicFolder(currentTopicDirectoryPath))
-            {
-                string newPath = Path.Combine(Path.GetDirectoryName(currentTopicDirectoryPath), QuestionsFile.toTopicFileName(textBox1.Text));
-                Directory.Move(
-                    currentTopicDirectoryPath,
-                    newPath
-                );
-                item.LinkToQuestions = Path.Combine(newPath, QuestionsFile.questionsFileName);
-                item.LinkLabel = textBox1.Text;
-                setTopicDirectoryPath();
+            if (textBox1.Text.Length == 0) return;
 
-                mainPage.updateList(mainPageListBox);
-            }
+            string newName = textBox1.Text;
+            string? newPath = QuestionsFile.RenameTopic(currentTopicDirectoryPath, newName);
+
+            if (newPath == null) return;
+
+            item.LinkToQuestions = Path.Combine(newPath, QuestionsFile.questionsFileName);
+            item.LinkLabel = newName;
+            setTopicDirectoryPath();
+
+            mainPage.updateList(mainPageListBox);
         }
 
         private void deleteBtn_Click(object sender, EventArgs e)
         {
-            if (isTopicFolder(currentTopicDirectoryPath))
+            string pathToTopicFolder = Path.GetFullPath(Path.GetDirectoryName(item.LinkToQuestions));
+            if (QuestionsFile.DeleteTopic(pathToTopicFolder))
             {
-                File.Delete(item.LinkToQuestions);
-                File.Delete(Path.Combine(currentTopicDirectoryPath, QuestionsFile.notesFileName));
-
-                Directory.Delete(Path.GetFullPath(Path.GetDirectoryName(item.LinkToQuestions)));
                 mainPage.updateList(mainPageListBox);
                 this.Hide();
             }
-        }
-
-        private static bool isTopicFolder(string path)
-        {
-            string fullPath = Path.GetFullPath(path);
-            string fullSourcesPath = Path.GetFullPath(QuestionsFile.utilFolderPath);
-            string fullParentPath = Path.GetFullPath(Path.GetDirectoryName(fullPath));
-            return Directory.Exists(path) && 
-                    fullPath.Contains(fullSourcesPath) && 
-                    fullSourcesPath.Contains(fullParentPath);
         }
 
         private void topicEditBox_Load(object sender, EventArgs e)

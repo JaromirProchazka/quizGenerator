@@ -1,19 +1,23 @@
-﻿using FileManager;
-using System;
+﻿using System;
 using System.IO;
+using System.Runtime.CompilerServices;
+using System.Text.Json.Serialization;
 
 
-namespace QuizLogicalComponents
+namespace QuizLogicalComponents.QuizStates
 {
-    public abstract record class IQuizState 
+    public abstract record class IQuizState
     {
         /// <summary>
         /// Path to the questions file.
         /// </summary>
+        [JsonInclude]
         public string CurrentQuestionsPath;
+
         /// <summary>
-        /// Index into the @QuestionIds.
+        /// Current questions ID
         /// </summary>
+        [JsonInclude]
         public int QuestionIndex;
 
         /// <summary>
@@ -21,6 +25,13 @@ namespace QuizLogicalComponents
         /// </summary>
         /// <param name="distance">The number of spaces in sequence, by which the questions Id is moved forward.</param>
         public abstract void MovePreviousAnswearedForward(int distance);
+
+        /// <summary>
+        /// Initialises new State instance.
+        /// </summary>
+        /// <param name="path">Path to the quiz</param>
+        /// <returns></returns>
+        public abstract IQuizState NewState(string path);
 
         /// <summary>
         /// Gives the number of questions.
@@ -60,13 +71,15 @@ namespace QuizLogicalComponents
     /// <summary>
     /// Represents the state of the quiz in a given time.
     /// </summary>
-    public record class QuizState : IQuizState
+    public record class ResetAroundState() : IQuizState
     {
         /// <summary>
         /// List of question Id, by which the questions are identified.
         /// </summary>
-        public List<string> QuestionIds;
+        [JsonInclude]
+        public List<string> QuestionIds = new List<string>();
 
+        [JsonIgnore]
         /// <summary>
         /// Used for generating random sequence.
         /// </summary>
@@ -78,7 +91,7 @@ namespace QuizLogicalComponents
         /// <returns></returns>
         public ISequenceOfQuestions GetSequence() => sequenceFinder;
 
-        public QuizState(string currentQuestionsPath, ISequenceOfQuestions sequence)
+        public ResetAroundState(string currentQuestionsPath, ISequenceOfQuestions sequence) : this()
         {
             sequenceFinder = sequence;
             CurrentQuestionsPath = currentQuestionsPath;
@@ -91,17 +104,22 @@ namespace QuizLogicalComponents
         /// Uses @RandomDagSequence Sequence generator as default.
         /// </summary>
         /// <param name="currentQuestionsPath">Path to the notes</param>
-        public QuizState(string currentQuestionsPath) : 
+        public ResetAroundState(string currentQuestionsPath) :
             this(
-                currentQuestionsPath, 
-                new RandomDagSequence(QuestionsFile.GetMarkDown(currentQuestionsPath))
-            ) { }
+                currentQuestionsPath,
+                new RandomDagSequence(new FileInfo(currentQuestionsPath))
+            )
+        { }
 
-        public override string GetCurrentQuestion() {
-            return QuestionIds[QuestionIndex]; 
+        public override IQuizState NewState(string path) => new ResetAroundState(path);
+
+        public override string GetCurrentQuestion()
+        {
+            return QuestionIds[QuestionIndex];
         }
 
-        public override void SetNextQuestion() {
+        public override void SetNextQuestion()
+        {
             QuestionIndex++;
         }
 
@@ -119,7 +137,7 @@ namespace QuizLogicalComponents
         public override string GetPreviousQuestion()
         {
             if (QuestionIndex == 0) return QuestionIds[0];
-            
+
             return QuestionIds[QuestionIndex - 1];
         }
 
@@ -128,7 +146,7 @@ namespace QuizLogicalComponents
             string previousQuestionId = GetPreviousQuestion();
             QuestionIds.RemoveAt(QuestionIndex - 1);
             QuestionIds.Insert(
-                (QuestionIndex + distance < GetQuestionsCount()) ? QuestionIndex + distance : QuestionIds.Count,
+                QuestionIndex + distance < GetQuestionsCount() ? QuestionIndex + distance : QuestionIds.Count,
                 previousQuestionId
             );
             QuestionIndex--;

@@ -4,7 +4,7 @@ using System.Collections.Generic;
 using System.Drawing;
 using System.IO;
 using System.Windows.Forms;
-using QuizLogicalComponents;
+using QuizLogicalComponents.QuizStates;
 
 namespace quizGenerator
 {
@@ -14,24 +14,29 @@ namespace quizGenerator
     public partial class questionsForm : Form
     {
         IQuizState state;
+        BaseStateSerializer<ResetAroundState> serializer;
         public static int movingDistanceOnBadAnswear = 10;
 
         /// <summary>
-        /// Initiates the Form of a quiz from the start (from default).
+        /// Initiates the Form of a quiz from the start (from default). Uses the @ResetAroundState State class.
         /// </summary>
         /// <param name="questionsFilePath">The path to the questions file in the ".sources" folder.</param>
         public questionsForm(string questionsFilePath)
         {
             InitializeComponent();
-            state = new QuizState(questionsFilePath);
+            //TODO: EDIT after test
+            serializer = new BaseStateSerializer<ResetAroundState>(questionsFilePath);
+            //state = new ResetAroundState(questionsFilePath);
+            state = serializer.LoadState();
         }
 
         /// <summary>
         /// Initiates the Form of a quiz from a given State (history).
         /// </summary>
         /// <param name="givenState">The state of the quiz</param>
-        public questionsForm(QuizState givenState) 
-        { 
+        public questionsForm(IQuizState givenState) 
+        {
+            InitializeComponent();
             state = givenState;
         }
 
@@ -133,6 +138,9 @@ namespace quizGenerator
             else {
                 showCurrentQuestion();
             }
+
+            //TODO: remove after test
+            serializer.StoreState((ResetAroundState)state);
         }
 
         private void showCurrentQuestion()
