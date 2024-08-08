@@ -1,0 +1,4 @@
+var interface_quiz_logical_components_1_1_quiz_creation_chain_1_1_choose_notion_notes_1_1_i_notion_page_a_p_i =
+[
+    [ "GetPage", "interface_quiz_logical_components_1_1_quiz_creation_chain_1_1_choose_notion_notes_1_1_i_notion_page_a_p_i.html#a410195a208cc17a7d020df099d3ac3e2", null ]
+];

@@ -1,6 +1,7 @@
 var searchData=
 [
-  ['openbtn_5fclick_0',['openBtn_Click',['../classquiz_generator_1_1main_page.html#a4d03b6312b55af388b111bbd45d04aa1',1,'quizGenerator::mainPage']]],
-  ['openmainpage_1',['OpenMainPage',['../classquiz_generator_1_1_topics.html#ab156aad393352038d9b1e7a53b560d28',1,'quizGenerator::Topics']]],
-  ['openquizpage_2',['OpenQuizPage',['../classquiz_generator_1_1_topics.html#a8d6deebfabb1dccfc113d811f56267ab',1,'quizGenerator::Topics']]]
+  ['newstate_0',['NewState',['../class_quiz_logical_components_1_1_quiz_states_1_1_i_quiz_state.html#a40e6fcc3a6b51873ede1e0ce215090f6',1,'QuizLogicalComponents::QuizStates::IQuizState']]],
+  ['newtopicbtn_5fclick_1',['newTopicBtn_Click',['../classquiz_generator_1_1main_page.html#a6741d71687fb6042bf18c9d23e572a79',1,'quizGenerator::mainPage']]],
+  ['notification_2',['Notification',['../class_q_generator_1_1_u_i_components_1_1_notification.html#a7b60dfe7a9c5fadfade6dc455397e95f',1,'QGenerator::UIComponents::Notification']]],
+  ['notification_5fload_3',['Notification_Load',['../class_q_generator_1_1_u_i_components_1_1_notification.html#ae30abcf07b69a829d89f72082281e975',1,'QGenerator::UIComponents::Notification']]]
 ];

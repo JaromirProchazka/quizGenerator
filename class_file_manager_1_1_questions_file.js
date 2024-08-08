@@ -4,7 +4,7 @@ var class_file_manager_1_1_questions_file =
       [ "Valid", "class_file_manager_1_1_questions_file.html#a422c75c129b0319b855ec7f80ac854a3a3ac705f2acd51a4613f9188c05c91d0d", null ],
       [ "NotFound", "class_file_manager_1_1_questions_file.html#a422c75c129b0319b855ec7f80ac854a3a38c300f4fc9ce8a77aad4a30de05cad8", null ]
     ] ],
-    [ "CreateNewTopic", "class_file_manager_1_1_questions_file.html#a659b9d6ebcfaa31d4d8359f848d5ad5e", null ],
+    [ "CreateNewTopic", "class_file_manager_1_1_questions_file.html#aba560fb3d28117fdd0bbbdd0029a521d", null ],
     [ "CreateQuestionsFileText", "class_file_manager_1_1_questions_file.html#ab7597be5c0a26ccde66ed2914f16ed1f", null ],
     [ "createSourcesFolder", "class_file_manager_1_1_questions_file.html#a40d9bf1d27c0d682903a13abe6747266", null ],
     [ "DeleteTopic", "class_file_manager_1_1_questions_file.html#a4bcde5078eb4ce52d70ff5d03150407b", null ],

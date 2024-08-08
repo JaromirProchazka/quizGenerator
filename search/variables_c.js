@@ -1,5 +1,4 @@
 var searchData=
 [
-  ['webbrowser1_0',['webBrowser1',['../classquiz_generator_1_1questions_form.html#abdf76e34d6657624333e91622bcff65c',1,'quizGenerator::questionsForm']]],
-  ['webbrowser2_1',['webBrowser2',['../classquiz_generator_1_1questions_form.html#a65baf5b2d9d2718a64b27be4b82b199a',1,'quizGenerator::questionsForm']]]
+  ['source_0',['source',['../class_quiz_logical_components_1_1_quiz_creation_chain_1_1_choose_notes_source.html#a7ec1c7daa2eac37908379ce3a0e227c5',1,'QuizLogicalComponents::QuizCreationChain::ChooseNotesSource']]]
 ];
