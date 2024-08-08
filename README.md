@@ -37,7 +37,9 @@ This App also support using notes from app [Notion](https://www.notion.so/) usin
 
 #### Quiz Menu
 
-At the Start of the App, you will be greeted by a list of your Quiz on top, and a `Create New Topic` button at the bottom. If you want to add a new topic, press the button and select the notes file on your device, with your notes.
+At the Start of the App, you will be greeted by a list of your Quiz on top, and a `Create New Topic` button at the bottom. If you want to add a new topic, press the button and choose the method of providing the notes. 
+
+You can either provide a local html file, or a link to a Notion page. Note that the page must be at the time of Creation PUBLIC.
 
 After that a new topic is added to the topics list at the top, or a topic with the same name is updated. Than select topic in list, you can then either click  
 

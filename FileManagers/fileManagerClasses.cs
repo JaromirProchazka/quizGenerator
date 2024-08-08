@@ -49,7 +49,8 @@ namespace FileManager
         /// <summary>
         /// Creates new topic folder with questions file to be later opened as quiz.
         /// </summary>
-        public static void CreateNewTopic(string notesPath)
+        /// <returns>Path to the Topic</returns>
+        public static string CreateNewTopic(string notesPath)
         {
             HtmlDocument htmlFile = new HtmlDocument();
             htmlFile.Load(notesPath);
@@ -76,6 +77,8 @@ namespace FileManager
                 Path.Combine(topicFolderPath, questionsFileName),
                 CreateQuestionsFileText(notesMarkdown)
             );
+
+            return topicFolderPath;
         }
 
         /// <summary>

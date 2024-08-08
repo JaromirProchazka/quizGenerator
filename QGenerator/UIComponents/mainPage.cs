@@ -1,4 +1,5 @@
 ﻿using FileManager;
+using QGenerator.UIComponents;
 using System;
 using System.Windows.Forms;
 
@@ -20,11 +21,10 @@ namespace quizGenerator
 
         private void listBoxLinks_SelectedIndexChanged(object sender, EventArgs e)
         {
-            if (TopicsList.SelectedIndex != -1)
-            {
-                HyperLink selectedItem = (HyperLink)TopicsList.SelectedItem;
-                Topics.OpenQuizPage(selectedItem.LinkToQuestions);
-            }
+            if (TopicsList.SelectedIndex == -1) return;
+            
+            HyperLink selectedItem = (HyperLink)TopicsList.SelectedItem;
+            Topics.OpenQuizPage(selectedItem.LinkToQuestions);
         }
 
         private static void populateListElement(ListBox listToBePopulated)
@@ -39,13 +39,21 @@ namespace quizGenerator
 
         private void newTopicBtn_Click(object sender, EventArgs e)
         {
-            if (openFileDialog1.ShowDialog() == DialogResult.OK)
-            {
-                string notesPath = openFileDialog1.FileName;
-                QuestionsFile.CreateNewTopic(notesPath);
+            //if (openFileDialog1.ShowDialog() == DialogResult.OK)
+            //{
+            //    string notesPath = openFileDialog1.FileName;
+            //    QuestionsFile.CreateNewTopic(notesPath);
 
-                updateList(TopicsList);
-            }
+            //    updateList(TopicsList);
+            //}
+
+            var creationWindow = new ChooseSourceStep(onTopicCreationFinish);
+            creationWindow.Show();
+        }
+
+        private void onTopicCreationFinish()
+        {
+            updateList(TopicsList);
         }
 
         private void Topics_SelectedIndexChanged(object sender, EventArgs e)
