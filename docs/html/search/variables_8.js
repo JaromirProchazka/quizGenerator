@@ -1,7 +1,10 @@
 var searchData=
 [
-  ['questionindex_0',['QuestionIndex',['../class_quiz_logical_components_1_1_quiz_states_1_1_i_quiz_state.html#adba9d90b02592d23d3b0095af835aff2',1,'QuizLogicalComponents::QuizStates::IQuizState']]],
-  ['questionsequence_1',['questionSequence',['../class_quiz_logical_components_1_1_random_dag_sequence.html#a8bef72fb9d09a3a1b769e3cc24c4dd1d',1,'QuizLogicalComponents::RandomDagSequence']]],
-  ['questionsobjects_2',['questionsObjects',['../class_quiz_logical_components_1_1_random_dag_sequence.html#a9f00c603e8fee00c75c89452b0d14b0a',1,'QuizLogicalComponents::RandomDagSequence']]],
-  ['questiontemplate_3',['questionTemplate',['../class_file_manager_1_1_questions_file.html#a6d52ca30f54264e49ed6b037dfd0a2b9',1,'FileManager::QuestionsFile']]]
+  ['neighbours_0',['neighbours',['../class_file_manager_1_1_dag.html#a2e691c2410b10c7f41c2af48fe73f3bf',1,'FileManager::Dag']]],
+  ['nodeidbyname_1',['nodeIdByName',['../class_file_manager_1_1_dag.html#afe2e2495bdde88bf6cdcb9c97f10138f',1,'FileManager::Dag']]],
+  ['nodename_2',['nodeName',['../class_file_manager_1_1_dag.html#ae5a05cbad2087f75df53666d8a8d40bc',1,'FileManager::Dag']]],
+  ['noteschooseoptions_3',['notesChooseOptions',['../class_q_generator_1_1_u_i_components_1_1_choose_source_step.html#a7d6c2587d0008b19ed787f01a0d51c34',1,'QGenerator::UIComponents::ChooseSourceStep']]],
+  ['notionapiurl_4',['NotionApiUrl',['../class_quiz_logical_components_1_1_quiz_creation_chain_1_1_choose_notion_notes.html#a473ff0141dd10b4d0f569b39c335dbae',1,'QuizLogicalComponents::QuizCreationChain::ChooseNotionNotes']]],
+  ['notionlink_5',['NotionLink',['../class_q_generator_1_1_u_i_components_1_1_choose_source_step.html#a3d49844975def8450031c1a60f7e8218',1,'QGenerator::UIComponents::ChooseSourceStep']]],
+  ['notionpageurl_6',['NotionPageUrl',['../class_quiz_logical_components_1_1_quiz_creation_chain_1_1_choose_notion_notes.html#a158d6ae8244ff85a28a2e294afc6feeb',1,'QuizLogicalComponents::QuizCreationChain::ChooseNotionNotes']]]
 ];

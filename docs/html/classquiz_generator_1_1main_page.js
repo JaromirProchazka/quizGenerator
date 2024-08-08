@@ -7,6 +7,7 @@ var classquiz_generator_1_1main_page =
     [ "listBoxLinks_SelectedIndexChanged", "classquiz_generator_1_1main_page.html#aa0f9f227671211d0ad7d21ad41183ee7", null ],
     [ "mainPage_Load", "classquiz_generator_1_1main_page.html#a4a28a9de06464989a42d06fe32dd7991", null ],
     [ "newTopicBtn_Click", "classquiz_generator_1_1main_page.html#a6741d71687fb6042bf18c9d23e572a79", null ],
+    [ "onTopicCreationFinish", "classquiz_generator_1_1main_page.html#a1d158a8cf4bfb49f582f13bac9360ed6", null ],
     [ "openBtn_Click", "classquiz_generator_1_1main_page.html#a4d03b6312b55af388b111bbd45d04aa1", null ],
     [ "populateListElement", "classquiz_generator_1_1main_page.html#ac76fab2607c3f5a57a539f667ca3fa3c", null ],
     [ "Topics_SelectedIndexChanged", "classquiz_generator_1_1main_page.html#a9b74bd437a762aefdbe0f0b0b6041e7b", null ],

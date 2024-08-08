@@ -1,5 +1,5 @@
 var searchData=
 [
-  ['indegrees_0',['inDegrees',['../class_file_manager_1_1_dag.html#a667d4e5ced5de43e83d8e71999cea3de',1,'FileManager::Dag']]],
-  ['item_1',['item',['../classquiz_generator_1_1topic_edit_box.html#a20baa1c83250523c15c12de91e806b50',1,'quizGenerator::topicEditBox']]]
+  ['filestreamfetcher_0',['FileStreamFetcher',['../class_quiz_logical_components_1_1_quiz_creation_chain_1_1_choose_local_html_file_option.html#ad898988e00d4ab5fd1c54c654e975942',1,'QuizLogicalComponents::QuizCreationChain::ChooseLocalHtmlFileOption']]],
+  ['finalize_1',['finalize',['../class_q_generator_1_1_u_i_components_1_1_choose_source_step.html#a27e7e78edb291d9c83c051c3f7bcc65c',1,'QGenerator::UIComponents::ChooseSourceStep']]]
 ];

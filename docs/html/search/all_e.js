@@ -20,5 +20,13 @@ var searchData=
   ['nodeidbyname_17',['nodeIdByName',['../class_file_manager_1_1_dag.html#afe2e2495bdde88bf6cdcb9c97f10138f',1,'FileManager::Dag']]],
   ['nodename_18',['nodeName',['../class_file_manager_1_1_dag.html#ae5a05cbad2087f75df53666d8a8d40bc',1,'FileManager::Dag']]],
   ['notes_19',['What are Notes?',['../index.html#autotoc_md4',1,'']]],
-  ['notfound_20',['NotFound',['../class_file_manager_1_1_questions_file.html#a422c75c129b0319b855ec7f80ac854a3a38c300f4fc9ce8a77aad4a30de05cad8',1,'FileManager::QuestionsFile']]]
+  ['noteschooseoptions_20',['notesChooseOptions',['../class_q_generator_1_1_u_i_components_1_1_choose_source_step.html#a7d6c2587d0008b19ed787f01a0d51c34',1,'QGenerator::UIComponents::ChooseSourceStep']]],
+  ['notfound_21',['NotFound',['../class_file_manager_1_1_questions_file.html#a422c75c129b0319b855ec7f80ac854a3a38c300f4fc9ce8a77aad4a30de05cad8',1,'FileManager::QuestionsFile']]],
+  ['notification_22',['Notification',['../class_q_generator_1_1_u_i_components_1_1_notification.html',1,'QGenerator.UIComponents.Notification'],['../class_q_generator_1_1_u_i_components_1_1_notification.html#a7b60dfe7a9c5fadfade6dc455397e95f',1,'QGenerator.UIComponents.Notification.Notification()']]],
+  ['notification_2ecs_23',['Notification.cs',['../_notification_8cs.html',1,'']]],
+  ['notification_2edesigner_2ecs_24',['Notification.Designer.cs',['../_notification_8_designer_8cs.html',1,'']]],
+  ['notification_5fload_25',['Notification_Load',['../class_q_generator_1_1_u_i_components_1_1_notification.html#ae30abcf07b69a829d89f72082281e975',1,'QGenerator::UIComponents::Notification']]],
+  ['notionapiurl_26',['NotionApiUrl',['../class_quiz_logical_components_1_1_quiz_creation_chain_1_1_choose_notion_notes.html#a473ff0141dd10b4d0f569b39c335dbae',1,'QuizLogicalComponents::QuizCreationChain::ChooseNotionNotes']]],
+  ['notionlink_27',['NotionLink',['../class_q_generator_1_1_u_i_components_1_1_choose_source_step.html#a3d49844975def8450031c1a60f7e8218',1,'QGenerator::UIComponents::ChooseSourceStep']]],
+  ['notionpageurl_28',['NotionPageUrl',['../class_quiz_logical_components_1_1_quiz_creation_chain_1_1_choose_notion_notes.html#a158d6ae8244ff85a28a2e294afc6feeb',1,'QuizLogicalComponents::QuizCreationChain::ChooseNotionNotes']]]
 ];

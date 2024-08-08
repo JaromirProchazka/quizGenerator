@@ -11,6 +11,8 @@ var searchData=
   ['menu_8',['Quiz Menu',['../index.html#autotoc_md8',1,'']]],
   ['menu_2ejs_9',['menu.js',['../menu_8js.html',1,'']]],
   ['menudata_2ejs_10',['menudata.js',['../menudata_8js.html',1,'']]],
-  ['min_11',['Min',['../class_file_manager_1_1_priority_queue.html#a2771ff0d5d979b39332bb596982f6833',1,'FileManager::PriorityQueue']]],
-  ['movepreviousanswearedforward_12',['MovePreviousAnswearedForward',['../class_quiz_logical_components_1_1_quiz_states_1_1_i_quiz_state.html#a7ca67bf343320bfd2c6c0493e73ed987',1,'QuizLogicalComponents::QuizStates::IQuizState']]]
+  ['messagelabel_11',['MessageLabel',['../class_q_generator_1_1_u_i_components_1_1_notification.html#aca6053d3e0a2dd546ff0e25df8616d08',1,'QGenerator::UIComponents::Notification']]],
+  ['messagetext_12',['MessageText',['../class_q_generator_1_1_u_i_components_1_1_notification.html#a88ba44e122c00ef21b2df41f43dc1059',1,'QGenerator::UIComponents::Notification']]],
+  ['min_13',['Min',['../class_file_manager_1_1_priority_queue.html#a2771ff0d5d979b39332bb596982f6833',1,'FileManager::PriorityQueue']]],
+  ['movepreviousanswearedforward_14',['MovePreviousAnswearedForward',['../class_quiz_logical_components_1_1_quiz_states_1_1_i_quiz_state.html#a7ca67bf343320bfd2c6c0493e73ed987',1,'QuizLogicalComponents::QuizStates::IQuizState']]]
 ];
