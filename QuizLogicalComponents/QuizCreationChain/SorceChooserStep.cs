@@ -155,16 +155,28 @@ namespace QuizLogicalComponents.QuizCreationChain
         internal override TopicProduct Step()
         {
             var notionAPI = RestService.For<INotionPageAPI>(NotionApiUrl);
-            var data = notionAPI.GetPage(Id);
+            var dataResponse = notionAPI.GetPage(Id);
 
             // add file to temporaries with the .html extension
             source = _tempFiles.AddExtension("html");
             createTemporaryFile(source);
 
+            var dataResponceResult = dataResponse.Result;
+            if (dataResponceResult == null) 
+            {
+                throw new Exception("Something went wrong with request!");
+            } 
+            if (!dataResponceResult.IsSuccessStatusCode)
+            {
+                throw new InvalidOperationException($"The request for the Notion notes exited with code ({(int)dataResponceResult.StatusCode}: {dataResponceResult.StatusCode})! Please make sure that YOUR NOTION PAGE IS PUBLIC!");
+            }
+
+            var data = dataResponceResult.Content;
+
             // Copy data from API output stream to the temporary file
             using (var fileStream = new FileStream(source, FileMode.Open, FileAccess.Write))
             {
-                data.Result.CopyToAsync(fileStream).Wait();
+                data.CopyToAsync(fileStream).Wait();
             }
 
             // give the notes temporary to the Product
@@ -176,7 +188,7 @@ namespace QuizLogicalComponents.QuizCreationChain
         public interface INotionPageAPI
         {
             [Get("/html?id={block_id}")]
-            Task<Stream> GetPage([AliasAs("block_id")] string notionPageBlockId);
+            Task<ApiResponse<Stream>> GetPage([AliasAs("block_id")] string notionPageBlockId);
         }
 
         private string GetIdFromUrl(Uri urlObject)
