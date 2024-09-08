@@ -7,11 +7,12 @@ using System.Threading.Tasks;
 using System.CodeDom.Compiler;
 using System.Text.Json;
 using Refit;
+using QuizLogicalComponents.AbstractChain;
 
 namespace QuizLogicalComponents.QuizCreationChain
 {
     /// <summary>
-    /// an @ITopicCreationStep, which is responsible for fetching the source of the Final Topic.
+    /// an <see cref="TopicCreationStep"/>, which is responsible for fetching the source of the Final Topic.
     /// </summary>
     /// <param name="FileStreamFetcher">The method that let's user choose the File, it is UI dependent.</param>
     public abstract record class ChooseNotesSource : TopicCreationStep
@@ -20,6 +21,11 @@ namespace QuizLogicalComponents.QuizCreationChain
         /// Path to a local file with the source notes.
         /// </summary>
         public string? source = null;
+
+        /// <summary>
+        /// Product of the last step.
+        /// </summary>
+        public new TopicProduct? BetweenStep = null;
 
         /// <summary>
         /// Temporary Files used for the source. Present in current directory.

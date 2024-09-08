@@ -12,13 +12,13 @@ namespace QuizLogicalComponents.QuizStates
     /// General interface for Quiz State serializers
     /// </summary>
     /// <typeparam name="QT">Quiz state type implementing default constructor</typeparam>
-    public interface IStateSerializer<QT> where QT : IQuizState, new()
+    public interface IStateSerializer<QT> where QT : QuizState, new()
     {
         /// <summary>
         /// Loads state from Quiz data file
         /// </summary>
         /// <returns>Quiz State instance either from memory, or newly initialized one using the @IQuizState.NewState method</returns>
-        public IQuizState LoadState();
+        public QuizState LoadState();
 
         /// <summary>
         /// Saves the Quiz state to the Topics data folder.
@@ -29,16 +29,16 @@ namespace QuizLogicalComponents.QuizStates
     }
 
     /// <summary>
-    /// A basic State serializer serializing to JSON using @JsonSerializer
+    /// A basic State serializer serializing to JSON using <see cref="JsonSerializer"/>
     /// </summary>
     /// <typeparam name="QST">State type implementing default constructor</typeparam>
     /// <param name="Path">Path to the questions file in topics folder</param>
     public record class BaseStateSerializer<QST>(string Path) : 
-        IStateSerializer<QST> where QST : IQuizState, new()
+        IStateSerializer<QST> where QST : QuizState, new()
     {
         public string Name = QuestionsFile.GetQuizName(Path);
 
-        public IQuizState LoadState()
+        public QuizState LoadState()
         {
             var loadedData = QuestionsFile.LoadQuizStateData(Name);
             if (loadedData.State == QuestionsFile.LoadedState.NotFound) 

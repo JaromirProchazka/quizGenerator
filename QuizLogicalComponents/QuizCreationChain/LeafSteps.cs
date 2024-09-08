@@ -4,15 +4,22 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using FileManager;
+using QuizLogicalComponents.AbstractChain;
 
 namespace QuizLogicalComponents.QuizCreationChain
 {
     /// <summary>
-    /// an @ITopicCreationStep, which simply returns the result ending the Chain. 
+    /// Simply returns the result ending the Chain. 
     /// </summary>
-    public sealed record class FinalizeTopicCreationChain() : TopicCreationStep()
+    public sealed record class FinalizeTopicCreationChain :
+       TopicCreationStep
     {
         public override TopicCreationStep? Next { get => null; }
+
+        /// <summary>
+        /// The Product of last Step. 
+        /// </summary>
+        public new TopicProduct? BetweenStep = null;
 
         internal override TopicProduct Step()
         {
@@ -20,20 +27,31 @@ namespace QuizLogicalComponents.QuizCreationChain
 
             BetweenStep.pathToSource = Path.Combine(topicPath, QuestionsFile.notesFileName);
             BetweenStep.pathToQuiz = Path.Combine(topicPath, QuestionsFile.questionsFileName);
-            
+
             return BetweenStep;
         }
     }
 
     /// <summary>
-    /// an @ITopicCreationStep, which Starts the Chain. 
+    /// Starts the Chain. 
     /// </summary>
-    public sealed record class StartTopicCreationChain() : TopicCreationStep()
+    public sealed record class StartTopicCreationChain :
+        TopicCreationStep
     {
+        /// <summary>
+        /// The Product of last Step. 
+        /// </summary>
+        public new TopicProduct? BetweenStep = null;
+
+        /// <summary>
+        /// Default Initializes the running Product and returns it.
+        /// </summary>
+        /// <returns>The running Product</returns>
         internal override TopicProduct Step()
         {
             BetweenStep = new TopicProduct();
             return BetweenStep;
         }
     }
+
 }

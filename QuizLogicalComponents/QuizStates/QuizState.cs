@@ -6,7 +6,7 @@ using System.Text.Json.Serialization;
 
 namespace QuizLogicalComponents.QuizStates
 {
-    public abstract record class IQuizState
+    public abstract record class QuizState
     {
         /// <summary>
         /// Path to the questions file (Json Included on Serialization).
@@ -36,11 +36,20 @@ namespace QuizLogicalComponents.QuizStates
         public abstract void MovePreviousAnswearedForward(int distance);
 
         /// <summary>
+        /// Used when the Topics name is needed.
+        /// </summary>
+        /// <returns>The path to the Topic Directory</returns>
+        public string GetTopicsPath() 
+        { 
+            return Path.GetDirectoryName(CurrentQuestionsPath); 
+        }
+
+        /// <summary>
         /// Initialises new State instance.
         /// </summary>
         /// <param name="path">Path to the quiz</param>
         /// <returns></returns>
-        public abstract IQuizState NewState(string path);
+        public abstract QuizState NewState(string path);
 
         /// <summary>
         /// Gives the number of questions.
@@ -79,13 +88,13 @@ namespace QuizLogicalComponents.QuizStates
         /// <summary>
         /// After @JsonSerializer.Deserialize, it initializes the field, that were not Serialized.
         /// </summary>
-        public virtual IQuizState InitUntrackedFields() { return this; }
+        public virtual QuizState InitUntrackedFields() { return this; }
     }
 
     /// <summary>
     /// Represents the state of the quiz in a given time.
     /// </summary>
-    public record class ResetAroundState() : IQuizState
+    public record class ResetAroundState() : QuizState
     {
         /// <summary>
         /// List of question Id, by which the questions are identified (Json Included on Serialization).
@@ -125,7 +134,7 @@ namespace QuizLogicalComponents.QuizStates
             )
         { }
 
-        public override IQuizState NewState(string path) => new ResetAroundState(path);
+        public override QuizState NewState(string path) => new ResetAroundState(path);
 
         public override string GetCurrentQuestion()
         {
