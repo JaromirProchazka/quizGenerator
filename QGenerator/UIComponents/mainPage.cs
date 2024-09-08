@@ -66,9 +66,10 @@ namespace quizGenerator
             if (TopicsList.SelectedIndex != -1)
             {
                 HyperLink selectedItem = (HyperLink)TopicsList.SelectedItem;
-                Topics.OpenQuizPage(
-                    selectedItem.LinkToQuestions
-                );
+                //Topics.OpenQuizPage(
+                //    selectedItem.LinkToQuestions
+                //);
+                new ChooseQuizBeginningFrom(selectedItem.LinkToQuestions).Show();
             }
         }
 

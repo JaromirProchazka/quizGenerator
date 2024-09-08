@@ -13,7 +13,7 @@ namespace quizGenerator
     /// </summary>
     public partial class questionsForm : Form
     {
-        IQuizState state;
+        QuizState state;
         BaseStateSerializer<ResetAroundState> serializer;
         public static int movingDistanceOnBadAnswear = 10;
 
@@ -24,9 +24,7 @@ namespace quizGenerator
         public questionsForm(string questionsFilePath)
         {
             InitializeComponent();
-            //TODO: EDIT after test
             serializer = new BaseStateSerializer<ResetAroundState>(questionsFilePath);
-            //state = new ResetAroundState(questionsFilePath);
             state = serializer.LoadState();
         }
 
@@ -34,9 +32,10 @@ namespace quizGenerator
         /// Initiates the Form of a quiz from a given State (history).
         /// </summary>
         /// <param name="givenState">The state of the quiz</param>
-        public questionsForm(IQuizState givenState) 
+        public questionsForm(QuizState givenState)
         {
             InitializeComponent();
+            serializer = new BaseStateSerializer<ResetAroundState>(givenState.CurrentQuestionsPath);
             state = givenState;
         }
 
@@ -65,7 +64,7 @@ namespace quizGenerator
             showCurrentQuestion();
         }
 
-        private void webBrowser2_Navigating (object sender, WebBrowserNavigatingEventArgs e)
+        private void webBrowser2_Navigating(object sender, WebBrowserNavigatingEventArgs e)
         {
             e.Cancel = true;
             System.Diagnostics.Process.Start(e.Url.ToString());
@@ -126,17 +125,18 @@ namespace quizGenerator
             }
             state.SetNextQuestion();
 
-            if (state.QuestionIndex > state.GetQuestionsCount()) 
+            if (state.QuestionIndex > state.GetQuestionsCount())
             {
                 state.ResetQuestions();
-            } 
+            }
 
             if (state.QuestionIndex == state.GetQuestionsCount())
             {
                 updateScore();
                 state.SetNextQuestion();
-            } 
-            else {
+            }
+            else
+            {
                 showCurrentQuestion();
             }
 
@@ -175,6 +175,16 @@ namespace quizGenerator
                     new object[] { state.GetCurrentQuestion() }
                 );
             }
+        }
+
+        private void textBox1_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void webBrowser1_DocumentCompleted(object sender, WebBrowserDocumentCompletedEventArgs e)
+        {
+
         }
     }
 

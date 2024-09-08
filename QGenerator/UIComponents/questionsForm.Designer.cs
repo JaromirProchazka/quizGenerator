@@ -28,114 +28,112 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.webBrowser1 = new System.Windows.Forms.WebBrowser();
-            this.webBrowser2 = new System.Windows.Forms.WebBrowser();
-            this.button1 = new System.Windows.Forms.Button();
-            this.button2 = new System.Windows.Forms.Button();
-            this.button3 = new System.Windows.Forms.Button();
-            this.button4 = new System.Windows.Forms.Button();
-            this.textBox1 = new System.Windows.Forms.TextBox();
-            this.SuspendLayout();
+            webBrowser1 = new WebBrowser();
+            webBrowser2 = new WebBrowser();
+            button1 = new Button();
+            button2 = new Button();
+            button3 = new Button();
+            button4 = new Button();
+            textBox1 = new TextBox();
+            SuspendLayout();
             // 
             // webBrowser1
             // 
-            this.webBrowser1.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.webBrowser1.Location = new System.Drawing.Point(0, 0);
-            this.webBrowser1.Margin = new System.Windows.Forms.Padding(2, 3, 2, 3);
-            this.webBrowser1.MinimumSize = new System.Drawing.Size(20, 20);
-            this.webBrowser1.Name = "webBrowser1";
-            this.webBrowser1.Size = new System.Drawing.Size(800, 450);
-            this.webBrowser1.TabIndex = 0;
+            webBrowser1.Dock = DockStyle.Fill;
+            webBrowser1.Location = new Point(0, 0);
+            webBrowser1.Margin = new Padding(2, 3, 2, 3);
+            webBrowser1.MinimumSize = new Size(23, 23);
+            webBrowser1.Name = "webBrowser1";
+            webBrowser1.Size = new Size(933, 519);
+            webBrowser1.TabIndex = 0;
+            webBrowser1.DocumentCompleted += webBrowser1_DocumentCompleted;
             // 
             // webBrowser2
             // 
-            this.webBrowser2.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.webBrowser2.Location = new System.Drawing.Point(0, 65);
-            this.webBrowser2.Margin = new System.Windows.Forms.Padding(2, 3, 2, 3);
-            this.webBrowser2.MinimumSize = new System.Drawing.Size(20, 20);
-            this.webBrowser2.Name = "webBrowser2";
-            this.webBrowser2.Size = new System.Drawing.Size(788, 385);
-            this.webBrowser2.TabIndex = 1;
-            this.webBrowser2.DocumentCompleted += new System.Windows.Forms.WebBrowserDocumentCompletedEventHandler(this.webBrowser2_DocumentCompleted);
+            webBrowser2.Anchor = AnchorStyles.Top | AnchorStyles.Bottom | AnchorStyles.Left | AnchorStyles.Right;
+            webBrowser2.Location = new Point(0, 75);
+            webBrowser2.Margin = new Padding(2, 3, 2, 3);
+            webBrowser2.MinimumSize = new Size(23, 23);
+            webBrowser2.Name = "webBrowser2";
+            webBrowser2.Size = new Size(919, 444);
+            webBrowser2.TabIndex = 1;
+            webBrowser2.DocumentCompleted += webBrowser2_DocumentCompleted;
             // 
             // button1
             // 
-            this.button1.Location = new System.Drawing.Point(12, 12);
-            this.button1.Margin = new System.Windows.Forms.Padding(2, 3, 2, 3);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(94, 35);
-            this.button1.TabIndex = 2;
-            this.button1.Text = "button1";
-            this.button1.UseVisualStyleBackColor = true;
-            this.button1.Click += new System.EventHandler(this.godNext_Click);
+            button1.Location = new Point(14, 14);
+            button1.Margin = new Padding(2, 3, 2, 3);
+            button1.Name = "button1";
+            button1.Size = new Size(110, 40);
+            button1.TabIndex = 2;
+            button1.Text = "button1";
+            button1.UseVisualStyleBackColor = true;
+            button1.Click += godNext_Click;
             // 
             // button2
             // 
-            this.button2.Location = new System.Drawing.Point(128, 12);
-            this.button2.Margin = new System.Windows.Forms.Padding(2, 3, 2, 3);
-            this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(94, 35);
-            this.button2.TabIndex = 3;
-            this.button2.Text = "button2";
-            this.button2.UseVisualStyleBackColor = true;
-            this.button2.Click += new System.EventHandler(this.badNext_Click);
+            button2.Location = new Point(149, 14);
+            button2.Margin = new Padding(2, 3, 2, 3);
+            button2.Name = "button2";
+            button2.Size = new Size(110, 40);
+            button2.TabIndex = 3;
+            button2.Text = "button2";
+            button2.UseVisualStyleBackColor = true;
+            button2.Click += badNext_Click;
             // 
             // button3
             // 
-            this.button3.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.button3.Location = new System.Drawing.Point(680, 12);
-            this.button3.Margin = new System.Windows.Forms.Padding(2, 3, 2, 3);
-            this.button3.Name = "button3";
-            this.button3.Size = new System.Drawing.Size(91, 34);
-            this.button3.TabIndex = 4;
-            this.button3.Text = "button3";
-            this.button3.UseVisualStyleBackColor = true;
-            this.button3.Click += new System.EventHandler(this.backButton_Click);
+            button3.Anchor = AnchorStyles.Top | AnchorStyles.Right;
+            button3.Location = new Point(793, 14);
+            button3.Margin = new Padding(2, 3, 2, 3);
+            button3.Name = "button3";
+            button3.Size = new Size(106, 39);
+            button3.TabIndex = 4;
+            button3.Text = "button3";
+            button3.UseVisualStyleBackColor = true;
+            button3.Click += backButton_Click;
             // 
             // button4
             // 
-            this.button4.Location = new System.Drawing.Point(277, 11);
-            this.button4.Margin = new System.Windows.Forms.Padding(2, 3, 2, 3);
-            this.button4.Name = "button4";
-            this.button4.Size = new System.Drawing.Size(94, 35);
-            this.button4.TabIndex = 5;
-            this.button4.Text = "button4";
-            this.button4.UseVisualStyleBackColor = true;
-            this.button4.Click += new System.EventHandler(this.AnswearButton_Click);
+            button4.Location = new Point(323, 13);
+            button4.Margin = new Padding(2, 3, 2, 3);
+            button4.Name = "button4";
+            button4.Size = new Size(110, 40);
+            button4.TabIndex = 5;
+            button4.Text = "button4";
+            button4.UseVisualStyleBackColor = true;
+            button4.Click += AnswearButton_Click;
             // 
             // textBox1
             // 
-            this.textBox1.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.textBox1.Location = new System.Drawing.Point(485, 20);
-            this.textBox1.Margin = new System.Windows.Forms.Padding(2, 3, 2, 3);
-            this.textBox1.MaximumSize = new System.Drawing.Size(72, 20);
-            this.textBox1.MinimumSize = new System.Drawing.Size(72, 20);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(72, 20);
-            this.textBox1.TabIndex = 6;
+            textBox1.Anchor = AnchorStyles.Top;
+            textBox1.Location = new Point(566, 23);
+            textBox1.Margin = new Padding(2, 3, 2, 3);
+            textBox1.MaximumSize = new Size(83, 20);
+            textBox1.MinimumSize = new Size(83, 20);
+            textBox1.Name = "textBox1";
+            textBox1.Size = new Size(83, 20);
+            textBox1.TabIndex = 6;
+            textBox1.TextChanged += textBox1_TextChanged;
             // 
             // questionsForm
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
-            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(800, 450);
-            this.Controls.Add(this.textBox1);
-            this.Controls.Add(this.button4);
-            this.Controls.Add(this.button3);
-            this.Controls.Add(this.button2);
-            this.Controls.Add(this.button1);
-            this.Controls.Add(this.webBrowser2);
-            this.Controls.Add(this.webBrowser1);
-            this.Margin = new System.Windows.Forms.Padding(2, 3, 2, 3);
-            this.Name = "questionsForm";
-            this.Text = "Quiz Generator";
-            this.Load += new System.EventHandler(this.questionsForm_Load);
-            this.ResumeLayout(false);
-            this.PerformLayout();
-
+            AutoScaleDimensions = new SizeF(7F, 15F);
+            AutoScaleMode = AutoScaleMode.Font;
+            ClientSize = new Size(933, 519);
+            Controls.Add(textBox1);
+            Controls.Add(button4);
+            Controls.Add(button3);
+            Controls.Add(button2);
+            Controls.Add(button1);
+            Controls.Add(webBrowser2);
+            Controls.Add(webBrowser1);
+            Margin = new Padding(2, 3, 2, 3);
+            Name = "questionsForm";
+            Text = "Quiz Generator";
+            Load += questionsForm_Load;
+            ResumeLayout(false);
+            PerformLayout();
         }
 
         #endregion

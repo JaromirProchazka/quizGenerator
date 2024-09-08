@@ -1,5 +1,6 @@
 ﻿using FileManager;
 using quizGenerator;
+using QuizLogicalComponents.AbstractChain;
 using QuizLogicalComponents.QuizCreationChain;
 using System;
 using System.Collections.Generic;
@@ -16,7 +17,7 @@ namespace QGenerator.UIComponents
 {
     public partial class ChooseSourceStep : Form
     {
-        TopicCreationStep TopicCreator = new StartTopicCreationChain();
+        StartTopicCreationChain TopicCreator = new StartTopicCreationChain();
         Action finalize;
 
         public ChooseSourceStep(Action finalize)
@@ -68,16 +69,17 @@ namespace QGenerator.UIComponents
                 TopicCreator.SetNext(thisStep);
 
                 TopicProduct? res = null;
-                res = TopicCreator.DoStep();
+                res = (TopicProduct)TopicCreator.DoStep();
 
                 Console.WriteLine(res);
-                this.Close();
             }
             catch (Exception ex)
             {
                 var notice = new Notification(ex.Message);
                 notice.Show();
             }
+
+            this.Close();
         }
 
         public new void Close()
