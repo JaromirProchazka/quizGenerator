@@ -11,7 +11,8 @@ namespace QuizLogicalComponents.QuizCreationChain
     /// <summary>
     /// Simply returns the result ending the Chain. 
     /// </summary>
-    public sealed record class FinalizeTopicCreationChain :
+    /// <param name="FirstStep">The Starting step chain of the to be Disposed</param>
+    public sealed record class FinalizeTopicCreationChain(TopicCreationStep FirstStep) :
        TopicCreationStep
     {
         public override TopicCreationStep? Next { get => null; }
@@ -19,7 +20,7 @@ namespace QuizLogicalComponents.QuizCreationChain
         /// <summary>
         /// The Product of last Step. 
         /// </summary>
-        public new TopicProduct? BetweenStep = null;
+        public override TopicProduct? BetweenStep { get; set; } = null;
 
         internal override TopicProduct Step()
         {
@@ -28,6 +29,7 @@ namespace QuizLogicalComponents.QuizCreationChain
             BetweenStep.pathToSource = Path.Combine(topicPath, QuestionsFile.notesFileName);
             BetweenStep.pathToQuiz = Path.Combine(topicPath, QuestionsFile.questionsFileName);
 
+            FirstStep.Dispose();
             return BetweenStep;
         }
     }
@@ -41,7 +43,7 @@ namespace QuizLogicalComponents.QuizCreationChain
         /// <summary>
         /// The Product of last Step. 
         /// </summary>
-        public new TopicProduct? BetweenStep = null;
+        public override TopicProduct? BetweenStep { get; set; } = null;
 
         /// <summary>
         /// Default Initializes the running Product and returns it.

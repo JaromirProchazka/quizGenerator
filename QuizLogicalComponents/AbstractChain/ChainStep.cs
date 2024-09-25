@@ -12,6 +12,7 @@ namespace QuizLogicalComponents.AbstractChain
     /// </summary>
     /// <typeparam name="ProductT">The type of the Product of the chain. Should implement Default constructor.</typeparam>
     public abstract record class ChainStep<ProductT>
+        where ProductT : ChainProduct
     {
         /// <summary>
         /// Next Step in the Chain.
@@ -30,6 +31,11 @@ namespace QuizLogicalComponents.AbstractChain
         public virtual ProductT? BetweenStep { get; set; }
 
         /// <summary>
+        /// The Final result of the chain. If null, the result isn't computed yet.
+        /// </summary>
+        public ProductT? Result { get; protected set; } = null;
+
+        /// <summary>
         /// Adds a step to the chain.
         /// </summary>
         /// <param name="next">The next step to add</param>
@@ -45,14 +51,16 @@ namespace QuizLogicalComponents.AbstractChain
         /// </summary>
         public virtual ProductT DoStep()
         {
-            var res = Step();
+            var betweenResult = Step();
 
             if (Next != null)
             {
-                Next.BetweenStep = res;
-                return Next.DoStep();
+                Next.BetweenStep = betweenResult;
+                Result = Next.DoStep();
+                // Here, the whole chain was transited
+                return Result;
             }
-            else return res;
+            else return betweenResult; // Here, this is the final result
         }
 
         /// <summary>

@@ -8,7 +8,7 @@ using System.Threading.Tasks;
 namespace QuizLogicalComponents.AbstractChain
 {
     public abstract record class ChainBuilder<StepT, ProductT> 
-        where ProductT : class, new()
+        where ProductT : ChainProduct, new()
         where StepT : ChainStep<ProductT>
     {
         /// <summary>

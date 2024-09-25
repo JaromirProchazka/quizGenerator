@@ -13,11 +13,11 @@ using quizGenerator;
 
 namespace QGenerator.UIComponents
 {
-    public partial class ChooseQuizBeginningFrom : Form
+    public partial class ChooseQuizBeginningFrom : ChainStepForm<QuizStartingStep, QuizProduct, ChainStartingBuilder>
     {
         string pathToQuiz;
 
-        public ChooseQuizBeginningFrom(string pathToQuiz)
+        public ChooseQuizBeginningFrom(string pathToQuiz, ChainStartingBuilder builder) : base(builder)
         {
             InitializeComponent();
             this.pathToQuiz = pathToQuiz;
@@ -39,20 +39,23 @@ namespace QGenerator.UIComponents
         {
             try
             {
-                var builder = new ChainStartingBuilder();
+                QuizStartingStep thisStep;
 
                 string selectedOption = (string)notesChooseOptions.SelectedItem;
                 if (selectedOption == ContinueQuizWhereLastEnded.GetLabel()) 
                 {
-                    builder.AddStep(new ContinueQuizWhereLastEnded(pathToQuiz));
+                    thisStep = new ContinueQuizWhereLastEnded(pathToQuiz);
                 }
                 else if (selectedOption == StartNewQuizFromBeginning.GetLabel())
                 {
-                    builder.AddStep(new StartNewQuizFromBeginning(pathToQuiz));
+                    thisStep = new StartNewQuizFromBeginning(pathToQuiz);
                 }
+                else return;
 
-                var res = (QuizProduct)builder.Build().DoStep();
-                new questionsForm(res.state).Show();
+                Builder.AddStep(thisStep);
+                var res = Finalize();
+                if (res != null) new questionsForm(res.state).Show();
+
                 this.Close();
             }
             catch (Exception ex)

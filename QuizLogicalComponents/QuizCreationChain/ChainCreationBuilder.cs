@@ -25,7 +25,7 @@ namespace QuizLogicalComponents.QuizCreationChain
         /// <returns>Start of the Chain.</returns>
         public override ChainStep<TopicProduct> Build()
         {
-            _ = AddStep(new FinalizeTopicCreationChain());
+            _ = AddStep(new FinalizeTopicCreationChain((TopicCreationStep)Start));
             return Start;
         }
     }

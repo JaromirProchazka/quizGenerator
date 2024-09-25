@@ -14,12 +14,12 @@ namespace QuizLogicalComponents.TopicStartingChain
     /// </summary>
     public abstract record class QuizStartingStep : ChainStep<QuizProduct>
     {
-        //public new virtual QuizStartingStep? Next { get; protected set; }
+        //public override QuizStartingStep? Next { get; protected set; }
 
         /// <summary>
         /// The Quiz Starting product of last Step. If none given, it is default initialized.
         /// </summary>
-        //public new virtual QuizProduct? BetweenStep { get; set; } = null;
+        public override QuizProduct? BetweenStep { get; set; } = null;
     }
 
     /// <summary>
