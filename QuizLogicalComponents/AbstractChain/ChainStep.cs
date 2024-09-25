@@ -12,6 +12,7 @@ namespace QuizLogicalComponents.AbstractChain
     /// </summary>
     /// <typeparam name="ProductT">The type of the Product of the chain. Should implement Default constructor.</typeparam>
     public abstract record class ChainStep<ProductT>
+        where ProductT : ChainProduct
     {
         /// <summary>
         /// Next Step in the Chain.

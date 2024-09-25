@@ -11,17 +11,17 @@ namespace QuizLogicalComponents.QuizCreationChain
     /// <summary>
     /// Abstract Step of the Chain of responsibility, that results in the creation of the Topic with quiz from some source.
     /// </summary>
-    public abstract record class TopicCreationStep() :
+    public abstract record class TopicCreationStep :
         ChainStep<TopicProduct>, IDisposable
     {
-        public new virtual TopicCreationStep? Next { get; protected set; }
+        //public override ChainStep<TopicProduct>? Next { get; protected set; }
 
         /// <summary>
         /// Disposes Successors temporary data. (In override call base.Dispose();)
         /// </summary>
         public virtual void Dispose()
         {
-            if (Next != null) Next?.Dispose();
+            if (Next != null) ((TopicCreationStep)Next)?.Dispose();
         }
     }
 

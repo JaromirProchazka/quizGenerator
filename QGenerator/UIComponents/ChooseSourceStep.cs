@@ -15,12 +15,11 @@ using static System.Windows.Forms.LinkLabel;
 
 namespace QGenerator.UIComponents
 {
-    public partial class ChooseSourceStep : Form
+    public partial class ChooseSourceStep : ChainStepForm<TopicCreationStep, TopicProduct, ChainCreationBuilder>
     {
-        StartTopicCreationChain TopicCreator = new StartTopicCreationChain();
         Action finalize;
 
-        public ChooseSourceStep(Action finalize)
+        public ChooseSourceStep(Action finalize, ChainCreationBuilder builder) : base(builder)
         {
             InitializeComponent();
             this.finalize = finalize;
@@ -65,18 +64,13 @@ namespace QGenerator.UIComponents
                 }
                 else return;
 
-                thisStep.SetNext(new FinalizeTopicCreationChain());
-                TopicCreator.SetNext(thisStep);
-
-                TopicProduct? res = null;
-                res = (TopicProduct)TopicCreator.DoStep();
-
-                Console.WriteLine(res);
+                //TopicCreator.SetNext(thisStep);
+                Builder.AddStep(thisStep);
+                var res = Finalize();
             }
             catch (Exception ex)
             {
-                var notice = new Notification(ex.Message);
-                notice.Show();
+                Notification.Notice(ex.Message);
             }
 
             this.Close();
@@ -84,7 +78,6 @@ namespace QGenerator.UIComponents
 
         public new void Close()
         {
-            TopicCreator.Dispose();
             finalize.Invoke();
             base.Close();
         }

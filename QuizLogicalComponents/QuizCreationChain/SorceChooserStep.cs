@@ -25,7 +25,7 @@ namespace QuizLogicalComponents.QuizCreationChain
         /// <summary>
         /// Product of the last step.
         /// </summary>
-        public new TopicProduct? BetweenStep = null;
+        public override TopicProduct? BetweenStep { get; set; } = null;
 
         /// <summary>
         /// Temporary Files used for the source. Present in current directory.

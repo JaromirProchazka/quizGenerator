@@ -2,6 +2,9 @@
 using QGenerator.UIComponents;
 using System;
 using System.Windows.Forms;
+using QuizLogicalComponents.TopicStartingChain;
+using QuizLogicalComponents.QuizCreationChain;
+using QGenerator;
 
 namespace quizGenerator
 {
@@ -47,8 +50,8 @@ namespace quizGenerator
             //    updateList(TopicsList);
             //}
 
-            var creationWindow = new ChooseSourceStep(onTopicCreationFinish);
-            creationWindow.Show();
+            var chain = ChainUiInit.GetCreationChain(onTopicCreationFinish);
+            chain.Show();
         }
 
         private void onTopicCreationFinish()
@@ -69,7 +72,8 @@ namespace quizGenerator
                 //Topics.OpenQuizPage(
                 //    selectedItem.LinkToQuestions
                 //);
-                new ChooseQuizBeginningFrom(selectedItem.LinkToQuestions).Show();
+                var chain = ChainUiInit.GetStartingChain(selectedItem.LinkToQuestions);
+                chain.Show();
             }
         }
 

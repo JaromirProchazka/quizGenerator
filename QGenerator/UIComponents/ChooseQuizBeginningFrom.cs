@@ -13,11 +13,11 @@ using quizGenerator;
 
 namespace QGenerator.UIComponents
 {
-    public partial class ChooseQuizBeginningFrom : Form
+    public partial class ChooseQuizBeginningFrom : ChainStepForm<QuizStartingStep, QuizProduct, ChainStartingBuilder>
     {
         string pathToQuiz;
 
-        public ChooseQuizBeginningFrom(string pathToQuiz)
+        public ChooseQuizBeginningFrom(string pathToQuiz, ChainStartingBuilder builder) : base(builder)
         {
             InitializeComponent();
             this.pathToQuiz = pathToQuiz;
