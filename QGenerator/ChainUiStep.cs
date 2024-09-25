@@ -32,7 +32,7 @@ namespace QGenerator
         /// The running builder of the Chain.
         /// </summary>
         internal BuilderT Builder;
-        public ChainStepForm<StepT, ProductT, BuilderT> SBuilder(BuilderT builder)
+        public ChainStepForm<StepT,ProductT,BuilderT> SBuilder(BuilderT builder)
         {
             Builder = builder;
             return this;
@@ -45,7 +45,8 @@ namespace QGenerator
         /// <summary>
         /// Does all the jobs before this window is ready to close.
         /// </summary>
-        public ProductT? Finalize()
+        /// <returns>If this step Produces the finished product, it return it. Otherwise it returns null.</returns>
+        public virtual ProductT? Finalize()
         {
             if (Next == null)
             {

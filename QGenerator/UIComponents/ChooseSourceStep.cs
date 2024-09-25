@@ -64,7 +64,6 @@ namespace QGenerator.UIComponents
                 }
                 else return;
 
-                //TopicCreator.SetNext(thisStep);
                 Builder.AddStep(thisStep);
                 var res = Finalize();
             }
