@@ -40,10 +40,6 @@ namespace FileManager
         public static string quizState = "state.json";
         public static string questionsScriptName = "questionsScript.js";
 
-        static string baseMarkdown = "<!DOCTYPE html><html lang=\"en\" xmlns=\"http://www.w3.org/1999/xhtml\"><head><meta charset=\"utf-8\" /><title></title><script type=\"text/javascript\" language=\"javascript\" src=\".\\..\\" + scriptFileName + "\"></script></head><body></body><link rel=\"stylesheet\" href=\".\\..\\" + stylesFileName + "\" /></html>";
-        static string questionTemplate = "<div class=\"question_box\" id=\"question_0\" style=\"display: none\"><h1 class=\"question_name\"></h1><div class=\"question_answer\" style=\"display: none\"></div></div>";
-        static string headingTemplate = "<div class=\"heading_sections\"><h1 class=\"section_heading\" style=\"display: none\"></h1><div class=\"heading_section_contents\" style=\"display: none\"></div></div>";
-
         static string templateSourcesPath = Path.Combine(AppDomain.CurrentDomain.BaseDirectory, "FileManagers", Path.GetDirectoryName(utilFolderPath));
 
         /// <summary>
@@ -55,7 +51,7 @@ namespace FileManager
             HtmlDocument htmlFile = new HtmlDocument();
             htmlFile.Load(notesPath);
 
-            string topicTitle = getHtmlTitle(htmlFile);
+            string topicTitle = NotesParser.getHtmlTitle(htmlFile);
             string topicName = Path.GetFileNameWithoutExtension(notesPath);
             string topicFolderPath = Path.Combine(
                 utilFolderPath,
@@ -238,171 +234,8 @@ namespace FileManager
         /// </summary>
         public static string CreateQuestionsFileText(string notesMarkdown)
         {
-            int idCounter = 1;
-            int currentParentHeadingRank = 0;
-            bool noQuestionInHeadingYet = true;
-
-            HtmlDocument notes = new HtmlDocument();
-            HtmlDocument result = new HtmlDocument();
-            notes.LoadHtml(notesMarkdown);
-            result.LoadHtml(baseMarkdown);
-            HtmlNode resultCurrentPosition = result.DocumentNode.SelectSingleNode("//body");
-
-            HtmlNode bodyNode = notes.DocumentNode.SelectSingleNode("//body");
-            goThrowNodes(bodyNode);
-
-            return result.DocumentNode.OuterHtml;
-
-
-            void goThrowNodes(HtmlNode node)
-            {
-                HtmlNodeCollection children = node.ChildNodes;
-                bool areInHeading = false;
-                HtmlNode currentHeadingAnswer = null;
-                foreach (HtmlNode child in children)
-                {
-                    areInHeading = false;
-                    if (child.NodeType != HtmlNodeType.Element)
-                    {
-                        continue;
-                    }
-
-                    if (child.Name == "header")
-                    {
-                        continue;
-                    }
-
-                    if (isHeading(child))
-                    {
-                        addHeading(child);
-                        areInHeading = true;
-                        noQuestionInHeadingYet = true;
-                        currentHeadingAnswer = resultCurrentPosition.SelectSingleNode("//*[contains(@class, 'heading_section_contents')]");
-                    }
-                    else if (child.Name == "em")
-                    {
-                        noQuestionInHeadingYet = false;
-                        addQuestion(child);
-                    }
-
-                    if (!areInHeading && child.Name != "em")
-                    {
-                        goThrowNodes(child);
-                    }
-
-                    if (currentParentHeadingRank != 0 && noQuestionInHeadingYet && !areInHeading && currentHeadingAnswer != null)
-                    {
-                        currentHeadingAnswer.AppendChild(child);
-                    }
-                }
-
-
-                void addQuestion(HtmlNode question)
-                {
-                    if (question == null) { return; }
-                    HtmlDocument questionBoxTemplate = new HtmlDocument();
-                    questionBoxTemplate.LoadHtml(questionTemplate);
-                    addIdCounterToNodeInDoc(questionBoxTemplate);
-
-                    HtmlNode latestQuestionBox = questionBoxTemplate
-                        .DocumentNode
-                        .SelectSingleNode("//*[contains(@class, 'question_box')]");
-                    HtmlNode questionBox = resultCurrentPosition
-                        .AppendChild(latestQuestionBox);
-
-                    HtmlNode questionName = questionBox.SelectSingleNode("//*[contains(@class, 'question_name')]");
-                    HtmlNode questionAnswear = questionBox
-                        .SelectSingleNode("//*[contains(@class, 'question_answer')]");
-                    if (questionAnswear != null && questionName != null)
-                    {
-                        questionBox.SelectSingleNode("//*[contains(@class, 'question_name')]").InnerHtml = question.InnerText;
-                        questionAnswear.AppendChild(ParentTextNode(question));
-                    }
-                }
-
-                void addHeading(HtmlNode heading)
-                {
-                    if (heading == null) { return; }
-                    HtmlDocument headingBoxTemplate = new HtmlDocument();
-                    headingBoxTemplate.LoadHtml(headingTemplate);
-                    addIdCounterToNodeInDoc(headingBoxTemplate);
-                    int headingRank = getHeadingRank(heading);
-
-                    if (headingRank <= currentParentHeadingRank)
-                    {
-                        HtmlNode currentParentHeading = resultCurrentPosition.ParentNode;
-                        int parentHeadingRank = currentParentHeadingRank - 1;
-                        while (parentHeadingRank >= headingRank)
-                        {
-                            currentParentHeading = currentParentHeading.ParentNode;
-                            parentHeadingRank--;
-                        }
-                        resultCurrentPosition = currentParentHeading;
-                    }
-                    HtmlNode headingBox = resultCurrentPosition.AppendChild(headingBoxTemplate.DocumentNode.SelectSingleNode("//div"));
-                    resultCurrentPosition = headingBox.SelectSingleNode("//*[contains(@class, 'heading_sections')]");
-                    currentParentHeadingRank = headingRank;
-
-                    headingBox.SelectSingleNode("//*[contains(@class, 'section_heading')]").InnerHtml = heading.InnerText;
-                }
-
-                void addIdCounterToNodeInDoc(HtmlDocument docForId)
-                {
-                    docForId.DocumentNode
-                        .SelectSingleNode("//div")
-                        .SetAttributeValue("id", $"question_{idCounter}");
-                    idCounter++;
-                }
-            }
-        }
-
-        /// <summary>
-        /// Takes a HtmlNode and if it is a heading like 'h3', returns it's rank, in our situation '3' or it returns '0', if it isn't a heading node.
-        /// </summary>
-        private static int getHeadingRank(HtmlNode hx)
-        {
-            int rank = 0;
-            if (hx.Name[0] != 'h')
-            {
-                return 0;
-            }
-
-            try
-            {
-                rank = Convert.ToInt32(hx.Name.Substring(1, hx.Name.Length - 1));
-            }
-            catch
-            {
-                return 0;
-            }
-
-            return rank;
-        }
-
-        private static bool isHeading(HtmlNode node)
-        {
-            return getHeadingRank(node) > 0;
-        }
-
-        private static HtmlNode ParentTextNode(HtmlNode keySegment)
-        {
-            string[] blockElements = { "p", "ul", "ol", "pre", "div", "blockquote", "dl", "figure", "hr" };
-            HtmlNode parent = keySegment;
-            while (!blockElements.Contains(parent.Name) && !isHeading(parent))
-            {
-                parent = parent.ParentNode;
-            }
-            return parent;
-        }
-
-        private static string getHtmlTitle(HtmlDocument htmlFile)
-        {
-            HtmlNode title = htmlFile.DocumentNode.SelectSingleNode("//title");
-            if (title != null)
-            {
-                return title.InnerText;
-            }
-            return "";
+            var parser = new NotesParser();
+            return parser.CreateQuestionsFileText(notesMarkdown);
         }
     }
 
