@@ -66,6 +66,22 @@ namespace FileManagerTests1
         }
 
         [TestMethod()]
+        public void createQuestionsFileText_RepeatedParsing()
+        {
+            string questions1 = cleanUp(QuestionsFile.CreateQuestionsFileText(tData("headingAnswersNotes.html")));
+            string message1 = areHtmlsEquivalent(tData("headingAnswersQuestions.html"), questions1);
+            Assert.IsTrue(message1 == "", message1);
+
+            string questions2 = cleanUp(QuestionsFile.CreateQuestionsFileText(tData("headingsNotes.html")));
+            string message2 = areHtmlsEquivalent(tData("headingQuestions.html"), questions2);
+            Assert.IsTrue(message2 == "", message2);
+
+            string questions3 = cleanUp(QuestionsFile.CreateQuestionsFileText(tData("redundantNotes.html")));
+            string message3 = areHtmlsEquivalent(tData("basicQuestions.html"), questions3);
+            Assert.IsTrue(message3 == "", message3);
+        }
+
+        [TestMethod()]
         public void createQuestionsFileText_NoNotes()
         {
             string questions = cleanUp(QuestionsFile.CreateQuestionsFileText(tData("noNotes.html")));

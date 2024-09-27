@@ -10,13 +10,31 @@ using System.Xml.Linq;
 
 namespace FileManager
 { 
+    /// <summary>
+    /// Class used for Parsing the Html notes source and geting the questions filed.
+    /// </summary>
     internal record class NotesParser
     {
+        /// <summary>
+        /// Base markdown template of an empty Questions html file.
+        /// </summary>
         internal static string baseMarkdown = "<!DOCTYPE html><html lang=\"en\" xmlns=\"http://www.w3.org/1999/xhtml\"><head><meta charset=\"utf-8\" /><title></title><script type=\"text/javascript\" language=\"javascript\" src=\".\\..\\" + QuestionsFile.scriptFileName + "\"></script></head><body></body><link rel=\"stylesheet\" href=\".\\..\\" + QuestionsFile.stylesFileName + "\" /></html>";
+        /// <summary>
+        /// Template for empty question html node.
+        /// </summary>
         internal static string questionTemplate = "<div class=\"question_box\" id=\"question_0\" style=\"display: none\"><h1 class=\"question_name\"></h1><div class=\"question_answer\" style=\"display: none\"></div></div>";
+        /// <summary>
+        /// Template for empty heading html node.
+        /// </summary>
         internal static string headingTemplate = "<div class=\"heading_sections\"><h1 class=\"section_heading\" style=\"display: none\"></h1><div class=\"heading_section_contents\" style=\"display: none\"></div></div>";
 
+        /// <summary>
+        /// State of the parsing of the Html file.
+        /// </summary>
         NotesParsingState state = new NotesParsingState();
+        /// <summary>
+        /// State of the result of the parsing of the Html file.
+        /// </summary>
         QuizFileResult resultState;
 
         public NotesParser()
@@ -45,6 +63,10 @@ namespace FileManager
             return resultText;
         }
 
+        /// <summary>
+        /// Recursive function used for iterating for all nested children of a given node.
+        /// </summary>
+        /// <param name="node">The html node to be searched throw.</param>
         void goThrowNodes(HtmlNode node)
         {
             HtmlNodeCollection children = node.ChildNodes;
@@ -56,7 +78,7 @@ namespace FileManager
             }
         }
 
-        void onNode(HtmlNode child, ref bool areInHeading, ref HtmlNode currentHeadingAnswer)
+        internal virtual void onNode(HtmlNode child, ref bool areInHeading, ref HtmlNode currentHeadingAnswer)
         {
             areInHeading = false;
             if (child.NodeType != HtmlNodeType.Element)
@@ -109,9 +131,18 @@ namespace FileManager
         }
     }
 
+    /// <summary>
+    /// Holds the state of the notes html parsing result. 
+    /// </summary>
     internal record class QuizFileResult
     {
+        /// <summary>
+        /// the resulting questions html contained in a node.
+        /// </summary>
         public HtmlNode? resultCurrentPosition;
+        /// <summary>
+        /// The html parsing state.
+        /// </summary>
         private NotesParsingState state;
 
         public QuizFileResult(NotesParsingState state) 
@@ -120,6 +151,9 @@ namespace FileManager
             Reset();
         }
 
+        /// <summary>
+        /// Resets the state to its initial conditions.
+        /// </summary>
         public void Reset()
         {
             resultCurrentPosition = null;
@@ -222,13 +256,18 @@ namespace FileManager
         }
     }
 
+    /// <summary>
+    /// State of the Html parsing.
+    /// </summary>
     internal record class NotesParsingState
     {
         public int idCounter;
         public int currentParentHeadingRank;
         public bool noQuestionInHeadingYet;
-        
 
+        /// <summary>
+        /// Resets the state to its initial conditions.
+        /// </summary>
         public NotesParsingState()
         {
             Reset();

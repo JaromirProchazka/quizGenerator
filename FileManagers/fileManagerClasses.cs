@@ -41,10 +41,12 @@ namespace FileManager
         public static string questionsScriptName = "questionsScript.js";
 
         static string templateSourcesPath = Path.Combine(AppDomain.CurrentDomain.BaseDirectory, "FileManagers", Path.GetDirectoryName(utilFolderPath));
+        internal static NotesParser parser = new NotesParser();
 
         /// <summary>
         /// Creates new topic folder with questions file to be later opened as quiz.
         /// </summary>
+        /// <param name="notesPath">File path to the source notes</param>
         /// <returns>Path to the Topic</returns>
         public static string CreateNewTopic(string notesPath)
         {
@@ -93,6 +95,12 @@ namespace FileManager
             return false;
         }
 
+        /// <summary>
+        /// Renames the Topic in the Topics fiolder
+        /// </summary>
+        /// <param name="currentTopicDirectoryPath">Path to the topics directory</param>
+        /// <param name="newName">The new Topic name</param>
+        /// <returns>New path to the Topics folder with new name, if the <see cref="currentTopicDirectoryPath"/> is valid</returns>
         public static string? RenameTopic(string currentTopicDirectoryPath, string newName)
         {
             if (isTopicFolder(currentTopicDirectoryPath))
@@ -234,7 +242,6 @@ namespace FileManager
         /// </summary>
         public static string CreateQuestionsFileText(string notesMarkdown)
         {
-            var parser = new NotesParser();
             return parser.CreateQuestionsFileText(notesMarkdown);
         }
     }
