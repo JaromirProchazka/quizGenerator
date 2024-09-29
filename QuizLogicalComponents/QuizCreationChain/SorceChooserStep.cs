@@ -157,7 +157,7 @@ namespace QuizLogicalComponents.QuizCreationChain
         public static string NotionApiUrl = "https://notion-page-to-html-api.vercel.app";
 
         /// <summary>
-        /// The Id of page used by Api to fatch the data
+        /// The Id of page used by Api to fetch the data
         /// </summary>
         private string Id;
 
