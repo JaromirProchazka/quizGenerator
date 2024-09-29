@@ -31,26 +31,29 @@
             MessageLabel = new Label();
             SuspendLayout();
             // 
-            // label1
+            // MessageLabel
             // 
+            MessageLabel.AllowDrop = true;
             MessageLabel.AutoSize = true;
             MessageLabel.Cursor = Cursors.IBeam;
-            MessageLabel.Location = new Point(158, 104);
-            MessageLabel.Name = "label1";
-            MessageLabel.Size = new Size(53, 15);
+            MessageLabel.Location = new Point(12, 9);
+            MessageLabel.MaximumSize = new Size(300, 200);
+            MessageLabel.Name = "MessageLabel";
+            MessageLabel.Size = new Size(67, 20);
             MessageLabel.TabIndex = 0;
             MessageLabel.Text = "Message";
-            MessageLabel.TextAlign = ContentAlignment.MiddleCenter;
+            MessageLabel.Click += MessageLabel_Click;
             // 
             // Notification
             // 
-            AutoScaleDimensions = new SizeF(7F, 15F);
+            AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
-            ClientSize = new Size(368, 229);
+            ClientSize = new Size(421, 305);
             Controls.Add(MessageLabel);
+            Margin = new Padding(3, 4, 3, 4);
             Name = "Notification";
             Text = "Form1";
-            Load += this.Notification_Load;
+            Load += Notification_Load;
             ResumeLayout(false);
             PerformLayout();
         }

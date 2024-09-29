@@ -17,7 +17,7 @@ namespace QGenerator.UIComponents
     {
         string pathToQuiz;
 
-        public ChooseQuizBeginningFrom(string pathToQuiz, ChainStartingBuilder builder) : base(builder)
+        public ChooseQuizBeginningFrom(string pathToQuiz)
         {
             InitializeComponent();
             this.pathToQuiz = pathToQuiz;

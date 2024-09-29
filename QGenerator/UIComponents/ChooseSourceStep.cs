@@ -19,7 +19,7 @@ namespace QGenerator.UIComponents
     {
         Action finalize;
 
-        public ChooseSourceStep(Action finalize, ChainCreationBuilder builder) : base(builder)
+        public ChooseSourceStep(Action finalize)
         {
             InitializeComponent();
             this.finalize = finalize;
@@ -52,7 +52,7 @@ namespace QGenerator.UIComponents
                 string selectedOption = (string)notesChooseOptions.SelectedItem;
                 if (selectedOption == ChooseLocalHtmlFileOption.GetLabel())
                 {
-                    thisStep = new ChooseLocalHtmlFileOption(GetLocalFile);
+                    thisStep = new ChooseLocalHtmlFileOption(GetLocalFile, finalize);
                 }
                 else if (selectedOption == ChooseNotionNotes.GetLabel())
                 {
@@ -60,7 +60,7 @@ namespace QGenerator.UIComponents
                     if (NotionLink.Text == "" || !Uri.TryCreate(NotionLink.Text, UriKind.Absolute, out outUri))
                         throw new Exception("Invalid Notion page Url! Make sure to copy the link to your PUBLIC Notion page correctly!");
 
-                    thisStep = new ChooseNotionNotes(outUri);
+                    thisStep = new ChooseNotionNotes(outUri, finalize);
                 }
                 else return;
 
@@ -73,12 +73,6 @@ namespace QGenerator.UIComponents
             }
 
             this.Close();
-        }
-
-        public new void Close()
-        {
-            finalize.Invoke();
-            base.Close();
         }
 
         private FileStream? GetLocalFile()

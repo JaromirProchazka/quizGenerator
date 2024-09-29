@@ -27,13 +27,16 @@ namespace QuizLogicalComponents.QuizCreationChain
         /// </summary>
         public override TopicProduct? BetweenStep { get; set; } = null;
 
+        public Action finalize;
+
         /// <summary>
         /// Temporary Files used for the source. Present in current directory.
         /// </summary>
         protected TempFileCollection _tempFiles;
 
-        public ChooseNotesSource()
+        public ChooseNotesSource(Action finalize)
         {
+            this.finalize = finalize;
             string directoryPath = Path.Combine(Environment.CurrentDirectory, "temps");
             if (!Directory.Exists(directoryPath)) Directory.CreateDirectory(directoryPath);
 
@@ -55,7 +58,14 @@ namespace QuizLogicalComponents.QuizCreationChain
             base.Dispose();
             _tempFiles.Delete();
         }
+
+        internal override TopicProduct Step()
+        {
+            BetweenStep.finalize = this.finalize;
+            return BetweenStep;
+        }
     }
+
 
     /// <summary>
     /// Step that lets user Choose a html file as the notes source.
@@ -74,7 +84,7 @@ namespace QuizLogicalComponents.QuizCreationChain
         /// </summary>
         public Func<FileStream?> FileStreamFetcher;
 
-        public ChooseLocalHtmlFileOption(Func<FileStream> fileStreamFetcher)
+        public ChooseLocalHtmlFileOption(Func<FileStream> fileStreamFetcher, Action finalize) : base(finalize)
         {
             this.FileStreamFetcher = fileStreamFetcher;
 
@@ -86,6 +96,8 @@ namespace QuizLogicalComponents.QuizCreationChain
 
         internal override TopicProduct Step()
         {
+            _ = base.Step();
+
             // add file to temporaries with the .html extension
             source = _tempFiles.AddExtension("html");
             createTemporaryFile(source);
@@ -124,6 +136,7 @@ namespace QuizLogicalComponents.QuizCreationChain
         }
     }
 
+
     /// <summary>
     /// Step that lets user Choose notion page as the notes source. This Page is downloaded of Step and is not synced with the actual notion page.
     /// <para>
@@ -150,7 +163,7 @@ namespace QuizLogicalComponents.QuizCreationChain
 
         public new static string GetLabel() => "Choose Notion page";
 
-        public ChooseNotionNotes(Uri notionPageUrl)
+        public ChooseNotionNotes(Uri notionPageUrl, Action finalize) : base(finalize)
         {
             NotionPageUrl = notionPageUrl;
 
@@ -160,6 +173,8 @@ namespace QuizLogicalComponents.QuizCreationChain
 
         internal override TopicProduct Step()
         {
+            _ = base.Step();
+
             var notionAPI = RestService.For<INotionPageAPI>(NotionApiUrl);
             var dataResponse = notionAPI.GetPage(Id);
 
@@ -174,7 +189,7 @@ namespace QuizLogicalComponents.QuizCreationChain
             } 
             if (!dataResponceResult.IsSuccessStatusCode)
             {
-                throw new InvalidOperationException($"The request for the Notion notes exited with code ({(int)dataResponceResult.StatusCode}: {dataResponceResult.StatusCode})! Please make sure that YOUR NOTION PAGE IS PUBLIC!");
+                throw new InvalidOperationException($"The request for the Notion notes exited with code ({(int)dataResponceResult.StatusCode}: {dataResponceResult.StatusCode})! Please make sure that YOUR NOTION PAGE IS PUBLIC! {dataResponceResult.Error.Message}!");
             }
 
             var data = dataResponceResult.Content;

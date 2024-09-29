@@ -14,14 +14,15 @@ namespace QGenerator
     public static class ChainUiInit
     {
         /// <summary>
-        /// Getter for a Chain of responsibility, which is responsible for creating new Topic.
+        /// Getter for a Chain of responsibility, which is responsible for Creating new Topic.
         /// </summary>
         /// <param name="finalize">A function to be called on the topic creation, for instance a Update of list of topics.</param>
         /// <returns>The First Step Form ready to be Shown.</returns>
         public static ChainStepForm<TopicCreationStep,TopicProduct,ChainCreationBuilder> GetCreationChain(Action finalize)
         {
             var builder = new ChainCreationBuilder();
-            var chain = new ChooseSourceStep(finalize, builder);
+            var chain = new ChooseSourceStep(finalize).SBuilder(builder); // first step
+            _ = chain.SNext(new ChooseQuestionsFormat());
 
             return chain;
         }
@@ -34,7 +35,8 @@ namespace QGenerator
         public static ChainStepForm<QuizStartingStep,QuizProduct,ChainStartingBuilder> GetStartingChain(string pathToQuiz)
         {
             var builder = new ChainStartingBuilder();
-            var chain = new ChooseQuizBeginningFrom(pathToQuiz, builder);
+            var chain = new ChooseQuizBeginningFrom(pathToQuiz).SBuilder(builder);
+            //_ = chain.SNext(  );
 
             return chain;
         }

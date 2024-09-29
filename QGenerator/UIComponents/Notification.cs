@@ -5,6 +5,7 @@ using System.Data;
 using System.Drawing;
 using System.Linq;
 using System.Net.NetworkInformation;
+using System.Reflection.Emit;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
@@ -19,6 +20,9 @@ namespace QGenerator.UIComponents
         {
             InitializeComponent();
             MessageText = messageText;
+
+            MessageLabel.MaximumSize = new Size(300, 0);
+            MessageLabel.AutoSize = true;
         }
 
         private void Notification_Load(object sender, EventArgs e)
@@ -34,6 +38,11 @@ namespace QGenerator.UIComponents
         {
             var notice = new Notification(messageText);
             notice.Show();
+        }
+
+        private void MessageLabel_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }

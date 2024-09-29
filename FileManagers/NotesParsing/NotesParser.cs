@@ -8,12 +8,12 @@ using System.Text.Json.Nodes;
 using System.Threading.Tasks;
 using System.Xml.Linq;
 
-namespace FileManager
-{ 
+namespace FileManager.NotesParsing
+{
     /// <summary>
     /// Class used for Parsing the Html notes source and geting the questions filed.
     /// </summary>
-    internal record class NotesParser
+    public record class NotesParser
     {
         /// <summary>
         /// Base markdown template of an empty Questions html file.
@@ -36,11 +36,17 @@ namespace FileManager
         /// State of the result of the parsing of the Html file.
         /// </summary>
         QuizFileResult resultState;
+        /// <summary>
+        /// Analyses the html node and determines, if it is a question.
+        /// </summary>
+        internal QuestionNodeParams questionNodeAnalyzer;
 
         public NotesParser()
         {
             resultState = new QuizFileResult(state);
+            questionNodeAnalyzer = DefaultAnalyzer; 
         }
+        public static QuestionNodeParams DefaultAnalyzer { get => new AndQuestionNodeParams().SetName("em"); }
 
         /// <summary>
         /// Takes a html file with notes, and creates a corresponding html markdown contents of just the quiz parts of the notes in standartised format.
@@ -91,6 +97,9 @@ namespace FileManager
                 return;
             }
 
+            // Determine if current node is the looked for question
+            bool isQuestion = questionNodeAnalyzer.Analyze(child);
+
             if (resultState.isHeading(child))
             {
                 resultState.addHeading(child);
@@ -98,13 +107,13 @@ namespace FileManager
                 state.noQuestionInHeadingYet = true;
                 currentHeadingAnswer = resultState.resultCurrentPosition.SelectSingleNode("//*[contains(@class, 'heading_section_contents')]");
             }
-            else if (child.Name == "em")
+            else if (isQuestion)
             {
                 state.noQuestionInHeadingYet = false;
                 resultState.addQuestion(child);
             }
 
-            if (!areInHeading && child.Name != "em")
+            if (!areInHeading && !isQuestion)
             {
                 goThrowNodes(child);
             }
@@ -145,7 +154,7 @@ namespace FileManager
         /// </summary>
         private NotesParsingState state;
 
-        public QuizFileResult(NotesParsingState state) 
+        public QuizFileResult(NotesParsingState state)
         {
             this.state = state;
             Reset();

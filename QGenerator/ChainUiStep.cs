@@ -31,15 +31,15 @@ namespace QGenerator
         /// <summary>
         /// The running builder of the Chain.
         /// </summary>
-        internal BuilderT Builder;
+        internal BuilderT? Builder = null;
         public ChainStepForm<StepT,ProductT,BuilderT> SBuilder(BuilderT builder)
         {
             Builder = builder;
             return this;
         }
 
-        public ChainStepForm(BuilderT bulder) { 
-            Builder = bulder;
+        public ChainStepForm() { 
+            //Builder = bulder;
         }
 
         /// <summary>

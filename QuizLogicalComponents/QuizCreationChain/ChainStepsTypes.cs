@@ -39,5 +39,10 @@ namespace QuizLogicalComponents.QuizCreationChain
         /// A path to a local file where the final quiz file is.
         /// </summary>
         public string? pathToQuiz { get; set; } = null;
+
+        /// <summary>
+        /// The final action to do on the Topic being created, like updating the list of topics.
+        /// </summary>
+        public Action? finalize { get; set; } = null;
     }
 }

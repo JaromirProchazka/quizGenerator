@@ -11,6 +11,7 @@ using System.Threading;
 using System.Runtime.InteropServices;
 using System.Runtime;
 using Microsoft.VisualBasic.FileIO;
+using FileManager.NotesParsing;
 
 namespace FileManager
 {
@@ -41,7 +42,22 @@ namespace FileManager
         public static string questionsScriptName = "questionsScript.js";
 
         static string templateSourcesPath = Path.Combine(AppDomain.CurrentDomain.BaseDirectory, "FileManagers", Path.GetDirectoryName(utilFolderPath));
-        internal static NotesParser parser = new NotesParser();
+
+        /// <summary>
+        /// Used for determining, which html nodes in the input source nodes are the questions 
+        /// </summary>
+        public static QuestionNodeParams? questionNodeAnalyzer { get; private set; }
+        public static void SetQuestionNodeAnalyzer(QuestionNodeParams value)
+        {
+            parser.questionNodeAnalyzer = value;
+            questionNodeAnalyzer = value;
+        }
+        internal static NotesParser parser;
+
+        static QuestionsFile()
+        {
+            parser = new NotesParser();
+        }
 
         /// <summary>
         /// Creates new topic folder with questions file to be later opened as quiz.

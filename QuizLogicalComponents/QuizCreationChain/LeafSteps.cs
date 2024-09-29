@@ -28,6 +28,7 @@ namespace QuizLogicalComponents.QuizCreationChain
 
             BetweenStep.pathToSource = Path.Combine(topicPath, QuestionsFile.notesFileName);
             BetweenStep.pathToQuiz = Path.Combine(topicPath, QuestionsFile.questionsFileName);
+            BetweenStep.finalize.Invoke(); // Updates the Topics list
 
             FirstStep.Dispose();
             return BetweenStep;
