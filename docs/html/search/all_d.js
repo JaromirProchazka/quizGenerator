@@ -8,11 +8,12 @@ var searchData=
   ['mainpage_2edesigner_2ecs_5',['mainPage.Designer.cs',['../main_page_8_designer_8cs.html',1,'']]],
   ['mainpage_5fload_6',['mainPage_Load',['../classquiz_generator_1_1main_page.html#a4a28a9de06464989a42d06fe32dd7991',1,'quizGenerator::mainPage']]],
   ['mainpagelistbox_7',['mainPageListBox',['../classquiz_generator_1_1topic_edit_box.html#a6b5ab7ca0576e81f66bd12cb5ab188f7',1,'quizGenerator::topicEditBox']]],
-  ['menu_8',['Quiz Menu',['../index.html#autotoc_md8',1,'']]],
+  ['menu_8',['Quiz Menu',['../index.html#autotoc_md6',1,'']]],
   ['menu_2ejs_9',['menu.js',['../menu_8js.html',1,'']]],
   ['menudata_2ejs_10',['menudata.js',['../menudata_8js.html',1,'']]],
   ['messagelabel_11',['MessageLabel',['../class_q_generator_1_1_u_i_components_1_1_notification.html#aca6053d3e0a2dd546ff0e25df8616d08',1,'QGenerator::UIComponents::Notification']]],
-  ['messagetext_12',['MessageText',['../class_q_generator_1_1_u_i_components_1_1_notification.html#a88ba44e122c00ef21b2df41f43dc1059',1,'QGenerator::UIComponents::Notification']]],
-  ['min_13',['Min',['../class_file_manager_1_1_priority_queue.html#a2771ff0d5d979b39332bb596982f6833',1,'FileManager::PriorityQueue']]],
-  ['movepreviousanswearedforward_14',['MovePreviousAnswearedForward',['../class_quiz_logical_components_1_1_quiz_states_1_1_i_quiz_state.html#a7ca67bf343320bfd2c6c0493e73ed987',1,'QuizLogicalComponents::QuizStates::IQuizState']]]
+  ['messagelabel_5fclick_12',['MessageLabel_Click',['../class_q_generator_1_1_u_i_components_1_1_notification.html#a64224e07c91ab8158e190f14a5066511',1,'QGenerator::UIComponents::Notification']]],
+  ['messagetext_13',['MessageText',['../class_q_generator_1_1_u_i_components_1_1_notification.html#a88ba44e122c00ef21b2df41f43dc1059',1,'QGenerator::UIComponents::Notification']]],
+  ['min_14',['Min',['../class_file_manager_1_1_priority_queue.html#a2771ff0d5d979b39332bb596982f6833',1,'FileManager::PriorityQueue']]],
+  ['movepreviousanswearedforward_15',['MovePreviousAnswearedForward',['../class_quiz_logical_components_1_1_quiz_states_1_1_quiz_state.html#a5d7c5d64963a1d8045ebe165d0d90ff9',1,'QuizLogicalComponents::QuizStates::QuizState']]]
 ];

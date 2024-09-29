@@ -1,4 +1,5 @@
 var _chain_steps_types_8cs =
 [
-    [ "TopicCreationStep", "_chain_steps_types_8cs.html#a86c83eb7edaf7d4292ed1e433c5fda8f", null ]
+    [ "QuizLogicalComponents.QuizCreationChain.TopicCreationStep", "class_quiz_logical_components_1_1_quiz_creation_chain_1_1_topic_creation_step.html", "class_quiz_logical_components_1_1_quiz_creation_chain_1_1_topic_creation_step" ],
+    [ "TopicProduct", "_chain_steps_types_8cs.html#a7759a0c68df7eb665adc4ebe29c57618", null ]
 ];

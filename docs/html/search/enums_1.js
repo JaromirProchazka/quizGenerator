@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['state_0',['State',['../class_file_manager_1_1_dag.html#a76f52d8a90d8adc96cd39f76354b8d5b',1,'FileManager::Dag']]]
+  ['nameoption_0',['NameOption',['../class_q_generator_1_1_u_i_components_1_1_choose_questions_format.html#aa02f1604e9f42d76408cee2de27b8889',1,'QGenerator::UIComponents::ChooseQuestionsFormat']]]
 ];

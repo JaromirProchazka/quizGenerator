@@ -101,110 +101,50 @@ $(function(){initNavTree('namespace_quiz_logical_components_1_1_quiz_creation_ch
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="nested-classes" name="nested-classes"></a>
 Classes</h2></td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_quiz_logical_components_1_1_quiz_creation_chain_1_1_chain_creation_builder.html">ChainCreationBuilder</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_quiz_logical_components_1_1_quiz_creation_chain_1_1_choose_local_html_file_option.html">ChooseLocalHtmlFileOption</a></td></tr>
 <tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Step that lets user Choose a html file as the notes source.  <a href="class_quiz_logical_components_1_1_quiz_creation_chain_1_1_choose_local_html_file_option.html#details">More...</a><br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_quiz_logical_components_1_1_quiz_creation_chain_1_1_choose_notes_source.html">ChooseNotesSource</a></td></tr>
-<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">an @ITopicCreationStep, which is responsible for fetching the source of the Final Topic.  <a href="class_quiz_logical_components_1_1_quiz_creation_chain_1_1_choose_notes_source.html#details">More...</a><br /></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">an TopicCreationStep, which is responsible for fetching the source of the Final Topic.  <a href="class_quiz_logical_components_1_1_quiz_creation_chain_1_1_choose_notes_source.html#details">More...</a><br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_quiz_logical_components_1_1_quiz_creation_chain_1_1_choose_notion_notes.html">ChooseNotionNotes</a></td></tr>
 <tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Step that lets user Choose notion page as the notes source.  <a href="class_quiz_logical_components_1_1_quiz_creation_chain_1_1_choose_notion_notes.html#details">More...</a><br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_quiz_logical_components_1_1_quiz_creation_chain_1_1_choose_question_format.html">ChooseQuestionFormat</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Determines the format of the html nodes, which will be taken as Questions.  <a href="class_quiz_logical_components_1_1_quiz_creation_chain_1_1_choose_question_format.html#details">More...</a><br /></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_quiz_logical_components_1_1_quiz_creation_chain_1_1_topic_creation_step.html">TopicCreationStep</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Abstract Step of the Chain of responsibility, that results in the creation of the Topic with quiz from some source.  <a href="class_quiz_logical_components_1_1_quiz_creation_chain_1_1_topic_creation_step.html#details">More...</a><br /></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="func-members" name="func-members"></a>
 Functions</h2></td></tr>
-<tr class="memitem:a86c83eb7edaf7d4292ed1e433c5fda8f" id="r_a86c83eb7edaf7d4292ed1e433c5fda8f"><td class="memItemLeft" align="right" valign="top">record class&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a86c83eb7edaf7d4292ed1e433c5fda8f">TopicCreationStep</a> ()</td></tr>
-<tr class="memdesc:a86c83eb7edaf7d4292ed1e433c5fda8f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Abstract Step of the Chain of responsibility, that results in the creation of the Topic with quiz from some source.  <br /></td></tr>
-<tr class="separator:a86c83eb7edaf7d4292ed1e433c5fda8f"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aaa3d55e34ad6913e5ada6337f1ae74d3" id="r_aaa3d55e34ad6913e5ada6337f1ae74d3"><td class="memItemLeft" align="right" valign="top">record class&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#aaa3d55e34ad6913e5ada6337f1ae74d3">FinalizeTopicCreationChain</a> ()</td></tr>
-<tr class="memdesc:aaa3d55e34ad6913e5ada6337f1ae74d3"><td class="mdescLeft">&#160;</td><td class="mdescRight">an @ITopicCreationStep, which simply returns the result ending the Chain.  <br /></td></tr>
-<tr class="separator:aaa3d55e34ad6913e5ada6337f1ae74d3"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a07fc93bb9590c3e9f9e1e718a1d82c36" id="r_a07fc93bb9590c3e9f9e1e718a1d82c36"><td class="memItemLeft" align="right" valign="top">record class&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a07fc93bb9590c3e9f9e1e718a1d82c36">StartTopicCreationChain</a> ()</td></tr>
-<tr class="memdesc:a07fc93bb9590c3e9f9e1e718a1d82c36"><td class="mdescLeft">&#160;</td><td class="mdescRight">an @ITopicCreationStep, which Starts the Chain.  <br /></td></tr>
-<tr class="separator:a07fc93bb9590c3e9f9e1e718a1d82c36"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7759a0c68df7eb665adc4ebe29c57618" id="r_a7759a0c68df7eb665adc4ebe29c57618"><td class="memItemLeft" align="right" valign="top">record class&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a7759a0c68df7eb665adc4ebe29c57618">TopicProduct</a> ()</td></tr>
+<tr class="memdesc:a7759a0c68df7eb665adc4ebe29c57618"><td class="mdescLeft">&#160;</td><td class="mdescRight">The product of topic creation.  <br /></td></tr>
+<tr class="separator:a7759a0c68df7eb665adc4ebe29c57618"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <h2 class="groupheader">Function Documentation</h2>
-<a id="aaa3d55e34ad6913e5ada6337f1ae74d3" name="aaa3d55e34ad6913e5ada6337f1ae74d3"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#aaa3d55e34ad6913e5ada6337f1ae74d3">&#9670;&#160;</a></span>FinalizeTopicCreationChain()</h2>
+<a id="a7759a0c68df7eb665adc4ebe29c57618" name="a7759a0c68df7eb665adc4ebe29c57618"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a7759a0c68df7eb665adc4ebe29c57618">&#9670;&#160;</a></span>TopicProduct()</h2>
 
 <div class="memitem">
 <div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">record class QuizLogicalComponents.QuizCreationChain.FinalizeTopicCreationChain </td>
+          <td class="memname">record class QuizLogicalComponents.QuizCreationChain.TopicProduct </td>
           <td>(</td>
           <td class="paramname"><span class="paramname"></span></td><td>)</td>
           <td></td>
         </tr>
       </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">sealed</span></span>  </td>
-  </tr>
-</table>
 </div><div class="memdoc">
 
-<p>an @ITopicCreationStep, which simply returns the result ending the Chain. </p>
-
-</div>
-</div>
-<a id="a07fc93bb9590c3e9f9e1e718a1d82c36" name="a07fc93bb9590c3e9f9e1e718a1d82c36"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a07fc93bb9590c3e9f9e1e718a1d82c36">&#9670;&#160;</a></span>StartTopicCreationChain()</h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">record class QuizLogicalComponents.QuizCreationChain.StartTopicCreationChain </td>
-          <td>(</td>
-          <td class="paramname"><span class="paramname"></span></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">sealed</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p>an @ITopicCreationStep, which Starts the Chain. </p>
-
-</div>
-</div>
-<a id="a86c83eb7edaf7d4292ed1e433c5fda8f" name="a86c83eb7edaf7d4292ed1e433c5fda8f"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a86c83eb7edaf7d4292ed1e433c5fda8f">&#9670;&#160;</a></span>TopicCreationStep()</h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">record class QuizLogicalComponents.QuizCreationChain.TopicCreationStep </td>
-          <td>(</td>
-          <td class="paramname"><span class="paramname"></span></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">abstract</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p>Abstract Step of the Chain of responsibility, that results in the creation of the Topic with quiz from some source. </p>
 <p>The product of topic creation. </p>
 <p>A path to a local file where the final notes source is.</p>
 <p>A path to a local file where the final quiz file is.</p>
+<p>The final action to do on the Topic being created, like updating the list of topics.</p>
 
 </div>
 </div>

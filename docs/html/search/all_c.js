@@ -1,14 +1,16 @@
 var searchData=
 [
-  ['label1_0',['label1',['../class_q_generator_1_1_u_i_components_1_1_choose_source_step.html#ad3c1a200ec5121dc7f6e6836740323a7',1,'QGenerator::UIComponents::ChooseSourceStep']]],
-  ['leafsteps_2ecs_1',['LeafSteps.cs',['../_leaf_steps_8cs.html',1,'']]],
-  ['leftchildindex_2',['leftChildIndex',['../class_file_manager_1_1_priority_queue.html#a91bbdacef0b26efc7c90f5d620b036d2',1,'FileManager::PriorityQueue']]],
-  ['linklabel_3',['LinkLabel',['../class_file_manager_1_1_hyper_link.html#a3035ad3effc9cf2581ba6e5889d4cb60',1,'FileManager::HyperLink']]],
-  ['linktoquestions_4',['LinkToQuestions',['../class_file_manager_1_1_hyper_link.html#aeee9c6fdd0474d8767a5b7aab52d744d',1,'FileManager::HyperLink']]],
-  ['listbox1_5fselectedindexchanged_5',['listBox1_SelectedIndexChanged',['../class_q_generator_1_1_u_i_components_1_1_choose_source_step.html#a68435f0d7ae75dd91fc0ff97f7e6fb76',1,'QGenerator::UIComponents::ChooseSourceStep']]],
-  ['listboxlinks_5fselectedindexchanged_6',['listBoxLinks_SelectedIndexChanged',['../classquiz_generator_1_1main_page.html#aa0f9f227671211d0ad7d21ad41183ee7',1,'quizGenerator::mainPage']]],
-  ['loadedstate_7',['LoadedState',['../class_file_manager_1_1_questions_file.html#a422c75c129b0319b855ec7f80ac854a3',1,'FileManager::QuestionsFile']]],
-  ['loadedstatetoken_8',['LoadedStateToken',['../class_file_manager_1_1_questions_file.html#af47550affe24974f562705f71a517f61',1,'FileManager::QuestionsFile']]],
-  ['loadquizstatedata_9',['LoadQuizStateData',['../class_file_manager_1_1_questions_file.html#a0dc74144620ae8cf9d5efc7de20510f6',1,'FileManager::QuestionsFile']]],
-  ['loadstate_10',['LoadState',['../interface_quiz_logical_components_1_1_quiz_states_1_1_i_state_serializer.html#a095d63c90b8f14cd3cb10c638f55f63d',1,'QuizLogicalComponents::QuizStates::IStateSerializer']]]
+  ['label1_0',['label1',['../class_q_generator_1_1_u_i_components_1_1_choose_questions_format.html#a2afea80af7be9b97c9cb5a2d40cb99f3',1,'QGenerator.UIComponents.ChooseQuestionsFormat.label1'],['../class_q_generator_1_1_u_i_components_1_1_choose_source_step.html#ad3c1a200ec5121dc7f6e6836740323a7',1,'QGenerator.UIComponents.ChooseSourceStep.label1']]],
+  ['label2_1',['label2',['../class_q_generator_1_1_u_i_components_1_1_choose_questions_format.html#aba112d73494a96777e542e6cccb14626',1,'QGenerator::UIComponents::ChooseQuestionsFormat']]],
+  ['label3_2',['label3',['../class_q_generator_1_1_u_i_components_1_1_choose_questions_format.html#a6f6ffe10b0092cfd5851c3db0e207dd7',1,'QGenerator::UIComponents::ChooseQuestionsFormat']]],
+  ['label3_5fclick_3',['label3_Click',['../class_q_generator_1_1_u_i_components_1_1_choose_questions_format.html#a625d4c94e0ff54cab5988c12cb3afe5b',1,'QGenerator::UIComponents::ChooseQuestionsFormat']]],
+  ['label4_4',['label4',['../class_q_generator_1_1_u_i_components_1_1_choose_questions_format.html#abf6c1f44b7fa8135848bbc0653e118af',1,'QGenerator::UIComponents::ChooseQuestionsFormat']]],
+  ['leafstartstep_2ecs_5',['leafStartStep.cs',['../leaf_start_step_8cs.html',1,'']]],
+  ['leafsteps_2ecs_6',['LeafSteps.cs',['../_leaf_steps_8cs.html',1,'']]],
+  ['leftchildindex_7',['leftChildIndex',['../class_file_manager_1_1_priority_queue.html#a91bbdacef0b26efc7c90f5d620b036d2',1,'FileManager::PriorityQueue']]],
+  ['li_8',['li',['../class_q_generator_1_1_u_i_components_1_1_choose_questions_format.html#aa02f1604e9f42d76408cee2de27b8889ad70c1e5d44de8a9150eb91ecff563578',1,'QGenerator::UIComponents::ChooseQuestionsFormat']]],
+  ['listbox1_5fselectedindexchanged_9',['listBox1_SelectedIndexChanged',['../class_q_generator_1_1_u_i_components_1_1_choose_source_step.html#a68435f0d7ae75dd91fc0ff97f7e6fb76',1,'QGenerator::UIComponents::ChooseSourceStep']]],
+  ['listboxlinks_5fselectedindexchanged_10',['listBoxLinks_SelectedIndexChanged',['../classquiz_generator_1_1main_page.html#aa0f9f227671211d0ad7d21ad41183ee7',1,'quizGenerator::mainPage']]],
+  ['loadstate_11',['LoadState',['../interface_quiz_logical_components_1_1_quiz_states_1_1_i_state_serializer.html#a0f3e46aed5c122bbc24a3a616bc0af55',1,'QuizLogicalComponents::QuizStates::IStateSerializer']]],
+  ['logicaloperator_12',['LogicalOperator',['../class_q_generator_1_1_u_i_components_1_1_choose_questions_format.html#a8b8fd3ed410bcc01e1e7de6fdbb70247',1,'QGenerator::UIComponents::ChooseQuestionsFormat']]]
 ];

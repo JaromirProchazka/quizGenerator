@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['opened_0',['Opened',['../class_file_manager_1_1_dag.html#a76f52d8a90d8adc96cd39f76354b8d5ba1a11b1adc359c03db0ca798a00e2632c',1,'FileManager::Dag']]]
+  ['dl_0',['dl',['../class_q_generator_1_1_u_i_components_1_1_choose_questions_format.html#aa02f1604e9f42d76408cee2de27b8889a01a120c756b1f6cf4f08e0fca0cfa6fe',1,'QGenerator::UIComponents::ChooseQuestionsFormat']]]
 ];

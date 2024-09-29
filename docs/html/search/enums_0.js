@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['loadedstate_0',['LoadedState',['../class_file_manager_1_1_questions_file.html#a422c75c129b0319b855ec7f80ac854a3',1,'FileManager::QuestionsFile']]]
+  ['checkslogicaloperator_0',['ChecksLogicalOperator',['../class_quiz_logical_components_1_1_quiz_creation_chain_1_1_choose_question_format.html#a913f4ef57d40eea49a7124dbb60da0ee',1,'QuizLogicalComponents::QuizCreationChain::ChooseQuestionFormat']]]
 ];

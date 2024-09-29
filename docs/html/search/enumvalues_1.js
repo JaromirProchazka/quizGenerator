@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['notfound_0',['NotFound',['../class_file_manager_1_1_questions_file.html#a422c75c129b0319b855ec7f80ac854a3a38c300f4fc9ce8a77aad4a30de05cad8',1,'FileManager::QuestionsFile']]]
+  ['closed_0',['Closed',['../class_file_manager_1_1_dag.html#a76f52d8a90d8adc96cd39f76354b8d5ba03f4a47830f97377a35321051685071e',1,'FileManager::Dag']]]
 ];

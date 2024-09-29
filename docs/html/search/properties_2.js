@@ -1,4 +1,5 @@
 var searchData=
 [
-  ['priority_0',['Priority',['../class_file_manager_1_1_priority_queue_1_1_item.html#a93c321623a0f3618291375ddc66e99ca',1,'FileManager::PriorityQueue::Item']]]
+  ['default_0',['Default',['../class_file_manager_1_1_dag_1_1_counter_default.html#ad00b7a6342f6c6b9948809f648b98af8',1,'FileManager::Dag::CounterDefault']]],
+  ['defaultanalyzer_1',['DefaultAnalyzer',['../class_file_manager_1_1_notes_parsing_1_1_notes_parser.html#a93e220f995e063d7bd90ca9c0e56c470',1,'FileManager::NotesParsing::NotesParser']]]
 ];

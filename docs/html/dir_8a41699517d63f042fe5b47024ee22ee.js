@@ -1,5 +1,9 @@
 var dir_8a41699517d63f042fe5b47024ee22ee =
 [
+    [ "ChooseQuestionsFormat.cs", "_choose_questions_format_8cs.html", "_choose_questions_format_8cs" ],
+    [ "ChooseQuestionsFormat.Designer.cs", "_choose_questions_format_8_designer_8cs.html", "_choose_questions_format_8_designer_8cs" ],
+    [ "ChooseQuizBeginningFrom.cs", "_choose_quiz_beginning_from_8cs.html", "_choose_quiz_beginning_from_8cs" ],
+    [ "ChooseQuizBeginningFrom.Designer.cs", "_choose_quiz_beginning_from_8_designer_8cs.html", "_choose_quiz_beginning_from_8_designer_8cs" ],
     [ "ChooseSourceStep.cs", "_choose_source_step_8cs.html", "_choose_source_step_8cs" ],
     [ "ChooseSourceStep.Designer.cs", "_choose_source_step_8_designer_8cs.html", "_choose_source_step_8_designer_8cs" ],
     [ "mainPage.cs", "main_page_8cs.html", "main_page_8cs" ],

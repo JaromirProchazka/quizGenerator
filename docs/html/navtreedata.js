@@ -25,17 +25,21 @@
 var NAVTREE =
 [
   [ "Quiz Generator", "index.html", [
-    [ "Dokumentatoin", "index.html#autotoc_md1", null ],
+    [ "Documentation", "index.html#autotoc_md1", null ],
     [ "Basic Idea", "index.html#autotoc_md2", [
       [ "What is Quiz?", "index.html#autotoc_md3", null ],
-      [ "What are Notes?", "index.html#autotoc_md4", null ]
-    ] ],
-    [ "Technologies", "index.html#autotoc_md5", [
-      [ "Advanced C# Tools", "index.html#autotoc_md6", null ],
-      [ "Basic UI design", "index.html#autotoc_md7", [
-        [ "Quiz Menu", "index.html#autotoc_md8", null ],
+      [ "What are Notes?", "index.html#autotoc_md4", null ],
+      [ "Basic UI design", "index.html#autotoc_md5", [
+        [ "Quiz Menu", "index.html#autotoc_md6", [
+          [ "Quiz Creation", "index.html#autotoc_md7", null ],
+          [ "Quiz Starting", "index.html#autotoc_md8", null ]
+        ] ],
         [ "Quiz Window", "index.html#autotoc_md9", null ]
       ] ]
+    ] ],
+    [ "Developer Overview", "index.html#autotoc_md10", [
+      [ "Technologies", "index.html#autotoc_md11", null ],
+      [ "Advanced C# Tools", "index.html#autotoc_md12", null ]
     ] ],
     [ "Namespaces", "namespaces.html", [
       [ "Namespace List", "namespaces.html", "namespaces_dup" ],
@@ -49,7 +53,7 @@ var NAVTREE =
       [ "Class Index", "classes.html", null ],
       [ "Class Hierarchy", "hierarchy.html", "hierarchy" ],
       [ "Class Members", "functions.html", [
-        [ "All", "functions.html", null ],
+        [ "All", "functions.html", "functions_dup" ],
         [ "Functions", "functions_func.html", null ],
         [ "Variables", "functions_vars.html", null ],
         [ "Enumerations", "functions_enum.html", null ],
@@ -57,16 +61,21 @@ var NAVTREE =
       ] ]
     ] ],
     [ "Files", "files.html", [
-      [ "File List", "files.html", "files_dup" ]
+      [ "File List", "files.html", "files_dup" ],
+      [ "File Members", "globals.html", [
+        [ "All", "globals.html", null ],
+        [ "Typedefs", "globals_type.html", null ]
+      ] ]
     ] ]
   ] ]
 ];
 
 var NAVTREEINDEX =
 [
-"__d__a__g__8cs_8js.html",
-"class_q_generator_1_1_u_i_components_1_1_choose_source_step.html#ad3c1a200ec5121dc7f6e6836740323a7",
-"dir_90fa234706a2341df0be9dd85f31662c.html"
+"__chain__steps__types__8cs_8js.html",
+"class_q_generator_1_1_u_i_components_1_1_choose_questions_format.html#a23d64f6d6fdfeb94adf21a1cc3e73ffd",
+"class_quiz_logical_components_1_1_quiz_states_1_1_quiz_state.html#a13ee6e521e42d5bd80bfe42efffe9cbb",
+"dir__f176b9a89ae102d336876258762a8051_8js.html"
 ];
 
 var SYNCONMSG = 'click to disable panel synchronisation';
