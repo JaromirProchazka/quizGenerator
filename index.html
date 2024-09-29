@@ -97,7 +97,7 @@ $(function(){initNavTree('index.html',''); initResizable(); });
 <div class="contents">
 <div class="textblock"><p><a class="anchor" id="md__c_1_2_users_2jarom_2_desktop_2_p_g___c_v_i_xC4_x8C_e_n_xC3_x8D_2quiz_generator_2_r_e_a_d_m_e"></a> </p>
 <h1><a class="anchor" id="autotoc_md1"></a>
-Dokumentatoin</h1>
+Documentation</h1>
 <p>Docs can be accessed <a href="https://jaromirprochazka.github.io/quizGenerator/">here</a>.</p>
 <h1><a class="anchor" id="autotoc_md2"></a>
 Basic Idea</h1>
@@ -109,28 +109,28 @@ What is Quiz?</h2>
 <p>The ordering is based around the dependence between questions, some questions can be asked only if some other has been already answered. Besides these restraints, there is random ordering.</p>
 <h2><a class="anchor" id="autotoc_md4"></a>
 What are Notes?</h2>
-<p>Notes are some text in a supported format containing the questions and answers. The questions are in some way marked. A way, that can be configured in the app before inputting the notes file. For instance, user could choose, that in his notes, each important topic is marked in italics, or in textbooks, all numbered statements and their proofs are selected as questions.</p>
+<p>Notes are some texts in a supported format containing the questions and answers. The questions are in some way marked. A way, that can be configured in the app before inputting the notes file. For instance, user could choose that in his notes, each important topic is marked in italics, or in textbooks, all numbered statements and their proofs are selected as questions.</p>
 <p>From it, the app creates a quiz file, which will than be used to generate the quiz in UI, so the conversion expensive only occurs once and the quiz file can be reused.</p>
-<h1><a class="anchor" id="autotoc_md5"></a>
-Technologies</h1>
-<p>The App logic is primarily written in **<code>C#</code>**. I would also like the app to by accessible as website. The C# libraries are mostly heavily dependent on supported note file formats, but for start, the C# library <code>HtmlAgilityPack</code> is necessary. This covers the back end side, the application that creates the quizzes themselves.</p>
-<p>The view of front end will than either be implemented in <code>windows forms</code> for native app, or the <code>javascript</code> in case of the web application. <br  />
-</p>
-<h2><a class="anchor" id="autotoc_md6"></a>
-Advanced C# Tools</h2>
-<p>This App also support using notes from app <a href="https://www.notion.so/">Notion</a> using there API to fetch it. For that we will need <b>Asynchronous methods</b>. Furthermore, we use <b>Extension methods</b> in the design of the utility parts.</p>
-<h2><a class="anchor" id="autotoc_md7"></a>
+<h2><a class="anchor" id="autotoc_md5"></a>
 Basic UI design</h2>
-<h3><a class="anchor" id="autotoc_md8"></a>
+<h3><a class="anchor" id="autotoc_md6"></a>
 Quiz Menu</h3>
 <p>At the Start of the App, you will be greeted by a list of your Quiz on top, and a <code>Create New Topic</code> button at the bottom. If you want to add a new topic, press the button and choose the method of providing the notes.</p>
-<p>You can either provide a local html file, or a link to a Notion page. Note that the page must be at the time of Creation PUBLIC.</p>
-<p>After that a new topic is added to the topics list at the top, or a topic with the same name is updated. Than select topic in list, you can then either click <br  />
+<p>After that a new topic is added to the topics list at the top, or a topic with the same name is updated. Then select topic in list, you can then either click <br  />
 </p>
 <ul>
 <li><code>Open</code> button and start the quiz,</li>
 <li>or click <code>Edit</code> button and a edit window will appear. You can <b>Rename</b> the topic or <b>Delete</b> it</li>
 </ul>
+<h4><a class="anchor" id="autotoc_md7"></a>
+Quiz Creation</h4>
+<p>You can either provide a local html file, or a link to a Notion page. Note that the page must be at the time of Creation PUBLIC. Press <code>Continue</code> to move on to the next step.</p>
+<p>Then you can choose the <em>Question format</em>, which are the attributes that if the given node in the source nodes will have, it will be interpreted as the question and will be added to the final Quiz.</p>
+<p>After pressing <code>Continue</code>, new Topic is added to the Topics list where you can edit its name.</p>
+<h4><a class="anchor" id="autotoc_md8"></a>
+Quiz Starting</h4>
+<p>On press of the <code>Open</code> button, the Topic selected in the Topics list will be opened. You will be presented with options of either Continuing where you ended in your last test, or the option of starting from the beginning with 0 in the current question counter. After that your quiz is opened. <br  />
+</p>
 <h3><a class="anchor" id="autotoc_md9"></a>
 Quiz Window</h3>
 <p>When the quiz is started, user is greeted on bottom with the question and answers window and on top with 4 buttons.</p>
@@ -142,7 +142,23 @@ Quiz Window</h3>
 </li>
 <li>when you are done and want to start a different quiz, simply press the <code>Back</code> button, which closes this quiz.</li>
 </ul>
-<p>There is also a counter, which says “<code>number of answered questions / number of question</code>”. If you answer incorrectly and press <code>Next 👎</code>, the counter doesn’t increment. </p>
+<p>There is also a counter, which says “<code>number of answered questions / number of questions</code>”. If you answer incorrectly and press <code>Next 👎</code>, the counter doesn’t increment.</p>
+<h1><a class="anchor" id="autotoc_md10"></a>
+Developer Overview</h1>
+<p>The UI is made in the Using the Windows Forms. The Quiz creation and Starting are done using a <b>Chain of responsibility</b> and a dedicated builder for them. For each Chain Step, a WF Window is prepared to set the steps parameters and on press of the <code>Continue</code> button finalize the Chain.</p>
+<p>In the Quiz creation, the notes in html format parsed and there html nodes are traversed and analyzed. When a node that satisfy the checks is determined to be a question, a question and answer are added to a resulting data file throw the <b>Quiz file manager Singleton</b>. On the Quizzes creation is this file opened in the WF Forms web view and it's components are shown or hidden using a <em>JS</em> script. <br  />
+</p>
+<h2><a class="anchor" id="autotoc_md11"></a>
+Technologies</h2>
+<p>The App logic is primarily written in **<code>C#</code>**. I would also like the app to by accessible as website. The C# libraries are mostly heavily dependent on supported note file formats, but for start, the C# library <code>HtmlAgilityPack</code> is necessary. This covers the back end side, the application that creates the quizzes themselves.</p>
+<p>The Notion page fetching is done using a notion-to-html API.</p>
+<p>The view of front end will than either be implemented in <code>windows forms</code> for native app, or the <code>JavaScript</code> in case of the web application. <br  />
+</p>
+<h2><a class="anchor" id="autotoc_md12"></a>
+Advanced C# Tools</h2>
+<p>This App also support using notes from app <a href="https://www.notion.so/">Notion</a> using their API to fetch it. For that we will need <b>Asynchronous methods</b>. Furthermore, we use <b>Extension methods</b> in the design of the utility parts.</p>
+<hr  />
+<p>More info in the <a href="https://jaromirprochazka.github.io/quizGenerator/">docs</a>. </p>
 </div></div><!-- PageDoc -->
 <a href="doxygen_crawl.html"/>
 </div><!-- contents -->

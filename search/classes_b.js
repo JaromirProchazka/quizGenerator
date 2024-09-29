@@ -1,5 +1,4 @@
 var searchData=
 [
-  ['topiceditbox_0',['topicEditBox',['../classquiz_generator_1_1topic_edit_box.html',1,'quizGenerator']]],
-  ['topics_1',['Topics',['../classquiz_generator_1_1_topics.html',1,'quizGenerator']]]
+  ['startstartingchain_0',['StartStartingChain',['../class_quiz_logical_components_1_1_topic_starting_chain_1_1_start_starting_chain.html',1,'QuizLogicalComponents::TopicStartingChain']]]
 ];

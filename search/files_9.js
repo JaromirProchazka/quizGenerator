@@ -1,5 +1,6 @@
 var searchData=
 [
   ['interface_5fquiz_5flogical_5fcomponents_5f1_5f1_5fi_5fsequence_5fof_5fquestions_2ejs_0',['interface_quiz_logical_components_1_1_i_sequence_of_questions.js',['../interface__quiz__logical__components__1__1__i__sequence__of__questions_8js.html',1,'']]],
-  ['interface_5fquiz_5flogical_5fcomponents_5f1_5f1_5fquiz_5fstates_5f1_5f1_5fi_5fstate_5fserializer_2ejs_1',['interface_quiz_logical_components_1_1_quiz_states_1_1_i_state_serializer.js',['../interface__quiz__logical__components__1__1__quiz__states__1__1__i__state__serializer_8js.html',1,'']]]
+  ['interface_5fquiz_5flogical_5fcomponents_5f1_5f1_5fquiz_5fcreation_5fchain_5f1_5f1_5fchoose_5fnotion_5fnotes_5f1_5f1_5fi_5fnotion_5fpage_5fa_5fp_5fi_2ejs_1',['interface_quiz_logical_components_1_1_quiz_creation_chain_1_1_choose_notion_notes_1_1_i_notion_page_a_p_i.js',['../interface__quiz__logical__components__1__1__quiz__creation__chain__1__1__choose__notion__notes__1b52aee65816b65119e69406220a0f6a.html',1,'']]],
+  ['interface_5fquiz_5flogical_5fcomponents_5f1_5f1_5fquiz_5fstates_5f1_5f1_5fi_5fstate_5fserializer_2ejs_2',['interface_quiz_logical_components_1_1_quiz_states_1_1_i_state_serializer.js',['../interface__quiz__logical__components__1__1__quiz__states__1__1__i__state__serializer_8js.html',1,'']]]
 ];
