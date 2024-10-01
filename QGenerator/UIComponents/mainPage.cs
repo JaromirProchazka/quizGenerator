@@ -42,14 +42,6 @@ namespace quizGenerator
 
         private void newTopicBtn_Click(object sender, EventArgs e)
         {
-            //if (openFileDialog1.ShowDialog() == DialogResult.OK)
-            //{
-            //    string notesPath = openFileDialog1.FileName;
-            //    QuestionsFile.CreateNewTopic(notesPath);
-
-            //    updateList(TopicsList);
-            //}
-
             var chain = ChainUiInit.GetCreationChain(onTopicCreationFinish);
             chain.Show();
         }
