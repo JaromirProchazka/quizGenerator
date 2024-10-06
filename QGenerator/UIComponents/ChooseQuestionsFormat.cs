@@ -18,7 +18,7 @@ namespace QGenerator.UIComponents
         ChainStepForm<TopicCreationStep, TopicProduct, ChainCreationBuilder>
     {
         public ChooseQuestionFormat.ChecksLogicalOperator LogicalOperator = ChooseQuestionFormat.ChecksLogicalOperator.AND;
-        public string? name = null;
+        public string? name = "em";
         enum NameOption { em = 0, strong, h1, h2, h3, a, ul, li, dl }
         public string? classes = null;
         public string? color = null;
@@ -28,6 +28,7 @@ namespace QGenerator.UIComponents
         public ChooseQuestionsFormat()
         {
             InitializeComponent();
+            comboBox1.SelectedIndex = 0;
         }
 
         private void textBox1_TextChanged(object sender, EventArgs e) { }
