@@ -12,6 +12,7 @@ using System.Runtime.InteropServices;
 using System.Runtime;
 using Microsoft.VisualBasic.FileIO;
 using FileManager.NotesParsing;
+using System.Xml.Linq;
 
 namespace FileManager
 {
@@ -71,9 +72,12 @@ namespace FileManager
 
             string topicTitle = NotesParser.getHtmlTitle(htmlFile);
             string topicName = Path.GetFileNameWithoutExtension(notesPath);
+
+            string name = getUniqueName((topicTitle.Any()) ? topicTitle : topicName);
+
             string topicFolderPath = Path.Combine(
                 utilFolderPath,
-                QuestionsFile.toTopicFileName((topicTitle.Any()) ? topicTitle : topicName)
+                QuestionsFile.toTopicFileName(name)
             );
 
             if (Directory.Exists(topicFolderPath))
@@ -119,9 +123,15 @@ namespace FileManager
         /// <returns>New path to the Topics folder with new name, if the <see cref="currentTopicDirectoryPath"/> is valid</returns>
         public static string? RenameTopic(string currentTopicDirectoryPath, string newName)
         {
+            string newPath = Path.Combine(Path.GetDirectoryName(currentTopicDirectoryPath), QuestionsFile.toTopicFileName(newName));
+            if (Directory.Exists(newPath))
+            {
+                string uniqueName = addCopyToName(newName);
+                return RenameTopic(currentTopicDirectoryPath, uniqueName);
+            }
+            
             if (isTopicFolder(currentTopicDirectoryPath))
             {
-                string newPath = Path.Combine(Path.GetDirectoryName(currentTopicDirectoryPath), QuestionsFile.toTopicFileName(newName));
                 Directory.Move(
                     currentTopicDirectoryPath,
                     newPath
@@ -131,6 +141,19 @@ namespace FileManager
             }
 
             return null;
+        }
+
+        private static string addCopyToName(string name)
+        {
+            string[] nameSplit = name.Split('.');
+            nameSplit[0] = nameSplit[0] + "_copy";
+            return string.Join("", nameSplit);
+        }
+
+        private static string getUniqueName(string name)
+        {
+            if ( !isTopicFolder(Path.Combine(utilFolderPath, toTopicFileName(name)))) return name;
+            return getUniqueName(addCopyToName(name));
         }
 
         /// <summary>
