@@ -89,8 +89,12 @@ namespace QuizLogicalComponents.QuizCreationChain
             this.FileStreamFetcher = fileStreamFetcher;
 
             // open the file
-            var fileRes = FileStreamFetcher.Invoke();
-            if (fileRes == null) throw new FileLoadException("Local source file not found!");
+            FileStream? fileRes = null;
+            while (fileRes == null)
+            {
+                fileRes = FileStreamFetcher.Invoke();
+            }
+
             this.openedFile = fileRes;
         }
 
