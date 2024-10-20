@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['orquestionnodeparams_0',['OrQuestionNodeParams',['../class_file_manager_1_1_notes_parsing_1_1_or_question_node_params.html',1,'FileManager::NotesParsing']]]
+  ['mainpage_0',['mainPage',['../classquiz_generator_1_1main_page.html',1,'quizGenerator']]]
 ];

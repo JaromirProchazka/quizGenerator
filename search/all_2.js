@@ -1,8 +1,8 @@
 var searchData=
 [
   ['a_0',['a',['../class_q_generator_1_1_u_i_components_1_1_choose_questions_format.html#aa02f1604e9f42d76408cee2de27b8889a0cc175b9c0f1b6a831c399e269772661',1,'QGenerator::UIComponents::ChooseQuestionsFormat']]],
-  ['addstep_1',['AddStep',['../class_quiz_logical_components_1_1_abstract_chain_1_1_chain_builder.html#a887428173d5db00b9a372a9d7c0d1f13',1,'QuizLogicalComponents::AbstractChain::ChainBuilder']]],
-  ['addstept_2',['AddStepT',['../class_quiz_logical_components_1_1_abstract_chain_1_1_chain_builder.html#ad1a195d1f8a22afc1d316576d0530ce6',1,'QuizLogicalComponents::AbstractChain::ChainBuilder']]],
+  ['addcopytoname_1',['addCopyToName',['../class_file_manager_1_1_questions_file.html#a04e6a914fbde81ae5abd87e14b6b78f4',1,'FileManager::QuestionsFile']]],
+  ['addstep_2',['AddStep',['../class_quiz_logical_components_1_1_abstract_chain_1_1_chain_builder.html#a887428173d5db00b9a372a9d7c0d1f13',1,'QuizLogicalComponents::AbstractChain::ChainBuilder']]],
   ['advanced_20c_20tools_3',['Advanced C# Tools',['../index.html#autotoc_md12',1,'']]],
   ['all_5f0_2ejs_4',['all_0.js',['../all__0_8js.html',1,'']]],
   ['all_5f1_2ejs_5',['all_1.js',['../all__1_8js.html',1,'']]],

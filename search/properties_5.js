@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['result_0',['Result',['../class_quiz_logical_components_1_1_abstract_chain_1_1_chain_step.html#a38f7700fb8d27df3e46219a946a4dccb',1,'QuizLogicalComponents::AbstractChain::ChainStep']]]
+  ['questionnodeanalyzer_0',['QuestionNodeAnalyzer',['../class_file_manager_1_1_questions_file.html#a9d274738ca93abe3514187c79c19c93f',1,'FileManager::QuestionsFile']]]
 ];

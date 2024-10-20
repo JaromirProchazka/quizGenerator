@@ -1,4 +1,5 @@
 var searchData=
 [
-  ['strong_0',['strong',['../class_q_generator_1_1_u_i_components_1_1_choose_questions_format.html#aa02f1604e9f42d76408cee2de27b8889a6f7f9432d35dea629c8384dab312259a',1,'QGenerator::UIComponents::ChooseQuestionsFormat']]]
+  ['opened_0',['Opened',['../class_file_manager_1_1_dag.html#a76f52d8a90d8adc96cd39f76354b8d5ba1a11b1adc359c03db0ca798a00e2632c',1,'FileManager::Dag']]],
+  ['or_1',['OR',['../class_quiz_logical_components_1_1_quiz_creation_chain_1_1_choose_question_format.html#a913f4ef57d40eea49a7124dbb60da0eea1d00e7dce692e8dc3f6877f035e3a616',1,'QuizLogicalComponents::QuizCreationChain::ChooseQuestionFormat']]]
 ];

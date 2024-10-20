@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['value_0',['Value',['../class_file_manager_1_1_priority_queue_1_1_item.html#aa2bc65fadedb7c1c71c3f0cc812c556a',1,'FileManager::PriorityQueue::Item']]]
+  ['scorewonstate_0',['ScoreWonState',['../class_quiz_logical_components_1_1_quiz_states_1_1_quiz_state.html#a2ea6db200079e2c01b9719924257663e',1,'QuizLogicalComponents::QuizStates::QuizState']]]
 ];

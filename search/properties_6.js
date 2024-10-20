@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['scorewonstate_0',['ScoreWonState',['../class_quiz_logical_components_1_1_quiz_states_1_1_quiz_state.html#a2ea6db200079e2c01b9719924257663e',1,'QuizLogicalComponents::QuizStates::QuizState']]]
+  ['result_0',['Result',['../class_quiz_logical_components_1_1_abstract_chain_1_1_chain_step.html#a38f7700fb8d27df3e46219a946a4dccb',1,'QuizLogicalComponents::AbstractChain::ChainStep']]]
 ];

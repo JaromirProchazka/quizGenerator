@@ -100,17 +100,29 @@ $(function(){initNavTree('class_quiz_logical_components_1_1_quiz_states_1_1_quiz
   <div class="headertitle"><div class="title">QuizLogicalComponents.QuizStates.QuizState Class Reference<span class="mlabels"><span class="mlabel">abstract</span></span></div></div>
 </div><!--header-->
 <div class="contents">
+
+<p>A Quiz persistence data structure.  
+ <a href="#details">More...</a></p>
+<div class="dynheader">
+Inheritance diagram for QuizLogicalComponents.QuizStates.QuizState:</div>
+<div class="dyncontent">
+ <div class="center">
+  <img src="class_quiz_logical_components_1_1_quiz_states_1_1_quiz_state.png" usemap="#QuizLogicalComponents.QuizStates.QuizState_map" alt=""/>
+  <map id="QuizLogicalComponents.QuizStates.QuizState_map" name="QuizLogicalComponents.QuizStates.QuizState_map">
+<area href="class_quiz_logical_components_1_1_quiz_states_1_1_reset_around_state.html" title="Represents the state of the quiz in a given time." alt="QuizLogicalComponents.QuizStates.ResetAroundState" shape="rect" coords="0,56,317,80"/>
+  </map>
+</div></div>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-methods" name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
 <tr class="memitem:a13ee6e521e42d5bd80bfe42efffe9cbb" id="r_a13ee6e521e42d5bd80bfe42efffe9cbb"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a13ee6e521e42d5bd80bfe42efffe9cbb">SetScoreAsWinning</a> ()</td></tr>
 <tr class="separator:a13ee6e521e42d5bd80bfe42efffe9cbb"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a5d7c5d64963a1d8045ebe165d0d90ff9" id="r_a5d7c5d64963a1d8045ebe165d0d90ff9"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a5d7c5d64963a1d8045ebe165d0d90ff9">MovePreviousAnswearedForward</a> (int distance)</td></tr>
-<tr class="memdesc:a5d7c5d64963a1d8045ebe165d0d90ff9"><td class="mdescLeft">&#160;</td><td class="mdescRight">Moves the previous in the sequence forward in the questions.  <br /></td></tr>
-<tr class="separator:a5d7c5d64963a1d8045ebe165d0d90ff9"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a4ca6c4a2c71dbb9af3d11ce3e23da2ad" id="r_a4ca6c4a2c71dbb9af3d11ce3e23da2ad"><td class="memItemLeft" align="right" valign="top">string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a4ca6c4a2c71dbb9af3d11ce3e23da2ad">GetTopicsPath</a> ()</td></tr>
-<tr class="memdesc:a4ca6c4a2c71dbb9af3d11ce3e23da2ad"><td class="mdescLeft">&#160;</td><td class="mdescRight">Used when the Topics name is needed.  <br /></td></tr>
-<tr class="separator:a4ca6c4a2c71dbb9af3d11ce3e23da2ad"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5c0904ecf16f8ac7f655997684312eaa" id="r_a5c0904ecf16f8ac7f655997684312eaa"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a5c0904ecf16f8ac7f655997684312eaa">MovePreviousAnsweredForward</a> (int distance)</td></tr>
+<tr class="memdesc:a5c0904ecf16f8ac7f655997684312eaa"><td class="mdescLeft">&#160;</td><td class="mdescRight">Moves the previous in the sequence forward in the questions.  <br /></td></tr>
+<tr class="separator:a5c0904ecf16f8ac7f655997684312eaa"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a69950c0fdabf9dff4876eff817bd794e" id="r_a69950c0fdabf9dff4876eff817bd794e"><td class="memItemLeft" align="right" valign="top">string?&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a69950c0fdabf9dff4876eff817bd794e">GetTopicsPath</a> ()</td></tr>
+<tr class="memdesc:a69950c0fdabf9dff4876eff817bd794e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Used when the Topics name is needed.  <br /></td></tr>
+<tr class="separator:a69950c0fdabf9dff4876eff817bd794e"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a0bfd5924c2fd1a85662cad99d6767e48" id="r_a0bfd5924c2fd1a85662cad99d6767e48"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_quiz_logical_components_1_1_quiz_states_1_1_quiz_state.html">QuizState</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a0bfd5924c2fd1a85662cad99d6767e48">NewState</a> (string path)</td></tr>
 <tr class="memdesc:a0bfd5924c2fd1a85662cad99d6767e48"><td class="mdescLeft">&#160;</td><td class="mdescRight">Initialises new State instance.  <br /></td></tr>
 <tr class="separator:a0bfd5924c2fd1a85662cad99d6767e48"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -138,9 +150,9 @@ Public Member Functions</h2></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-attribs" name="pub-attribs"></a>
 Public Attributes</h2></td></tr>
-<tr class="memitem:aba699033d75f101bf444078c7853b4c8" id="r_aba699033d75f101bf444078c7853b4c8"><td class="memItemLeft" align="right" valign="top">string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#aba699033d75f101bf444078c7853b4c8">CurrentQuestionsPath</a></td></tr>
-<tr class="memdesc:aba699033d75f101bf444078c7853b4c8"><td class="mdescLeft">&#160;</td><td class="mdescRight">Path to the questions file (Json Included on Serialization).  <br /></td></tr>
-<tr class="separator:aba699033d75f101bf444078c7853b4c8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8c80df66849ebf9cf96799c3ca5b2af9" id="r_a8c80df66849ebf9cf96799c3ca5b2af9"><td class="memItemLeft" align="right" valign="top">string?&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a8c80df66849ebf9cf96799c3ca5b2af9">CurrentQuestionsPath</a></td></tr>
+<tr class="memdesc:a8c80df66849ebf9cf96799c3ca5b2af9"><td class="mdescLeft">&#160;</td><td class="mdescRight">Path to the questions file (Json Included on Serialization).  <br /></td></tr>
+<tr class="separator:a8c80df66849ebf9cf96799c3ca5b2af9"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a4575133d70733d19966855f92bac3f65" id="r_a4575133d70733d19966855f92bac3f65"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a4575133d70733d19966855f92bac3f65">QuestionIndex</a></td></tr>
 <tr class="memdesc:a4575133d70733d19966855f92bac3f65"><td class="mdescLeft">&#160;</td><td class="mdescRight">Current questions ID (Json Included on Serialization).  <br /></td></tr>
 <tr class="separator:a4575133d70733d19966855f92bac3f65"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -151,7 +163,10 @@ Properties</h2></td></tr>
 <tr class="memdesc:a2ea6db200079e2c01b9719924257663e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Says, if the score is in the Won state (Json Included on Serialization).  <br /></td></tr>
 <tr class="separator:a2ea6db200079e2c01b9719924257663e"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
-<h2 class="groupheader">Member Function Documentation</h2>
+<a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
+<div class="textblock"><p>A Quiz persistence data structure. </p>
+<p>On init, user must set the path to the Quiz with QuizState.NewState(string). </p>
+</div><h2 class="groupheader">Member Function Documentation</h2>
 <a id="ab0e9b57c8cff947e418353703327fab7" name="ab0e9b57c8cff947e418353703327fab7"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#ab0e9b57c8cff947e418353703327fab7">&#9670;&#160;</a></span>GetCurrentQuestion()</h2>
 
@@ -266,8 +281,8 @@ Properties</h2></td></tr>
 
 </div>
 </div>
-<a id="a4ca6c4a2c71dbb9af3d11ce3e23da2ad" name="a4ca6c4a2c71dbb9af3d11ce3e23da2ad"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a4ca6c4a2c71dbb9af3d11ce3e23da2ad">&#9670;&#160;</a></span>GetTopicsPath()</h2>
+<a id="a69950c0fdabf9dff4876eff817bd794e" name="a69950c0fdabf9dff4876eff817bd794e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a69950c0fdabf9dff4876eff817bd794e">&#9670;&#160;</a></span>GetTopicsPath()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -276,7 +291,7 @@ Properties</h2></td></tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">string QuizLogicalComponents.QuizStates.QuizState.GetTopicsPath </td>
+          <td class="memname">string? QuizLogicalComponents.QuizStates.QuizState.GetTopicsPath </td>
           <td>(</td>
           <td class="paramname"><span class="paramname"></span></td><td>)</td>
           <td></td>
@@ -319,10 +334,12 @@ Properties</h2></td></tr>
 
 <p>After @JsonSerializer.Deserialize, it initializes the field, that were not Serialized. </p>
 
+<p>Reimplemented in <a class="el" href="class_quiz_logical_components_1_1_quiz_states_1_1_reset_around_state.html#aab0b7e8238a8955f463300a9b28bbd32">QuizLogicalComponents.QuizStates.ResetAroundState</a>.</p>
+
 </div>
 </div>
-<a id="a5d7c5d64963a1d8045ebe165d0d90ff9" name="a5d7c5d64963a1d8045ebe165d0d90ff9"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a5d7c5d64963a1d8045ebe165d0d90ff9">&#9670;&#160;</a></span>MovePreviousAnswearedForward()</h2>
+<a id="a5c0904ecf16f8ac7f655997684312eaa" name="a5c0904ecf16f8ac7f655997684312eaa"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a5c0904ecf16f8ac7f655997684312eaa">&#9670;&#160;</a></span>MovePreviousAnsweredForward()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -331,7 +348,7 @@ Properties</h2></td></tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">void QuizLogicalComponents.QuizStates.QuizState.MovePreviousAnswearedForward </td>
+          <td class="memname">void QuizLogicalComponents.QuizStates.QuizState.MovePreviousAnsweredForward </td>
           <td>(</td>
           <td class="paramtype">int</td>          <td class="paramname"><span class="paramname"><em>distance</em></span></td><td>)</td>
           <td></td>
@@ -468,14 +485,14 @@ Properties</h2></td></tr>
 </div>
 </div>
 <h2 class="groupheader">Member Data Documentation</h2>
-<a id="aba699033d75f101bf444078c7853b4c8" name="aba699033d75f101bf444078c7853b4c8"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#aba699033d75f101bf444078c7853b4c8">&#9670;&#160;</a></span>CurrentQuestionsPath</h2>
+<a id="a8c80df66849ebf9cf96799c3ca5b2af9" name="a8c80df66849ebf9cf96799c3ca5b2af9"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a8c80df66849ebf9cf96799c3ca5b2af9">&#9670;&#160;</a></span>CurrentQuestionsPath</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">string QuizLogicalComponents.QuizStates.QuizState.CurrentQuestionsPath</td>
+          <td class="memname">string? QuizLogicalComponents.QuizStates.QuizState.CurrentQuestionsPath</td>
         </tr>
       </table>
 </div><div class="memdoc">

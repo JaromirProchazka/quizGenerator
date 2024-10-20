@@ -1,10 +1,9 @@
 var searchData=
 [
-  ['nameinput_5fselectedindexchanged_0',['nameInput_SelectedIndexChanged',['../class_q_generator_1_1_u_i_components_1_1_choose_questions_format.html#a720bc5c75fa2d85efd95f2cb748dfa88',1,'QGenerator::UIComponents::ChooseQuestionsFormat']]],
-  ['newstate_1',['NewState',['../class_quiz_logical_components_1_1_quiz_states_1_1_quiz_state.html#a0bfd5924c2fd1a85662cad99d6767e48',1,'QuizLogicalComponents::QuizStates::QuizState']]],
-  ['newtopicbtn_5fclick_2',['newTopicBtn_Click',['../classquiz_generator_1_1main_page.html#a6741d71687fb6042bf18c9d23e572a79',1,'quizGenerator::mainPage']]],
-  ['notesparser_3',['NotesParser',['../class_file_manager_1_1_notes_parsing_1_1_notes_parser.html#a875263aa57ec7e4be4e8d4681a01b3ff',1,'FileManager::NotesParsing::NotesParser']]],
-  ['notice_4',['Notice',['../class_q_generator_1_1_u_i_components_1_1_notification.html#ad988c1a14f6609fcff409aa74b19cedb',1,'QGenerator::UIComponents::Notification']]],
-  ['notification_5',['Notification',['../class_q_generator_1_1_u_i_components_1_1_notification.html#a7b60dfe7a9c5fadfade6dc455397e95f',1,'QGenerator::UIComponents::Notification']]],
-  ['notification_5fload_6',['Notification_Load',['../class_q_generator_1_1_u_i_components_1_1_notification.html#ae30abcf07b69a829d89f72082281e975',1,'QGenerator::UIComponents::Notification']]]
+  ['main_0',['Main',['../classquiz_generator_1_1_quiz_generator.html#a41f0e164c157b88c2f740fd9703ff20c',1,'quizGenerator::QuizGenerator']]],
+  ['mainpage_1',['mainPage',['../classquiz_generator_1_1main_page.html#a7f0c02117497aa5d3fbf0539dc224aed',1,'quizGenerator::mainPage']]],
+  ['mainpage_5fload_2',['mainPage_Load',['../classquiz_generator_1_1main_page.html#a4a28a9de06464989a42d06fe32dd7991',1,'quizGenerator::mainPage']]],
+  ['messagelabel_5fclick_3',['MessageLabel_Click',['../class_q_generator_1_1_u_i_components_1_1_notification.html#a64224e07c91ab8158e190f14a5066511',1,'QGenerator::UIComponents::Notification']]],
+  ['min_4',['Min',['../class_file_manager_1_1_priority_queue.html#a2771ff0d5d979b39332bb596982f6833',1,'FileManager::PriorityQueue']]],
+  ['movepreviousansweredforward_5',['MovePreviousAnsweredForward',['../class_quiz_logical_components_1_1_quiz_states_1_1_quiz_state.html#a5c0904ecf16f8ac7f655997684312eaa',1,'QuizLogicalComponents.QuizStates.QuizState.MovePreviousAnsweredForward()'],['../class_quiz_logical_components_1_1_quiz_states_1_1_reset_around_state.html#a4d1fac316d1de39291a09d592874ee14',1,'QuizLogicalComponents.QuizStates.ResetAroundState.MovePreviousAnsweredForward()']]]
 ];
