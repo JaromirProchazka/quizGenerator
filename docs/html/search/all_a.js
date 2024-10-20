@@ -4,7 +4,7 @@ var searchData=
   ['idea_1',['Basic Idea',['../index.html#autotoc_md2',1,'']]],
   ['indegrees_2',['inDegrees',['../class_file_manager_1_1_dag.html#a667d4e5ced5de43e83d8e71999cea3de',1,'FileManager::Dag']]],
   ['initializecomponent_3',['InitializeComponent',['../classquiz_generator_1_1questions_form.html#aafcb7c18224df89c7f4d974e1727a693',1,'quizGenerator.questionsForm.InitializeComponent()'],['../class_q_generator_1_1_u_i_components_1_1_choose_questions_format.html#ab51a791203c44fc62f410808cc5da38b',1,'QGenerator.UIComponents.ChooseQuestionsFormat.InitializeComponent()'],['../class_q_generator_1_1_u_i_components_1_1_choose_quiz_beginning_from.html#ae579ce5e27b1a0700e7a9a008d31eece',1,'QGenerator.UIComponents.ChooseQuizBeginningFrom.InitializeComponent()'],['../class_q_generator_1_1_u_i_components_1_1_choose_source_step.html#a2106ed344ff3565f605b8dbb07e7f732',1,'QGenerator.UIComponents.ChooseSourceStep.InitializeComponent()'],['../classquiz_generator_1_1main_page.html#a6619bab7bf7c232d563bb149a8ce44bc',1,'quizGenerator.mainPage.InitializeComponent()'],['../class_q_generator_1_1_u_i_components_1_1_notification.html#a8341a150419abcf9128b9a2179be7c39',1,'QGenerator.UIComponents.Notification.InitializeComponent()'],['../classquiz_generator_1_1questions_form.html#aafcb7c18224df89c7f4d974e1727a693',1,'quizGenerator.questionsForm.InitializeComponent()'],['../classquiz_generator_1_1topic_edit_box.html#a302c0ae91680ae038d04c26c59f6ab78',1,'quizGenerator.topicEditBox.InitializeComponent()']]],
-  ['inituntrackedfields_4',['InitUntrackedFields',['../class_quiz_logical_components_1_1_quiz_states_1_1_quiz_state.html#a3d1638018ef205f9b83df25367d74db4',1,'QuizLogicalComponents::QuizStates::QuizState']]],
+  ['inituntrackedfields_4',['InitUntrackedFields',['../class_quiz_logical_components_1_1_quiz_states_1_1_quiz_state.html#a3d1638018ef205f9b83df25367d74db4',1,'QuizLogicalComponents.QuizStates.QuizState.InitUntrackedFields()'],['../class_quiz_logical_components_1_1_quiz_states_1_1_reset_around_state.html#aab0b7e8238a8955f463300a9b28bbd32',1,'QuizLogicalComponents.QuizStates.ResetAroundState.InitUntrackedFields()']]],
   ['inlinenodestyle_5',['inlineNodeStyle',['../class_file_manager_1_1_notes_parsing_1_1_question_node_params.html#a5c23eaa088574ef1b206bd481a34407f',1,'FileManager::NotesParsing::QuestionNodeParams']]],
   ['inotionpageapi_6',['INotionPageAPI',['../interface_quiz_logical_components_1_1_quiz_creation_chain_1_1_choose_notion_notes_1_1_i_notion_page_a_p_i.html',1,'QuizLogicalComponents::QuizCreationChain::ChooseNotionNotes']]],
   ['insert_7',['insert',['../class_file_manager_1_1_dag.html#a7967ef502f6d2633660d64ba6a971483',1,'FileManager::Dag']]],
@@ -15,7 +15,9 @@ var searchData=
   ['is_20quiz_12',['What is Quiz?',['../index.html#autotoc_md3',1,'']]],
   ['isequenceofquestions_13',['ISequenceOfQuestions',['../interface_quiz_logical_components_1_1_i_sequence_of_questions.html',1,'QuizLogicalComponents']]],
   ['istateserializer_14',['IStateSerializer',['../interface_quiz_logical_components_1_1_quiz_states_1_1_i_state_serializer.html',1,'QuizLogicalComponents::QuizStates']]],
-  ['item_15',['Item',['../class_file_manager_1_1_priority_queue_1_1_item.html',1,'FileManager::PriorityQueue']]],
-  ['item_16',['item',['../classquiz_generator_1_1topic_edit_box.html#a20baa1c83250523c15c12de91e806b50',1,'quizGenerator::topicEditBox']]],
-  ['item_17',['Item',['../class_file_manager_1_1_priority_queue_1_1_item.html#a15728480a32e49b3a24cb5a94913fbb0',1,'FileManager::PriorityQueue::Item']]]
+  ['istateserializer_3c_20qst_20_3e_15',['IStateSerializer&lt; QST &gt;',['../interface_quiz_logical_components_1_1_quiz_states_1_1_i_state_serializer.html',1,'QuizLogicalComponents::QuizStates']]],
+  ['istopicfolder_16',['isTopicFolder',['../class_file_manager_1_1_questions_file.html#afcdd9f7170cab4b591ae1fd03eb7f524',1,'FileManager::QuestionsFile']]],
+  ['item_17',['Item',['../class_file_manager_1_1_priority_queue_1_1_item.html',1,'FileManager::PriorityQueue']]],
+  ['item_18',['item',['../classquiz_generator_1_1topic_edit_box.html#a20baa1c83250523c15c12de91e806b50',1,'quizGenerator::topicEditBox']]],
+  ['item_19',['Item',['../class_file_manager_1_1_priority_queue_1_1_item.html#a0da88113575b6b2b13827636fb610d81',1,'FileManager::PriorityQueue::Item']]]
 ];

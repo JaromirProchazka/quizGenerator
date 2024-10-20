@@ -8,6 +8,6 @@ var searchData=
   ['contextmenustrip1_5',['contextMenuStrip1',['../classquiz_generator_1_1topic_edit_box.html#adf58e823ce19958f50470bb869cbbba0',1,'quizGenerator::topicEditBox']]],
   ['continuebtn_6',['ContinueBtn',['../class_q_generator_1_1_u_i_components_1_1_choose_quiz_beginning_from.html#a33662da204fae5c9c245d2d7608eb716',1,'QGenerator.UIComponents.ChooseQuizBeginningFrom.ContinueBtn'],['../class_q_generator_1_1_u_i_components_1_1_choose_source_step.html#a7f19504ef9b8880a760397da5fa90b70',1,'QGenerator.UIComponents.ChooseSourceStep.ContinueBtn']]],
   ['counter_7',['Counter',['../class_file_manager_1_1_dag_1_1_counter_default.html#aee8400d96f8e9c7fc97a238c3c1b25ce',1,'FileManager::Dag::CounterDefault']]],
-  ['currentquestionspath_8',['CurrentQuestionsPath',['../class_quiz_logical_components_1_1_quiz_states_1_1_quiz_state.html#aba699033d75f101bf444078c7853b4c8',1,'QuizLogicalComponents::QuizStates::QuizState']]],
-  ['currenttopicdirectorypath_9',['currentTopicDirectoryPath',['../classquiz_generator_1_1topic_edit_box.html#ab128e3a1e00ba8f62e68ac8d30372c48',1,'quizGenerator::topicEditBox']]]
+  ['currentquestionspath_8',['CurrentQuestionsPath',['../class_quiz_logical_components_1_1_quiz_states_1_1_quiz_state.html#a8c80df66849ebf9cf96799c3ca5b2af9',1,'QuizLogicalComponents::QuizStates::QuizState']]],
+  ['currenttopicdirectorypath_9',['currentTopicDirectoryPath',['../classquiz_generator_1_1topic_edit_box.html#a0041f932f02e35e7e74e47cfff6cbcfd',1,'quizGenerator::topicEditBox']]]
 ];

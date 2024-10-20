@@ -10,5 +10,5 @@ var searchData=
   ['or_7',['OR',['../class_quiz_logical_components_1_1_quiz_creation_chain_1_1_choose_question_format.html#a913f4ef57d40eea49a7124dbb60da0eea1d00e7dce692e8dc3f6877f035e3a616',1,'QuizLogicalComponents::QuizCreationChain::ChooseQuestionFormat']]],
   ['oroption_5fcheckedchanged_8',['OrOption_CheckedChanged',['../class_q_generator_1_1_u_i_components_1_1_choose_questions_format.html#a3c5eedf36e7aa0e7f8d9fb8419e51526',1,'QGenerator::UIComponents::ChooseQuestionsFormat']]],
   ['orquestionnodeparams_9',['OrQuestionNodeParams',['../class_file_manager_1_1_notes_parsing_1_1_or_question_node_params.html',1,'FileManager::NotesParsing']]],
-  ['overview_10',['Developer Overview',['../index.html#autotoc_md10',1,'']]]
+  ['overview_10',['Overview',['../index.html#autotoc_md13',1,'Detailed Project Overview'],['../index.html#autotoc_md10',1,'Developer Overview']]]
 ];

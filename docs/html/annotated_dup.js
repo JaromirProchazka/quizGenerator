@@ -8,8 +8,9 @@ var annotated_dup =
         [ "QuestionNodeParams", "class_file_manager_1_1_notes_parsing_1_1_question_node_params.html", "class_file_manager_1_1_notes_parsing_1_1_question_node_params" ]
       ] ],
       [ "Dag", "class_file_manager_1_1_dag.html", "class_file_manager_1_1_dag" ],
-      [ "FileManager", "class_file_manager_1_1_file_manager.html", "class_file_manager_1_1_file_manager" ],
-      [ "PriorityQueue", "class_file_manager_1_1_priority_queue.html", "class_file_manager_1_1_priority_queue" ]
+      [ "HyperLink", "class_file_manager_1_1_hyper_link.html", "class_file_manager_1_1_hyper_link" ],
+      [ "PriorityQueue", "class_file_manager_1_1_priority_queue.html", "class_file_manager_1_1_priority_queue" ],
+      [ "QuestionsFile", "class_file_manager_1_1_questions_file.html", "class_file_manager_1_1_questions_file" ]
     ] ],
     [ "QGenerator", "namespace_q_generator.html", [
       [ "UIComponents", "namespace_q_generator_1_1_u_i_components.html", [
@@ -42,8 +43,10 @@ var annotated_dup =
         [ "TopicCreationStep", "class_quiz_logical_components_1_1_quiz_creation_chain_1_1_topic_creation_step.html", "class_quiz_logical_components_1_1_quiz_creation_chain_1_1_topic_creation_step" ]
       ] ],
       [ "QuizStates", "namespace_quiz_logical_components_1_1_quiz_states.html", [
+        [ "BaseStateSerializer", "class_quiz_logical_components_1_1_quiz_states_1_1_base_state_serializer.html", "class_quiz_logical_components_1_1_quiz_states_1_1_base_state_serializer" ],
         [ "IStateSerializer", "interface_quiz_logical_components_1_1_quiz_states_1_1_i_state_serializer.html", "interface_quiz_logical_components_1_1_quiz_states_1_1_i_state_serializer" ],
-        [ "QuizState", "class_quiz_logical_components_1_1_quiz_states_1_1_quiz_state.html", "class_quiz_logical_components_1_1_quiz_states_1_1_quiz_state" ]
+        [ "QuizState", "class_quiz_logical_components_1_1_quiz_states_1_1_quiz_state.html", "class_quiz_logical_components_1_1_quiz_states_1_1_quiz_state" ],
+        [ "ResetAroundState", "class_quiz_logical_components_1_1_quiz_states_1_1_reset_around_state.html", "class_quiz_logical_components_1_1_quiz_states_1_1_reset_around_state" ]
       ] ],
       [ "TopicStartingChain", "namespace_quiz_logical_components_1_1_topic_starting_chain.html", [
         [ "ChainStartingBuilder", "class_quiz_logical_components_1_1_topic_starting_chain_1_1_chain_starting_builder.html", "class_quiz_logical_components_1_1_topic_starting_chain_1_1_chain_starting_builder" ],

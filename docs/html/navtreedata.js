@@ -39,7 +39,13 @@ var NAVTREE =
     ] ],
     [ "Developer Overview", "index.html#autotoc_md10", [
       [ "Technologies", "index.html#autotoc_md11", null ],
-      [ "Advanced C# Tools", "index.html#autotoc_md12", null ]
+      [ "Advanced C# Tools", "index.html#autotoc_md12", null ],
+      [ "Detailed Project Overview", "index.html#autotoc_md13", [
+        [ "FileManager namespace", "index.html#autotoc_md14", null ],
+        [ "QuizLogicalComponents namespace", "index.html#autotoc_md15", null ],
+        [ "QGenerator namespace", "index.html#autotoc_md16", null ]
+      ] ],
+      [ "Future Expansions", "index.html#autotoc_md18", null ]
     ] ],
     [ "Namespaces", "namespaces.html", [
       [ "Namespace List", "namespaces.html", "namespaces_dup" ],
@@ -72,10 +78,11 @@ var NAVTREE =
 
 var NAVTREEINDEX =
 [
-"__chain__steps__types__8cs_8js.html",
-"class_q_generator_1_1_u_i_components_1_1_choose_questions_format.html#a23d64f6d6fdfeb94adf21a1cc3e73ffd",
-"class_quiz_logical_components_1_1_quiz_states_1_1_quiz_state.html#a13ee6e521e42d5bd80bfe42efffe9cbb",
-"dir__f176b9a89ae102d336876258762a8051_8js.html"
+"__chain__builder__8cs_8js.html",
+"class_file_manager_1_1_priority_queue.html#a86a69ee7b7add284ce5a6b386bf1ac42",
+"class_q_generator_1_1_u_i_components_1_1_notification.html#ae76f17c76736e9b20f3223a016daba8d",
+"classquiz_generator_1_1main_page.html#a0fb89b15870d3ab19fccaef9db8a9e90",
+"index.html#autotoc_md13"
 ];
 
 var SYNCONMSG = 'click to disable panel synchronisation';

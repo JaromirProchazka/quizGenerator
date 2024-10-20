@@ -1,5 +1,6 @@
 var hierarchy =
 [
+    [ "QuizLogicalComponents.QuizStates.BaseStateSerializer< ResetAroundState >", "class_quiz_logical_components_1_1_quiz_states_1_1_base_state_serializer.html", null ],
     [ "QuizLogicalComponents.AbstractChain.ChainBuilder< StepT, ProductT >", "class_quiz_logical_components_1_1_abstract_chain_1_1_chain_builder.html", null ],
     [ "QuizLogicalComponents.AbstractChain.ChainBuilder< QuizStartingStep, QuizProduct >", "class_quiz_logical_components_1_1_abstract_chain_1_1_chain_builder.html", [
       [ "QuizLogicalComponents.TopicStartingChain.ChainStartingBuilder", "class_quiz_logical_components_1_1_topic_starting_chain_1_1_chain_starting_builder.html", null ]
@@ -37,13 +38,13 @@ var hierarchy =
     [ "QGenerator.ChainUiInit", "class_q_generator_1_1_chain_ui_init.html", null ],
     [ "FileManager.Dag.CounterDefault< T >", "class_file_manager_1_1_dag_1_1_counter_default.html", null ],
     [ "FileManager.Dag", "class_file_manager_1_1_dag.html", null ],
-    [ "FileManager.FileManager", "class_file_manager_1_1_file_manager.html", null ],
     [ "Form", null, [
       [ "QGenerator.ChainStepForm< StepT, ProductT, BuilderT >", "class_q_generator_1_1_chain_step_form.html", null ],
       [ "QGenerator.UIComponents.Notification", "class_q_generator_1_1_u_i_components_1_1_notification.html", null ],
       [ "quizGenerator.mainPage", "classquiz_generator_1_1main_page.html", null ],
       [ "quizGenerator.topicEditBox", "classquiz_generator_1_1topic_edit_box.html", null ]
     ] ],
+    [ "FileManager.HyperLink", "class_file_manager_1_1_hyper_link.html", null ],
     [ "IDisposable", null, [
       [ "QuizLogicalComponents.QuizCreationChain.TopicCreationStep", "class_quiz_logical_components_1_1_quiz_creation_chain_1_1_topic_creation_step.html", null ]
     ] ],
@@ -52,15 +53,21 @@ var hierarchy =
       [ "QuizLogicalComponents.RandomDagSequence", "class_quiz_logical_components_1_1_random_dag_sequence.html", null ]
     ] ],
     [ "QuizLogicalComponents.QuizStates.IStateSerializer< QT >", "interface_quiz_logical_components_1_1_quiz_states_1_1_i_state_serializer.html", null ],
-    [ "FileManager.PriorityQueue< T >.Item< T >", "class_file_manager_1_1_priority_queue_1_1_item.html", null ],
+    [ "QuizLogicalComponents.QuizStates.IStateSerializer< QST >", "interface_quiz_logical_components_1_1_quiz_states_1_1_i_state_serializer.html", [
+      [ "QuizLogicalComponents.QuizStates.BaseStateSerializer< QST >", "class_quiz_logical_components_1_1_quiz_states_1_1_base_state_serializer.html", null ]
+    ] ],
+    [ "FileManager.PriorityQueue< T >.Item< IT >", "class_file_manager_1_1_priority_queue_1_1_item.html", null ],
     [ "FileManager.NotesParsing.NotesParser", "class_file_manager_1_1_notes_parsing_1_1_notes_parser.html", null ],
     [ "FileManager.PriorityQueue< T >", "class_file_manager_1_1_priority_queue.html", null ],
     [ "FileManager.NotesParsing.QuestionNodeParams", "class_file_manager_1_1_notes_parsing_1_1_question_node_params.html", [
       [ "FileManager.NotesParsing.AndQuestionNodeParams", "class_file_manager_1_1_notes_parsing_1_1_and_question_node_params.html", null ],
       [ "FileManager.NotesParsing.OrQuestionNodeParams", "class_file_manager_1_1_notes_parsing_1_1_or_question_node_params.html", null ]
     ] ],
+    [ "FileManager.QuestionsFile", "class_file_manager_1_1_questions_file.html", null ],
     [ "quizGenerator.questionsForm", "classquiz_generator_1_1questions_form.html", null ],
     [ "quizGenerator.QuizGenerator", "classquiz_generator_1_1_quiz_generator.html", null ],
-    [ "QuizLogicalComponents.QuizStates.QuizState", "class_quiz_logical_components_1_1_quiz_states_1_1_quiz_state.html", null ],
+    [ "QuizLogicalComponents.QuizStates.QuizState", "class_quiz_logical_components_1_1_quiz_states_1_1_quiz_state.html", [
+      [ "QuizLogicalComponents.QuizStates.ResetAroundState", "class_quiz_logical_components_1_1_quiz_states_1_1_reset_around_state.html", null ]
+    ] ],
     [ "quizGenerator.Topics", "classquiz_generator_1_1_topics.html", null ]
 ];

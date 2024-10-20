@@ -1,9 +1,10 @@
 var searchData=
 [
-  ['main_0',['Main',['../class_file_manager_1_1_file_manager.html#a4d11f9f39f505309b0000f08fdf29e78',1,'FileManager.FileManager.Main()'],['../classquiz_generator_1_1_quiz_generator.html#a41f0e164c157b88c2f740fd9703ff20c',1,'quizGenerator.QuizGenerator.Main()']]],
-  ['mainpage_1',['mainPage',['../classquiz_generator_1_1main_page.html#a7f0c02117497aa5d3fbf0539dc224aed',1,'quizGenerator::mainPage']]],
-  ['mainpage_5fload_2',['mainPage_Load',['../classquiz_generator_1_1main_page.html#a4a28a9de06464989a42d06fe32dd7991',1,'quizGenerator::mainPage']]],
-  ['messagelabel_5fclick_3',['MessageLabel_Click',['../class_q_generator_1_1_u_i_components_1_1_notification.html#a64224e07c91ab8158e190f14a5066511',1,'QGenerator::UIComponents::Notification']]],
-  ['min_4',['Min',['../class_file_manager_1_1_priority_queue.html#a2771ff0d5d979b39332bb596982f6833',1,'FileManager::PriorityQueue']]],
-  ['movepreviousanswearedforward_5',['MovePreviousAnswearedForward',['../class_quiz_logical_components_1_1_quiz_states_1_1_quiz_state.html#a5d7c5d64963a1d8045ebe165d0d90ff9',1,'QuizLogicalComponents::QuizStates::QuizState']]]
+  ['label3_5fclick_0',['label3_Click',['../class_q_generator_1_1_u_i_components_1_1_choose_questions_format.html#a625d4c94e0ff54cab5988c12cb3afe5b',1,'QGenerator::UIComponents::ChooseQuestionsFormat']]],
+  ['leftchildindex_1',['leftChildIndex',['../class_file_manager_1_1_priority_queue.html#a91bbdacef0b26efc7c90f5d620b036d2',1,'FileManager::PriorityQueue']]],
+  ['listbox1_5fselectedindexchanged_2',['ListBox1_SelectedIndexChanged',['../class_q_generator_1_1_u_i_components_1_1_choose_source_step.html#ab581d5c6b79ea6fa6e64dda04967228b',1,'QGenerator::UIComponents::ChooseSourceStep']]],
+  ['listboxlinks_5fselectedindexchanged_3',['listBoxLinks_SelectedIndexChanged',['../classquiz_generator_1_1main_page.html#aa0f9f227671211d0ad7d21ad41183ee7',1,'quizGenerator::mainPage']]],
+  ['loadedstatetoken_4',['LoadedStateToken',['../class_file_manager_1_1_questions_file.html#af47550affe24974f562705f71a517f61',1,'FileManager::QuestionsFile']]],
+  ['loadquizstatedata_5',['LoadQuizStateData',['../class_file_manager_1_1_questions_file.html#a0dc74144620ae8cf9d5efc7de20510f6',1,'FileManager::QuestionsFile']]],
+  ['loadstate_6',['LoadState',['../interface_quiz_logical_components_1_1_quiz_states_1_1_i_state_serializer.html#a6520ce6494e4eae7010098b2edca625d',1,'QuizLogicalComponents.QuizStates.IStateSerializer.LoadState()'],['../class_quiz_logical_components_1_1_quiz_states_1_1_base_state_serializer.html#a3c3388ba42f22da6f6390b6d3f9c5333',1,'QuizLogicalComponents.QuizStates.BaseStateSerializer.LoadState()']]]
 ];
