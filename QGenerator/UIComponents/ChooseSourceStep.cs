@@ -13,6 +13,8 @@ using System.Threading.Tasks;
 using System.Windows.Forms;
 using static System.Windows.Forms.LinkLabel;
 
+#nullable enable
+
 namespace QGenerator.UIComponents
 {
     public partial class ChooseSourceStep : ChainStepForm<TopicCreationStep, TopicProduct, ChainCreationBuilder>
@@ -28,16 +30,16 @@ namespace QGenerator.UIComponents
         private void ChooseSourceStep_Load(object sender, EventArgs e)
         {
             ContinueBtn.Text = "Continue";
-            populateListElement(notesChooseOptions);
+            PopulateListElement(notesChooseOptions);
         }
 
-        private static void populateListElement(ListBox listToBePopulated)
+        private static void PopulateListElement(ListBox listToBePopulated)
         {
             listToBePopulated.Items.Add(ChooseLocalHtmlFileOption.GetLabel());
             listToBePopulated.Items.Add(ChooseNotionNotes.GetLabel());
         }
 
-        private void listBox1_SelectedIndexChanged(object sender, EventArgs e)
+        private void ListBox1_SelectedIndexChanged(object sender, EventArgs e)
         {
 
         }
@@ -49,7 +51,8 @@ namespace QGenerator.UIComponents
                 if (notesChooseOptions.SelectedIndex == -1) throw new Exception("Choose an option in the list menu!");
                 TopicCreationStep? thisStep = null;
 
-                string selectedOption = (string)notesChooseOptions.SelectedItem;
+                if (notesChooseOptions.SelectedItem == null) throw new Exception("The selected item in the list is null");
+                string? selectedOption = (string)notesChooseOptions.SelectedItem;
                 if (selectedOption == ChooseLocalHtmlFileOption.GetLabel())
                 {
                     thisStep = new ChooseLocalHtmlFileOption(GetLocalFile, finalize);
@@ -64,7 +67,7 @@ namespace QGenerator.UIComponents
                 }
                 else return;
 
-                Builder.AddStep(thisStep);
+                _ = Builder?.AddStep(thisStep);
                 var res = Finalize();
             }
             catch (Exception ex)
@@ -80,6 +83,7 @@ namespace QGenerator.UIComponents
             if (ChooseLocalFile.ShowDialog() != DialogResult.OK) return null;
 
             string notesPath = ChooseLocalFile.FileName;
+            if (!File.Exists(notesPath)) return null;
             return File.OpenRead(notesPath);
         }
     }

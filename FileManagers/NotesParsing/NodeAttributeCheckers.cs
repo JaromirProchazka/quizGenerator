@@ -1,6 +1,7 @@
 ﻿using HtmlAgilityPack;
 using System;
 using System.Collections.Generic;
+using System.ComponentModel.DataAnnotations;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -78,7 +79,7 @@ namespace FileManager.NotesParsing
 
         protected override bool CheckPresent(HtmlNode node, StyleAttributes? inlineNodeStyle = null)
         {
-            if (Attribute.Count == 0) return true;
+            if (Attribute == null || Attribute.Count == 0) return true;
 
             var classAttribute = node.GetAttributeValue("class", null);
             if (string.IsNullOrEmpty(classAttribute))
@@ -99,6 +100,7 @@ namespace FileManager.NotesParsing
 
         protected override bool CheckPresent(HtmlNode node, StyleAttributes? inlineNodeStyle = null)
         {
+            if (inlineNodeStyle == null) return false;
             foreach (Tuple<string, string> att in inlineNodeStyle)
                 if (att.Item1 == "color" && att.Item2 == Attribute)
                     return true;
@@ -112,6 +114,7 @@ namespace FileManager.NotesParsing
 
         protected override bool CheckPresent(HtmlNode node, StyleAttributes? inlineNodeStyle = null)
         {
+            if (inlineNodeStyle == null) return false;
             foreach (Tuple<string, string> att in inlineNodeStyle)
                 if (att.Item1 == "font-family" && att.Item2.Split(',', StringSplitOptions.TrimEntries).Contains(Attribute))
                     return true;

@@ -6,13 +6,16 @@ using System.Text.Json.Serialization;
 
 namespace QuizLogicalComponents.QuizStates
 {
+    /// <summary>
+    /// A Quiz persistence data structure. On init, user must set the path to the Quiz with <see cref="QuizState.NewState(string)"/>.
+    /// </summary>
     public abstract record class QuizState
     {
         /// <summary>
         /// Path to the questions file (Json Included on Serialization).
         /// </summary>
         [JsonInclude]
-        public string CurrentQuestionsPath;
+        public string? CurrentQuestionsPath;
 
         /// <summary>
         /// Current questions ID (Json Included on Serialization).
@@ -27,19 +30,23 @@ namespace QuizLogicalComponents.QuizStates
         [JsonInclude]
         public bool ScoreWonState { get; private set; } = false;
 
+        //public QuizState(string currentQuestionsPath) { 
+        //    CurrentQuestionsPath = currentQuestionsPath;
+        //}
+
         public void SetScoreAsWinning() { ScoreWonState = true; }
 
         /// <summary>
         /// Moves the previous in the sequence forward in the questions.
         /// </summary>
         /// <param name="distance">The number of spaces in sequence, by which the questions Id is moved forward.</param>
-        public abstract void MovePreviousAnswearedForward(int distance);
+        public abstract void MovePreviousAnsweredForward(int distance);
 
         /// <summary>
         /// Used when the Topics name is needed.
         /// </summary>
         /// <returns>The path to the Topic Directory</returns>
-        public string GetTopicsPath() 
+        public string? GetTopicsPath() 
         { 
             return Path.GetDirectoryName(CurrentQuestionsPath); 
         }
@@ -94,7 +101,7 @@ namespace QuizLogicalComponents.QuizStates
     /// <summary>
     /// Represents the state of the quiz in a given time.
     /// </summary>
-    public record class ResetAroundState() : QuizState
+    public record class ResetAroundState : QuizState
     {
         /// <summary>
         /// List of question Id, by which the questions are identified (Json Included on Serialization).
@@ -106,15 +113,15 @@ namespace QuizLogicalComponents.QuizStates
         /// Used for generating random sequence.
         /// </summary>
         [JsonIgnore]
-        private ISequenceOfQuestions sequenceFinder;
+        private ISequenceOfQuestions? sequenceFinder;
 
         /// <summary>
         /// Returns the random sequence generator (Untracked by Json Serializer).
         /// </summary>
         /// <returns></returns>
-        public ISequenceOfQuestions GetSequence() => sequenceFinder;
+        public ISequenceOfQuestions? GetSequence() => sequenceFinder;
 
-        public ResetAroundState(string currentQuestionsPath, ISequenceOfQuestions sequence) : this()
+        public ResetAroundState(string currentQuestionsPath, ISequenceOfQuestions sequence) : base()
         {
             sequenceFinder = sequence;
             CurrentQuestionsPath = currentQuestionsPath;
@@ -129,10 +136,12 @@ namespace QuizLogicalComponents.QuizStates
         /// <param name="currentQuestionsPath">Path to the notes</param>
         public ResetAroundState(string currentQuestionsPath) :
             this(
-                currentQuestionsPath,
-                new RandomDagSequence(new FileInfo(currentQuestionsPath))
+                currentQuestionsPath: currentQuestionsPath,
+                sequence: new RandomDagSequence(new FileInfo(currentQuestionsPath))
             )
         { }
+
+        public ResetAroundState() { }
 
         public override QuizState NewState(string path) => new ResetAroundState(path);
 
@@ -165,7 +174,7 @@ namespace QuizLogicalComponents.QuizStates
             return QuestionIds[QuestionIndex - 1];
         }
 
-        public override void MovePreviousAnswearedForward(int distance)
+        public override void MovePreviousAnsweredForward(int distance)
         {
             string previousQuestionId = GetPreviousQuestion();
             QuestionIds.RemoveAt(QuestionIndex - 1);
@@ -178,6 +187,7 @@ namespace QuizLogicalComponents.QuizStates
 
         public override void ResetQuestions()
         {
+            if (sequenceFinder == null) return;
             QuestionIds = sequenceFinder.getSequence();
             QuestionIndex = 0;
         }
@@ -186,6 +196,7 @@ namespace QuizLogicalComponents.QuizStates
 
         public override ResetAroundState InitUntrackedFields()
         {
+            if (CurrentQuestionsPath == null) throw new ArgumentException("Path to Questions wasn't set for the QuizState!");
             sequenceFinder = new RandomDagSequence(new FileInfo(CurrentQuestionsPath));
             return this;
         }

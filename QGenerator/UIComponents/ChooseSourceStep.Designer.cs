@@ -43,7 +43,7 @@
             notesChooseOptions.Name = "notesChooseOptions";
             notesChooseOptions.Size = new Size(287, 334);
             notesChooseOptions.TabIndex = 0;
-            notesChooseOptions.SelectedIndexChanged += listBox1_SelectedIndexChanged;
+            notesChooseOptions.SelectedIndexChanged += ListBox1_SelectedIndexChanged;
             // 
             // ContinueBtn
             // 

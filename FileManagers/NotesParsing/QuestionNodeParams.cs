@@ -50,6 +50,7 @@ namespace FileManager.NotesParsing
         internal NameCheck Name = new NameCheck(null);
         public QuestionNodeParams SetName(string? name)
         {
+            if (name == null) return this;
             Name.Attribute = name;
             return this;
         }
@@ -69,8 +70,9 @@ namespace FileManager.NotesParsing
         /// Nodes text color in HEX.
         /// </summary>
         internal ColorCheck Color = new ColorCheck(null);
-        public QuestionNodeParams SetColor(string color)
+        public QuestionNodeParams SetColor(string? color)
         {
+            if (color == null) return this;
             Color.Attribute = color;
             return this;
         }
@@ -79,8 +81,9 @@ namespace FileManager.NotesParsing
         /// Nodes text font-family.
         /// </summary>
         internal FontCheck FontFamily = new FontCheck(null);
-        public QuestionNodeParams SetFontFamily(string fontFamily)
+        public QuestionNodeParams SetFontFamily(string? fontFamily)
         {
+            if (fontFamily == null) return this;
             FontFamily.Attribute = fontFamily;
             return this;
         }

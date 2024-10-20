@@ -11,12 +11,13 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "FileManagerTests", "FileMan
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "QuizLogicalComponents", "QuizLogicalComponents\QuizLogicalComponents.csproj", "{83BDC551-3E45-4C81-B64A-200014C89664}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "QuizLogicalComponentsTests", "QuizLogicalComponentsTests\QuizLogicalComponentsTests.csproj", "{EAB8E4B4-4FD0-40F8-A84A-5C9673BB8524}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "QuizLogicalComponentsTests", "QuizLogicalComponentsTests\QuizLogicalComponentsTests.csproj", "{EAB8E4B4-4FD0-40F8-A84A-5C9673BB8524}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
 		Release|Any CPU = Release|Any CPU
+		Description = An app for powerful Quiz Generation from many formats and self testing
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
 		{84D0D301-01E6-4820-A815-F3968C794F9B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU

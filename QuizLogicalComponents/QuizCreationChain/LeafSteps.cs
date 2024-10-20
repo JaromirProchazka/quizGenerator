@@ -5,6 +5,7 @@ using System.Text;
 using System.Threading.Tasks;
 using FileManager;
 using QuizLogicalComponents.AbstractChain;
+using QuizLogicalComponents.TopicStartingChain;
 
 namespace QuizLogicalComponents.QuizCreationChain
 {
@@ -24,11 +25,14 @@ namespace QuizLogicalComponents.QuizCreationChain
 
         internal override TopicProduct Step()
         {
+            if (BetweenStep == null) BetweenStep = new TopicProduct();
+            if (BetweenStep.pathToSource == null) throw new ArgumentException("Source choosing must be run before the Finalizing step!");
             var topicPath = QuestionsFile.CreateNewTopic(BetweenStep.pathToSource);
 
             BetweenStep.pathToSource = Path.Combine(topicPath, QuestionsFile.notesFileName);
             BetweenStep.pathToQuiz = Path.Combine(topicPath, QuestionsFile.questionsFileName);
-            BetweenStep.finalize.Invoke(); // Updates the Topics list
+
+            if (BetweenStep.finalize != null) BetweenStep.finalize.Invoke(); // Updates the Topics list
 
             FirstStep.Dispose();
             return BetweenStep;

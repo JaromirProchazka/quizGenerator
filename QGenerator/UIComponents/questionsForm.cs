@@ -35,12 +35,14 @@ namespace quizGenerator
         public questionsForm(QuizState givenState)
         {
             InitializeComponent();
+            if (givenState.CurrentQuestionsPath == null) throw new Exception("Quiz State was not set correctly!");
             serializer = new BaseStateSerializer<ResetAroundState>(givenState.CurrentQuestionsPath);
             state = givenState;
         }
 
         private void questionsForm_Load(object sender, EventArgs e)
         {
+            if (state.CurrentQuestionsPath == null) throw new Exception("Quiz State was not set correctly!");
             string uriPath = @"file:///" + Path.GetFullPath(state.CurrentQuestionsPath).Replace(@"\", "/").Replace("#", "%23");
             webBrowser2.Url = new Uri(uriPath);
 
@@ -64,9 +66,10 @@ namespace quizGenerator
             showCurrentQuestion();
         }
 
-        private void webBrowser2_Navigating(object sender, WebBrowserNavigatingEventArgs e)
+        private void webBrowser2_Navigating(object? sender, WebBrowserNavigatingEventArgs e)
         {
             e.Cancel = true;
+            if (e.Url == null) return;
             System.Diagnostics.Process.Start(e.Url.ToString());
         }
 
@@ -84,7 +87,7 @@ namespace quizGenerator
         private void badNext_Click(object sender, EventArgs e)
         {
             NextQuestion();
-            state.MovePreviousAnswearedForward(movingDistanceOnBadAnswear);
+            state.MovePreviousAnsweredForward(movingDistanceOnBadAnswear);
             updateScore();
         }
 
@@ -146,7 +149,7 @@ namespace quizGenerator
         private void showCurrentQuestion()
         {
             webBrowser2
-            .Document
+            .Document?
             .InvokeScript(
                 "ShowQuestion",
                 new object[] { state.GetCurrentQuestion() }
@@ -158,7 +161,7 @@ namespace quizGenerator
         private void hideCurrentQuestion()
         {
             webBrowser2
-            .Document
+            .Document?
             .InvokeScript(
                 "HideQuestion",
                 new object[] { state.GetCurrentQuestion() }
@@ -169,7 +172,7 @@ namespace quizGenerator
             if (state.QuestionIndex >= 0 && state.QuestionIndex < state.GetQuestionsCount())
             {
                 webBrowser2
-                .Document
+                .Document?
                 .InvokeScript(
                     "ShowAnswear",
                     new object[] { state.GetCurrentQuestion() }

@@ -38,10 +38,6 @@ namespace QGenerator
             return this;
         }
 
-        public ChainStepForm() { 
-            //Builder = bulder;
-        }
-
         /// <summary>
         /// Does all the jobs before this window is ready to close.
         /// </summary>
@@ -50,7 +46,7 @@ namespace QGenerator
         {
             if (Next == null)
             {
-                return Builder.Build().DoStep();
+                return Builder?.Build().DoStep();
             }
             else
             {

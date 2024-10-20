@@ -48,6 +48,9 @@ namespace QuizLogicalComponents.QuizCreationChain
                 case ChecksLogicalOperator.OR:
                     Analyser = new OrQuestionNodeParams();
                     break;
+                default:
+                    Analyser = new AndQuestionNodeParams();
+                    break;
             }
 
             Analyser
@@ -60,6 +63,7 @@ namespace QuizLogicalComponents.QuizCreationChain
         internal override TopicProduct Step()
         {
             FileManager.QuestionsFile.SetQuestionNodeAnalyzer(Analyser);
+            if (BetweenStep == null) BetweenStep = new TopicProduct();
             return BetweenStep;
         }
 

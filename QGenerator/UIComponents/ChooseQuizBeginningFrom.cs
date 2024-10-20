@@ -41,6 +41,7 @@ namespace QGenerator.UIComponents
             {
                 QuizStartingStep thisStep;
 
+                if (notesChooseOptions.SelectedItem == null) return;
                 string selectedOption = (string)notesChooseOptions.SelectedItem;
                 if (selectedOption == ContinueQuizWhereLastEnded.GetLabel()) 
                 {
@@ -52,9 +53,9 @@ namespace QGenerator.UIComponents
                 }
                 else return;
 
-                Builder.AddStep(thisStep);
+                _ = Builder?.AddStep(thisStep);
                 var res = Finalize();
-                if (res != null) new questionsForm(res.state).Show();
+                if (res != null && res.state != null) new questionsForm(res.state).Show();
 
                 this.Close();
             }

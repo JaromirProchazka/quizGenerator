@@ -373,7 +373,7 @@ namespace FileManagerTests.NotesParsingTests
 
 
         // Phind - generated
-        private static HtmlNode CreateHtmlNode(string nodeName, Dictionary<string, string> attributes = null)
+        private static HtmlNode CreateHtmlNode(string nodeName, Dictionary<string, string>? attributes = null)
         {
             var doc = new HtmlDocument();
             var node = doc.CreateElement(nodeName);

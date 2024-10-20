@@ -61,6 +61,7 @@ namespace QuizLogicalComponents.QuizCreationChain
 
         internal override TopicProduct Step()
         {
+            if (BetweenStep == null) BetweenStep = new TopicProduct();
             BetweenStep.finalize = this.finalize;
             return BetweenStep;
         }
@@ -84,17 +85,15 @@ namespace QuizLogicalComponents.QuizCreationChain
         /// </summary>
         public Func<FileStream?> FileStreamFetcher;
 
-        public ChooseLocalHtmlFileOption(Func<FileStream> fileStreamFetcher, Action finalize) : base(finalize)
+        public ChooseLocalHtmlFileOption(Func<FileStream?> fileStreamFetcher, Action finalize) : base(finalize)
         {
             this.FileStreamFetcher = fileStreamFetcher;
 
             // open the file
-            FileStream? fileRes = null;
-            while (fileRes == null)
-            {
-                fileRes = FileStreamFetcher.Invoke();
-            }
+            var fileRes = FileStreamFetcher.Invoke();
 
+
+            if (fileRes == null) throw new FileLoadException("File not selected");
             this.openedFile = fileRes;
         }
 
@@ -109,6 +108,7 @@ namespace QuizLogicalComponents.QuizCreationChain
             transferData();
 
             // give the notes to the Product
+            if (BetweenStep == null) BetweenStep = new TopicProduct();
             BetweenStep.pathToSource = source;
             return BetweenStep;
         }
@@ -205,6 +205,7 @@ namespace QuizLogicalComponents.QuizCreationChain
             }
 
             // give the notes temporary to the Product
+            if (BetweenStep == null) BetweenStep = new TopicProduct();
             BetweenStep.pathToSource = source;
 
             return BetweenStep;

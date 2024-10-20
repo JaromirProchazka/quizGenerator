@@ -25,6 +25,7 @@ namespace quizGenerator
         private void listBoxLinks_SelectedIndexChanged(object sender, EventArgs e)
         {
             if (TopicsList.SelectedIndex == -1) return;
+            if (TopicsList.SelectedItem == null) return;
             
             HyperLink selectedItem = (HyperLink)TopicsList.SelectedItem;
             Topics.OpenQuizPage(selectedItem.LinkToQuestions);
@@ -60,6 +61,7 @@ namespace quizGenerator
         {
             if (TopicsList.SelectedIndex != -1)
             {
+                if (TopicsList.SelectedItem == null) return;
                 HyperLink selectedItem = (HyperLink)TopicsList.SelectedItem;
                 //Topics.OpenQuizPage(
                 //    selectedItem.LinkToQuestions
@@ -79,6 +81,7 @@ namespace quizGenerator
         {
             if (TopicsList.SelectedIndex != -1)
             {
+                if (TopicsList.SelectedItem == null) return;
                 HyperLink selectedItem = (HyperLink)TopicsList.SelectedItem;
                 new topicEditBox(TopicsList, selectedItem).Show();
             }

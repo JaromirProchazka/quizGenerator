@@ -25,7 +25,7 @@ namespace QuizLogicalComponents.TopicStartingChain
         /// <returns></returns>
         internal override QuizProduct Step()
         {
-
+            if (BetweenStep == null) BetweenStep = new QuizProduct();
             return BetweenStep;
         }
     }

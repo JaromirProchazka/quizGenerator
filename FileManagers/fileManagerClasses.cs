@@ -34,29 +34,31 @@ namespace FileManager
     /// </summary>
     public static class QuestionsFile
     {
-        public static string utilFolderPath = @".\.sources\";
-        public static string questionsFileName = "questions.html";
-        public static string notesFileName = "notes.html";
-        public static string stylesFileName = "styles.css";
-        public static string scriptFileName = "script.js";
-        public static string quizState = "state.json";
-        public static string questionsScriptName = "questionsScript.js";
+        public static readonly string utilFolderName = ".sources";
+        public static readonly string utilFolderPath = $".\\{utilFolderName}\\";
+        public static readonly string questionsFileName = "questions.html";
+        public static readonly string notesFileName = "notes.html";
+        public static readonly string stylesFileName = "styles.css";
+        public static readonly string scriptFileName = "script.js";
+        public static readonly string quizState = "state.json";
+        public static readonly string questionsScriptName = "questionsScript.js";
 
-        static string templateSourcesPath = Path.Combine(AppDomain.CurrentDomain.BaseDirectory, "FileManagers", Path.GetDirectoryName(utilFolderPath));
+        static readonly string templateSourcesPath = Path.Combine(AppDomain.CurrentDomain.BaseDirectory, "FileManagers", utilFolderName);
 
         /// <summary>
         /// Used for determining, which html nodes in the input source nodes are the questions 
         /// </summary>
-        public static QuestionNodeParams? questionNodeAnalyzer { get; private set; }
+        public static QuestionNodeParams? QuestionNodeAnalyzer { get; private set; }
         public static void SetQuestionNodeAnalyzer(QuestionNodeParams value)
         {
             parser.questionNodeAnalyzer = value;
-            questionNodeAnalyzer = value;
+            QuestionNodeAnalyzer = value;
         }
         internal static NotesParser parser;
 
         static QuestionsFile()
         {
+
             parser = new NotesParser();
         }
 
@@ -123,7 +125,10 @@ namespace FileManager
         /// <returns>New path to the Topics folder with new name, if the <see cref="currentTopicDirectoryPath"/> is valid</returns>
         public static string? RenameTopic(string currentTopicDirectoryPath, string newName)
         {
-            string newPath = Path.Combine(Path.GetDirectoryName(currentTopicDirectoryPath), QuestionsFile.toTopicFileName(newName));
+            var currentTopicName = Path.GetDirectoryName(currentTopicDirectoryPath);
+            if (currentTopicName == null) return null;
+
+            string newPath = Path.Combine(currentTopicName, QuestionsFile.toTopicFileName(newName));
             if (Directory.Exists(newPath))
             {
                 string uniqueName = addCopyToName(newName);
@@ -165,7 +170,9 @@ namespace FileManager
         {
             string fullPath = Path.GetFullPath(path);
             string fullSourcesPath = Path.GetFullPath(QuestionsFile.utilFolderPath);
-            string fullParentPath = Path.GetFullPath(Path.GetDirectoryName(fullPath));
+            string? name = Path.GetDirectoryName(fullPath);
+            if (name == null) return false;
+            string fullParentPath = Path.GetFullPath(name);
             return Directory.Exists(path) &&
                     fullPath.Contains(fullSourcesPath) &&
                     fullSourcesPath.Contains(fullParentPath);
@@ -263,8 +270,10 @@ namespace FileManager
         /// <returns></returns>
         public static string GetQuizName(string pathToQuiz)
         {
-            var dirInfo = new DirectoryInfo(pathToQuiz);
-            return dirInfo.Parent.Name;
+            DirectoryInfo dirInfo = new DirectoryInfo(pathToQuiz);
+            var dirname = dirInfo.Parent?.Name;
+            if (dirname == null) throw new Exception("Not a valid Quiz file given!");
+            return dirname;
         }
 
         /// <summary>

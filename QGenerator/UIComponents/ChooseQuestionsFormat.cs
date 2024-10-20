@@ -54,7 +54,7 @@ namespace QGenerator.UIComponents
             try
             {
                 var step = new ChooseQuestionFormat(LogicalOperator, name, classes, color, font);
-                Builder.AddStep(step);
+                _ = Builder?.AddStep(step);
                 _ = Finalize();
             }
             catch (Exception ex)

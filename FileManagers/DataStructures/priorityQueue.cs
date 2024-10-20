@@ -47,7 +47,6 @@ namespace FileManager
             {
                 if (Heap.Count == 0) { return; }
                 int currentIndex = 0;
-                bool changed = true;
                 while (2 * currentIndex <= Count) 
                 {
                     int leftChildIndex = this.leftChildIndex(currentIndex);
@@ -121,12 +120,12 @@ namespace FileManager
             }
         }
 
-        private class Item<T>
+        private class Item<IT> where IT : T
         {
             public int Priority { get; } 
-            public T Value { get; }
+            public IT Value { get; }
 
-            public Item(int _priority, T _item)
+            public Item(int _priority, IT _item)
             {
                 Priority = _priority;
                 Value = _item;

@@ -17,7 +17,7 @@ namespace quizGenerator
     {
         ListBox mainPageListBox;
         HyperLink item;
-        public string currentTopicDirectoryPath;
+        public string? currentTopicDirectoryPath;
 
         public topicEditBox(ListBox _listBox, HyperLink _item)
         {
@@ -35,6 +35,9 @@ namespace quizGenerator
 
         private void renameBtn_Click(object sender, EventArgs e)
         {
+            if (currentTopicDirectoryPath == null) 
+                throw new Exception("The current topic directory path wasn't set!");
+
             if (textBox1.Text.Length == 0) return;
 
             string newName = textBox1.Text;
@@ -51,7 +54,9 @@ namespace quizGenerator
 
         private void deleteBtn_Click(object sender, EventArgs e)
         {
-            string pathToTopicFolder = Path.GetFullPath(Path.GetDirectoryName(item.LinkToQuestions));
+            var dirName = Path.GetDirectoryName(item.LinkToQuestions);
+            if (dirName == null) return;
+            string pathToTopicFolder = Path.GetFullPath(dirName);
             if (QuestionsFile.DeleteTopic(pathToTopicFolder))
             {
                 mainPage.updateList(mainPageListBox);

@@ -6,6 +6,8 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
+#nullable disable
+
 namespace QuizLogicalComponents.TopicStartingChain
 {
     public record class ChainStartingBuilder :
@@ -21,7 +23,7 @@ namespace QuizLogicalComponents.TopicStartingChain
         }
 
         /// <summary>
-        /// Creates the Chian.
+        /// Creates the Chain.
         /// </summary>
         /// <returns>returns the first step of the chain</returns>
         public override ChainStep<QuizProduct> Build()

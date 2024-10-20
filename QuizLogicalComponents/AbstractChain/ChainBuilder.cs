@@ -14,12 +14,12 @@ namespace QuizLogicalComponents.AbstractChain
         /// <summary>
         /// The starting step in the chain.
         /// </summary>
-        public ChainStep<ProductT> Start;
+        public ChainStep<ProductT>? Start;
 
         /// <summary>
         /// The current end Step in the chain.
         /// </summary>
-        public ChainStep<ProductT> End;
+        public ChainStep<ProductT>? End;
 
         /// <summary>
         /// Adds another step to the end of the chain.
@@ -28,22 +28,11 @@ namespace QuizLogicalComponents.AbstractChain
         /// <returns>This Builder for fluent syntax.</returns>
         public ChainBuilder<StepT,ProductT> AddStep(ChainStep<ProductT> step)
         {
+            if (End == null) throw new Exception("Chain Builder not init with Start and End");
             _ = End.SetNext(step);
             End = step;
 
             return this;
-        }
-
-        /// <summary>
-        /// Creates new instance of the given StepType and adds it to the end of the Chain.
-        /// </summary>
-        /// <typeparam name="StepT">The type of the Creation step.</typeparam>
-        /// <param name="args">The arguments to the Generic arguments constructor.</param>
-        /// <returns></returns>
-        public ChainBuilder<StepT,ProductT> AddStepT(params object[] args)
-        {
-            StepT step = (StepT)Activator.CreateInstance(typeof(StepT), args);
-            return AddStep(step);
         }
 
         /// <summary>

@@ -38,6 +38,7 @@ namespace QuizLogicalComponents.TopicStartingChain
     {
         internal override QuizProduct Step()
         {
+            if (BetweenStep == null) BetweenStep = new QuizProduct();
             BetweenStep.state = this.state;
             return BetweenStep;
         }
@@ -54,6 +55,7 @@ namespace QuizLogicalComponents.TopicStartingChain
     {
         internal override QuizProduct Step()
         {
+            if (BetweenStep == null) BetweenStep = new QuizProduct();
             BetweenStep.state = new ResetAroundState(questionsFilePath);
             return BetweenStep;
         }

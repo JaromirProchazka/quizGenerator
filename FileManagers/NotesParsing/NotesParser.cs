@@ -77,14 +77,14 @@ namespace FileManager.NotesParsing
         {
             HtmlNodeCollection children = node.ChildNodes;
             bool areInHeading = false;
-            HtmlNode currentHeadingAnswer = null;
+            HtmlNode? currentHeadingAnswer = null;
             foreach (HtmlNode child in children)
             {
                 onNode(child, ref areInHeading, ref currentHeadingAnswer);
             }
         }
 
-        internal virtual void onNode(HtmlNode child, ref bool areInHeading, ref HtmlNode currentHeadingAnswer)
+        internal virtual void onNode(HtmlNode child, ref bool areInHeading, ref HtmlNode? currentHeadingAnswer)
         {
             areInHeading = false;
             if (child.NodeType != HtmlNodeType.Element)
@@ -105,7 +105,7 @@ namespace FileManager.NotesParsing
                 resultState.addHeading(child);
                 areInHeading = true;
                 state.noQuestionInHeadingYet = true;
-                currentHeadingAnswer = resultState.resultCurrentPosition.SelectSingleNode("//*[contains(@class, 'heading_section_contents')]");
+                currentHeadingAnswer = resultState.resultCurrentPosition?.SelectSingleNode("//*[contains(@class, 'heading_section_contents')]");
             }
             else if (isQuestion)
             {
@@ -178,16 +178,16 @@ namespace FileManager.NotesParsing
             HtmlNode latestQuestionBox = questionBoxTemplate
                 .DocumentNode
                 .SelectSingleNode("//*[contains(@class, 'question_box')]");
-            HtmlNode questionBox = resultCurrentPosition
+            HtmlNode? questionBox = resultCurrentPosition?
                 .AppendChild(latestQuestionBox);
 
-            HtmlNode questionName = questionBox.SelectSingleNode("//*[contains(@class, 'question_name')]");
-            HtmlNode questionAnswear = questionBox
+            HtmlNode? questionName = questionBox?.SelectSingleNode("//*[contains(@class, 'question_name')]");
+            HtmlNode? questionAnswer = questionBox?
                 .SelectSingleNode("//*[contains(@class, 'question_answer')]");
-            if (questionAnswear != null && questionName != null)
+            if (questionAnswer != null && questionName != null && questionBox != null)
             {
                 questionBox.SelectSingleNode("//*[contains(@class, 'question_name')]").InnerHtml = question.InnerText;
-                questionAnswear.AppendChild(ParentTextNode(question));
+                questionAnswer.AppendChild(ParentTextNode(question));
             }
         }
 
@@ -201,19 +201,20 @@ namespace FileManager.NotesParsing
 
             if (headingRank <= state.currentParentHeadingRank)
             {
-                HtmlNode currentParentHeading = resultCurrentPosition.ParentNode;
+                HtmlNode? currentParentHeading = resultCurrentPosition?.ParentNode;
                 int parentHeadingRank = state.currentParentHeadingRank - 1;
                 while (parentHeadingRank >= headingRank)
                 {
-                    currentParentHeading = currentParentHeading.ParentNode;
+                    currentParentHeading = currentParentHeading?.ParentNode;
                     parentHeadingRank--;
                 }
                 resultCurrentPosition = currentParentHeading;
             }
-            HtmlNode headingBox = resultCurrentPosition.AppendChild(headingBoxTemplate.DocumentNode.SelectSingleNode("//div"));
-            resultCurrentPosition = headingBox.SelectSingleNode("//*[contains(@class, 'heading_sections')]");
+            HtmlNode? headingBox = resultCurrentPosition?.AppendChild(headingBoxTemplate.DocumentNode.SelectSingleNode("//div"));
+            resultCurrentPosition = headingBox?.SelectSingleNode("//*[contains(@class, 'heading_sections')]");
             state.currentParentHeadingRank = headingRank;
 
+            if (headingBox == null) return;
             headingBox.SelectSingleNode("//*[contains(@class, 'section_heading')]").InnerHtml = heading.InnerText;
         }
 
