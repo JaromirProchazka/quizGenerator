@@ -560,6 +560,34 @@
         "runtime": {
           "bin/placeholder/QuizLogicalComponents.dll": {}
         }
+      },
+      "QuizStarting/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v8.0",
+        "dependencies": {
+          "FileManager": "1.0.0",
+          "QuizLogicalComponents": "1.0.0"
+        },
+        "compile": {
+          "bin/placeholder/QuizStarting.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/QuizStarting.dll": {}
+        }
+      },
+      "TopicCreation/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v8.0",
+        "dependencies": {
+          "FileManager": "1.0.0",
+          "QuizLogicalComponents": "1.0.0"
+        },
+        "compile": {
+          "bin/placeholder/TopicCreation.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/TopicCreation.dll": {}
+        }
       }
     }
   },
@@ -1419,6 +1447,16 @@
       "type": "project",
       "path": "../QuizLogicalComponents/QuizLogicalComponents.csproj",
       "msbuildProject": "../QuizLogicalComponents/QuizLogicalComponents.csproj"
+    },
+    "QuizStarting/1.0.0": {
+      "type": "project",
+      "path": "../QuizStarting/QuizStarting.csproj",
+      "msbuildProject": "../QuizStarting/QuizStarting.csproj"
+    },
+    "TopicCreation/1.0.0": {
+      "type": "project",
+      "path": "../TopicCreation/TopicCreation.csproj",
+      "msbuildProject": "../TopicCreation/TopicCreation.csproj"
     }
   },
   "projectFileDependencyGroups": {
@@ -1429,6 +1467,8 @@
       "MSTest.TestFramework >= 3.1.1",
       "Microsoft.NET.Test.Sdk >= 17.8.0",
       "QuizLogicalComponents >= 1.0.0",
+      "QuizStarting >= 1.0.0",
+      "TopicCreation >= 1.0.0",
       "coverlet.collector >= 6.0.0"
     ]
   },
@@ -1470,6 +1510,12 @@
             },
             "C:\\Users\\jarom\\Desktop\\PG_CVIČENÍ\\quizGenerator\\QuizLogicalComponents\\QuizLogicalComponents.csproj": {
               "projectPath": "C:\\Users\\jarom\\Desktop\\PG_CVIČENÍ\\quizGenerator\\QuizLogicalComponents\\QuizLogicalComponents.csproj"
+            },
+            "C:\\Users\\jarom\\Desktop\\PG_CVIČENÍ\\quizGenerator\\QuizStarting\\QuizStarting.csproj": {
+              "projectPath": "C:\\Users\\jarom\\Desktop\\PG_CVIČENÍ\\quizGenerator\\QuizStarting\\QuizStarting.csproj"
+            },
+            "C:\\Users\\jarom\\Desktop\\PG_CVIČENÍ\\quizGenerator\\TopicCreation\\TopicCreation.csproj": {
+              "projectPath": "C:\\Users\\jarom\\Desktop\\PG_CVIČENÍ\\quizGenerator\\TopicCreation\\TopicCreation.csproj"
             }
           }
         }

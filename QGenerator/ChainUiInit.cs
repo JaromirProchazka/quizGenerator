@@ -6,8 +6,8 @@ using System.Text;
 using System.Threading.Tasks;
 using QGenerator.UIComponents;
 
-using QuizLogicalComponents.QuizCreationChain;
-using QuizLogicalComponents.TopicStartingChain;
+using TopicCreation.QuizCreationChain;
+using QuizStarting.TopicStartingChain;
 
 namespace QGenerator
 {

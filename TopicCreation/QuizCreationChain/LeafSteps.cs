@@ -5,9 +5,8 @@ using System.Text;
 using System.Threading.Tasks;
 using FileManager;
 using QuizLogicalComponents.AbstractChain;
-using QuizLogicalComponents.TopicStartingChain;
 
-namespace QuizLogicalComponents.QuizCreationChain
+namespace TopicCreation.QuizCreationChain
 {
     /// <summary>
     /// Simply returns the result ending the Chain. 
@@ -23,7 +22,7 @@ namespace QuizLogicalComponents.QuizCreationChain
         /// </summary>
         public override TopicProduct? BetweenStep { get; set; } = null;
 
-        internal override TopicProduct Step()
+        public override TopicProduct Step()
         {
             if (BetweenStep == null) BetweenStep = new TopicProduct();
             if (BetweenStep.pathToSource == null) throw new ArgumentException("Source choosing must be run before the Finalizing step!");
@@ -54,7 +53,7 @@ namespace QuizLogicalComponents.QuizCreationChain
         /// Default Initializes the running Product and returns it.
         /// </summary>
         /// <returns>The running Product</returns>
-        internal override TopicProduct Step()
+        public override TopicProduct Step()
         {
             BetweenStep = new TopicProduct();
             return BetweenStep;

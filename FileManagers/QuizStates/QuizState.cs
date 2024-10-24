@@ -2,9 +2,10 @@
 using System.IO;
 using System.Runtime.CompilerServices;
 using System.Text.Json.Serialization;
+using FileManager;
 
 
-namespace QuizLogicalComponents.QuizStates
+namespace FileManager.QuizStates
 {
     /// <summary>
     /// A Quiz persistence data structure. On init, user must set the path to the Quiz with <see cref="QuizState.NewState(string)"/>.

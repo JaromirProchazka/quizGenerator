@@ -1,5 +1,4 @@
-﻿using QuizLogicalComponents.QuizCreationChain;
-using QuizLogicalComponents.TopicStartingChain;
+﻿using QuizStarting.TopicStartingChain;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;

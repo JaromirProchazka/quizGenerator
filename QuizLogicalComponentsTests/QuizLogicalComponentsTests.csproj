@@ -39,6 +39,8 @@
   <ItemGroup>
     <ProjectReference Include="..\FileManagerTests1\FileManagerTests.csproj" />
     <ProjectReference Include="..\QuizLogicalComponents\QuizLogicalComponents.csproj" />
+    <ProjectReference Include="..\QuizStarting\QuizStarting.csproj" />
+    <ProjectReference Include="..\TopicCreation\TopicCreation.csproj" />
   </ItemGroup>
 
   <ItemGroup>

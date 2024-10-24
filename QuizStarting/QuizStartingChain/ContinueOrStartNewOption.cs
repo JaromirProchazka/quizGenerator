@@ -1,12 +1,12 @@
 ﻿using QuizLogicalComponents.AbstractChain;
-using QuizLogicalComponents.QuizStates;
+using FileManager.QuizStates;
 using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace QuizLogicalComponents.TopicStartingChain
+namespace QuizStarting.TopicStartingChain
 {
     
     public abstract record class ContinueOrStartNewOption : 
@@ -36,7 +36,7 @@ namespace QuizLogicalComponents.TopicStartingChain
     public record class ContinueQuizWhereLastEnded(string questionsFilePath) :
         ContinueOrStartNewOption(questionsFilePath)
     {
-        internal override QuizProduct Step()
+        public override QuizProduct Step()
         {
             if (BetweenStep == null) BetweenStep = new QuizProduct();
             BetweenStep.state = this.state;
@@ -53,7 +53,7 @@ namespace QuizLogicalComponents.TopicStartingChain
     public record class StartNewQuizFromBeginning(string questionsFilePath) :
         ContinueOrStartNewOption(questionsFilePath)
     {
-        internal override QuizProduct Step()
+        public override QuizProduct Step()
         {
             if (BetweenStep == null) BetweenStep = new QuizProduct();
             BetweenStep.state = new ResetAroundState(questionsFilePath);

@@ -1,5 +1,4 @@
-﻿using QuizLogicalComponents.QuizCreationChain;
-using System;
+﻿using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -66,7 +65,7 @@ namespace QuizLogicalComponents.AbstractChain
         /// <summary>
         /// The method characterizing the Step in the Chain. Override to implement your concreate Step.
         /// </summary>
-        internal abstract ProductT Step();
+        public abstract ProductT Step();
     }
 
     public record class ChainProduct()

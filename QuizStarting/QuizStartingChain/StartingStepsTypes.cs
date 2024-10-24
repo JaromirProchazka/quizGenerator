@@ -1,13 +1,12 @@
 ﻿using QuizLogicalComponents.AbstractChain;
-using QuizLogicalComponents.QuizCreationChain;
-using QuizLogicalComponents.QuizStates;
+using FileManager.QuizStates;
 using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace QuizLogicalComponents.TopicStartingChain
+namespace QuizStarting.TopicStartingChain
 {
     /// <summary>
     /// A step in the Quiz Starting chain.

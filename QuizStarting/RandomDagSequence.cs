@@ -1,4 +1,5 @@
 ﻿using FileManager;
+using NotesParsing.DataStructures;
 using HtmlAgilityPack;
 using System;
 using System.Collections.Generic;
@@ -6,7 +7,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace QuizLogicalComponents
+namespace QuizStarting
 {
     public interface ISequenceOfQuestions
     {

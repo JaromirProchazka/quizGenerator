@@ -1,12 +1,11 @@
 ﻿using QuizLogicalComponents.AbstractChain;
-using QuizLogicalComponents.QuizCreationChain;
 using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace QuizLogicalComponents.TopicStartingChain
+namespace QuizStarting.TopicStartingChain
 {
     /// <summary>
     /// The last step of the Quiz starting Chain. Starts the quiz and return the <see cref="QuizProduct"/> instance.
@@ -23,7 +22,7 @@ namespace QuizLogicalComponents.TopicStartingChain
         /// Starts the quiz and return the product.
         /// </summary>
         /// <returns></returns>
-        internal override QuizProduct Step()
+        public override QuizProduct Step()
         {
             if (BetweenStep == null) BetweenStep = new QuizProduct();
             return BetweenStep;
@@ -40,7 +39,7 @@ namespace QuizLogicalComponents.TopicStartingChain
         /// Default Initializes the running Product and returns it.
         /// </summary>
         /// <returns>The running Product</returns>
-        internal override QuizProduct Step()
+        public override QuizProduct Step()
         {
             BetweenStep = new QuizProduct();
             return BetweenStep;

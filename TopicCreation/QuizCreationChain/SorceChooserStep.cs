@@ -9,7 +9,7 @@ using System.Text.Json;
 using Refit;
 using QuizLogicalComponents.AbstractChain;
 
-namespace QuizLogicalComponents.QuizCreationChain
+namespace TopicCreation.QuizCreationChain
 {
     /// <summary>
     /// an <see cref="TopicCreationStep"/>, which is responsible for fetching the source of the Final Topic.
@@ -59,7 +59,7 @@ namespace QuizLogicalComponents.QuizCreationChain
             _tempFiles.Delete();
         }
 
-        internal override TopicProduct Step()
+        public override TopicProduct Step()
         {
             if (BetweenStep == null) BetweenStep = new TopicProduct();
             BetweenStep.finalize = this.finalize;
@@ -97,7 +97,7 @@ namespace QuizLogicalComponents.QuizCreationChain
             this.openedFile = fileRes;
         }
 
-        internal override TopicProduct Step()
+        public override TopicProduct Step()
         {
             _ = base.Step();
 
@@ -175,7 +175,7 @@ namespace QuizLogicalComponents.QuizCreationChain
             Id = this.GetIdFromUrl(notionPageUrl);
         }
 
-        internal override TopicProduct Step()
+        public override TopicProduct Step()
         {
             _ = base.Step();
 

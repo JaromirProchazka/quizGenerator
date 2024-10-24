@@ -1,5 +1,4 @@
 ﻿using QuizLogicalComponents.AbstractChain;
-using QuizLogicalComponents.QuizCreationChain;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -8,7 +7,7 @@ using System.Threading.Tasks;
 
 #nullable disable
 
-namespace QuizLogicalComponents.TopicStartingChain
+namespace QuizStarting.TopicStartingChain
 {
     public record class ChainStartingBuilder :
         ChainBuilder<QuizStartingStep, QuizProduct>

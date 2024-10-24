@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 using NotesParsing;
 using Refit;
 
-namespace QuizLogicalComponents.QuizCreationChain
+namespace TopicCreation.QuizCreationChain
 {
     /// <summary>
     /// Determines the format of the html nodes, which will be taken as Questions. 
@@ -60,7 +60,7 @@ namespace QuizLogicalComponents.QuizCreationChain
                 .SetFontFamily(fontFamily);
         }
 
-        internal override TopicProduct Step()
+        public override TopicProduct Step()
         {
             FileManager.QuestionsFile.SetQuestionNodeAnalyzer(Analyser);
             if (BetweenStep == null) BetweenStep = new TopicProduct();

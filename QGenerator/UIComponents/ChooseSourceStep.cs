@@ -1,7 +1,7 @@
 ﻿using FileManager;
 using quizGenerator;
 using QuizLogicalComponents.AbstractChain;
-using QuizLogicalComponents.QuizCreationChain;
+using TopicCreation.QuizCreationChain;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;

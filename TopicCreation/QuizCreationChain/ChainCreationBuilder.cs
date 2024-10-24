@@ -7,7 +7,7 @@ using System.Threading.Tasks;
 
 #nullable disable
 
-namespace QuizLogicalComponents.QuizCreationChain
+namespace TopicCreation.QuizCreationChain
 {
     public record class ChainCreationBuilder : 
         ChainBuilder<TopicCreationStep, TopicProduct>

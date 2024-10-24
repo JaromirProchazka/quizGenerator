@@ -6,7 +6,7 @@ using System.Text.Json;
 using System.Threading.Tasks;
 using FileManager;
 
-namespace QuizLogicalComponents.QuizStates
+namespace FileManager.QuizStates
 {
     /// <summary>
     /// General interface for Quiz State serializers

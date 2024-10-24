@@ -2,8 +2,8 @@
 using QGenerator.UIComponents;
 using System;
 using System.Windows.Forms;
-using QuizLogicalComponents.TopicStartingChain;
-using QuizLogicalComponents.QuizCreationChain;
+using QuizStarting.TopicStartingChain;
+using TopicCreation.QuizCreationChain;
 using QGenerator;
 
 namespace quizGenerator

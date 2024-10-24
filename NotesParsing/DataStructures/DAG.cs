@@ -7,7 +7,7 @@ using System.Security.Cryptography;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace FileManager
+namespace NotesParsing.DataStructures
 {
     /// <summary>
     /// an acyclic oriented graph with insert() and randomTopologicalOrder() methods. The insert() method insured, that the graph is indeed still a DAG
