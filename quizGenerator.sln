@@ -13,6 +13,8 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "QuizLogicalComponents", "Qu
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "QuizLogicalComponentsTests", "QuizLogicalComponentsTests\QuizLogicalComponentsTests.csproj", "{EAB8E4B4-4FD0-40F8-A84A-5C9673BB8524}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "NotesParsing", "NotesParsing\NotesParsing.csproj", "{83FD6438-7E9D-48F2-92DB-E9A6FBA82EB0}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -40,6 +42,10 @@ Global
 		{EAB8E4B4-4FD0-40F8-A84A-5C9673BB8524}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{EAB8E4B4-4FD0-40F8-A84A-5C9673BB8524}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{EAB8E4B4-4FD0-40F8-A84A-5C9673BB8524}.Release|Any CPU.Build.0 = Release|Any CPU
+		{83FD6438-7E9D-48F2-92DB-E9A6FBA82EB0}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{83FD6438-7E9D-48F2-92DB-E9A6FBA82EB0}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{83FD6438-7E9D-48F2-92DB-E9A6FBA82EB0}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{83FD6438-7E9D-48F2-92DB-E9A6FBA82EB0}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

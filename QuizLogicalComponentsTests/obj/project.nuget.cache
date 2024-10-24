@@ -1,11 +1,11 @@
 {
   "version": 2,
-  "dgSpecHash": "QCGW3JGzaGxzk08JR9Y52igkpTLWFQvauyOcFh/ZquwhocsM8QSewWT9iIEL5tzG+XIW4fbGAzIR4DLRROD0AQ==",
+  "dgSpecHash": "RlzxP1eRidJMFosnc+vY5WwBnnJhJzMd/RFe2eUQ8llnuF840SsGHJ8ZXKSNMHd4DFtn8Iv019rQrRNgmuQ8Kw==",
   "success": true,
   "projectFilePath": "C:\\Users\\jarom\\Desktop\\PG_CVIČENÍ\\quizGenerator\\QuizLogicalComponentsTests\\QuizLogicalComponentsTests.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\jarom\\.nuget\\packages\\coverlet.collector\\6.0.0\\coverlet.collector.6.0.0.nupkg.sha512",
-    "C:\\Users\\jarom\\.nuget\\packages\\htmlagilitypack\\1.11.61\\htmlagilitypack.1.11.61.nupkg.sha512",
+    "C:\\Users\\jarom\\.nuget\\packages\\htmlagilitypack\\1.11.67\\htmlagilitypack.1.11.67.nupkg.sha512",
     "C:\\Users\\jarom\\.nuget\\packages\\microsoft.codecoverage\\17.8.0\\microsoft.codecoverage.17.8.0.nupkg.sha512",
     "C:\\Users\\jarom\\.nuget\\packages\\microsoft.net.test.sdk\\17.8.0\\microsoft.net.test.sdk.17.8.0.nupkg.sha512",
     "C:\\Users\\jarom\\.nuget\\packages\\microsoft.testplatform.objectmodel\\17.8.0\\microsoft.testplatform.objectmodel.17.8.0.nupkg.sha512",

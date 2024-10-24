@@ -8,7 +8,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using QuizLogicalComponents.QuizCreationChain;
-using FileManager.NotesParsing;
+using NotesParsing;
 using System.CodeDom;
 using System.Diagnostics.Eventing.Reader;
 

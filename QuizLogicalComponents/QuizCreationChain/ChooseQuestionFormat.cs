@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
-using FileManager.NotesParsing;
+using NotesParsing;
 using Refit;
 
 namespace QuizLogicalComponents.QuizCreationChain

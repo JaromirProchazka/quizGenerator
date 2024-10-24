@@ -7,6 +7,7 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <PackageReference Include="HtmlAgilityPack" Version="1.11.67" />
     <PackageReference Include="Refit" Version="7.1.2" />
     <PackageReference Include="System.CodeDom" Version="9.0.0-preview.6.24327.7" />
   </ItemGroup>

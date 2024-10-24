@@ -17,7 +17,11 @@
   </ItemGroup>
 
   <ItemGroup>
-    <PackageReference Include="HtmlAgilityPack" Version="1.11.61" />
+    <PackageReference Include="HtmlAgilityPack" Version="1.11.67" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\NotesParsing\NotesParsing.csproj" />
   </ItemGroup>
 
 </Project>

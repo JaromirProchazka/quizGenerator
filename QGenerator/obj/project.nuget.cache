@@ -1,10 +1,10 @@
 {
   "version": 2,
-  "dgSpecHash": "PpuGCS/tWrPXXKGFrLpDFoayY1Kx2gmRF3OVpYAknwHG1E3/zOZ0Dv/wVVTNcFCuyCWKkiq6sk9yVjcHMF0DkQ==",
+  "dgSpecHash": "YMQCZ5BycOEDZt/M0b+AW2M4C2vVMxLfU3UC4Ei1UrwE8n4wyV9fvv24eyB+56BHByIE0ggE2pVlV3It9brZ4A==",
   "success": true,
   "projectFilePath": "C:\\Users\\jarom\\Desktop\\PG_CVIČENÍ\\quizGenerator\\QGenerator\\QGenerator.csproj",
   "expectedPackageFiles": [
-    "C:\\Users\\jarom\\.nuget\\packages\\htmlagilitypack\\1.11.61\\htmlagilitypack.1.11.61.nupkg.sha512",
+    "C:\\Users\\jarom\\.nuget\\packages\\htmlagilitypack\\1.11.67\\htmlagilitypack.1.11.67.nupkg.sha512",
     "C:\\Users\\jarom\\.nuget\\packages\\refit\\7.1.2\\refit.7.1.2.nupkg.sha512",
     "C:\\Users\\jarom\\.nuget\\packages\\system.codedom\\9.0.0-preview.6.24327.7\\system.codedom.9.0.0-preview.6.24327.7.nupkg.sha512",
     "C:\\Users\\jarom\\.nuget\\packages\\system.net.http.json\\8.0.0\\system.net.http.json.8.0.0.nupkg.sha512",
