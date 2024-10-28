@@ -6,7 +6,7 @@ using System.IO;
 using System.Windows.Forms;
 using FileManager.QuizStates;
 
-namespace quizGenerator
+namespace QuizGeneratorPresentation.QuizStarting
 {
     /// <summary>
     /// An interface for specific quiz. A Path to the Questions is provided in constructor.

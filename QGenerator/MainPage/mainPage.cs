@@ -1,12 +1,10 @@
 ﻿using FileManager;
-using QGenerator.UIComponents;
 using System;
 using System.Windows.Forms;
 using QuizStarting.TopicStartingChain;
-using TopicCreation.QuizCreationChain;
-using QGenerator;
+using TopicCreation.TopicCreationChain;
 
-namespace quizGenerator
+namespace QuizGeneratorPresentation.MainPage
 {
     public partial class mainPage : Form
     {

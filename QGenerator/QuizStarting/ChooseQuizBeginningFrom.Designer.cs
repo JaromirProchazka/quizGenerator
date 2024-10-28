@@ -1,4 +1,4 @@
-﻿namespace QGenerator.UIComponents
+﻿namespace QuizGeneratorPresentation.QuizStarting
 {
     partial class ChooseQuizBeginningFrom
     {

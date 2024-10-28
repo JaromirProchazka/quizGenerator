@@ -1,4 +1,4 @@
-﻿namespace quizGenerator
+﻿namespace QuizGeneratorPresentation.MainPage
 {
     partial class mainPage
     {

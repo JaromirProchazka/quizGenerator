@@ -10,7 +10,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
-namespace QGenerator.UIComponents
+namespace QuizGeneratorPresentation
 {
     public partial class Notification : Form
     {

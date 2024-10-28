@@ -5,23 +5,23 @@ VisualStudioVersion = 17.5.33627.172
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "FileManager", "FileManagers\FileManager.csproj", "{84D0D301-01E6-4820-A815-F3968C794F9B}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "QGenerator", "QGenerator\QGenerator.csproj", "{9E8079CF-B75D-4E96-80DB-AFEF46CAB156}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "QuizGeneratorPresentation", "QGenerator\QuizGeneratorPresentation.csproj", "{9E8079CF-B75D-4E96-80DB-AFEF46CAB156}"
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "FileManagerTests", "FileManagerTests1\FileManagerTests.csproj", "{244F2DBC-DBCA-4A25-8795-693E2E5EE3D1}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "QuizLogicalComponents", "QuizLogicalComponents\QuizLogicalComponents.csproj", "{83BDC551-3E45-4C81-B64A-200014C89664}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "AbstractChainStructure", "QuizLogicalComponents\AbstractChainStructure.csproj", "{83BDC551-3E45-4C81-B64A-200014C89664}"
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "QuizLogicalComponentsTests", "QuizLogicalComponentsTests\QuizLogicalComponentsTests.csproj", "{EAB8E4B4-4FD0-40F8-A84A-5C9673BB8524}"
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "NotesParsing", "NotesParsing\NotesParsing.csproj", "{83FD6438-7E9D-48F2-92DB-E9A6FBA82EB0}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TopicCreation", "TopicCreation\TopicCreation.csproj", "{F8374BB8-75C8-498D-A18A-259BD5C86A58}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "TopicCreation", "TopicCreation\TopicCreation.csproj", "{F8374BB8-75C8-498D-A18A-259BD5C86A58}"
 	ProjectSection(ProjectDependencies) = postProject
 		{83BDC551-3E45-4C81-B64A-200014C89664} = {83BDC551-3E45-4C81-B64A-200014C89664}
 		{84D0D301-01E6-4820-A815-F3968C794F9B} = {84D0D301-01E6-4820-A815-F3968C794F9B}
 	EndProjectSection
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "QuizStarting", "QuizStarting\QuizStarting.csproj", "{B4A5CC79-C3F2-49F1-B88A-95F2E2DCDEC5}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "QuizStarting", "QuizStarting\QuizStarting.csproj", "{B4A5CC79-C3F2-49F1-B88A-95F2E2DCDEC5}"
 	ProjectSection(ProjectDependencies) = postProject
 		{83BDC551-3E45-4C81-B64A-200014C89664} = {83BDC551-3E45-4C81-B64A-200014C89664}
 		{84D0D301-01E6-4820-A815-F3968C794F9B} = {84D0D301-01E6-4820-A815-F3968C794F9B}

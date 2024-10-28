@@ -5,9 +5,9 @@ using System.Collections.Generic;
 using System.IO;
 using System.Reflection;
 using System.Diagnostics;
-using quizGenerator;
+using QuizGeneratorPresentation;
 
-namespace quizGenerator
+namespace QuizGeneratorPresentation
 {
     public class QuizGenerator
     {

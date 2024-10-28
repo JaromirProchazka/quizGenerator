@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "jaYsU3ZdkPSy49LnA635zPI54chghS5DvG0zG+H9xt2OVvzlv0VQuZg2LZjl8kWOwbYnrdWtokXaq6tXqn0yxw==",
+  "dgSpecHash": "VhiusGc9AdzyaiVIurm+AHf+HWrn3K0O3+8FJxEB4xVn4JMMN1PubRPlPk0Z07+ibaSMhvOGfBMCdJi/3lXPmA==",
   "success": true,
-  "projectFilePath": "C:\\Users\\jarom\\Desktop\\PG_CVIČENÍ\\quizGenerator\\QuizStarting\\QuizStarting.csproj",
+  "projectFilePath": "C:\\Users\\jarom\\Desktop\\PG_CVIČENÍ\\quizGenerator\\TopicCreationPresentation\\TopicCreationPresentation.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\jarom\\.nuget\\packages\\htmlagilitypack\\1.11.67\\htmlagilitypack.1.11.67.nupkg.sha512",
     "C:\\Users\\jarom\\.nuget\\packages\\refit\\7.1.2\\refit.7.1.2.nupkg.sha512",

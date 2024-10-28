@@ -7,7 +7,7 @@ using System.Threading.Tasks;
 using QuizLogicalComponents;
 using QuizLogicalComponents.AbstractChain;
 
-namespace QGenerator
+namespace QuizGeneratorPresentation
 {
     public class ChainStepForm<StepT, ProductT, BuilderT> : Form
         where ProductT : ChainProduct, new()

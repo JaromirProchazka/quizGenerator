@@ -1,4 +1,6 @@
 ﻿using FileManager;
+using QuizGeneratorPresentation.MainPage;
+using QuizGeneratorPresentation.QuizStarting;
 using System;
 using System.Collections.Generic;
 using System.IO;
@@ -7,7 +9,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
-namespace quizGenerator
+namespace QuizGeneratorPresentation
 {
     public static class Topics
     {

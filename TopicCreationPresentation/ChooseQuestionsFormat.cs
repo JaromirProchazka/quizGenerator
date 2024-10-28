@@ -11,6 +11,7 @@ using TopicCreation.QuizCreationChain;
 using NotesParsing;
 using System.CodeDom;
 using System.Diagnostics.Eventing.Reader;
+using System.Windows.Forms;
 
 namespace QGenerator.UIComponents
 {

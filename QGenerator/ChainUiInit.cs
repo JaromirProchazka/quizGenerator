@@ -4,12 +4,13 @@ using System.Linq;
 using System.Net.NetworkInformation;
 using System.Text;
 using System.Threading.Tasks;
-using QGenerator.UIComponents;
+using QuizGeneratorPresentation.QuizStarting;
+using QuizGeneratorPresentation.TopicCreation;
 
-using TopicCreation.QuizCreationChain;
+using TopicCreation.TopicCreationChain;
 using QuizStarting.TopicStartingChain;
 
-namespace QGenerator
+namespace QuizGeneratorPresentation
 {
     public static class ChainUiInit
     {

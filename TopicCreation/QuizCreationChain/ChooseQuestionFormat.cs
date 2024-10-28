@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 using NotesParsing;
 using Refit;
 
-namespace TopicCreation.QuizCreationChain
+namespace TopicCreation.TopicCreationChain
 {
     /// <summary>
     /// Determines the format of the html nodes, which will be taken as Questions. 

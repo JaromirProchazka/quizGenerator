@@ -1,4 +1,4 @@
-﻿namespace QGenerator.UIComponents
+﻿namespace QuizGeneratorPresentation
 {
     partial class Notification
     {

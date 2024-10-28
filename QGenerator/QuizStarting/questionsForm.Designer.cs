@@ -1,4 +1,4 @@
-﻿namespace quizGenerator
+﻿namespace QuizGeneratorPresentation.QuizStarting
 {
     partial class questionsForm
     {

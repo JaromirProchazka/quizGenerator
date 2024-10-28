@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 using FileManager;
 using QuizLogicalComponents.AbstractChain;
 
-namespace TopicCreation.QuizCreationChain
+namespace TopicCreation.TopicCreationChain
 {
     /// <summary>
     /// Simply returns the result ending the Chain. 

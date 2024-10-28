@@ -262,12 +262,13 @@ namespace FileManager
         public record struct LoadedStateToken(LoadedState State, string Data) { }
 
         /// <summary>
-        /// Given a path to quiz return it's name
+        /// Given a path to quiz return its name
         /// </summary>
-        /// <param name="pathToQuiz">Name of the quiz</param>
-        /// <returns></returns>
-        public static string GetQuizName(string pathToQuiz)
+        /// <param name="pathToQuiz"></param>
+        /// <returns>Name of the quiz. If null, returns empty string</returns>
+        public static string GetQuizName(string? pathToQuiz)
         {
+            if (pathToQuiz == null) return "";
             DirectoryInfo dirInfo = new DirectoryInfo(pathToQuiz);
             var dirname = dirInfo.Parent?.Name;
             if (dirname == null) throw new Exception("Not a valid Quiz file given!");

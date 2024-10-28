@@ -27,7 +27,7 @@ namespace QuizLogicalComponents.Tests
 
             if (sequence.Count != 3)
             {
-                Assert.Fail($"More or Less questions than neccesary (is {sequence.Count} but should be 3).");
+                Assert.Fail($"More or Less questions than necessary (is {sequence.Count} but should be 3).");
             }
             foreach (string s in new string[] { "question_1", "question_2", "question_3" })
             {

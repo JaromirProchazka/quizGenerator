@@ -1,7 +1,7 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\jarom\\Desktop\\PG_CVIČENÍ\\quizGenerator\\QGenerator\\QGenerator.csproj": {}
+    "C:\\Users\\jarom\\Desktop\\PG_CVIČENÍ\\quizGenerator\\QGenerator\\QuizGeneratorPresentation.csproj": {}
   },
   "projects": {
     "C:\\Users\\jarom\\Desktop\\PG_CVIČENÍ\\quizGenerator\\FileManagers\\FileManager.csproj": {
@@ -150,12 +150,12 @@
         }
       }
     },
-    "C:\\Users\\jarom\\Desktop\\PG_CVIČENÍ\\quizGenerator\\QGenerator\\QGenerator.csproj": {
+    "C:\\Users\\jarom\\Desktop\\PG_CVIČENÍ\\quizGenerator\\QGenerator\\QuizGeneratorPresentation.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\jarom\\Desktop\\PG_CVIČENÍ\\quizGenerator\\QGenerator\\QGenerator.csproj",
-        "projectName": "QGenerator",
-        "projectPath": "C:\\Users\\jarom\\Desktop\\PG_CVIČENÍ\\quizGenerator\\QGenerator\\QGenerator.csproj",
+        "projectUniqueName": "C:\\Users\\jarom\\Desktop\\PG_CVIČENÍ\\quizGenerator\\QGenerator\\QuizGeneratorPresentation.csproj",
+        "projectName": "QuizGeneratorPresentation",
+        "projectPath": "C:\\Users\\jarom\\Desktop\\PG_CVIČENÍ\\quizGenerator\\QGenerator\\QuizGeneratorPresentation.csproj",
         "packagesPath": "C:\\Users\\jarom\\.nuget\\packages\\",
         "outputPath": "C:\\Users\\jarom\\Desktop\\PG_CVIČENÍ\\quizGenerator\\QGenerator\\obj\\",
         "projectStyle": "PackageReference",

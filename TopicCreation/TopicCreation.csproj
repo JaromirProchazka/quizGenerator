@@ -8,7 +8,7 @@
 
   <ItemGroup>
     <ProjectReference Include="..\FileManagers\FileManager.csproj" />
-    <ProjectReference Include="..\QuizLogicalComponents\QuizLogicalComponents.csproj" />
+    <ProjectReference Include="..\QuizLogicalComponents\AbstractChainStructure.csproj" />
   </ItemGroup>
 
 </Project>

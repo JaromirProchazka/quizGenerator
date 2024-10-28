@@ -9,7 +9,7 @@ using System.Text.Json;
 using Refit;
 using QuizLogicalComponents.AbstractChain;
 
-namespace TopicCreation.QuizCreationChain
+namespace TopicCreation.TopicCreationChain
 {
     /// <summary>
     /// an <see cref="TopicCreationStep"/>, which is responsible for fetching the source of the Final Topic.

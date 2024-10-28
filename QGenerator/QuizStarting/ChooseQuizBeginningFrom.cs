@@ -8,9 +8,9 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
-using quizGenerator;
+using QuizGeneratorPresentation;
 
-namespace QGenerator.UIComponents
+namespace QuizGeneratorPresentation.QuizStarting
 {
     public partial class ChooseQuizBeginningFrom : ChainStepForm<QuizStartingStep, QuizProduct, ChainStartingBuilder>
     {
@@ -22,11 +22,13 @@ namespace QGenerator.UIComponents
             this.pathToQuiz = pathToQuiz;
         }
 
+
         private void ChooseQuizBeginningFrom_Load(object sender, EventArgs e)
         {
             ContinueBtn.Text = "Continue";
             populateListElement(notesChooseOptions);
         }
+
 
         private static void populateListElement(ListBox listToBePopulated)
         {
@@ -34,15 +36,19 @@ namespace QGenerator.UIComponents
             listToBePopulated.Items.Add(StartNewQuizFromBeginning.GetLabel());
         }
 
+
         private void ContinueBtn_Click(object sender, EventArgs e)
         {
             try
             {
                 QuizStartingStep thisStep;
 
+
                 if (notesChooseOptions.SelectedItem == null) return;
+
                 string selectedOption = (string)notesChooseOptions.SelectedItem;
-                if (selectedOption == ContinueQuizWhereLastEnded.GetLabel()) 
+
+                if (selectedOption == ContinueQuizWhereLastEnded.GetLabel())
                 {
                     thisStep = new ContinueQuizWhereLastEnded(pathToQuiz);
                 }
@@ -53,7 +59,9 @@ namespace QGenerator.UIComponents
                 else return;
 
                 _ = Builder?.AddStep(thisStep);
+
                 var res = Finalize();
+
                 if (res != null && res.state != null) new questionsForm(res.state).Show();
 
                 this.Close();

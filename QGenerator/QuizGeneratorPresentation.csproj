@@ -14,22 +14,29 @@
 
   <ItemGroup>
     <ProjectReference Include="..\FileManagers\FileManager.csproj" />
-    <ProjectReference Include="..\QuizLogicalComponents\QuizLogicalComponents.csproj" />
+    <ProjectReference Include="..\QuizLogicalComponents\AbstractChainStructure.csproj" />
     <ProjectReference Include="..\QuizStarting\QuizStarting.csproj" />
     <ProjectReference Include="..\TopicCreation\TopicCreation.csproj" />
   </ItemGroup>
 
   <ItemGroup>
-    <Compile Update="UIComponents\mainPage.cs">
+    <Compile Update="ChainUiStep.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Update="UIComponents\questionsForm.cs">
+    <Compile Update="TopicCreation\ChooseQuestionsFormat.cs" />
+    <Compile Update="TopicCreation\ChooseSourceStep.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Update="UIComponents\questionsForm.Designer.cs">
+    <Compile Update="MainPage\mainPage.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="QuizStarting\questionsForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="QuizStarting\questionsForm.Designer.cs">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Compile>
-    <Compile Update="UIComponents\topicEditBox.cs">
+    <Compile Update="MainPage\topicEditBox.cs">
       <SubType>Form</SubType>
     </Compile>
   </ItemGroup>

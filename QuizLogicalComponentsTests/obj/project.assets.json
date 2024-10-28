@@ -499,6 +499,22 @@
           "buildTransitive/net6.0/System.Text.Json.targets": {}
         }
       },
+      "AbstractChainStructure/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v8.0",
+        "dependencies": {
+          "FileManager": "1.0.0",
+          "HtmlAgilityPack": "1.11.67",
+          "Refit": "7.1.2",
+          "System.CodeDom": "9.0.0-preview.6.24327.7"
+        },
+        "compile": {
+          "bin/placeholder/AbstractChainStructure.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/AbstractChainStructure.dll": {}
+        }
+      },
       "FileManager/1.0.0": {
         "type": "project",
         "framework": ".NETCoreApp,Version=v8.0",
@@ -545,28 +561,12 @@
           "bin/placeholder/NotesParsing.dll": {}
         }
       },
-      "QuizLogicalComponents/1.0.0": {
-        "type": "project",
-        "framework": ".NETCoreApp,Version=v8.0",
-        "dependencies": {
-          "FileManager": "1.0.0",
-          "HtmlAgilityPack": "1.11.67",
-          "Refit": "7.1.2",
-          "System.CodeDom": "9.0.0-preview.6.24327.7"
-        },
-        "compile": {
-          "bin/placeholder/QuizLogicalComponents.dll": {}
-        },
-        "runtime": {
-          "bin/placeholder/QuizLogicalComponents.dll": {}
-        }
-      },
       "QuizStarting/1.0.0": {
         "type": "project",
         "framework": ".NETCoreApp,Version=v8.0",
         "dependencies": {
-          "FileManager": "1.0.0",
-          "QuizLogicalComponents": "1.0.0"
+          "AbstractChainStructure": "1.0.0",
+          "FileManager": "1.0.0"
         },
         "compile": {
           "bin/placeholder/QuizStarting.dll": {}
@@ -579,8 +579,8 @@
         "type": "project",
         "framework": ".NETCoreApp,Version=v8.0",
         "dependencies": {
-          "FileManager": "1.0.0",
-          "QuizLogicalComponents": "1.0.0"
+          "AbstractChainStructure": "1.0.0",
+          "FileManager": "1.0.0"
         },
         "compile": {
           "bin/placeholder/TopicCreation.dll": {}
@@ -1428,6 +1428,11 @@
         "useSharedDesignerContext.txt"
       ]
     },
+    "AbstractChainStructure/1.0.0": {
+      "type": "project",
+      "path": "../QuizLogicalComponents/AbstractChainStructure.csproj",
+      "msbuildProject": "../QuizLogicalComponents/AbstractChainStructure.csproj"
+    },
     "FileManager/1.0.0": {
       "type": "project",
       "path": "../FileManagers/FileManager.csproj",
@@ -1443,11 +1448,6 @@
       "path": "../NotesParsing/NotesParsing.csproj",
       "msbuildProject": "../NotesParsing/NotesParsing.csproj"
     },
-    "QuizLogicalComponents/1.0.0": {
-      "type": "project",
-      "path": "../QuizLogicalComponents/QuizLogicalComponents.csproj",
-      "msbuildProject": "../QuizLogicalComponents/QuizLogicalComponents.csproj"
-    },
     "QuizStarting/1.0.0": {
       "type": "project",
       "path": "../QuizStarting/QuizStarting.csproj",
@@ -1461,12 +1461,12 @@
   },
   "projectFileDependencyGroups": {
     "net8.0": [
+      "AbstractChainStructure >= 1.0.0",
       "FileManagerTests >= 1.0.0",
       "HtmlAgilityPack >= 1.11.67",
       "MSTest.TestAdapter >= 3.1.1",
       "MSTest.TestFramework >= 3.1.1",
       "Microsoft.NET.Test.Sdk >= 17.8.0",
-      "QuizLogicalComponents >= 1.0.0",
       "QuizStarting >= 1.0.0",
       "TopicCreation >= 1.0.0",
       "coverlet.collector >= 6.0.0"
@@ -1508,8 +1508,8 @@
             "C:\\Users\\jarom\\Desktop\\PG_CVIČENÍ\\quizGenerator\\FileManagerTests1\\FileManagerTests.csproj": {
               "projectPath": "C:\\Users\\jarom\\Desktop\\PG_CVIČENÍ\\quizGenerator\\FileManagerTests1\\FileManagerTests.csproj"
             },
-            "C:\\Users\\jarom\\Desktop\\PG_CVIČENÍ\\quizGenerator\\QuizLogicalComponents\\QuizLogicalComponents.csproj": {
-              "projectPath": "C:\\Users\\jarom\\Desktop\\PG_CVIČENÍ\\quizGenerator\\QuizLogicalComponents\\QuizLogicalComponents.csproj"
+            "C:\\Users\\jarom\\Desktop\\PG_CVIČENÍ\\quizGenerator\\QuizLogicalComponents\\AbstractChainStructure.csproj": {
+              "projectPath": "C:\\Users\\jarom\\Desktop\\PG_CVIČENÍ\\quizGenerator\\QuizLogicalComponents\\AbstractChainStructure.csproj"
             },
             "C:\\Users\\jarom\\Desktop\\PG_CVIČENÍ\\quizGenerator\\QuizStarting\\QuizStarting.csproj": {
               "projectPath": "C:\\Users\\jarom\\Desktop\\PG_CVIČENÍ\\quizGenerator\\QuizStarting\\QuizStarting.csproj"

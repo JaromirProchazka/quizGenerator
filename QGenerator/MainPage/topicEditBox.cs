@@ -1,5 +1,4 @@
 ﻿using FileManager;
-using quizGenerator;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
@@ -11,7 +10,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
-namespace quizGenerator
+namespace QuizGeneratorPresentation.MainPage
 {
     public partial class topicEditBox : Form
     {
@@ -21,11 +20,12 @@ namespace quizGenerator
 
         public topicEditBox(ListBox _listBox, HyperLink _item)
         {
-            this.mainPageListBox = _listBox;
-            this.item = _item;
+            mainPageListBox = _listBox;
+            item = _item;
             setTopicDirectoryPath();
 
             InitializeComponent();
+            textBox1.Lines[0] = QuestionsFile.GetQuizName(currentTopicDirectoryPath);
         }
 
         public void setTopicDirectoryPath()
@@ -35,7 +35,7 @@ namespace quizGenerator
 
         private void renameBtn_Click(object sender, EventArgs e)
         {
-            if (currentTopicDirectoryPath == null) 
+            if (currentTopicDirectoryPath == null)
                 throw new Exception("The current topic directory path wasn't set!");
 
             if (textBox1.Text.Length == 0) return;
@@ -60,7 +60,7 @@ namespace quizGenerator
             if (QuestionsFile.DeleteTopic(pathToTopicFolder))
             {
                 mainPage.updateList(mainPageListBox);
-                this.Hide();
+                Hide();
             }
         }
 

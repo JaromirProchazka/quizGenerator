@@ -6,7 +6,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace TopicCreation.QuizCreationChain
+namespace TopicCreation.TopicCreationChain
 {
     /// <summary>
     /// Abstract Step of the Chain of responsibility, that results in the creation of the Topic with quiz from some source.
