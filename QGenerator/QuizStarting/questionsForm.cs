@@ -1,10 +1,10 @@
-﻿using FileManager;
+﻿using QuizPersistence;
 using System;
 using System.Collections.Generic;
 using System.Drawing;
 using System.IO;
 using System.Windows.Forms;
-using FileManager.QuizStates;
+using QuizPersistence.QuizStates;
 
 namespace QuizGeneratorPresentation.QuizStarting
 {

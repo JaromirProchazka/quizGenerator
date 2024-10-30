@@ -4,7 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using QuizLogicalComponents;
-using FileManager.QuizStates;
+using QuizPersistence.QuizStates;
 
 namespace QuizLogicalComponentsTests
 {

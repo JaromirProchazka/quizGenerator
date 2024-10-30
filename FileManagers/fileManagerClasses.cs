@@ -14,7 +14,7 @@ using Microsoft.VisualBasic.FileIO;
 using NotesParsing;
 using System.Xml.Linq;
 
-namespace FileManager
+namespace QuizPersistence
 {
     /// <summary>
     /// Singleton containing methods and constants, to manage the 'quizGenerator' backend. It follows this file structure:

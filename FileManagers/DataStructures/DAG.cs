@@ -7,7 +7,7 @@ using System.Security.Cryptography;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace NotesParsing.DataStructures
+namespace QuizPersistence.DataStructures
 {
     /// <summary>
     /// an acyclic oriented graph with insert() and randomTopologicalOrder() methods. The insert() method insured, that the graph is indeed still a DAG

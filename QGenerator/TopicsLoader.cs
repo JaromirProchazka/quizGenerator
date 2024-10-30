@@ -1,4 +1,4 @@
-﻿using FileManager;
+﻿using QuizPersistence;
 using QuizGeneratorPresentation.MainPage;
 using QuizGeneratorPresentation.QuizStarting;
 using System;

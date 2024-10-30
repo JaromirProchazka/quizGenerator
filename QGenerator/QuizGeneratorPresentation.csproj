@@ -13,7 +13,7 @@
   </ItemGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\FileManagers\FileManager.csproj" />
+    <ProjectReference Include="..\FileManagers\QuizPersistence.csproj" />
     <ProjectReference Include="..\QuizLogicalComponents\AbstractChainStructure.csproj" />
     <ProjectReference Include="..\QuizStarting\QuizStarting.csproj" />
     <ProjectReference Include="..\TopicCreation\TopicCreation.csproj" />

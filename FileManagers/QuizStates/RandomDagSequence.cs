@@ -1,5 +1,5 @@
-﻿using FileManager;
-using NotesParsing.DataStructures;
+﻿using QuizPersistence;
+using QuizPersistence.DataStructures;
 using HtmlAgilityPack;
 using System;
 using System.Collections.Generic;
@@ -7,7 +7,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace FileManager.QuizStates
+namespace QuizPersistence.QuizStates
 {
     public interface ISequenceOfQuestions
     {

@@ -5,7 +5,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.IO;
 
-namespace FileManager
+namespace QuizPersistence
 {
     internal record class RecursiveFolderCopy(string folderPath)
     {

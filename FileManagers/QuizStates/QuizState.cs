@@ -2,10 +2,10 @@
 using System.IO;
 using System.Runtime.CompilerServices;
 using System.Text.Json.Serialization;
-using FileManager;
+using QuizPersistence;
 
 
-namespace FileManager.QuizStates
+namespace QuizPersistence.QuizStates
 {
     /// <summary>
     /// A Quiz persistence data structure. On init, user must set the path to the Quiz with <see cref="QuizState.NewState(string)"/>.

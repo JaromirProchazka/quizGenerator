@@ -62,7 +62,7 @@ namespace TopicCreation.TopicCreationChain
 
         public override TopicProduct Step()
         {
-            FileManager.QuestionsFile.SetQuestionNodeAnalyzer(Analyser);
+            QuizPersistence.QuestionsFile.SetQuestionNodeAnalyzer(Analyser);
             if (BetweenStep == null) BetweenStep = new TopicProduct();
             return BetweenStep;
         }
@@ -71,7 +71,7 @@ namespace TopicCreation.TopicCreationChain
         {
             base.Dispose();
 
-            FileManager.QuestionsFile.SetQuestionNodeAnalyzer(NotesParser.DefaultAnalyzer);
+            QuizPersistence.QuestionsFile.SetQuestionNodeAnalyzer(NotesParser.DefaultAnalyzer);
         }
     }
 }

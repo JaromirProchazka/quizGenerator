@@ -4,9 +4,9 @@ using System.Linq;
 using System.Text;
 using System.Text.Json;
 using System.Threading.Tasks;
-using FileManager;
+using QuizPersistence;
 
-namespace FileManager.QuizStates
+namespace QuizPersistence.QuizStates
 {
     /// <summary>
     /// General interface for Quiz State serializers

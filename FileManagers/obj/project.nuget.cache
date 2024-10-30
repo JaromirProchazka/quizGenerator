@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "Vzq5rCqKToPBjD0C3YCa3hQb7RbtCLzqJPFE+Z6Icvz7h4Zwr9tjrTTUa3hMtBrfcHotPrWfp8872jFxSkJhpA==",
+  "dgSpecHash": "qfm97I/lfFLvLiLoZHnuXrT1btSuX+vpLUfNJcB8xyZJdRZLi44NDfn2qfb1CKh2NAJtX2/xjzgMe3quq1ppTg==",
   "success": true,
-  "projectFilePath": "C:\\Users\\jarom\\Desktop\\PG_CVIČENÍ\\quizGenerator\\FileManagers\\FileManager.csproj",
+  "projectFilePath": "C:\\Users\\jarom\\Desktop\\PG_CVIČENÍ\\quizGenerator\\FileManagers\\QuizPersistence.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\jarom\\.nuget\\packages\\htmlagilitypack\\1.11.67\\htmlagilitypack.1.11.67.nupkg.sha512"
   ],

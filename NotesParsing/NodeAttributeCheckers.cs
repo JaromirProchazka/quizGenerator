@@ -62,6 +62,9 @@ namespace NotesParsing
         }
     }
 
+    /// <summary>
+    /// A <see cref="AttributeCheck<string>"/> that checks if the given node has a required name.
+    /// </summary>
     internal sealed record class NameCheck : AttributeCheck<string>
     {
         public NameCheck(string? Name) : base(Name) { }
@@ -94,6 +97,9 @@ namespace NotesParsing
         }
     }
 
+    /// <summary>
+    /// A <see cref="AttributeCheck<string>"/> that checks if the given node has a required color name in inline style.
+    /// </summary>
     internal sealed record class ColorCheck : AttributeCheck<string>
     {
         public ColorCheck(string? color) : base(color) { }
@@ -108,6 +114,9 @@ namespace NotesParsing
         }
     }
 
+    /// <summary>
+    /// A <see cref="AttributeCheck<string>"/> that checks if the given node has a required Font family in inline style.
+    /// </summary>
     internal sealed record class FontCheck : AttributeCheck<string>
     {
         public FontCheck(string? fontName) : base(fontName) { }
