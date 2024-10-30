@@ -1,9 +1,10 @@
 var searchData=
 [
-  ['h1_0',['h1',['../class_q_generator_1_1_u_i_components_1_1_choose_questions_format.html#aa02f1604e9f42d76408cee2de27b8889a346b81a32e7007eccadf60252bb599f0',1,'QGenerator::UIComponents::ChooseQuestionsFormat']]],
-  ['h2_1',['h2',['../class_q_generator_1_1_u_i_components_1_1_choose_questions_format.html#aa02f1604e9f42d76408cee2de27b8889a490b2834e65737c1fce95e468cc8b8bf',1,'QGenerator::UIComponents::ChooseQuestionsFormat']]],
-  ['h3_2',['h3',['../class_q_generator_1_1_u_i_components_1_1_choose_questions_format.html#aa02f1604e9f42d76408cee2de27b8889a6f207f8b5dfe1eebac63467930df5189',1,'QGenerator::UIComponents::ChooseQuestionsFormat']]],
-  ['heap_3',['Heap',['../class_file_manager_1_1_priority_queue.html#a079c24bd061fd37849a74e2c140d9c61',1,'FileManager::PriorityQueue']]],
+  ['h1_0',['h1',['../class_quiz_generator_presentation_1_1_topic_creation_1_1_choose_questions_format.html#a7b230707cb473c5e937744bbc8838ef6a346b81a32e7007eccadf60252bb599f0',1,'QuizGeneratorPresentation.TopicCreation.ChooseQuestionsFormat.h1'],['../class_q_generator_1_1_u_i_components_1_1_choose_questions_format.html#aa02f1604e9f42d76408cee2de27b8889a346b81a32e7007eccadf60252bb599f0',1,'QGenerator.UIComponents.ChooseQuestionsFormat.h1']]],
+  ['h2_1',['h2',['../class_quiz_generator_presentation_1_1_topic_creation_1_1_choose_questions_format.html#a7b230707cb473c5e937744bbc8838ef6a490b2834e65737c1fce95e468cc8b8bf',1,'QuizGeneratorPresentation.TopicCreation.ChooseQuestionsFormat.h2'],['../class_q_generator_1_1_u_i_components_1_1_choose_questions_format.html#aa02f1604e9f42d76408cee2de27b8889a490b2834e65737c1fce95e468cc8b8bf',1,'QGenerator.UIComponents.ChooseQuestionsFormat.h2']]],
+  ['h3_2',['h3',['../class_quiz_generator_presentation_1_1_topic_creation_1_1_choose_questions_format.html#a7b230707cb473c5e937744bbc8838ef6a6f207f8b5dfe1eebac63467930df5189',1,'QuizGeneratorPresentation.TopicCreation.ChooseQuestionsFormat.h3'],['../class_q_generator_1_1_u_i_components_1_1_choose_questions_format.html#aa02f1604e9f42d76408cee2de27b8889a6f207f8b5dfe1eebac63467930df5189',1,'QGenerator.UIComponents.ChooseQuestionsFormat.h3']]],
+  ['heap_3',['Heap',['../class_quiz_persistence_1_1_data_structures_1_1_priority_queue.html#aa6e42a6cfde399ff216c3b3721a76baa',1,'QuizPersistence::DataStructures::PriorityQueue']]],
   ['hierarchy_2ejs_4',['hierarchy.js',['../hierarchy_8js.html',1,'']]],
-  ['hyperlink_5',['HyperLink',['../class_file_manager_1_1_hyper_link.html',1,'FileManager.HyperLink'],['../class_file_manager_1_1_hyper_link.html#a1d6d98d6ffad2917c92e6bd398f5354e',1,'FileManager.HyperLink.HyperLink()']]]
+  ['html_20agility_20pack_5',['Html Agility Pack',['../md__c_1_2_users_2jarom_2_desktop_2_p_g___c_v_i_x_c4_x8_c_e_n_x_c3_x8_d_2quiz_generator_2packagesd746762943b27c8acb80de6b87a95c8e.html',1,'']]],
+  ['hyperlink_6',['HyperLink',['../class_quiz_persistence_1_1_hyper_link.html',1,'QuizPersistence.HyperLink'],['../class_quiz_persistence_1_1_hyper_link.html#a7c01464c2bfcd37b0f96ada525a1ccf2',1,'QuizPersistence.HyperLink.HyperLink()']]]
 ];

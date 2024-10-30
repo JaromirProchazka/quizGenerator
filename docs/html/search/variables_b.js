@@ -1,13 +1,13 @@
 var searchData=
 [
-  ['name_0',['name',['../class_q_generator_1_1_u_i_components_1_1_choose_questions_format.html#a9a8196939417ca1124e90da41909edc4',1,'QGenerator::UIComponents::ChooseQuestionsFormat']]],
-  ['name_1',['Name',['../class_quiz_logical_components_1_1_quiz_states_1_1_base_state_serializer.html#a6d8e5a5937300ca5659b9862ebf69969',1,'QuizLogicalComponents::QuizStates::BaseStateSerializer']]],
-  ['neighbours_2',['neighbours',['../class_file_manager_1_1_dag.html#a2e691c2410b10c7f41c2af48fe73f3bf',1,'FileManager::Dag']]],
-  ['nodeidbyname_3',['nodeIdByName',['../class_file_manager_1_1_dag.html#afe2e2495bdde88bf6cdcb9c97f10138f',1,'FileManager::Dag']]],
-  ['nodename_4',['nodeName',['../class_file_manager_1_1_dag.html#ae5a05cbad2087f75df53666d8a8d40bc',1,'FileManager::Dag']]],
-  ['noteschooseoptions_5',['notesChooseOptions',['../class_q_generator_1_1_u_i_components_1_1_choose_quiz_beginning_from.html#aae637394016cbd2045047fbe5c26da24',1,'QGenerator.UIComponents.ChooseQuizBeginningFrom.notesChooseOptions'],['../class_q_generator_1_1_u_i_components_1_1_choose_source_step.html#a7d6c2587d0008b19ed787f01a0d51c34',1,'QGenerator.UIComponents.ChooseSourceStep.notesChooseOptions']]],
-  ['notesfilename_6',['notesFileName',['../class_file_manager_1_1_questions_file.html#adbfe95f3541b4c764659999589454a8c',1,'FileManager::QuestionsFile']]],
-  ['notionapiurl_7',['NotionApiUrl',['../class_quiz_logical_components_1_1_quiz_creation_chain_1_1_choose_notion_notes.html#a473ff0141dd10b4d0f569b39c335dbae',1,'QuizLogicalComponents::QuizCreationChain::ChooseNotionNotes']]],
-  ['notionlink_8',['NotionLink',['../class_q_generator_1_1_u_i_components_1_1_choose_source_step.html#a3d49844975def8450031c1a60f7e8218',1,'QGenerator::UIComponents::ChooseSourceStep']]],
-  ['notionpageurl_9',['NotionPageUrl',['../class_quiz_logical_components_1_1_quiz_creation_chain_1_1_choose_notion_notes.html#a158d6ae8244ff85a28a2e294afc6feeb',1,'QuizLogicalComponents::QuizCreationChain::ChooseNotionNotes']]]
+  ['name_0',['Name',['../class_quiz_persistence_1_1_quiz_states_1_1_base_state_serializer.html#ac2767667e475ea0697274d2586413dc3',1,'QuizPersistence::QuizStates::BaseStateSerializer']]],
+  ['name_1',['name',['../class_quiz_generator_presentation_1_1_topic_creation_1_1_choose_questions_format.html#a68677cc945828cb6525c7f9191f86fe4',1,'QuizGeneratorPresentation.TopicCreation.ChooseQuestionsFormat.name'],['../class_q_generator_1_1_u_i_components_1_1_choose_questions_format.html#a9a8196939417ca1124e90da41909edc4',1,'QGenerator.UIComponents.ChooseQuestionsFormat.name']]],
+  ['neighbours_2',['neighbours',['../class_quiz_persistence_1_1_data_structures_1_1_dag.html#a1b8d049c76329d4586e3cbaa252a974c',1,'QuizPersistence::DataStructures::Dag']]],
+  ['nodeidbyname_3',['nodeIdByName',['../class_quiz_persistence_1_1_data_structures_1_1_dag.html#a7314f0b9d3420fb9c22674dda186990b',1,'QuizPersistence::DataStructures::Dag']]],
+  ['nodename_4',['nodeName',['../class_quiz_persistence_1_1_data_structures_1_1_dag.html#a0046a071b863fe4e26fbba173f0fe72c',1,'QuizPersistence::DataStructures::Dag']]],
+  ['noteschooseoptions_5',['notesChooseOptions',['../class_quiz_generator_presentation_1_1_quiz_starting_1_1_choose_quiz_beginning_from.html#ab0a9d945481444ee25908bb46a157111',1,'QuizGeneratorPresentation.QuizStarting.ChooseQuizBeginningFrom.notesChooseOptions'],['../class_quiz_generator_presentation_1_1_topic_creation_1_1_choose_source_step.html#ae7d89de7640a3b4c9201085224f4817d',1,'QuizGeneratorPresentation.TopicCreation.ChooseSourceStep.notesChooseOptions'],['../class_q_generator_1_1_u_i_components_1_1_choose_source_step.html#a7d6c2587d0008b19ed787f01a0d51c34',1,'QGenerator.UIComponents.ChooseSourceStep.notesChooseOptions']]],
+  ['notesfilename_6',['notesFileName',['../class_quiz_persistence_1_1_questions_file.html#a2ae1cd6d53c4d61c496de047f995aac3',1,'QuizPersistence::QuestionsFile']]],
+  ['notionapiurl_7',['NotionApiUrl',['../class_topic_creation_1_1_topic_creation_chain_1_1_choose_notion_notes.html#af71fac02f934aed0cc87abb4d092514e',1,'TopicCreation::TopicCreationChain::ChooseNotionNotes']]],
+  ['notionlink_8',['NotionLink',['../class_quiz_generator_presentation_1_1_topic_creation_1_1_choose_source_step.html#aefd1c7c110ebceba271b1162ac2c3cd6',1,'QuizGeneratorPresentation.TopicCreation.ChooseSourceStep.NotionLink'],['../class_q_generator_1_1_u_i_components_1_1_choose_source_step.html#a3d49844975def8450031c1a60f7e8218',1,'QGenerator.UIComponents.ChooseSourceStep.NotionLink']]],
+  ['notionpageurl_9',['NotionPageUrl',['../class_topic_creation_1_1_topic_creation_chain_1_1_choose_notion_notes.html#ad632ced02d0123261f8bc38d836f42dd',1,'TopicCreation::TopicCreationChain::ChooseNotionNotes']]]
 ];

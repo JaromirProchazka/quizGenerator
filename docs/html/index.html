@@ -96,24 +96,24 @@ $(function(){initNavTree('index.html',''); initResizable(); });
 </div><!--header-->
 <div class="contents">
 <div class="textblock"><p><a class="anchor" id="md__c_1_2_users_2jarom_2_desktop_2_p_g___c_v_i_xC4_x8C_e_n_xC3_x8D_2quiz_generator_2_r_e_a_d_m_e"></a> </p>
-<h1><a class="anchor" id="autotoc_md1"></a>
+<h1><a class="anchor" id="autotoc_md64"></a>
 Documentation</h1>
 <p>Docs can be accessed <a href="https://jaromirprochazka.github.io/quizGenerator/">here</a>.</p>
-<h1><a class="anchor" id="autotoc_md2"></a>
+<h1><a class="anchor" id="autotoc_md65"></a>
 Basic Idea</h1>
 <p>This App is used for <b>building tests in form of quizzes from the input of digital notes</b> or other materials. These are intended as study aids, not a testing framework for teachers and the student decides, whether his answer is good enough. The user can <b>choose from multiple file formats for his notes or textbooks</b>. From these, the marked sections of the text are made quiz questions and mostly based on headings, keywords and so on, a logical ordering of the questions is created.</p>
 <p>For each quiz is than stored users score, history of answers, last state to be returned to and other quality of life features.</p>
-<h2><a class="anchor" id="autotoc_md3"></a>
+<h2><a class="anchor" id="autotoc_md66"></a>
 What is Quiz?</h2>
 <p>In our context, a quiz is a set of questions and answers. These are than iteratively gone throw by the student. Student tries to answer a question, that he is shown the answer. If he is satisfied, he can move on to the next, else the question is moved some number of questions ahead, so that the student can try again.</p>
 <p>The ordering is based around the dependence between questions, some questions can be asked only if some other has been already answered. Besides these restraints, there is random ordering.</p>
-<h2><a class="anchor" id="autotoc_md4"></a>
+<h2><a class="anchor" id="autotoc_md67"></a>
 What are Notes?</h2>
 <p>Notes are some texts in a supported format containing the questions and answers. The questions are in some way marked. A way, that can be configured in the app before inputting the notes file. For instance, user could choose that in his notes, each important topic is marked in italics, or in textbooks, all numbered statements and their proofs are selected as questions.</p>
 <p>From it, the app creates a quiz file, which will then be used to generate the quiz in UI, so the conversion expensive only occurs once and the quiz file can be reused.</p>
-<h2><a class="anchor" id="autotoc_md5"></a>
+<h2><a class="anchor" id="autotoc_md68"></a>
 Basic UI design</h2>
-<h3><a class="anchor" id="autotoc_md6"></a>
+<h3><a class="anchor" id="autotoc_md69"></a>
 Quiz Menu</h3>
 <p>At the Start of the App, you will be greeted by a list of your Quiz on top, and a <code>Create New Topic</code> button at the bottom. If you want to add a new topic, press the button and choose the method of providing the notes.</p>
 <p>After that a new topic is added to the topics list at the top, or a topic with the same name is updated. Then select topic in list, you can then either click <br  />
@@ -122,16 +122,16 @@ Quiz Menu</h3>
 <li><code>Open</code> button and start the quiz,</li>
 <li>or click <code>Edit</code> button and a edit window will appear. You can <b>Rename</b> the topic or <b>Delete</b> it</li>
 </ul>
-<h4><a class="anchor" id="autotoc_md7"></a>
+<h4><a class="anchor" id="autotoc_md70"></a>
 Quiz Creation</h4>
 <p>You can either provide a local html file, or a link to a Notion page. Note that the page must be at the time of Creation PUBLIC. Press <code>Continue</code> to move on to the next step.</p>
 <p>Then you can choose the <em>Question format</em>, which are the attributes that if the given node in the source nodes will have, it will be interpreted as the question and will be added to the final Quiz.</p>
 <p>After pressing <code>Continue</code>, new Topic is added to the Topics list where you can edit its name.</p>
-<h4><a class="anchor" id="autotoc_md8"></a>
+<h4><a class="anchor" id="autotoc_md71"></a>
 Quiz Starting</h4>
 <p>On press of the <code>Open</code> button, the Topic selected in the Topics list will be opened. You will be presented with options of either continuing where you ended in your last test, or the option of starting from the beginning with 0 in the current question counter. After that your quiz is opened. <br  />
 </p>
-<h3><a class="anchor" id="autotoc_md9"></a>
+<h3><a class="anchor" id="autotoc_md72"></a>
 Quiz Window</h3>
 <p>When the quiz is started, user is greeted on bottom with the question and answers window and on top with 4 buttons.</p>
 <ul>
@@ -143,41 +143,41 @@ Quiz Window</h3>
 <li>when you are done and want to start a different quiz, simply press the <code>Back</code> button, which closes this quiz.</li>
 </ul>
 <p>There is also a counter, which says “<code>number of answered questions / number of questions</code>”. If you answer incorrectly and press <code>Next 👎</code>, the counter doesn’t increment.</p>
-<h1><a class="anchor" id="autotoc_md10"></a>
+<h1><a class="anchor" id="autotoc_md73"></a>
 Developer Overview</h1>
 <p>The UI is made in the Using the Windows Forms. The Quiz creation and Starting are done using a <b>Chain of responsibility</b> and a dedicated builder for them. For each Chain Step, a WF Window is prepared to set the steps parameters and on press of the <code>Continue</code> button finalize the Chain.</p>
 <p>In the Quiz creation, the notes in html format parsed and there html nodes are traversed and analysed. When a node that satisfy the checks is determined to be a question, a question and answer are added to a resulting data file throw the <b>Quiz file manager Singleton</b>. On the Quizzes creation is this file opened in the WF Forms web view and it's components are shown or hidden using a <em>JS</em> script. <br  />
 </p>
-<h2><a class="anchor" id="autotoc_md11"></a>
+<h2><a class="anchor" id="autotoc_md74"></a>
 Technologies</h2>
 <p>The App logic is primarily written in **<code>C#</code>**. I would also like the app to by accessible as website. The C# libraries are mostly heavily dependent on supported note file formats, but for start, the C# library <code>HtmlAgilityPack</code> is necessary. This covers the back end side, the application that creates the quizzes themselves.</p>
 <p>The Notion page fetching is done using a notion-to-html API.</p>
 <p>The view of front end will than either be implemented in <code>windows forms</code> for native app, or the <code>JavaScript</code> in case of the web application. <br  />
 </p>
-<h2><a class="anchor" id="autotoc_md12"></a>
+<h2><a class="anchor" id="autotoc_md75"></a>
 Advanced C# Tools</h2>
 <p>This App also support using notes from app <a href="https://www.notion.so/">Notion</a> using their API to fetch it. For that we will need <b>Asynchronous methods</b>. Furthermore, we use <b>Extension methods</b> in the design of the utility parts.</p>
-<h2><a class="anchor" id="autotoc_md13"></a>
+<h2><a class="anchor" id="autotoc_md76"></a>
 Detailed Project Overview</h2>
-<h3><a class="anchor" id="autotoc_md14"></a>
+<h3><a class="anchor" id="autotoc_md77"></a>
 FileManager namespace</h3>
 <p>Takes care of the <b>Quiz folders</b> with the **<code>QuestionsFile</code>** singleton. Also implements the input <b>notes parsing</b> with the **<code>NotesParser</code>**.</p>
 <p>The **<code>QuestionsFile</code>** singleton provides an API for accessing, creating new folders with the Quiz data and accessing the Quiz State. It also holds an instance of **<code>NotesParser</code>** which implements the <code>CreateQuestionsFileText</code> that parses the source html file and create the Quiz data.</p>
 <p>The questions are found using the **<code>QuestionNodeParams</code>** which holds the List of Attribute check classes. Each of these classes has a check for some possible html node attribute and on running the <code>QuestionNodeParams</code> function for analysing the <code>HtmlNode</code>, each of these checks are used on the node. This insures great extensibility, new Check can be created by making inheriting object from the <code>BaseAttributeCheck</code> and it's instance be added to the Checks List. **<code>QuestionNodeParams</code> is abstract and has two inheritors**, the **<code>AndQuestionNodeParams</code>** and **<code>OrQuestionNodeParams</code>**. The And one passes, if all Checks in the List pass and the Or one passes if at least one check in the List passes. <br  />
 </p>
-<h3><a class="anchor" id="autotoc_md15"></a>
+<h3><a class="anchor" id="autotoc_md78"></a>
 QuizLogicalComponents namespace</h3>
 <p><code><a class="el" href="namespace_quiz_logical_components.html">QuizLogicalComponents</a></code> implements a higher-level API for creating and opening the Quizzes. Also, there is an API for the **<code>QuizState</code>** loading and storing the Quizzes state.</p>
 <p>The abstract **<code>ChainStep&lt;ProductT&gt;</code>** class implements a Step of an abstract Chain of responsibility. There is also a Builder for this chain: **<code>ChainBuilder&lt;StepT, ProductT&gt;</code>**, which creates a Stating (initializes empty product) and Finishing (returns the finished product) step for the user and provides tools for adding Steps into the chain.</p>
 <p>This abstract chain and its builder are implemented by the **<code>TopicCreationStep : ChainStep&lt;TopicProduct&gt;</code>** and it's builder. This <code>TopicCreationStep</code> is implemented by the <code>ChooseQuestionFormat</code> which lets user configure the **<code>NotesParser</code>** and define what is interpreted as a question. Also there is the **<code>ChooseNotesSource : TopicCreationStep</code>** which lets user choose the notes source. For that, there is the Notion Page source and local file source.</p>
 <p>This implementation makes the creation and starting parts of the chain <b>highly extendible</b>. To make new options for the user, one just implements the given encapsulated Step either creating completely new one or extending already existing once like <em>adding new source options</em>.</p>
 <p>Then there is a **<code>QuizState</code>** implemented with Json Serialization and Deserialization. The States Load or Store are than done with the <code>IStateSerializer&lt;QT&gt; where QT : QuizState</code> which implements the <code>QuizState LoadState()</code> and <code>StoreState(QT state)</code> methods.</p>
-<h3><a class="anchor" id="autotoc_md16"></a>
+<h3><a class="anchor" id="autotoc_md79"></a>
 QGenerator namespace</h3>
 <p>Contains mainly the UI components like the Main Page or Quiz Page. Also for Step components, there are special Forms implementing **<code>ChainStepForm&lt;StepT, ProductT, BuilderT&gt; : Form</code>**. This form holds the current Chain builder and the next form to be opened. When user presses Continue, the Chosen step is added to the Builder and the Builder is passed to the next form. Finaly, when the Building is finished, the Chain is built and executed. <br  />
 </p>
 <hr  />
-<h2><a class="anchor" id="autotoc_md18"></a>
+<h2><a class="anchor" id="autotoc_md81"></a>
 Future Expansions</h2>
 <p>Future expansions will mostly be more steps to the Creation and Open Chains. For the Creation one, there will be:</p><ul>
 <li>a Step, where user sees all found questions and can some exclude or edit there answers</li>

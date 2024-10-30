@@ -1,4 +1,4 @@
 var main_page_8cs =
 [
-    [ "quizGenerator.mainPage", "classquiz_generator_1_1main_page.html", "classquiz_generator_1_1main_page" ]
+    [ "QuizGeneratorPresentation.MainPage.mainPage", "class_quiz_generator_presentation_1_1_main_page_1_1main_page.html", "class_quiz_generator_presentation_1_1_main_page_1_1main_page" ]
 ];

@@ -1,5 +1,5 @@
 var searchData=
 [
-  ['openedfile_0',['openedFile',['../class_quiz_logical_components_1_1_quiz_creation_chain_1_1_choose_local_html_file_option.html#acc5bd25a74e342238b8dd40652a90208',1,'QuizLogicalComponents::QuizCreationChain::ChooseLocalHtmlFileOption']]],
-  ['openfiledialog1_1',['openFileDialog1',['../classquiz_generator_1_1main_page.html#aebde57ad725141fdf31a3554713acd4b',1,'quizGenerator::mainPage']]]
+  ['openedfile_0',['openedFile',['../class_topic_creation_1_1_topic_creation_chain_1_1_choose_local_html_file_option.html#a93c5f87c0af7173e6e064657c7706952',1,'TopicCreation::TopicCreationChain::ChooseLocalHtmlFileOption']]],
+  ['openfiledialog1_1',['openFileDialog1',['../class_quiz_generator_presentation_1_1_main_page_1_1main_page.html#add4f787c480c0654373ca032c2e649e6',1,'QuizGeneratorPresentation::MainPage::mainPage']]]
 ];

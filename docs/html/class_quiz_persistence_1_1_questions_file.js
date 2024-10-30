@@ -1,0 +1,35 @@
+var class_quiz_persistence_1_1_questions_file =
+[
+    [ "LoadedState", "class_quiz_persistence_1_1_questions_file.html#a02af7b2c51afca7cb332493bcd8e9881", [
+      [ "Valid", "class_quiz_persistence_1_1_questions_file.html#a02af7b2c51afca7cb332493bcd8e9881a3ac705f2acd51a4613f9188c05c91d0d", null ],
+      [ "NotFound", "class_quiz_persistence_1_1_questions_file.html#a02af7b2c51afca7cb332493bcd8e9881a38c300f4fc9ce8a77aad4a30de05cad8", null ]
+    ] ],
+    [ "QuestionsFile", "class_quiz_persistence_1_1_questions_file.html#ac224f9b67dd349d1fb18f983d31433bd", null ],
+    [ "addCopyToName", "class_quiz_persistence_1_1_questions_file.html#a3d3484e479c8eb63bd65241bb0966b08", null ],
+    [ "CreateNewTopic", "class_quiz_persistence_1_1_questions_file.html#a7701bc1214dbe3fa14bd8a298840dbf6", null ],
+    [ "CreateQuestionsFileText", "class_quiz_persistence_1_1_questions_file.html#aaf6ea8c55b8417fd506750bb1207e770", null ],
+    [ "createSourcesFolder", "class_quiz_persistence_1_1_questions_file.html#a49fdd914b4d09a3cc931b976f9af43ae", null ],
+    [ "DeleteTopic", "class_quiz_persistence_1_1_questions_file.html#a8dc4719c8674a736f50d2b78d96db588", null ],
+    [ "GetDataFilePath", "class_quiz_persistence_1_1_questions_file.html#a501e5c4f80544356c2b5b7266610534b", null ],
+    [ "GetMarkDown", "class_quiz_persistence_1_1_questions_file.html#a802733253dde2a3ca6762bf5ff20d2bb", null ],
+    [ "GetQuizName", "class_quiz_persistence_1_1_questions_file.html#a44a2ef087657e6b53798d48d88608321", null ],
+    [ "GetTopics", "class_quiz_persistence_1_1_questions_file.html#ab16ca2fa70ca2f0da0c03312aceac36e", null ],
+    [ "getUniqueName", "class_quiz_persistence_1_1_questions_file.html#af84c61a78849ea9c70817c2882264a05", null ],
+    [ "isTopicFolder", "class_quiz_persistence_1_1_questions_file.html#ab24845729bc5e9361a12fe44d0487f44", null ],
+    [ "LoadedStateToken", "class_quiz_persistence_1_1_questions_file.html#a17cf0fbea8a63d473e8411b43b248bad", null ],
+    [ "LoadQuizStateData", "class_quiz_persistence_1_1_questions_file.html#a785f97d5ef58c1ba6c2a618232488eed", null ],
+    [ "RenameTopic", "class_quiz_persistence_1_1_questions_file.html#a263f4ae977cfbcaa7ca842a620df539c", null ],
+    [ "SaveQuizState", "class_quiz_persistence_1_1_questions_file.html#a58f1fe504882eaab49eafdbaffad1837", null ],
+    [ "SetQuestionNodeAnalyzer", "class_quiz_persistence_1_1_questions_file.html#a13ccd8735323193037bd98b067e894ec", null ],
+    [ "toTopicFileName", "class_quiz_persistence_1_1_questions_file.html#ad92a0b874304fa9e0432b46d5c2690c5", null ],
+    [ "notesFileName", "class_quiz_persistence_1_1_questions_file.html#a2ae1cd6d53c4d61c496de047f995aac3", null ],
+    [ "questionsFileName", "class_quiz_persistence_1_1_questions_file.html#a52015bab19e4b18b141f7983df789a33", null ],
+    [ "questionsScriptName", "class_quiz_persistence_1_1_questions_file.html#a64b7ea6145baa0d24cea4f3e3b5ca9d4", null ],
+    [ "quizState", "class_quiz_persistence_1_1_questions_file.html#afbb9a0fb78fd0e2f57f4901afd18ab8f", null ],
+    [ "scriptFileName", "class_quiz_persistence_1_1_questions_file.html#ade94a1cf1e088ab6906cf568895fb80d", null ],
+    [ "stylesFileName", "class_quiz_persistence_1_1_questions_file.html#af43e3615ab7808295cec520520bdf0c0", null ],
+    [ "templateSourcesPath", "class_quiz_persistence_1_1_questions_file.html#a64608cdfd5215288941ceec72534a62d", null ],
+    [ "utilFolderName", "class_quiz_persistence_1_1_questions_file.html#a5f3874fc3b42a281f3a4112f8999580c", null ],
+    [ "utilFolderPath", "class_quiz_persistence_1_1_questions_file.html#abbe8a7c1a5497f7c4097e879eb4a2c16", null ],
+    [ "QuestionNodeAnalyzer", "class_quiz_persistence_1_1_questions_file.html#ae5f80c9cef4c38014ffe99fb3b4c2504", null ]
+];

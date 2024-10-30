@@ -25,28 +25,88 @@
 var NAVTREE =
 [
   [ "Quiz Generator", "index.html", [
-    [ "Documentation", "index.html#autotoc_md1", null ],
-    [ "Basic Idea", "index.html#autotoc_md2", [
-      [ "What is Quiz?", "index.html#autotoc_md3", null ],
-      [ "What are Notes?", "index.html#autotoc_md4", null ],
-      [ "Basic UI design", "index.html#autotoc_md5", [
-        [ "Quiz Menu", "index.html#autotoc_md6", [
-          [ "Quiz Creation", "index.html#autotoc_md7", null ],
-          [ "Quiz Starting", "index.html#autotoc_md8", null ]
+    [ "Documentation", "index.html#autotoc_md64", null ],
+    [ "Basic Idea", "index.html#autotoc_md65", [
+      [ "What is Quiz?", "index.html#autotoc_md66", null ],
+      [ "What are Notes?", "index.html#autotoc_md67", null ],
+      [ "Basic UI design", "index.html#autotoc_md68", [
+        [ "Quiz Menu", "index.html#autotoc_md69", [
+          [ "Quiz Creation", "index.html#autotoc_md70", null ],
+          [ "Quiz Starting", "index.html#autotoc_md71", null ]
         ] ],
-        [ "Quiz Window", "index.html#autotoc_md9", null ]
+        [ "Quiz Window", "index.html#autotoc_md72", null ]
       ] ]
     ] ],
-    [ "Developer Overview", "index.html#autotoc_md10", [
-      [ "Technologies", "index.html#autotoc_md11", null ],
-      [ "Advanced C# Tools", "index.html#autotoc_md12", null ],
-      [ "Detailed Project Overview", "index.html#autotoc_md13", [
-        [ "FileManager namespace", "index.html#autotoc_md14", null ],
-        [ "QuizLogicalComponents namespace", "index.html#autotoc_md15", null ],
-        [ "QGenerator namespace", "index.html#autotoc_md16", null ]
+    [ "Developer Overview", "index.html#autotoc_md73", [
+      [ "Technologies", "index.html#autotoc_md74", null ],
+      [ "Advanced C# Tools", "index.html#autotoc_md75", null ],
+      [ "Detailed Project Overview", "index.html#autotoc_md76", [
+        [ "FileManager namespace", "index.html#autotoc_md77", null ],
+        [ "QuizLogicalComponents namespace", "index.html#autotoc_md78", null ],
+        [ "QGenerator namespace", "index.html#autotoc_md79", null ]
       ] ],
-      [ "Future Expansions", "index.html#autotoc_md18", null ]
+      [ "Future Expansions", "index.html#autotoc_md81", null ]
     ] ],
+    [ "Developer Overview", "md__manual_2_developer_01_documentation.html", null ],
+    [ "File Structure Documentation", "md__manual_2_file_01_structure_01_documentation.html", [
+      [ "QuizPersistence", "md__manual_2_file_01_structure_01_documentation.html#autotoc_md8", [
+        [ ".sources", "md__manual_2_file_01_structure_01_documentation.html#autotoc_md10", null ],
+        [ "fileManagerClasses.cs", "md__manual_2_file_01_structure_01_documentation.html#autotoc_md11", null ],
+        [ "QuizStates Module", "md__manual_2_file_01_structure_01_documentation.html#autotoc_md12", [
+          [ "QuizState.cs", "md__manual_2_file_01_structure_01_documentation.html#autotoc_md13", null ],
+          [ "StateSerializer.cs", "md__manual_2_file_01_structure_01_documentation.html#autotoc_md14", null ],
+          [ "RandomDagSequence.cs", "md__manual_2_file_01_structure_01_documentation.html#autotoc_md15", null ]
+        ] ],
+        [ "DataStructures", "md__manual_2_file_01_structure_01_documentation.html#autotoc_md16", [
+          [ "DAG.cs", "md__manual_2_file_01_structure_01_documentation.html#autotoc_md17", null ],
+          [ "priorityQueue.cs", "md__manual_2_file_01_structure_01_documentation.html#autotoc_md18", null ]
+        ] ]
+      ] ],
+      [ "NotesParsing", "md__manual_2_file_01_structure_01_documentation.html#autotoc_md19", [
+        [ "NodeAttributeCheckers.cs", "md__manual_2_file_01_structure_01_documentation.html#autotoc_md21", null ],
+        [ "NotesParser.cs", "md__manual_2_file_01_structure_01_documentation.html#autotoc_md22", null ],
+        [ "QuestionNodeParams.cs", "md__manual_2_file_01_structure_01_documentation.html#autotoc_md23", null ]
+      ] ],
+      [ "AbstractChainStructure", "md__manual_2_file_01_structure_01_documentation.html#autotoc_md24", [
+        [ "AbstractChain", "md__manual_2_file_01_structure_01_documentation.html#autotoc_md26", [
+          [ "ChainStep.cs", "md__manual_2_file_01_structure_01_documentation.html#autotoc_md27", null ],
+          [ "ChainBuilder.cs", "md__manual_2_file_01_structure_01_documentation.html#autotoc_md28", null ]
+        ] ]
+      ] ],
+      [ "TopicCreation", "md__manual_2_file_01_structure_01_documentation.html#autotoc_md29", [
+        [ "TopicCreationChain", "md__manual_2_file_01_structure_01_documentation.html#autotoc_md31", [
+          [ "ChainCreationBuilder.cs", "md__manual_2_file_01_structure_01_documentation.html#autotoc_md32", null ],
+          [ "ChainStepsTypes.cs", "md__manual_2_file_01_structure_01_documentation.html#autotoc_md33", null ],
+          [ "LeafSteps.cs", "md__manual_2_file_01_structure_01_documentation.html#autotoc_md34", null ],
+          [ "SorceChooserStep.cs", "md__manual_2_file_01_structure_01_documentation.html#autotoc_md35", null ]
+        ] ]
+      ] ],
+      [ "QuizStarting", "md__manual_2_file_01_structure_01_documentation.html#autotoc_md36", [
+        [ "RandomDagSequence.cs", "md__manual_2_file_01_structure_01_documentation.html#autotoc_md38", null ],
+        [ "QuizStartingChain", "md__manual_2_file_01_structure_01_documentation.html#autotoc_md39", [
+          [ "ChainStartingBuilder.cs", "md__manual_2_file_01_structure_01_documentation.html#autotoc_md40", null ],
+          [ "ContinueOrStartNewOption.cs", "md__manual_2_file_01_structure_01_documentation.html#autotoc_md41", null ],
+          [ "leafStartStep.cs", "md__manual_2_file_01_structure_01_documentation.html#autotoc_md42", null ],
+          [ "StartingStepsTypes.cs", "md__manual_2_file_01_structure_01_documentation.html#autotoc_md43", null ]
+        ] ]
+      ] ],
+      [ "QuizGeneratorPresentation", "md__manual_2_file_01_structure_01_documentation.html#autotoc_md44", [
+        [ "MainPage", "md__manual_2_file_01_structure_01_documentation.html#autotoc_md46", [
+          [ "mainPage.cs", "md__manual_2_file_01_structure_01_documentation.html#autotoc_md47", null ],
+          [ "topicEditBox.cs", "md__manual_2_file_01_structure_01_documentation.html#autotoc_md48", null ]
+        ] ],
+        [ "QuizStarting", "md__manual_2_file_01_structure_01_documentation.html#autotoc_md49", [
+          [ "questionsForm.cs", "md__manual_2_file_01_structure_01_documentation.html#autotoc_md50", null ],
+          [ "ChooseQuizBeginningFrom.cs", "md__manual_2_file_01_structure_01_documentation.html#autotoc_md51", null ]
+        ] ],
+        [ "TopicCreation", "md__manual_2_file_01_structure_01_documentation.html#autotoc_md52", [
+          [ "ChooseQuestionsFormat.cs", "md__manual_2_file_01_structure_01_documentation.html#autotoc_md53", null ],
+          [ "ChooseSourceStep.cs", "md__manual_2_file_01_structure_01_documentation.html#autotoc_md54", null ]
+        ] ]
+      ] ]
+    ] ],
+    [ "Basic UI design", "md__manual_2_user_docs.html", null ],
+    [ "Html Agility Pack", "md__c_1_2_users_2jarom_2_desktop_2_p_g___c_v_i_x_c4_x8_c_e_n_x_c3_x8_d_2quiz_generator_2packagesd746762943b27c8acb80de6b87a95c8e.html", null ],
     [ "Namespaces", "namespaces.html", [
       [ "Namespace List", "namespaces.html", "namespaces_dup" ],
       [ "Namespace Members", "namespacemembers.html", [
@@ -60,7 +120,7 @@ var NAVTREE =
       [ "Class Hierarchy", "hierarchy.html", "hierarchy" ],
       [ "Class Members", "functions.html", [
         [ "All", "functions.html", "functions_dup" ],
-        [ "Functions", "functions_func.html", null ],
+        [ "Functions", "functions_func.html", "functions_func" ],
         [ "Variables", "functions_vars.html", null ],
         [ "Enumerations", "functions_enum.html", null ],
         [ "Properties", "functions_prop.html", null ]
@@ -79,10 +139,11 @@ var NAVTREE =
 var NAVTREEINDEX =
 [
 "__chain__builder__8cs_8js.html",
-"class_file_manager_1_1_priority_queue.html#a86a69ee7b7add284ce5a6b386bf1ac42",
-"class_q_generator_1_1_u_i_components_1_1_notification.html#ae76f17c76736e9b20f3223a016daba8d",
-"classquiz_generator_1_1main_page.html#a0fb89b15870d3ab19fccaef9db8a9e90",
-"index.html#autotoc_md13"
+"class_q_generator_1_1_u_i_components_1_1_choose_questions_format.html#a86cae05121525627cf68463a0e857ac1",
+"class_quiz_generator_presentation_1_1_topic_creation_1_1_choose_questions_format.html#a1c0d714a1b34fdc34192b95ab09bc1bc",
+"class_quiz_persistence_1_1_questions_file.html#a7701bc1214dbe3fa14bd8a298840dbf6",
+"classes__1_8js.html",
+"interface_topic_creation_1_1_topic_creation_chain_1_1_choose_notion_notes_1_1_i_notion_page_a_p_i.html#a227b6837f490b7c76a1fa82079c05a57"
 ];
 
 var SYNCONMSG = 'click to disable panel synchronisation';

@@ -1,11 +1,12 @@
 var searchData=
 [
-  ['questionids_0',['QuestionIds',['../class_quiz_logical_components_1_1_quiz_states_1_1_reset_around_state.html#aa05bc63e8c394369f09dc851d58e5ea9',1,'QuizLogicalComponents::QuizStates::ResetAroundState']]],
-  ['questionindex_1',['QuestionIndex',['../class_quiz_logical_components_1_1_quiz_states_1_1_quiz_state.html#a4575133d70733d19966855f92bac3f65',1,'QuizLogicalComponents::QuizStates::QuizState']]],
-  ['questionsequence_2',['questionSequence',['../class_quiz_logical_components_1_1_random_dag_sequence.html#a8bef72fb9d09a3a1b769e3cc24c4dd1d',1,'QuizLogicalComponents::RandomDagSequence']]],
-  ['questionsfilename_3',['questionsFileName',['../class_file_manager_1_1_questions_file.html#a71f6b7ebb115d2fa6d8ec9ce80f8c8fe',1,'FileManager::QuestionsFile']]],
-  ['questionsfilepath_4',['QuestionsFilePath',['../class_quiz_logical_components_1_1_quiz_states_1_1_base_state_serializer.html#ab435ab5868eda084481e11f0d87ffcf0',1,'QuizLogicalComponents::QuizStates::BaseStateSerializer']]],
-  ['questionsobjects_5',['questionsObjects',['../class_quiz_logical_components_1_1_random_dag_sequence.html#a9f00c603e8fee00c75c89452b0d14b0a',1,'QuizLogicalComponents::RandomDagSequence']]],
-  ['questionsscriptname_6',['questionsScriptName',['../class_file_manager_1_1_questions_file.html#a5500bf37d8ca3714430aab1d5251c859',1,'FileManager::QuestionsFile']]],
-  ['quizstate_7',['quizState',['../class_file_manager_1_1_questions_file.html#a53b0948657d9c83337b4983fd9f4da62',1,'FileManager::QuestionsFile']]]
+  ['questionids_0',['QuestionIds',['../class_quiz_persistence_1_1_quiz_states_1_1_reset_around_state.html#a52d86df87da59e7ef110eb453a18dc9e',1,'QuizPersistence::QuizStates::ResetAroundState']]],
+  ['questionindex_1',['QuestionIndex',['../class_quiz_persistence_1_1_quiz_states_1_1_quiz_state.html#a21f694252449f5d8fb83fef621c5389b',1,'QuizPersistence::QuizStates::QuizState']]],
+  ['questionnodeanalyzer_2',['questionNodeAnalyzer',['../class_notes_parsing_1_1_notes_parser.html#aa9393d5a683caaa96d391355cfb907d2',1,'NotesParsing::NotesParser']]],
+  ['questionsequence_3',['questionSequence',['../class_quiz_persistence_1_1_quiz_states_1_1_random_dag_sequence.html#a3021e2a9fc2fad3451efe84bf8e8ab40',1,'QuizPersistence.QuizStates.RandomDagSequence.questionSequence'],['../class_quiz_starting_1_1_random_dag_sequence.html#ae080aff94e341d87ce8a20e021b70023',1,'QuizStarting.RandomDagSequence.questionSequence']]],
+  ['questionsfilename_4',['questionsFileName',['../class_quiz_persistence_1_1_questions_file.html#a52015bab19e4b18b141f7983df789a33',1,'QuizPersistence::QuestionsFile']]],
+  ['questionsfilepath_5',['QuestionsFilePath',['../class_quiz_persistence_1_1_quiz_states_1_1_base_state_serializer.html#ace4b956cbd159bf56677e68bd02120ba',1,'QuizPersistence::QuizStates::BaseStateSerializer']]],
+  ['questionsobjects_6',['questionsObjects',['../class_quiz_persistence_1_1_quiz_states_1_1_random_dag_sequence.html#a459dca42ecb01ee6bc0e04f7422e3013',1,'QuizPersistence.QuizStates.RandomDagSequence.questionsObjects'],['../class_quiz_starting_1_1_random_dag_sequence.html#aedddb56720480a70f472872d88fc4e8d',1,'QuizStarting.RandomDagSequence.questionsObjects']]],
+  ['questionsscriptname_7',['questionsScriptName',['../class_quiz_persistence_1_1_questions_file.html#a64b7ea6145baa0d24cea4f3e3b5ca9d4',1,'QuizPersistence::QuestionsFile']]],
+  ['quizstate_8',['quizState',['../class_quiz_persistence_1_1_questions_file.html#afbb9a0fb78fd0e2f57f4901afd18ab8f',1,'QuizPersistence::QuestionsFile']]]
 ];

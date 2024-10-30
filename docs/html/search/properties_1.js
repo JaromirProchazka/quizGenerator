@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['count_0',['Count',['../class_file_manager_1_1_priority_queue.html#a89211b09d9c095e743e381fb1ff19487',1,'FileManager::PriorityQueue']]]
+  ['count_0',['Count',['../class_quiz_persistence_1_1_data_structures_1_1_priority_queue.html#afcafe821228b323f2e56f2736f52865b',1,'QuizPersistence::DataStructures::PriorityQueue']]]
 ];

@@ -1,5 +1,5 @@
 var searchData=
 [
-  ['utilfoldername_0',['utilFolderName',['../class_file_manager_1_1_questions_file.html#ac4f317e584ea81d9ce7057f66d6a2e43',1,'FileManager::QuestionsFile']]],
-  ['utilfolderpath_1',['utilFolderPath',['../class_file_manager_1_1_questions_file.html#abe28d611ef13eb94ed54d563ccd5fdbe',1,'FileManager::QuestionsFile']]]
+  ['utilfoldername_0',['utilFolderName',['../class_quiz_persistence_1_1_questions_file.html#a5f3874fc3b42a281f3a4112f8999580c',1,'QuizPersistence::QuestionsFile']]],
+  ['utilfolderpath_1',['utilFolderPath',['../class_quiz_persistence_1_1_questions_file.html#abbe8a7c1a5497f7c4097e879eb4a2c16',1,'QuizPersistence::QuestionsFile']]]
 ];

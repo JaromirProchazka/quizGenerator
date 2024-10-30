@@ -1,5 +1,5 @@
 var searchData=
 [
-  ['webbrowser1_0',['webBrowser1',['../classquiz_generator_1_1questions_form.html#abdf76e34d6657624333e91622bcff65c',1,'quizGenerator::questionsForm']]],
-  ['webbrowser2_1',['webBrowser2',['../classquiz_generator_1_1questions_form.html#a65baf5b2d9d2718a64b27be4b82b199a',1,'quizGenerator::questionsForm']]]
+  ['webbrowser1_0',['webBrowser1',['../class_quiz_generator_presentation_1_1_quiz_starting_1_1questions_form.html#a3bda74fc48140444650ae496a796ccf9',1,'QuizGeneratorPresentation::QuizStarting::questionsForm']]],
+  ['webbrowser2_1',['webBrowser2',['../class_quiz_generator_presentation_1_1_quiz_starting_1_1questions_form.html#af097041e3b627cafb3cfb9a7718ad317',1,'QuizGeneratorPresentation::QuizStarting::questionsForm']]]
 ];
