@@ -105,7 +105,7 @@ var NAVTREE =
         ] ]
       ] ]
     ] ],
-    [ "Basic UI design", "md__manual_2_user_docs.html", null ],
+    [ "User Documentation", "md__manual_2_user_docs.html", null ],
     [ "Html Agility Pack", "md__c_1_2_users_2jarom_2_desktop_2_p_g___c_v_i_x_c4_x8_c_e_n_x_c3_x8_d_2quiz_generator_2packagesd746762943b27c8acb80de6b87a95c8e.html", null ],
     [ "Namespaces", "namespaces.html", [
       [ "Namespace List", "namespaces.html", "namespaces_dup" ],
@@ -139,11 +139,11 @@ var NAVTREE =
 var NAVTREEINDEX =
 [
 "__chain__builder__8cs_8js.html",
-"class_q_generator_1_1_u_i_components_1_1_choose_questions_format.html#a86cae05121525627cf68463a0e857ac1",
-"class_quiz_generator_presentation_1_1_topic_creation_1_1_choose_questions_format.html#a1c0d714a1b34fdc34192b95ab09bc1bc",
-"class_quiz_persistence_1_1_questions_file.html#a7701bc1214dbe3fa14bd8a298840dbf6",
-"classes__1_8js.html",
-"interface_topic_creation_1_1_topic_creation_chain_1_1_choose_notion_notes_1_1_i_notion_page_a_p_i.html#a227b6837f490b7c76a1fa82079c05a57"
+"class_notes_parsing_1_1_or_question_node_params.html#a99b359ffa8160684b5509763a833315b",
+"class_quiz_generator_presentation_1_1_quiz_starting_1_1_choose_quiz_beginning_from.html#a34ca893cde67ef4489b4c1d48a89b364",
+"class_quiz_persistence_1_1_data_structures_1_1_priority_queue_1_1_item.html#a0cf5a7da23923048d8fdf73d0e492e19",
+"class_topic_creation_1_1_topic_creation_chain_1_1_choose_notes_source.html#a7612fc45812dbed145c7a523892dec6b",
+"functions_func_b.html"
 ];
 
 var SYNCONMSG = 'click to disable panel synchronisation';
