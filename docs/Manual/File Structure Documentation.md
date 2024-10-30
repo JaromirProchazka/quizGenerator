@@ -4,17 +4,17 @@ This page describes the individual modules and their files for development purpo
 
 Here you can see a high level c4 architectural diagram:
 
-![High level user-app-outside_dependencies diagram](../ArchitectureDiagrams/L1.png)
+![High level user-app-outside_dependencies diagram](https://github.com/JaromirProchazka/quizGenerator/blob/main/docs/ArchitectureDiagrams/L1.png)
 
 Here is a bit more detailed diagram with containers:
 
-![Application containers diagram](../ArchitectureDiagrams/L1.png)
+![Application containers diagram](https://github.com/JaromirProchazka/quizGenerator/blob/main/docs/ArchitectureDiagrams/L1.png)
 
 ## QuizPersistence
 
 ---
 
-![QuizPersistence components diagram](../ArchitectureDiagrams/L3-persist.png)
+![QuizPersistence components diagram](https://github.com/JaromirProchazka/quizGenerator/blob/main/docs/ArchitectureDiagrams/L3-persist.png)
 
 Module that provides an interface for interactiong with the Apps persistance. For exampel creating new Topics folder, renaming Topics...
 
@@ -151,7 +151,7 @@ Defines the chain of responsibility for starting Quizzes from Topics.
 
 Contains mainly the UI components like the Main Page or Quiz Page. Also for Step components, there are special Forms implementing ChainStepForm<StepT, ProductT, BuilderT> : Form. This form holds the current Chain builder and the next form to be opened. When user presses Continue, the Chosen step is added to the Builder and the Builder is passed to the next form. Finaly, when the Building is finished, the Chain is built and executed.
 
-![QuizPersistence components diagram](../ArchitectureDiagrams/L3-presentation.png)
+![QuizPersistence components diagram](https://github.com/JaromirProchazka/quizGenerator/blob/main/docs/ArchitectureDiagrams/L3-presentation.png)
 
 ### MainPage
 

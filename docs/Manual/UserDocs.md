@@ -1,4 +1,4 @@
-### Basic UI design
+### User Documentation
 
 #### Quiz Menu
 
