@@ -31,9 +31,9 @@ workspace "Name" "Description"
             }
         }
 
-        u -> qg.presentation.createUi "Create Quiz"
-        u -> qg.presentation.startUi "Start Quiz"
-        u -> qg.presentation.mainUi "Edit Quiz"
+        qg.presentation.createUi -> u "Create Quiz"
+        qg.presentation.startUi -> u "Start Quiz"
+        qg.presentation.mainUi -> u "Edit Quiz"
         
         qg.presentation.createUi -> qg.presentation.mainUi "Is accessible from"
         qg.presentation.startUi -> qg.presentation.mainUi "Is accessible from"
