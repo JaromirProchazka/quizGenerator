@@ -31,9 +31,7 @@ var NAVTREE =
       [ "What is Topic?", "index.html#autotoc_md62", null ],
       [ "What are Notes?", "index.html#autotoc_md63", null ]
     ] ],
-    [ "From it, the app creates a quiz file, which will then be used to generate the quiz in UI,...", "index.html#autotoc_md64", [
-      [ "Future Expansions", "index.html#autotoc_md65", null ]
-    ] ],
+    [ "### Future Expansions", "index.html#autotoc_md65", null ],
     [ "Developer Overview", "md__manual_2_developer_01_documentation.html", null ],
     [ "File Structure Documentation", "md__manual_2_file_01_structure_01_documentation.html", [
       [ "QuizPersistence", "md__manual_2_file_01_structure_01_documentation.html#autotoc_md3", [
