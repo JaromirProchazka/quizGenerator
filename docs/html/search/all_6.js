@@ -19,5 +19,5 @@ var searchData=
   ['enumvalues_5f8_2ejs_16',['enumvalues_8.js',['../enumvalues__8_8js.html',1,'']]],
   ['enumvalues_5f9_2ejs_17',['enumvalues_9.js',['../enumvalues__9_8js.html',1,'']]],
   ['enumvalues_5fa_2ejs_18',['enumvalues_a.js',['../enumvalues__a_8js.html',1,'']]],
-  ['expansions_19',['Future Expansions',['../index.html#autotoc_md81',1,'']]]
+  ['expansions_19',['Future Expansions',['../index.html#autotoc_md76',1,'']]]
 ];

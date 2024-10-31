@@ -1,13 +1,13 @@
 var searchData=
 [
   ['a_0',['a',['../class_quiz_generator_presentation_1_1_topic_creation_1_1_choose_questions_format.html#a7b230707cb473c5e937744bbc8838ef6a0cc175b9c0f1b6a831c399e269772661',1,'QuizGeneratorPresentation.TopicCreation.ChooseQuestionsFormat.a'],['../class_q_generator_1_1_u_i_components_1_1_choose_questions_format.html#aa02f1604e9f42d76408cee2de27b8889a0cc175b9c0f1b6a831c399e269772661',1,'QGenerator.UIComponents.ChooseQuestionsFormat.a']]],
-  ['abstractchain_1',['AbstractChain',['../md__manual_2_file_01_structure_01_documentation.html#autotoc_md26',1,'']]],
-  ['abstractchainstructure_2',['AbstractChainStructure',['../md__manual_2_file_01_structure_01_documentation.html#autotoc_md24',1,'']]],
+  ['abstractchain_1',['AbstractChain',['../md__manual_2_file_01_structure_01_documentation.html#autotoc_md21',1,'']]],
+  ['abstractchainstructure_2',['AbstractChainStructure',['../md__manual_2_file_01_structure_01_documentation.html#autotoc_md19',1,'']]],
   ['abstractchainstructure_2eassemblyinfo_2ecs_3',['AbstractChainStructure.AssemblyInfo.cs',['../_abstract_chain_structure_8_assembly_info_8cs.html',1,'']]],
   ['abstractchainstructure_2eglobalusings_2eg_2ecs_4',['AbstractChainStructure.GlobalUsings.g.cs',['../_abstract_chain_structure_8_global_usings_8g_8cs.html',1,'']]],
   ['addcopytoname_5',['addCopyToName',['../class_quiz_persistence_1_1_questions_file.html#a3d3484e479c8eb63bd65241bb0966b08',1,'QuizPersistence::QuestionsFile']]],
   ['addstep_6',['AddStep',['../class_quiz_logical_components_1_1_abstract_chain_1_1_chain_builder.html#a887428173d5db00b9a372a9d7c0d1f13',1,'QuizLogicalComponents::AbstractChain::ChainBuilder']]],
-  ['advanced_20c_20tools_7',['Advanced C Tools',['../md__manual_2_developer_01_documentation.html#autotoc_md2',1,'Advanced C# Tools'],['../index.html#autotoc_md75',1,'Advanced C# Tools']]],
+  ['advanced_20c_20tools_7',['Advanced C# Tools',['../index.html#autotoc_md70',1,'']]],
   ['agility_20pack_8',['Html Agility Pack',['../md__c_1_2_users_2jarom_2_desktop_2_p_g___c_v_i_x_c4_x8_c_e_n_x_c3_x8_d_2quiz_generator_2packagesd746762943b27c8acb80de6b87a95c8e.html',1,'']]],
   ['all_5f0_2ejs_9',['all_0.js',['../all__0_8js.html',1,'']]],
   ['all_5f1_2ejs_10',['all_1.js',['../all__1_8js.html',1,'']]],
@@ -39,5 +39,5 @@ var searchData=
   ['andoption_5fcheckedchanged_36',['AndOption_CheckedChanged',['../class_quiz_generator_presentation_1_1_topic_creation_1_1_choose_questions_format.html#a47b1b1a660e1320246de34f1040c760f',1,'QuizGeneratorPresentation.TopicCreation.ChooseQuestionsFormat.AndOption_CheckedChanged()'],['../class_q_generator_1_1_u_i_components_1_1_choose_questions_format.html#a96913929429b24e4b4e0936d9d4d840a',1,'QGenerator.UIComponents.ChooseQuestionsFormat.AndOption_CheckedChanged()']]],
   ['andquestionnodeparams_37',['AndQuestionNodeParams',['../class_notes_parsing_1_1_and_question_node_params.html',1,'NotesParsing']]],
   ['annotated_5fdup_2ejs_38',['annotated_dup.js',['../annotated__dup_8js.html',1,'']]],
-  ['are_20notes_39',['What are Notes?',['../index.html#autotoc_md67',1,'']]]
+  ['are_20notes_39',['What are Notes?',['../index.html#autotoc_md62',1,'']]]
 ];

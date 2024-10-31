@@ -3,10 +3,10 @@ var searchData=
   ['file_20structure_20documentation_0',['File Structure Documentation',['../md__manual_2_file_01_structure_01_documentation.html',1,'']]],
   ['file_20structure_20documentation_2emd_1',['File Structure Documentation.md',['../_file_01_structure_01_documentation_8md.html',1,'']]],
   ['file_5fmanager_5fclasses_5f8cs_2ejs_2',['file_manager_classes_8cs.js',['../file__manager__classes__8cs_8js.html',1,'']]],
-  ['filemanager_20namespace_3',['FileManager namespace',['../md__manual_2_developer_01_documentation.html#autotoc_md4',1,'FileManager namespace'],['../index.html#autotoc_md77',1,'FileManager namespace']]],
+  ['filemanager_20namespace_3',['FileManager namespace',['../index.html#autotoc_md72',1,'']]],
   ['filemanager_2eassemblyinfo_2ecs_4',['FileManager.AssemblyInfo.cs',['../_debug_2net8_80_2_file_manager_8_assembly_info_8cs.html',1,'(Global Namespace)'],['../_release_2net8_80_2_file_manager_8_assembly_info_8cs.html',1,'(Global Namespace)']]],
   ['filemanager_2eglobalusings_2eg_2ecs_5',['FileManager.GlobalUsings.g.cs',['../_debug_2net8_80_2_file_manager_8_global_usings_8g_8cs.html',1,'(Global Namespace)'],['../_release_2net8_80_2_file_manager_8_global_usings_8g_8cs.html',1,'(Global Namespace)']]],
-  ['filemanagerclasses_20cs_6',['fileManagerClasses.cs',['../md__manual_2_file_01_structure_01_documentation.html#autotoc_md11',1,'']]],
+  ['filemanagerclasses_20cs_6',['fileManagerClasses.cs',['../md__manual_2_file_01_structure_01_documentation.html#autotoc_md6',1,'']]],
   ['filemanagerclasses_2ecs_7',['fileManagerClasses.cs',['../file_manager_classes_8cs.html',1,'']]],
   ['filemanagers_2eassemblyinfo_2ecs_8',['FileManagers.AssemblyInfo.cs',['../_file_managers_8_assembly_info_8cs.html',1,'']]],
   ['filemanagers_2eglobalusings_2eg_2ecs_9',['FileManagers.GlobalUsings.g.cs',['../_file_managers_8_global_usings_8g_8cs.html',1,'']]],
@@ -59,5 +59,5 @@ var searchData=
   ['functions_5fe_2ejs_56',['functions_e.js',['../functions__e_8js.html',1,'']]],
   ['functions_5ff_2ejs_57',['functions_f.js',['../functions__f_8js.html',1,'']]],
   ['functions_5ffunc_2ejs_58',['functions_func.js',['../functions__func_8js.html',1,'']]],
-  ['future_20expansions_59',['Future Expansions',['../index.html#autotoc_md81',1,'']]]
+  ['future_20expansions_59',['Future Expansions',['../index.html#autotoc_md76',1,'']]]
 ];
