@@ -13,7 +13,7 @@ workspace "Name" "Description"
                 fs = component ".sources" "Stores Quiz data" "File System" {
                     tags "Database"
                 }
-                noteP = component "Defines tools for parsing notes into quiz questions" "" "Library"
+                noteP = component "NotesParsing" "Defines tools for parsing notes into quiz questions" "" "Library"
             }
             tCreateBusiness = container "Creating Quizzes" "Business layer: Defines structures for Creating new Topics" {
                 create = component "TopicCreation" "" "Module" {
