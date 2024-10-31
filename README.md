@@ -25,10 +25,10 @@ Topic is the thing, that is created from the notes after parsing. It is visible 
 Notes are some texts in a supported format containing the questions and answers. The questions are in some way marked. A way, that can be configured in the app before inputting the notes file. For instance, user could choose that in his notes, each important topic is marked in italics, or in textbooks, all numbered statements and their proofs are selected as questions. 
 
 From it, the app creates a quiz file, which will then be used to generate the quiz in UI, so the conversion expensive only occurs once and the quiz file can be reused.
+
 ---
-
 ### Future Expansions
-
+---
 Future expansions will mostly be more steps to the Creation and Open Chains. For the Creation one, there will be:
 - a Step, where user sees all found questions and can some exclude or edit there answers
 - adding options for more questions dependency (you can set one question to be dependent in the DAG on another question)
