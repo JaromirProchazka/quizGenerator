@@ -13,6 +13,7 @@ workspace "Name" "Description"
                 fs = component ".sources" "Stores Quiz data" "File System" {
                     tags "Database"
                 }
+                noteP = component "Defines tools for parsing notes into quiz questions" "" "Library"
             }
             tCreateBusiness = container "Creating Quizzes" "Business layer: Defines structures for Creating new Topics" {
                 create = component "TopicCreation" "" "Module" {
@@ -40,8 +41,9 @@ workspace "Name" "Description"
         
         qg.tCreateBusiness.create -> notion "fetch data" "HTTP GET"
         qg.qPersist.quizPersistence -> qg.qPersist.fs "read/write"
-        qg.tCreateBusiness.create -> qg.qPersist.quizPersistence "store"
-        qg.qStartBusiness.start -> qg.qPersist.quizPersistence "load"
+        qg.qPersist.quizPersistence -> qg.qPersist.noteP "create new topic"
+        qg.tCreateBusiness.create -> qg.qPersist.quizPersistence "store" "Serialization"
+        qg.qStartBusiness.start -> qg.qPersist.quizPersistence "load" "Deserialization"
         qg.presentation.createUi -> qg.tCreateBusiness.create "generate"
         qg.presentation.startUi -> qg.qStartBusiness.start "generate"
     }
@@ -69,7 +71,7 @@ workspace "Name" "Description"
 
         styles {
             element "Element" {
-                color white
+                color black
             }
             element "Person" {
                 background #116611
@@ -86,5 +88,4 @@ workspace "Name" "Description"
             }
         }
     }
-
 }
