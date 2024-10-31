@@ -19,5 +19,6 @@ var searchData=
   ['enumvalues_5f8_2ejs_16',['enumvalues_8.js',['../enumvalues__8_8js.html',1,'']]],
   ['enumvalues_5f9_2ejs_17',['enumvalues_9.js',['../enumvalues__9_8js.html',1,'']]],
   ['enumvalues_5fa_2ejs_18',['enumvalues_a.js',['../enumvalues__a_8js.html',1,'']]],
-  ['expansions_19',['Future Expansions',['../index.html#autotoc_md76',1,'']]]
+  ['expansions_19',['Future Expansions',['../index.html#autotoc_md65',1,'']]],
+  ['expensive_20only_20occurs_20once_20and_20the_20quiz_20file_20can_20be_20reused_20',['From it, the app creates a quiz file, which will then be used to generate the quiz in UI, so the conversion expensive only occurs once and the quiz file can be reused.',['../index.html#autotoc_md64',1,'']]]
 ];

@@ -28,24 +28,11 @@ var NAVTREE =
     [ "Documentation", "index.html#autotoc_md59", null ],
     [ "Basic Idea", "index.html#autotoc_md60", [
       [ "What is Quiz?", "index.html#autotoc_md61", null ],
-      [ "What are Notes?", "index.html#autotoc_md62", null ],
-      [ "Basic UI design", "index.html#autotoc_md63", [
-        [ "Quiz Menu", "index.html#autotoc_md64", [
-          [ "Quiz Creation", "index.html#autotoc_md65", null ],
-          [ "Quiz Starting", "index.html#autotoc_md66", null ]
-        ] ],
-        [ "Quiz Window", "index.html#autotoc_md67", null ]
-      ] ]
+      [ "What is Topic?", "index.html#autotoc_md62", null ],
+      [ "What are Notes?", "index.html#autotoc_md63", null ]
     ] ],
-    [ "Developer Overview", "index.html#autotoc_md68", [
-      [ "Technologies", "index.html#autotoc_md69", null ],
-      [ "Advanced C# Tools", "index.html#autotoc_md70", null ],
-      [ "Detailed Project Overview", "index.html#autotoc_md71", [
-        [ "FileManager namespace", "index.html#autotoc_md72", null ],
-        [ "QuizLogicalComponents namespace", "index.html#autotoc_md73", null ],
-        [ "QGenerator namespace", "index.html#autotoc_md74", null ]
-      ] ],
-      [ "Future Expansions", "index.html#autotoc_md76", null ]
+    [ "From it, the app creates a quiz file, which will then be used to generate the quiz in UI,...", "index.html#autotoc_md64", [
+      [ "Future Expansions", "index.html#autotoc_md65", null ]
     ] ],
     [ "Developer Overview", "md__manual_2_developer_01_documentation.html", null ],
     [ "File Structure Documentation", "md__manual_2_file_01_structure_01_documentation.html", [

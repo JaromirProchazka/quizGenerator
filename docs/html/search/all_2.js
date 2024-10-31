@@ -1,13 +1,13 @@
 var searchData=
 [
   ['a_0',['a',['../class_quiz_generator_presentation_1_1_topic_creation_1_1_choose_questions_format.html#a7b230707cb473c5e937744bbc8838ef6a0cc175b9c0f1b6a831c399e269772661',1,'QuizGeneratorPresentation.TopicCreation.ChooseQuestionsFormat.a'],['../class_q_generator_1_1_u_i_components_1_1_choose_questions_format.html#aa02f1604e9f42d76408cee2de27b8889a0cc175b9c0f1b6a831c399e269772661',1,'QGenerator.UIComponents.ChooseQuestionsFormat.a']]],
-  ['abstractchain_1',['AbstractChain',['../md__manual_2_file_01_structure_01_documentation.html#autotoc_md21',1,'']]],
-  ['abstractchainstructure_2',['AbstractChainStructure',['../md__manual_2_file_01_structure_01_documentation.html#autotoc_md19',1,'']]],
-  ['abstractchainstructure_2eassemblyinfo_2ecs_3',['AbstractChainStructure.AssemblyInfo.cs',['../_abstract_chain_structure_8_assembly_info_8cs.html',1,'']]],
-  ['abstractchainstructure_2eglobalusings_2eg_2ecs_4',['AbstractChainStructure.GlobalUsings.g.cs',['../_abstract_chain_structure_8_global_usings_8g_8cs.html',1,'']]],
-  ['addcopytoname_5',['addCopyToName',['../class_quiz_persistence_1_1_questions_file.html#a3d3484e479c8eb63bd65241bb0966b08',1,'QuizPersistence::QuestionsFile']]],
-  ['addstep_6',['AddStep',['../class_quiz_logical_components_1_1_abstract_chain_1_1_chain_builder.html#a887428173d5db00b9a372a9d7c0d1f13',1,'QuizLogicalComponents::AbstractChain::ChainBuilder']]],
-  ['advanced_20c_20tools_7',['Advanced C# Tools',['../index.html#autotoc_md70',1,'']]],
+  ['a_20quiz_20file_20which_20will_20then_20be_20used_20to_20generate_20the_20quiz_20in_20ui_20so_20the_20conversion_20expensive_20only_20occurs_20once_20and_20the_20quiz_20file_20can_20be_20reused_1',['From it, the app creates a quiz file, which will then be used to generate the quiz in UI, so the conversion expensive only occurs once and the quiz file can be reused.',['../index.html#autotoc_md64',1,'']]],
+  ['abstractchain_2',['AbstractChain',['../md__manual_2_file_01_structure_01_documentation.html#autotoc_md21',1,'']]],
+  ['abstractchainstructure_3',['AbstractChainStructure',['../md__manual_2_file_01_structure_01_documentation.html#autotoc_md19',1,'']]],
+  ['abstractchainstructure_2eassemblyinfo_2ecs_4',['AbstractChainStructure.AssemblyInfo.cs',['../_abstract_chain_structure_8_assembly_info_8cs.html',1,'']]],
+  ['abstractchainstructure_2eglobalusings_2eg_2ecs_5',['AbstractChainStructure.GlobalUsings.g.cs',['../_abstract_chain_structure_8_global_usings_8g_8cs.html',1,'']]],
+  ['addcopytoname_6',['addCopyToName',['../class_quiz_persistence_1_1_questions_file.html#a3d3484e479c8eb63bd65241bb0966b08',1,'QuizPersistence::QuestionsFile']]],
+  ['addstep_7',['AddStep',['../class_quiz_logical_components_1_1_abstract_chain_1_1_chain_builder.html#a887428173d5db00b9a372a9d7c0d1f13',1,'QuizLogicalComponents::AbstractChain::ChainBuilder']]],
   ['agility_20pack_8',['Html Agility Pack',['../md__c_1_2_users_2jarom_2_desktop_2_p_g___c_v_i_x_c4_x8_c_e_n_x_c3_x8_d_2quiz_generator_2packagesd746762943b27c8acb80de6b87a95c8e.html',1,'']]],
   ['all_5f0_2ejs_9',['all_0.js',['../all__0_8js.html',1,'']]],
   ['all_5f1_2ejs_10',['all_1.js',['../all__1_8js.html',1,'']]],
@@ -36,8 +36,10 @@ var searchData=
   ['analyser_33',['Analyser',['../class_topic_creation_1_1_topic_creation_chain_1_1_choose_question_format.html#abcf05f07605d28f23705b19e50a61f65',1,'TopicCreation::TopicCreationChain::ChooseQuestionFormat']]],
   ['analyze_34',['Analyze',['../class_notes_parsing_1_1_question_node_params.html#aa62f162ebf3a2127174b378b1e962d3d',1,'NotesParsing.QuestionNodeParams.Analyze()'],['../class_notes_parsing_1_1_and_question_node_params.html#accb974446f88b3bff132e66c3920e837',1,'NotesParsing.AndQuestionNodeParams.Analyze()'],['../class_notes_parsing_1_1_or_question_node_params.html#a99b359ffa8160684b5509763a833315b',1,'NotesParsing.OrQuestionNodeParams.Analyze()']]],
   ['and_35',['AND',['../class_topic_creation_1_1_topic_creation_chain_1_1_choose_question_format.html#a85e0aa9807ab9d589035976e03f830cea558ffc8f5770d8e4f95f51d822685532',1,'TopicCreation::TopicCreationChain::ChooseQuestionFormat']]],
-  ['andoption_5fcheckedchanged_36',['AndOption_CheckedChanged',['../class_quiz_generator_presentation_1_1_topic_creation_1_1_choose_questions_format.html#a47b1b1a660e1320246de34f1040c760f',1,'QuizGeneratorPresentation.TopicCreation.ChooseQuestionsFormat.AndOption_CheckedChanged()'],['../class_q_generator_1_1_u_i_components_1_1_choose_questions_format.html#a96913929429b24e4b4e0936d9d4d840a',1,'QGenerator.UIComponents.ChooseQuestionsFormat.AndOption_CheckedChanged()']]],
-  ['andquestionnodeparams_37',['AndQuestionNodeParams',['../class_notes_parsing_1_1_and_question_node_params.html',1,'NotesParsing']]],
-  ['annotated_5fdup_2ejs_38',['annotated_dup.js',['../annotated__dup_8js.html',1,'']]],
-  ['are_20notes_39',['What are Notes?',['../index.html#autotoc_md62',1,'']]]
+  ['and_20the_20quiz_20file_20can_20be_20reused_36',['From it, the app creates a quiz file, which will then be used to generate the quiz in UI, so the conversion expensive only occurs once and the quiz file can be reused.',['../index.html#autotoc_md64',1,'']]],
+  ['andoption_5fcheckedchanged_37',['AndOption_CheckedChanged',['../class_quiz_generator_presentation_1_1_topic_creation_1_1_choose_questions_format.html#a47b1b1a660e1320246de34f1040c760f',1,'QuizGeneratorPresentation.TopicCreation.ChooseQuestionsFormat.AndOption_CheckedChanged()'],['../class_q_generator_1_1_u_i_components_1_1_choose_questions_format.html#a96913929429b24e4b4e0936d9d4d840a',1,'QGenerator.UIComponents.ChooseQuestionsFormat.AndOption_CheckedChanged()']]],
+  ['andquestionnodeparams_38',['AndQuestionNodeParams',['../class_notes_parsing_1_1_and_question_node_params.html',1,'NotesParsing']]],
+  ['annotated_5fdup_2ejs_39',['annotated_dup.js',['../annotated__dup_8js.html',1,'']]],
+  ['app_20creates_20a_20quiz_20file_20which_20will_20then_20be_20used_20to_20generate_20the_20quiz_20in_20ui_20so_20the_20conversion_20expensive_20only_20occurs_20once_20and_20the_20quiz_20file_20can_20be_20reused_40',['From it, the app creates a quiz file, which will then be used to generate the quiz in UI, so the conversion expensive only occurs once and the quiz file can be reused.',['../index.html#autotoc_md64',1,'']]],
+  ['are_20notes_41',['What are Notes?',['../index.html#autotoc_md63',1,'']]]
 ];

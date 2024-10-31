@@ -10,7 +10,7 @@ var searchData=
   ['mainpage_2edesigner_2ecs_7',['mainPage.Designer.cs',['../main_page_8_designer_8cs.html',1,'']]],
   ['mainpage_5fload_8',['mainPage_Load',['../class_quiz_generator_presentation_1_1_main_page_1_1main_page.html#a6d31fcf1e8e5180ae2a9748f2d1b4346',1,'QuizGeneratorPresentation::MainPage::mainPage']]],
   ['mainpagelistbox_9',['mainPageListBox',['../class_quiz_generator_presentation_1_1_main_page_1_1topic_edit_box.html#a8ecc27c22d3316582c7274e493b78429',1,'QuizGeneratorPresentation::MainPage::topicEditBox']]],
-  ['menu_10',['Menu',['../md__manual_2_user_docs.html#autotoc_md51',1,'Quiz Menu'],['../index.html#autotoc_md64',1,'Quiz Menu']]],
+  ['menu_10',['Quiz Menu',['../md__manual_2_user_docs.html#autotoc_md51',1,'']]],
   ['menu_2ejs_11',['menu.js',['../menu_8js.html',1,'']]],
   ['menudata_2ejs_12',['menudata.js',['../menudata_8js.html',1,'']]],
   ['messagelabel_13',['MessageLabel',['../class_quiz_generator_presentation_1_1_notification.html#aa0840a77a3e83962813eec57a4e0aa3b',1,'QuizGeneratorPresentation::Notification']]],

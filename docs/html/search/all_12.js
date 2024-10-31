@@ -17,5 +17,6 @@ var searchData=
   ['resize_2ejs_14',['resize.js',['../resize_8js.html',1,'']]],
   ['result_15',['Result',['../class_quiz_logical_components_1_1_abstract_chain_1_1_chain_step.html#a38f7700fb8d27df3e46219a946a4dccb',1,'QuizLogicalComponents::AbstractChain::ChainStep']]],
   ['resultstate_16',['resultState',['../class_notes_parsing_1_1_notes_parser.html#a554b63c4a02c3f55ea9a098a367e3563',1,'NotesParsing::NotesParser']]],
-  ['rn_17',['rn',['../class_quiz_persistence_1_1_data_structures_1_1_dag.html#aa49596ccbff2f2de71dec0f57e285717',1,'QuizPersistence::DataStructures::Dag']]]
+  ['reused_17',['From it, the app creates a quiz file, which will then be used to generate the quiz in UI, so the conversion expensive only occurs once and the quiz file can be reused.',['../index.html#autotoc_md64',1,'']]],
+  ['rn_18',['rn',['../class_quiz_persistence_1_1_data_structures_1_1_dag.html#aa49596ccbff2f2de71dec0f57e285717',1,'QuizPersistence::DataStructures::Dag']]]
 ];
