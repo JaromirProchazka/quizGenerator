@@ -1,51 +1,44 @@
 workspace "Name" "Description"
 
-    !identifiers hierarchical
+    # !identifiers hierarchical
 
     model {
         u = person "User" "A general User"
-        notion = softwareSystem "Notion API" "An API for fetching notes from Notion app"
-        qg = softwareSystem "Software System" {
-            qPersist = container "Persistence" {
+        notion = softwareSystem "Notion API" "An API for fetching notes from Notion app" "HTTP Server"
+        qg = softwareSystem "Quiz Generator" {
+            qgApp = container "Quiz Generator App" "" "Client side Windows App" {
                 quizPersistence = component "QuizPersistence" "Handles Quiz state loading and storing" "Module" {
-                    
                 }
-                fs = component ".sources" "Stores Quiz data" "File System" {
-                    tags "Database"
-                }
-                noteP = component "NotesParsing" "Defines tools for parsing notes into quiz questions" "" "Library"
-            }
-            tCreateBusiness = container "Creating Quizzes" "Business layer: Defines structures for Creating new Topics" {
-                create = component "TopicCreation" "" "Module" {
-                    
+                noteP = component "NotesParsing" "Defines tools for parsing notes into quiz questions" "Module"
+                create = component "TopicCreation" "Business layer: Defines structures for Creating new Topics" "Module"              
+                start = component "QuizStarting" "Business layer: Defines structures for Starting Quizzes from created Topics" "Module" 
+                presentation = component "QuizGeneratorPresentation" "Presentation layer: displays quizzes and other services to user" "Module" {
+                    # mainUi = component "MainPage" "The Dashboard from which the other services are accessed" "Submodule" {}
+                    # startUi = component "QuizStarting" "A chain of pages used to configure the quiz start" "Submodule" {}
+                    # createUi = component "TopicCreation" "A chain of pages used to configure the quiz creation" "Submodule" {}
                 }
             }
-            qStartBusiness = container "Quiz Taking" "Business layer: Defines structures for Starting Quizzes from created Topics" "Module" {
-                start = component "QuizStarting" "" "Module" {
-                    
-                }
-            }
-            presentation = container "QuizGeneratorPresentation" "Presentation layer: displays quizzes and other services to user" "Module" {
-                mainUi = component "MainPage" "The Dashboard from which the other services are accessed" "Submodule" {}
-                startUi = component "QuizStarting" "A chain of pages used to configure the quiz start" "Submodule" {}
-                createUi = component "TopicCreation" "A chain of pages used to configure the quiz creation" "Submodule" {}
+            fs = container ".sources" "Stores Quiz data" "File System" {
+                tags "Database"
             }
         }
 
-        qg.presentation.createUi -> u "Create Quiz"
-        qg.presentation.startUi -> u "Start Quiz"
-        qg.presentation.mainUi -> u "Edit Quiz"
+        u -> presentation "Create Quiz"
+        u -> presentation "Start Quiz"
+        u -> presentation "Edit Quiz"
         
-        qg.presentation.createUi -> qg.presentation.mainUi "Is accessible from"
-        qg.presentation.startUi -> qg.presentation.mainUi "Is accessible from"
+        # createUi -> mainUi "Is accessible from"
+        # startUi -> mainUi "Is accessible from"
+        # startUi -> start "generate"
+        # createUi -> create "generate"
         
-        qg.tCreateBusiness.create -> notion "fetch data" "HTTP GET"
-        qg.qPersist.quizPersistence -> qg.qPersist.fs "read/write"
-        qg.qPersist.quizPersistence -> qg.qPersist.noteP "create new topic"
-        qg.tCreateBusiness.create -> qg.qPersist.quizPersistence "store" "Serialization"
-        qg.qStartBusiness.start -> qg.qPersist.quizPersistence "load" "Deserialization"
-        qg.presentation.createUi -> qg.tCreateBusiness.create "generate"
-        qg.presentation.startUi -> qg.qStartBusiness.start "generate"
+        create -> notion "fetch data" "HTTP GET"
+        quizPersistence -> fs "read/write"
+        quizPersistence -> noteP "create new topic"
+        create -> quizPersistence "store" "Serialization"
+        start -> quizPersistence "load" "Deserialization"
+        presentation -> start "generate"
+        presentation -> create "generate"
     }
 
     views {
@@ -59,32 +52,37 @@ workspace "Name" "Description"
             autolayout lr
         }
         
-        component qg.presentation "Presentation_module_layer" {
-            include *
-            autolayout lr
-        }
-        
-        component qg.qPersist "Persist_module_layer" {
+        component qgApp "Component_layer" {
             include *
             autolayout lr
         }
 
         styles {
             element "Element" {
-                color black
+                background "#1168bd"
+                color "#ffffff"
+                shape RoundedBox
             }
+
+            element "Component element" {
+                background "#90d5ff"
+                shape RoundedBox
+            }
+
+            element "External System" {
+                background "#aaaaaa"
+            }
+
             element "Person" {
-                background #116611
                 shape person
             }
-            element "Software System" {
-                background #2D882D
+
+            element "Web Front-End"  {
+                shape WebBrowser
             }
-            element "Container" {
-                background #55aa55
-            }
-            element "Database" {
-                shape cylinder
+
+            element "Database"  {
+                shape Cylinder
             }
         }
     }
