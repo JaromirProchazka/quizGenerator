@@ -1,4 +1,4 @@
-workspace "Name" "Description"
+workspace "Quiz Generator" "An app for powerful Quiz Generation from many formats and self testing"
 
     model {
         u = person "User" "A general User"
