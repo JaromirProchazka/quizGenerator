@@ -1,7 +1,5 @@
 workspace "Name" "Description"
 
-    # !identifiers hierarchical
-
     model {
         u = person "User" "A general User"
         notion = softwareSystem "Notion API" "An API for fetching notes from Notion app" "HTTP Server"
