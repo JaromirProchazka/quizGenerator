@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['quiz_20generator_0',['Quiz Generator',['../index.html',1,'']]]
+  ['table_20of_20contents_0',['Table of Contents',['../index.html',1,'']]]
 ];

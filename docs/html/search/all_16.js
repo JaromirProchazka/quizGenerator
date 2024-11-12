@@ -1,25 +1,9 @@
 var searchData=
 [
-  ['valid_0',['Valid',['../class_quiz_persistence_1_1_questions_file.html#a02af7b2c51afca7cb332493bcd8e9881a3ac705f2acd51a4613f9188c05c91d0d',1,'QuizPersistence::QuestionsFile']]],
-  ['value_1',['Value',['../class_quiz_persistence_1_1_data_structures_1_1_priority_queue_1_1_item.html#a0cf5a7da23923048d8fdf73d0e492e19',1,'QuizPersistence::DataStructures::PriorityQueue::Item']]],
-  ['variables_5f0_2ejs_2',['variables_0.js',['../variables__0_8js.html',1,'']]],
-  ['variables_5f1_2ejs_3',['variables_1.js',['../variables__1_8js.html',1,'']]],
-  ['variables_5f10_2ejs_4',['variables_10.js',['../variables__10_8js.html',1,'']]],
-  ['variables_5f11_2ejs_5',['variables_11.js',['../variables__11_8js.html',1,'']]],
-  ['variables_5f12_2ejs_6',['variables_12.js',['../variables__12_8js.html',1,'']]],
-  ['variables_5f13_2ejs_7',['variables_13.js',['../variables__13_8js.html',1,'']]],
-  ['variables_5f2_2ejs_8',['variables_2.js',['../variables__2_8js.html',1,'']]],
-  ['variables_5f3_2ejs_9',['variables_3.js',['../variables__3_8js.html',1,'']]],
-  ['variables_5f4_2ejs_10',['variables_4.js',['../variables__4_8js.html',1,'']]],
-  ['variables_5f5_2ejs_11',['variables_5.js',['../variables__5_8js.html',1,'']]],
-  ['variables_5f6_2ejs_12',['variables_6.js',['../variables__6_8js.html',1,'']]],
-  ['variables_5f7_2ejs_13',['variables_7.js',['../variables__7_8js.html',1,'']]],
-  ['variables_5f8_2ejs_14',['variables_8.js',['../variables__8_8js.html',1,'']]],
-  ['variables_5f9_2ejs_15',['variables_9.js',['../variables__9_8js.html',1,'']]],
-  ['variables_5fa_2ejs_16',['variables_a.js',['../variables__a_8js.html',1,'']]],
-  ['variables_5fb_2ejs_17',['variables_b.js',['../variables__b_8js.html',1,'']]],
-  ['variables_5fc_2ejs_18',['variables_c.js',['../variables__c_8js.html',1,'']]],
-  ['variables_5fd_2ejs_19',['variables_d.js',['../variables__d_8js.html',1,'']]],
-  ['variables_5fe_2ejs_20',['variables_e.js',['../variables__e_8js.html',1,'']]],
-  ['variables_5ff_2ejs_21',['variables_f.js',['../variables__f_8js.html',1,'']]]
+  ['ul_0',['ul',['../class_quiz_generator_presentation_1_1_topic_creation_1_1_choose_questions_format.html#a7b230707cb473c5e937744bbc8838ef6a738a656e8e8ec272ca17cd51e12f558b',1,'QuizGeneratorPresentation.TopicCreation.ChooseQuestionsFormat.ul'],['../class_q_generator_1_1_u_i_components_1_1_choose_questions_format.html#aa02f1604e9f42d76408cee2de27b8889a738a656e8e8ec272ca17cd51e12f558b',1,'QGenerator.UIComponents.ChooseQuestionsFormat.ul']]],
+  ['unreached_1',['Unreached',['../class_quiz_persistence_1_1_data_structures_1_1_dag.html#aeda8f56bd7814a18fee27e38b3e61939a714c3e3ce954bde7d1439b60909485b6',1,'QuizPersistence::DataStructures::Dag']]],
+  ['updatelist_2',['updateList',['../class_quiz_generator_presentation_1_1_main_page_1_1main_page.html#ab37aaac28bfd4c8aaf9cefd85dc5e8dc',1,'QuizGeneratorPresentation::MainPage::mainPage']]],
+  ['user_20documentation_3',['Quiz Generator User Documentation',['../index.html#autotoc_md7',1,'']]],
+  ['utilfoldername_4',['utilFolderName',['../class_quiz_persistence_1_1_questions_file.html#a5f3874fc3b42a281f3a4112f8999580c',1,'QuizPersistence::QuestionsFile']]],
+  ['utilfolderpath_5',['utilFolderPath',['../class_quiz_persistence_1_1_questions_file.html#abbe8a7c1a5497f7c4097e879eb4a2c16',1,'QuizPersistence::QuestionsFile']]]
 ];

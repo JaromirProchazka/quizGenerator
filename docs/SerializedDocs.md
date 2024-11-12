@@ -1,20 +1,28 @@
-# Quiz Generator Documentation
-
 ## Table of Contents
 
 ---
 
-1. [Introduction](#introduction)
-2. [Architecture](#architecture)
-3. [Installation and Setup](#installation-and-setup)
-4. [Technical Details](#technical-Details)
-5. [Development Guidelines](#development-guidelines)
-6. [Testing Strategy](#testing-strategy)
-7. [Database Schema](#database-schema)
-8. [Troubleshooting](#troubleshooting)
-9. [Deployment](#deployment)
-10. [Glossary](#glossary)
-11. [Future Enhancements](#future-enhancements)
+[Introduction](#introduction)
+
+[Quiz Generator User Documentation](#quiz-generator-user-documentation)
+
+1. [Quiz Menu](#quiz-menu)
+2. [Quiz Creation](#quiz-creation)
+3. [Quiz Starting](#quiz-starting)
+4. [Quiz Window](#quiz-window)
+
+[Quiz Generator Developer Documentation](#quiz-generator-developer-documentation)
+
+1. [Architecture](#architecture)
+2. [Installation and Setup](#installation-and-setup)
+3. [Technical Details](#technical-Details)
+4. [Development Guidelines](#development-guidelines)
+5. [Testing Strategy](#testing-strategy)
+6. [Database Schema](#database-schema)
+7. [Troubleshooting](#troubleshooting)
+8. [Deployment](#deployment)
+9. [Glossary](#glossary)
+10. [Future Enhancements](#future-enhancements)
 
 ---
 
@@ -26,13 +34,13 @@ The Quiz Generator is a Windows application designed to generate quizzes from no
 
 The Quiz Generator application is designed to make the learning process more efficient by transforming raw notes into interactive, personalized quizzes. Its primary purpose is to empower students and educators alike to create engaging, adaptive assessments that reinforce knowledge retention and comprehension.
 
-**Core Objectives:**
+**Core Objectives: **
 
 1. _Create a efficient learning workflow_:
    - Listen or Read
    - Take notes
    - Highlight important concepts
-   - Iteratively test your self from highlighted concepts until all learned
+   - Iteratively test yourself from highlighted concepts until all learned
 2. _Efficient Learning Tool_: Convert static notes into dynamic, interactive quizzes that stimulate active recall and reinforce learning.
 3. _Customizable Assessments_: Allow users to tailor quizzes to their specific needs, adapting difficulty levels and content to suit individual learning styles.
 4. _Time-Saving Solution_: Automate the quiz creation process, significantly reducing the time spent on manually crafting assessment materials.
@@ -40,28 +48,85 @@ The Quiz Generator application is designed to make the learning process more eff
 
 ### Scope
 
-The Quiz Generator application is specifically designed to serve the needs of students across various educational levels and disciplines. Its primary focus is on enhancing the learning experience and improving knowledge retention among students.
+The Quiz Generator application is specifically designed to serve the needs of students across various educational levels and disciplines. Its primary focus is on enhancing learning experience and improving knowledge retention among students.
 
-It can also be used by anybody who wants to self study from books on other sources and maintain his knowledge.
+It can also be used by anybody who wants to self-study from books on other sources and maintain his knowledge.
 
 ### Key Features
 
 - Supports parsing notes in HTML format
 - Generates quizzes with questions and answers from parsed notes
-- Allows starting quizzes from created topics
+- Allows starting quizzes from topics created
 - Implements a Chain of Responsibility pattern for quiz creation and starting
 - Utilizes Windows Forms for UI development
 - Supports fetching notes from Notion API
 
+# Quiz Generator User Documentation
+
+## Quiz Menu
+
+At the Start of the App, you will be greeted by a list of your Quiz on top, and a `Create New Topic` button at the bottom. If you want to add a new topic, press the button and choose the method of providing the notes.
+
+After that a new topic is added to the topics list at the top, or a topic with the same name is updated. Then select topic in list, you can then either click
+
+- `Open` button and start the quiz,
+- or click `Edit` button and an edit window will appear. You can **Rename** the topic or **Delete** it
+
+### Quiz Creation
+
+Now a chain of configuration pages will be shown in this order:
+
+#### Choose Notes Source
+
+You can either provide a local html file. In this case click the option and than press `Continue`. After that a file explorer window is shown where you can
+
+Or give a link of a Notion page into the text field next to the Notion page option. Note that the page must be at the time of Creation PUBLIC.
+
+Press `Continue` to move on to the next step.
+
+#### Choose Question Format
+
+Then you can choose the _Question format_, which are the attributes that if the given node in the source notes will have, it will be interpreted as the question and will be added to the final Quiz.
+
+First you can choose if the conditions you give are supposed to be all present in the question node (AND) or if the any condition is sufficient (OR). There are these options for formatting the question node in the html file node:
+
+- _Node name_: The name of the node. For instance stylistic nodes like `em` or `b`, or structural node names like lists
+- _Node Color_: The inline color style in the node, for instance `blue` or `#ff0000`
+- _Class_: Class names list that the node has separated with spaces, any of these classes present in node is will satisfy the condition
+- _Font-Family_: inline Font family field
+
+if the text field isn't written in, it is not used in the node analyzing.
+
+After pressing `Continue`, new Topic is added to the Topics list where you can edit its name.
+
+### Quiz Starting
+
+On press of the `Open` button, the Topic selected in the Topics list will be opened. You will be presented with options of either continuing where you ended in your last test, or the option of starting from the beginning with 0 in the current question counter. After that your quiz is opened.
+
+## Quiz Window
+
+When the quiz is started, user is greeted on bottom with the question and answers window and on top with 4 buttons.
+
+- press `Answer` button, and read your notes, which are shown at the bottom.
+  - If you answer matches, press `Next 👍` which simply shows new question and increment counter.
+  - If you failed to answer correctly, press the `Next 👎` button. This one also shows new question, but it moves the incorrectly answered question ahead, so that it will be asked again and hopefully answered correctly.
+- when you are done and want to start a different quiz, simply press the `Back` button, which closes this quiz.
+
+There is also a counter, which says “`number of answered questions / number of questions`”. If you answer incorrectly and press `Next 👎`, the counter doesn’t increment.
+
+# Quiz Generator Developer Documentation
+
+Doxygen code Docs can be accessed [here](https://jaromirprochazka.github.io/quizGenerator/).
+
 ## Architecture
 
-The Quiz Generator is a Windows application. It follows a modular architecture with clear separation of concerns:
+The Quiz Generator is a Windows application. It follows modular architecture with clear separation of concerns:
 
 ### External Systems
 
 1. **Notion API**: Used for fetching notes from Notion app
 
-![High level user-app-outside_dependencies diagram](https://github.com/JaromirProchazka/quizGenerator/blob/main/docs/ArchitectureDiagrams/L1.png?raw=true)
+![High level user-app-outside-dependencies diagram](https://github.com/JaromirProchazka/quizGenerator/blob/main/docs/ArchitectureDiagrams/L1.png?raw=true)
 
 ### Containers
 
@@ -85,7 +150,7 @@ The Quiz Generator is a Windows application. It follows a modular architecture w
 
 ### C4 Model
 
-![High level user-app-outside_dependencies diagram](https://github.com/JaromirProchazka/quizGenerator/blob/main/docs/ArchitectureDiagrams/L1.png?raw=true)
+![High level user-app-outside-dependencies diagram](https://github.com/JaromirProchazka/quizGenerator/blob/main/docs/ArchitectureDiagrams/L1.png?raw=true)
 ![Application containers diagram](https://github.com/JaromirProchazka/quizGenerator/blob/main/docs/ArchitectureDiagrams/L2.png?raw=true)
 ![Quiz components diagram](https://github.com/JaromirProchazka/quizGenerator/blob/main/docs/ArchitectureDiagrams/L3.png?raw=true)
 
@@ -129,7 +194,7 @@ The Quiz Generator is a Windows application. It follows a modular architecture w
 2. Use meaningful variable names.
 3. Implement proper exception handling.
 4. Write unit tests for critical components.
-5. **Opend-closed principal**: for new functionalities use inheritance to create new classes with needed features. Do not touch the old once
+5. **Opened-closed principal**: for new functionalities use inheritance to create new classes with needed features. Do not touch the old once
 
 ### Version Control Practices
 
@@ -144,9 +209,9 @@ Unit tests for individual components and methods
 
 ## Database Schema
 
-The Quiz Generator uses a file-based storage system for quiz data. The schema consists of:
+The Quiz Generator uses a file-based storage system for quiz data. The scheme consists of:
 
-The topics folder contains the styling and quiz visualization scripts. Further for each topic, there is a folder. Each folder containers an original notes file, the generated quiz file with the questions and answers and a serialized state file.
+The topics folder contains styling and quiz visualization scripts. Further for each topic, there is a folder. Each folder containers an original notes file, the generated quiz file with the questions and answers and a serialized state file.
 
 ```
 .sources\
@@ -163,21 +228,23 @@ The topics folder contains the styling and quiz visualization scripts. Further f
 
 ![QuizPersistence components diagram](https://github.com/JaromirProchazka/quizGenerator/blob/main/docs/ArchitectureDiagrams/L3.png?raw=true)
 
-- **QuizPersistence:** Module that provides an interface for interactiong with the Apps persistance. For exampel creating new Topics folder, renaming Topics...
-  - **DataStructures:** Defines dataStructures useful for Questions Sequencing.
-- **NotesParsing:** Defines tools for parsing notes into Quizzes. The questions are found using the **`QuestionNodeParams`** which holds the List of Attribute check classes. Each of these classes has a check for some possible html node attribute and on running the `QuestionNodeParams` function for analysing the `HtmlNode`, each of these checks are used on the node. This insures great extensibility, new Check can be created by making inheriting object from the `BaseAttributeCheck` and it's instance be added to the Checks List. **`QuestionNodeParams` is abstract and has two inheritors**, the **`AndQuestionNodeParams`** and **`OrQuestionNodeParams`**. The And one passes, if all Checks in the List pass and the Or one passes if at least one check in the List passes.
+- **QuizPersistence:** Module that provides an interface for interacting with the Apps persistance. For example creating new Topics folder, renaming Topics...
+  - **DataStructures:** Defines data structures useful for Questions Sequencing.
+- **NotesParsing:** Defines tools for parsing notes into Quizzes. The questions are found using the **`QuestionNodeParams`** which holds the List of Attribute check classes. Each of these classes has a check for some possible html node attribute and on running the `QuestionNodeParams` function for analyzing the `HtmlNode`, each of these checks are used on the node. This insures great extensibility, new Check can be created by making inheriting object from the `BaseAttributeCheck` and it's instance be added to the Checks List. **`QuestionNodeParams` is abstract and has two inheritors**, the **`AndQuestionNodeParams`** and **`OrQuestionNodeParams`**. The And one passes, if all Checks in the List pass and the Or one passes if at least one check in the List passes.
 - **AbstractChainStructure:**
   - **AbstractChain:** Defiens an abstract Chain of responsibility Pattern and its Builder.
 - **TopicCreation:** Defines structures for Creating new Topics.
   - **TopicCreationChain:** This abstract chain and its builder are implemented by the **`TopicCreationStep : ChainStep<TopicProduct>`** and it's builder. This `TopicCreationStep` is implemented by the `ChooseQuestionFormat` which lets user configure the **`NotesParser`** and define what is interpreted as a question. Also there is the **`ChooseNotesSource : TopicCreationStep`** which lets user choose the notes source. For that, there is the Notion Page source and local file source.
 - **QuizStarting:** Defines structures for Starting Quizzes from created Topics.
-  - **QuizStartingChain:** Defiens step and its inheritors for choosing, from which possition to start the quiz and a builder for the quiz starting chain.
+  - **QuizStartingChain:** Defines step and its inheritors for choosing, from which position to start the quiz and a builder for the quiz starting chain.
 - **QuizGeneratorPresentation:** Contains mainly the UI components like the Main Page or Quiz Page. Also for Step components, there are special Forms implementing ChainStepForm<StepT, ProductT, BuilderT> : Form. This form holds the current Chain builder and the next form to be opened. When user presses Continue, the Chosen step is added to the Builder and the Builder is passed to the next form. Finaly, when the Building is finished, the Chain is built and executed.
   - **MainPage:** Defines the programs dashboard.
   - **QuizStarting:** Defiens UI elemets for satarting an existing Quiz from a Topic.
   - **TopicCreation:** Defiens UI elemets for creating new Topics.
 
 ## Troubleshooting
+
+`
 
 ### Common Errors and Solutions
 

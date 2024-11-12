@@ -193,6 +193,7 @@ var dir_9cba3ccb450b89ac6f0c2a18abcbadf0 =
     [ "functions_dup.js", "functions__dup_8js.html", null ],
     [ "functions_func.js", "functions__func_8js.html", null ],
     [ "hierarchy.js", "hierarchy_8js.html", null ],
+    [ "index.js", "index_8js.html", null ],
     [ "interface_quiz_logical_components_1_1_i_sequence_of_questions.js", "interface__quiz__logical__components__1__1__i__sequence__of__questions_8js.html", null ],
     [ "interface_quiz_logical_components_1_1_quiz_creation_chain_1_1_choose_notion_notes_1_1_i_notion_page_a_p_i.js", "interface__quiz__logical__components__1__1__quiz__creation__chain__1__1__choose__notion__notes__1b52aee65816b65119e69406220a0f6a.html", null ],
     [ "interface_quiz_logical_components_1_1_quiz_states_1_1_i_state_serializer.js", "interface__quiz__logical__components__1__1__quiz__states__1__1__i__state__serializer_8js.html", null ],

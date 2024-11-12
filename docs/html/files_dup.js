@@ -2,7 +2,6 @@ var files_dup =
 [
     [ "FileManagers", "dir_044138b4876a2756e8ef6044ab4fd82c.html", "dir_044138b4876a2756e8ef6044ab4fd82c" ],
     [ "html", "dir_9cba3ccb450b89ac6f0c2a18abcbadf0.html", "dir_9cba3ccb450b89ac6f0c2a18abcbadf0" ],
-    [ "Manual", "dir_1d1a060e020aa2b78e1f0cffb100afda.html", null ],
     [ "NotesParsing", "dir_98a61a2c3be4ef62c1b5a18de2cb08c5.html", "dir_98a61a2c3be4ef62c1b5a18de2cb08c5" ],
     [ "packages", "dir_93501a11e921083efbd154e0cdff5f10.html", "dir_93501a11e921083efbd154e0cdff5f10" ],
     [ "QGenerator", "dir_55fa3b2edf6da33274d16b787c238426.html", "dir_55fa3b2edf6da33274d16b787c238426" ],

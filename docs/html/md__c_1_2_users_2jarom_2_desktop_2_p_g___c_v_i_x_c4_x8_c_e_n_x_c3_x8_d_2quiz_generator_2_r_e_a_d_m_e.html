@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=11"/>
 <meta name="generator" content="Doxygen 1.10.0"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>Quiz Generator: UserDocs.md File Reference</title>
+<title>Quiz Generator: Quiz Generator</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -66,7 +66,7 @@ $(function() {
 </div>
 <script type="text/javascript">
 /* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
-$(function(){initNavTree('_user_docs_8md.html',''); initResizable(); });
+$(function(){initNavTree('md__c_1_2_users_2jarom_2_desktop_2_p_g___c_v_i_x_c4_x8_c_e_n_x_c3_x8_d_2quiz_generator_2_r_e_a_d_m_e.html',''); initResizable(); });
 /* @license-end */
 </script>
 <div id="doc-content">
@@ -91,16 +91,50 @@ $(function(){initNavTree('_user_docs_8md.html',''); initResizable(); });
 </div>
 </div>
 
-<div class="header">
-  <div class="headertitle"><div class="title">UserDocs.md File Reference</div></div>
+<div><div class="header">
+  <div class="headertitle"><div class="title">Quiz Generator</div></div>
 </div><!--header-->
 <div class="contents">
-</div><!-- contents -->
+<div class="textblock"><p><a class="anchor" id="autotoc_md42"></a> </p>
+<h1><a class="anchor" id="autotoc_md43"></a>
+Documentation</h1>
+<p>Docs can be accessed <a href="https://jaromirprochazka.github.io/quizGenerator/">here</a>.</p>
+<h1><a class="anchor" id="autotoc_md44"></a>
+Basic Idea</h1>
+<p>This App is used for <b>building tests in form of quizzes from the input of digital notes</b> or other materials. These are intended as study aids, not a testing framework for teachers and the student decides, whether his answer is good enough. The user can <b>choose from multiple file formats for his notes or textbooks</b>. From these, the marked sections of the text are made quiz questions and mostly based on headings, keywords and so on, a logical ordering of the questions is created.</p>
+<p>For each quiz is than stored users score, history of answers, last state to be returned to and other quality of life features.</p>
+<h2><a class="anchor" id="autotoc_md45"></a>
+What is Quiz?</h2>
+<p>In our context, a quiz is a set of questions and answers. These are than iteratively gone throw by the student. Student tries to answer a question, that he is shown the answer. If he is satisfied, he can move on to the next, else the question is moved some number of questions ahead, so that the student can try again.</p>
+<p>The ordering is based around the dependence between questions, some questions can be asked only if some other has been already answered. Besides these restraints, there is random ordering.</p>
+<h2><a class="anchor" id="autotoc_md46"></a>
+What is Topic?</h2>
+<p>Topic is the thing, that is created from the notes after parsing. It is visible on the main page of the app in the Topics list and a quiz can be started from it. It is different from Quiz because from the Topic, multiple different Quizzes with different ordering and starting conditions can be started.</p>
+<h2><a class="anchor" id="autotoc_md47"></a>
+What are Notes?</h2>
+<p>Notes are some texts in a supported format containing the questions and answers. The questions are in some way marked. A way, that can be configured in the app before inputting the notes file. For instance, user could choose that in his notes, each important topic is marked in italics, or in textbooks, all numbered statements and their proofs are selected as questions.</p>
+<p>From it, the app creates a quiz file, which will then be used to generate the quiz in UI, so the conversion expensive only occurs once and the quiz file can be reused.</p>
+<hr  />
+ <h1><a class="anchor" id="autotoc_md49"></a>
+### Future Expansions</h1>
+<p>Future expansions will mostly be more steps to the Creation and Open Chains. For the Creation one, there will be:</p><ul>
+<li>a Step, where user sees all found questions and can some exclude or edit there answers</li>
+<li>adding options for more questions dependency (you can set one question to be dependent in the DAG on another question)</li>
+</ul>
+<p>For the opening Chain:</p><ul>
+<li>adding option for AI checker, that will have user summarize his answer and some king of Language Model will decide, if the answer was good enough</li>
+</ul>
+<p>And besides the Chains:</p><ul>
+<li>analytics in the Quiz List like number of wrongly answered questions to correctly answered ratio. Or weather the Quiz was already finished</li>
+</ul>
+<hr  />
+<p>More info in the <a href="https://jaromirprochazka.github.io/quizGenerator/">docs</a>. </p>
+</div></div><!-- contents -->
+</div><!-- PageDoc -->
 </div><!-- doc-content -->
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="navelem"><a class="el" href="_user_docs_8md.html">UserDocs.md</a></li>
     <li class="footer">Generated by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.10.0 </li>
   </ul>
 </div>

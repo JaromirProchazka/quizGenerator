@@ -1,9 +1,26 @@
 var searchData=
 [
-  ['webbrowser1_0',['webBrowser1',['../class_quiz_generator_presentation_1_1_quiz_starting_1_1questions_form.html#a3bda74fc48140444650ae496a796ccf9',1,'QuizGeneratorPresentation::QuizStarting::questionsForm']]],
-  ['webbrowser2_1',['webBrowser2',['../class_quiz_generator_presentation_1_1_quiz_starting_1_1questions_form.html#af097041e3b627cafb3cfb9a7718ad317',1,'QuizGeneratorPresentation::QuizStarting::questionsForm']]],
-  ['what_20are_20notes_2',['What are Notes?',['../index.html#autotoc_md63',1,'']]],
-  ['what_20is_20quiz_3',['What is Quiz?',['../index.html#autotoc_md61',1,'']]],
-  ['what_20is_20topic_4',['What is Topic?',['../index.html#autotoc_md62',1,'']]],
-  ['window_5',['Quiz Window',['../md__manual_2_user_docs.html#autotoc_md54',1,'']]]
+  ['valid_0',['Valid',['../class_quiz_persistence_1_1_questions_file.html#a02af7b2c51afca7cb332493bcd8e9881a3ac705f2acd51a4613f9188c05c91d0d',1,'QuizPersistence::QuestionsFile']]],
+  ['value_1',['Value',['../class_quiz_persistence_1_1_data_structures_1_1_priority_queue_1_1_item.html#a0cf5a7da23923048d8fdf73d0e492e19',1,'QuizPersistence::DataStructures::PriorityQueue::Item']]],
+  ['variables_5f0_2ejs_2',['variables_0.js',['../variables__0_8js.html',1,'']]],
+  ['variables_5f1_2ejs_3',['variables_1.js',['../variables__1_8js.html',1,'']]],
+  ['variables_5f10_2ejs_4',['variables_10.js',['../variables__10_8js.html',1,'']]],
+  ['variables_5f11_2ejs_5',['variables_11.js',['../variables__11_8js.html',1,'']]],
+  ['variables_5f12_2ejs_6',['variables_12.js',['../variables__12_8js.html',1,'']]],
+  ['variables_5f13_2ejs_7',['variables_13.js',['../variables__13_8js.html',1,'']]],
+  ['variables_5f2_2ejs_8',['variables_2.js',['../variables__2_8js.html',1,'']]],
+  ['variables_5f3_2ejs_9',['variables_3.js',['../variables__3_8js.html',1,'']]],
+  ['variables_5f4_2ejs_10',['variables_4.js',['../variables__4_8js.html',1,'']]],
+  ['variables_5f5_2ejs_11',['variables_5.js',['../variables__5_8js.html',1,'']]],
+  ['variables_5f6_2ejs_12',['variables_6.js',['../variables__6_8js.html',1,'']]],
+  ['variables_5f7_2ejs_13',['variables_7.js',['../variables__7_8js.html',1,'']]],
+  ['variables_5f8_2ejs_14',['variables_8.js',['../variables__8_8js.html',1,'']]],
+  ['variables_5f9_2ejs_15',['variables_9.js',['../variables__9_8js.html',1,'']]],
+  ['variables_5fa_2ejs_16',['variables_a.js',['../variables__a_8js.html',1,'']]],
+  ['variables_5fb_2ejs_17',['variables_b.js',['../variables__b_8js.html',1,'']]],
+  ['variables_5fc_2ejs_18',['variables_c.js',['../variables__c_8js.html',1,'']]],
+  ['variables_5fd_2ejs_19',['variables_d.js',['../variables__d_8js.html',1,'']]],
+  ['variables_5fe_2ejs_20',['variables_e.js',['../variables__e_8js.html',1,'']]],
+  ['variables_5ff_2ejs_21',['variables_f.js',['../variables__f_8js.html',1,'']]],
+  ['version_20control_20practices_22',['Version Control Practices',['../index.html#autotoc_md28',1,'']]]
 ];
