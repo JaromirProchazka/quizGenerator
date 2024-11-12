@@ -3,6 +3,7 @@
 ## Documentation
 
 Extensive user and developer docs can be accessed here [here](https://github.com/JaromirProchazka/quizGenerator/blob/main/docs/SerializedDocs.md)
+
 Doxygen Docs can be accessed [here](https://jaromirprochazka.github.io/quizGenerator/).
 
 ## Basic Idea
