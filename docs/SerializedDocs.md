@@ -34,7 +34,7 @@ The Quiz Generator is a Windows application designed to generate quizzes from no
 
 The Quiz Generator application is designed to make the learning process more efficient by transforming raw notes into interactive, personalized quizzes. Its primary purpose is to empower students and educators alike to create engaging, adaptive assessments that reinforce knowledge retention and comprehension.
 
-**Core Objectives: **
+**Core Objectives:**
 
 1. _Create a efficient learning workflow_:
    - Listen or Read
