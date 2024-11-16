@@ -1,15 +1,12 @@
 {
   "version": 2,
-  "dgSpecHash": "hzmCWNAUJd3eJxPZ+7TZ1cI3+UFP67/NL5DUIz7iwA4Qvc56sMnGbTTNCzV5Bw4vy+nXCLmSgeV/R0210bos/g==",
+  "dgSpecHash": "RDS7SMWfT7xfIWNRW71C0GEYETW45mlmiv6fBzg9JtpZe45mEM+wDqj6KeF4p5yiCqQlqP2E+29C4pXmPdFUKw==",
   "success": true,
   "projectFilePath": "C:\\Users\\jarom\\Desktop\\PG_EXER\\quizGenerator\\TopicCreation\\TopicCreation.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\jarom\\.nuget\\packages\\htmlagilitypack\\1.11.67\\htmlagilitypack.1.11.67.nupkg.sha512",
-    "C:\\Users\\jarom\\.nuget\\packages\\refit\\7.1.2\\refit.7.1.2.nupkg.sha512",
-    "C:\\Users\\jarom\\.nuget\\packages\\system.codedom\\9.0.0-preview.6.24327.7\\system.codedom.9.0.0-preview.6.24327.7.nupkg.sha512",
-    "C:\\Users\\jarom\\.nuget\\packages\\system.net.http.json\\8.0.0\\system.net.http.json.8.0.0.nupkg.sha512",
-    "C:\\Users\\jarom\\.nuget\\packages\\system.text.encodings.web\\8.0.0\\system.text.encodings.web.8.0.0.nupkg.sha512",
-    "C:\\Users\\jarom\\.nuget\\packages\\system.text.json\\8.0.0\\system.text.json.8.0.0.nupkg.sha512"
+    "C:\\Users\\jarom\\.nuget\\packages\\refit\\8.0.0\\refit.8.0.0.nupkg.sha512",
+    "C:\\Users\\jarom\\.nuget\\packages\\system.codedom\\9.0.0-preview.6.24327.7\\system.codedom.9.0.0-preview.6.24327.7.nupkg.sha512"
   ],
   "logs": []
 }

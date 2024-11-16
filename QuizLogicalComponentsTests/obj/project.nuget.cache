@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "hqrDVg/duJCdN57DxYZzo+WYw1ew2D7da1o1jhaKyDfJVlOEJ+gwBMYcBVhQS5uhFTWIczQFkAp6LvPW+Ln/WA==",
+  "dgSpecHash": "WMlqo3Xae/4RBZg5nq9lP3l71aN7Hd8D6tKpnctUYublSPkWjXMZpNF4Y41HH83+Ts8QW9XpopxtlbRTzY2MaA==",
   "success": true,
   "projectFilePath": "C:\\Users\\jarom\\Desktop\\PG_EXER\\quizGenerator\\QuizLogicalComponentsTests\\QuizLogicalComponentsTests.csproj",
   "expectedPackageFiles": [
@@ -14,12 +14,9 @@
     "C:\\Users\\jarom\\.nuget\\packages\\mstest.testframework\\3.1.1\\mstest.testframework.3.1.1.nupkg.sha512",
     "C:\\Users\\jarom\\.nuget\\packages\\newtonsoft.json\\13.0.1\\newtonsoft.json.13.0.1.nupkg.sha512",
     "C:\\Users\\jarom\\.nuget\\packages\\nuget.frameworks\\6.5.0\\nuget.frameworks.6.5.0.nupkg.sha512",
-    "C:\\Users\\jarom\\.nuget\\packages\\refit\\7.1.2\\refit.7.1.2.nupkg.sha512",
+    "C:\\Users\\jarom\\.nuget\\packages\\refit\\8.0.0\\refit.8.0.0.nupkg.sha512",
     "C:\\Users\\jarom\\.nuget\\packages\\system.codedom\\9.0.0-preview.6.24327.7\\system.codedom.9.0.0-preview.6.24327.7.nupkg.sha512",
-    "C:\\Users\\jarom\\.nuget\\packages\\system.net.http.json\\8.0.0\\system.net.http.json.8.0.0.nupkg.sha512",
-    "C:\\Users\\jarom\\.nuget\\packages\\system.reflection.metadata\\1.6.0\\system.reflection.metadata.1.6.0.nupkg.sha512",
-    "C:\\Users\\jarom\\.nuget\\packages\\system.text.encodings.web\\8.0.0\\system.text.encodings.web.8.0.0.nupkg.sha512",
-    "C:\\Users\\jarom\\.nuget\\packages\\system.text.json\\8.0.0\\system.text.json.8.0.0.nupkg.sha512"
+    "C:\\Users\\jarom\\.nuget\\packages\\system.reflection.metadata\\1.6.0\\system.reflection.metadata.1.6.0.nupkg.sha512"
   ],
   "logs": []
 }

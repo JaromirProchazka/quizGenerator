@@ -196,12 +196,12 @@ namespace TopicCreation.TopicCreationChain
                 throw new InvalidOperationException($"The request for the Notion notes exited with code ({(int)dataResponceResult.StatusCode}: {dataResponceResult.StatusCode})! Please make sure that YOUR NOTION PAGE IS PUBLIC! {dataResponceResult.Error.Message}!");
             }
 
-            var data = dataResponceResult.Content;
+            var data = dataResponceResult?.Content;
 
             // Copy data from API output stream to the temporary file
             using (var fileStream = new FileStream(source, FileMode.Open, FileAccess.Write))
             {
-                data.CopyToAsync(fileStream).Wait();
+                data?.CopyToAsync(fileStream).Wait();
             }
 
             // give the notes temporary to the Product

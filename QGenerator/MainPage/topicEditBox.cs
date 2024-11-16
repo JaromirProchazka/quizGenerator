@@ -77,7 +77,9 @@ namespace QuizGeneratorPresentation.MainPage
         {
             renameTextInput.Text = QuestionsFile.GetQuizName(currentTopicDirectoryPath).Replace("_", " ");
             this.Text = $"Edit '{renameTextInput.Text}' Topic";
+            # nullable disable
             renameTextInput.TextChanged += new EventHandler(renameBtn_TextChange);
+            #nullable enable
             renameBtn.Enabled = false;
         }
     }
