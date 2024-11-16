@@ -264,13 +264,24 @@ namespace QuizPersistence
         /// <summary>
         /// Given a path to quiz return its name
         /// </summary>
-        /// <param name="pathToQuiz"></param>
+        /// <param name="pathToQuiz">Path to the questions file</param>
         /// <returns>Name of the quiz. If null, returns empty string</returns>
         public static string GetQuizName(string? pathToQuiz)
         {
             if (pathToQuiz == null) return "";
+
+            
             DirectoryInfo dirInfo = new DirectoryInfo(pathToQuiz);
-            var dirname = dirInfo.Parent?.Name;
+            string? dirname;
+            if (dirInfo.Parent?.Name == utilFolderName 
+                && (string)Path.GetFileName(pathToQuiz) != questionsFileName)
+            {
+                dirname = dirInfo.Name;
+            }
+            else
+            {
+                dirname = dirInfo.Parent?.Name;
+            }
             if (dirname == null) throw new Exception("Not a valid Quiz file given!");
             return dirname;
         }

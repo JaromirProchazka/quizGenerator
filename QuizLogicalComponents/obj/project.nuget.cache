@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "2+u2CPEGx4Myn3dpxtY8K+lAfm/QwvLcoAFsrW+75yttFxYyfjahuiGBxZgbEMdfJdOqV4+wpRmCUvf/sKGK2Q==",
+  "dgSpecHash": "Y0JdyOjdgCib+od/Goe22br3yvP0UQQMScVOcnDaCnBO2An/DxVvYU90xVxil8EAm69SYflsF35zin9U1i5hgA==",
   "success": true,
-  "projectFilePath": "C:\\Users\\jarom\\Desktop\\PG_CVIČENÍ\\quizGenerator\\QuizLogicalComponents\\AbstractChainStructure.csproj",
+  "projectFilePath": "C:\\Users\\jarom\\Desktop\\PG_EXER\\quizGenerator\\QuizLogicalComponents\\AbstractChainStructure.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\jarom\\.nuget\\packages\\htmlagilitypack\\1.11.67\\htmlagilitypack.1.11.67.nupkg.sha512",
     "C:\\Users\\jarom\\.nuget\\packages\\refit\\7.1.2\\refit.7.1.2.nupkg.sha512",
@@ -11,5 +11,16 @@
     "C:\\Users\\jarom\\.nuget\\packages\\system.text.encodings.web\\8.0.0\\system.text.encodings.web.8.0.0.nupkg.sha512",
     "C:\\Users\\jarom\\.nuget\\packages\\system.text.json\\8.0.0\\system.text.json.8.0.0.nupkg.sha512"
   ],
-  "logs": []
+  "logs": [
+    {
+      "code": "NU1904",
+      "level": "Warning",
+      "warningLevel": 1,
+      "message": "Package 'Refit' 7.1.2 has a known critical severity vulnerability, https://github.com/advisories/GHSA-3hxg-fxwm-8gf7",
+      "libraryId": "Refit",
+      "targetGraphs": [
+        "net8.0"
+      ]
+    }
+  ]
 }

@@ -10,6 +10,7 @@ using System.Threading.Tasks;
 using System.Windows.Forms;
 using QuizGeneratorPresentation;
 
+
 namespace QuizGeneratorPresentation.QuizStarting
 {
     public partial class ChooseQuizBeginningFrom : ChainStepForm<QuizStartingStep, QuizProduct, ChainStartingBuilder>
@@ -25,10 +26,20 @@ namespace QuizGeneratorPresentation.QuizStarting
 
         private void ChooseQuizBeginningFrom_Load(object sender, EventArgs e)
         {
+            this.Text = "Choose Quiz Starting State";
             ContinueBtn.Text = "Continue";
+            ContinueBtn.Enabled = false;
             populateListElement(notesChooseOptions);
+            #nullable disable
+            notesChooseOptions.DoubleClick += new EventHandler(notesChooseOptions_DoubleClick);
+            notesChooseOptions.SelectedIndexChanged += new EventHandler(notesChooseOptions_SelectedIndexChanged);
+            #nullable enable
         }
 
+        private void notesChooseOptions_DoubleClick(object sender, EventArgs e)
+        {
+            ContinueBtn_Click(sender, e);
+        }
 
         private static void populateListElement(ListBox listToBePopulated)
         {
@@ -36,6 +47,17 @@ namespace QuizGeneratorPresentation.QuizStarting
             listToBePopulated.Items.Add(StartNewQuizFromBeginning.GetLabel());
         }
 
+        private void notesChooseOptions_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            if (notesChooseOptions.SelectedItem == null) return;
+            if (notesChooseOptions.SelectedIndex == -1)
+            {
+                ContinueBtn.Enabled = false;
+                return;
+            }
+
+            ContinueBtn.Enabled = true;
+        }
 
         private void ContinueBtn_Click(object sender, EventArgs e)
         {

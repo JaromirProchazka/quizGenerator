@@ -12,6 +12,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using static System.Windows.Forms.LinkLabel;
+using System.Reflection.Emit;
 
 #nullable enable
 
@@ -27,15 +28,63 @@ namespace QuizGeneratorPresentation.TopicCreation
             this.finalize = finalize;
         }
 
-
-
         private void ChooseSourceStep_Load(object sender, EventArgs e)
         {
+            this.Text = "Choose Quiz Notes Source";
             ContinueBtn.Text = "Continue";
+            ContinueBtn.Enabled = false;
+
+            NotionLink.Visible = false;
+            NotionLinkLabel.Visible = false;
+
             PopulateListElement(notesChooseOptions);
+            #nullable disable
+            notesChooseOptions.DoubleClick += new EventHandler(notesChooseOptions_DoubleClick);
+            notesChooseOptions.SelectedIndexChanged += new EventHandler(notesChooseOptions_SelectedIndexChanged);
+            NotionLink.TextChanged += new EventHandler(ListBox1_SelectedIndexChanged);
+            #nullable enable
+        }
+
+        private void notesChooseOptions_DoubleClick(object sender, EventArgs e)
+        {
+            if (notesChooseOptions.SelectedIndex == 1)
+            {
+                NotionLink.Visible = true;
+                NotionLinkLabel.Visible = true;
+                return;
+            }
+
+            NotionLink.Visible = false;
+            NotionLinkLabel.Visible = false;
+            ContinueBtn_Click(sender, e);
         }
 
 
+
+        private void NotionLink_TextChange(object sender, EventArgs e)
+        {
+
+        }
+
+        private void notesChooseOptions_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            if (notesChooseOptions.SelectedItem == null) return;
+            if (notesChooseOptions.SelectedIndex == -1)
+            {
+                ContinueBtn.Enabled = false;
+                return;
+            }
+            if (notesChooseOptions.SelectedIndex == 1)
+            {
+                NotionLink.Visible = true;
+                NotionLinkLabel.Visible = true;
+                return;
+            }
+
+            NotionLink.Visible = false;
+            NotionLinkLabel.Visible = false;
+            ContinueBtn.Enabled = true;
+        }
 
         private static void PopulateListElement(ListBox listToBePopulated)
         {
@@ -43,14 +92,16 @@ namespace QuizGeneratorPresentation.TopicCreation
             listToBePopulated.Items.Add(ChooseNotionNotes.GetLabel());
         }
 
-
-
         private void ListBox1_SelectedIndexChanged(object sender, EventArgs e)
         {
+            if (NotionLink.Text == "")
+            {
+                ContinueBtn.Enabled = false;
+                return;
+            }
 
+            ContinueBtn.Enabled = true;
         }
-
-
 
         private void ContinueBtn_Click(object sender, EventArgs e)
         {

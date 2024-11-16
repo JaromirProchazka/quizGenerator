@@ -35,6 +35,7 @@ namespace QuizGeneratorPresentation.QuizStarting
         public questionsForm(QuizState givenState)
         {
             InitializeComponent();
+            this.Text = QuestionsFile.GetQuizName(givenState.CurrentQuestionsPath);
             if (givenState.CurrentQuestionsPath == null) throw new Exception("Quiz State was not set correctly!");
             serializer = new BaseStateSerializer<ResetAroundState>(givenState.CurrentQuestionsPath);
             state = givenState;
@@ -46,15 +47,15 @@ namespace QuizGeneratorPresentation.QuizStarting
             string uriPath = @"file:///" + Path.GetFullPath(state.CurrentQuestionsPath).Replace(@"\", "/").Replace("#", "%23");
             webBrowser2.Url = new Uri(uriPath);
 
-            button1.Text = "Next 👍";
-            Stylings.goodButtonStyle(button1);
+            nextGoodBtn.Text = "Next 👍";
+            Stylings.goodButtonStyle(nextGoodBtn);
 
-            button2.Text = "Next 👎";
-            Stylings.badButtonStyle(button2);
+            nextBadBtn.Text = "Next 👎";
+            Stylings.badButtonStyle(nextBadBtn);
 
-            button3.Text = "Back";
-            button4.Text = "Answer";
-            Stylings.defaultButtonStyle(button3, button4);
+            quitBtn.Text = "Quit";
+            showAnswerBtn.Text = "Answer";
+            Stylings.defaultButtonStyle(quitBtn, showAnswerBtn);
 
             Stylings.scoreStyle(textBox1);
             updateScore();

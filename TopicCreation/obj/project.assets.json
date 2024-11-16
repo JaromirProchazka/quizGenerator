@@ -428,11 +428,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\jarom\\Desktop\\PG_CVIČENÍ\\quizGenerator\\TopicCreation\\TopicCreation.csproj",
+      "projectUniqueName": "C:\\Users\\jarom\\Desktop\\PG_EXER\\quizGenerator\\TopicCreation\\TopicCreation.csproj",
       "projectName": "TopicCreation",
-      "projectPath": "C:\\Users\\jarom\\Desktop\\PG_CVIČENÍ\\quizGenerator\\TopicCreation\\TopicCreation.csproj",
+      "projectPath": "C:\\Users\\jarom\\Desktop\\PG_EXER\\quizGenerator\\TopicCreation\\TopicCreation.csproj",
       "packagesPath": "C:\\Users\\jarom\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\jarom\\Desktop\\PG_CVIČENÍ\\quizGenerator\\TopicCreation\\obj\\",
+      "outputPath": "C:\\Users\\jarom\\Desktop\\PG_EXER\\quizGenerator\\TopicCreation\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
@@ -454,11 +454,11 @@
         "net8.0": {
           "targetAlias": "net8.0",
           "projectReferences": {
-            "C:\\Users\\jarom\\Desktop\\PG_CVIČENÍ\\quizGenerator\\FileManagers\\QuizPersistence.csproj": {
-              "projectPath": "C:\\Users\\jarom\\Desktop\\PG_CVIČENÍ\\quizGenerator\\FileManagers\\QuizPersistence.csproj"
+            "C:\\Users\\jarom\\Desktop\\PG_EXER\\quizGenerator\\FileManagers\\QuizPersistence.csproj": {
+              "projectPath": "C:\\Users\\jarom\\Desktop\\PG_EXER\\quizGenerator\\FileManagers\\QuizPersistence.csproj"
             },
-            "C:\\Users\\jarom\\Desktop\\PG_CVIČENÍ\\quizGenerator\\QuizLogicalComponents\\AbstractChainStructure.csproj": {
-              "projectPath": "C:\\Users\\jarom\\Desktop\\PG_CVIČENÍ\\quizGenerator\\QuizLogicalComponents\\AbstractChainStructure.csproj"
+            "C:\\Users\\jarom\\Desktop\\PG_EXER\\quizGenerator\\QuizLogicalComponents\\AbstractChainStructure.csproj": {
+              "projectPath": "C:\\Users\\jarom\\Desktop\\PG_EXER\\quizGenerator\\QuizLogicalComponents\\AbstractChainStructure.csproj"
             }
           }
         }

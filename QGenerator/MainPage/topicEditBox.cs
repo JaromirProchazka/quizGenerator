@@ -25,7 +25,6 @@ namespace QuizGeneratorPresentation.MainPage
             setTopicDirectoryPath();
 
             InitializeComponent();
-            textBox1.Lines[0] = QuestionsFile.GetQuizName(currentTopicDirectoryPath);
         }
 
         public void setTopicDirectoryPath()
@@ -33,14 +32,24 @@ namespace QuizGeneratorPresentation.MainPage
             currentTopicDirectoryPath = Path.GetDirectoryName(item.LinkToQuestions);
         }
 
+        private void renameBtn_TextChange(object sender, EventArgs e)
+        {
+            if (renameTextInput.Text == "")
+            {
+                renameBtn.Enabled = false;
+                return;
+            }
+            renameBtn.Enabled = true;
+        }
+
         private void renameBtn_Click(object sender, EventArgs e)
         {
             if (currentTopicDirectoryPath == null)
                 throw new Exception("The current topic directory path wasn't set!");
 
-            if (textBox1.Text.Length == 0) return;
+            if (renameTextInput.Text.Length == 0) return;
 
-            string newName = textBox1.Text;
+            string newName = renameTextInput.Text;
             string? newPath = QuestionsFile.RenameTopic(currentTopicDirectoryPath, newName);
 
             if (newPath == null) return;
@@ -66,7 +75,10 @@ namespace QuizGeneratorPresentation.MainPage
 
         private void topicEditBox_Load(object sender, EventArgs e)
         {
-
+            renameTextInput.Text = QuestionsFile.GetQuizName(currentTopicDirectoryPath).Replace("_", " ");
+            this.Text = $"Edit '{renameTextInput.Text}' Topic";
+            renameTextInput.TextChanged += new EventHandler(renameBtn_TextChange);
+            renameBtn.Enabled = false;
         }
     }
 }

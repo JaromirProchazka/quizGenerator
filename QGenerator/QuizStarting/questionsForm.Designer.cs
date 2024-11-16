@@ -30,10 +30,10 @@
         {
             webBrowser1 = new WebBrowser();
             webBrowser2 = new WebBrowser();
-            button1 = new Button();
-            button2 = new Button();
-            button3 = new Button();
-            button4 = new Button();
+            nextGoodBtn = new Button();
+            nextBadBtn = new Button();
+            quitBtn = new Button();
+            showAnswerBtn = new Button();
             textBox1 = new TextBox();
             SuspendLayout();
             // 
@@ -61,48 +61,48 @@
             // 
             // button1
             // 
-            button1.Location = new Point(14, 14);
-            button1.Margin = new Padding(2, 3, 2, 3);
-            button1.Name = "button1";
-            button1.Size = new Size(110, 40);
-            button1.TabIndex = 2;
-            button1.Text = "button1";
-            button1.UseVisualStyleBackColor = true;
-            button1.Click += godNext_Click;
+            nextGoodBtn.Location = new Point(14, 14);
+            nextGoodBtn.Margin = new Padding(2, 3, 2, 3);
+            nextGoodBtn.Name = "button1";
+            nextGoodBtn.Size = new Size(110, 40);
+            nextGoodBtn.TabIndex = 2;
+            nextGoodBtn.Text = "button1";
+            nextGoodBtn.UseVisualStyleBackColor = true;
+            nextGoodBtn.Click += godNext_Click;
             // 
             // button2
             // 
-            button2.Location = new Point(149, 14);
-            button2.Margin = new Padding(2, 3, 2, 3);
-            button2.Name = "button2";
-            button2.Size = new Size(110, 40);
-            button2.TabIndex = 3;
-            button2.Text = "button2";
-            button2.UseVisualStyleBackColor = true;
-            button2.Click += badNext_Click;
+            nextBadBtn.Location = new Point(149, 14);
+            nextBadBtn.Margin = new Padding(2, 3, 2, 3);
+            nextBadBtn.Name = "button2";
+            nextBadBtn.Size = new Size(110, 40);
+            nextBadBtn.TabIndex = 3;
+            nextBadBtn.Text = "button2";
+            nextBadBtn.UseVisualStyleBackColor = true;
+            nextBadBtn.Click += badNext_Click;
             // 
             // button3
             // 
-            button3.Anchor = AnchorStyles.Top | AnchorStyles.Right;
-            button3.Location = new Point(793, 14);
-            button3.Margin = new Padding(2, 3, 2, 3);
-            button3.Name = "button3";
-            button3.Size = new Size(106, 39);
-            button3.TabIndex = 4;
-            button3.Text = "button3";
-            button3.UseVisualStyleBackColor = true;
-            button3.Click += backButton_Click;
+            quitBtn.Anchor = AnchorStyles.Top | AnchorStyles.Right;
+            quitBtn.Location = new Point(793, 14);
+            quitBtn.Margin = new Padding(2, 3, 2, 3);
+            quitBtn.Name = "button3";
+            quitBtn.Size = new Size(106, 39);
+            quitBtn.TabIndex = 4;
+            quitBtn.Text = "button3";
+            quitBtn.UseVisualStyleBackColor = true;
+            quitBtn.Click += backButton_Click;
             // 
             // button4
             // 
-            button4.Location = new Point(323, 13);
-            button4.Margin = new Padding(2, 3, 2, 3);
-            button4.Name = "button4";
-            button4.Size = new Size(110, 40);
-            button4.TabIndex = 5;
-            button4.Text = "button4";
-            button4.UseVisualStyleBackColor = true;
-            button4.Click += AnswearButton_Click;
+            showAnswerBtn.Location = new Point(323, 13);
+            showAnswerBtn.Margin = new Padding(2, 3, 2, 3);
+            showAnswerBtn.Name = "button4";
+            showAnswerBtn.Size = new Size(110, 40);
+            showAnswerBtn.TabIndex = 5;
+            showAnswerBtn.Text = "button4";
+            showAnswerBtn.UseVisualStyleBackColor = true;
+            showAnswerBtn.Click += AnswearButton_Click;
             // 
             // textBox1
             // 
@@ -122,10 +122,10 @@
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(933, 519);
             Controls.Add(textBox1);
-            Controls.Add(button4);
-            Controls.Add(button3);
-            Controls.Add(button2);
-            Controls.Add(button1);
+            Controls.Add(showAnswerBtn);
+            Controls.Add(quitBtn);
+            Controls.Add(nextBadBtn);
+            Controls.Add(nextGoodBtn);
             Controls.Add(webBrowser2);
             Controls.Add(webBrowser1);
             Margin = new Padding(2, 3, 2, 3);
@@ -140,10 +140,10 @@
 
         private System.Windows.Forms.WebBrowser webBrowser1;
         private System.Windows.Forms.WebBrowser webBrowser2;
-        private System.Windows.Forms.Button button1;
-        private System.Windows.Forms.Button button2;
-        private System.Windows.Forms.Button button3;
-        private System.Windows.Forms.Button button4;
+        private System.Windows.Forms.Button nextGoodBtn;
+        private System.Windows.Forms.Button nextBadBtn;
+        private System.Windows.Forms.Button quitBtn;
+        private System.Windows.Forms.Button showAnswerBtn;
         private System.Windows.Forms.TextBox textBox1;
     }
 }

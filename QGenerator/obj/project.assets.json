@@ -469,11 +469,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\jarom\\Desktop\\PG_CVIČENÍ\\quizGenerator\\QGenerator\\QuizGeneratorPresentation.csproj",
+      "projectUniqueName": "C:\\Users\\jarom\\Desktop\\PG_EXER\\quizGenerator\\QGenerator\\QuizGeneratorPresentation.csproj",
       "projectName": "QuizGeneratorPresentation",
-      "projectPath": "C:\\Users\\jarom\\Desktop\\PG_CVIČENÍ\\quizGenerator\\QGenerator\\QuizGeneratorPresentation.csproj",
+      "projectPath": "C:\\Users\\jarom\\Desktop\\PG_EXER\\quizGenerator\\QGenerator\\QuizGeneratorPresentation.csproj",
       "packagesPath": "C:\\Users\\jarom\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\jarom\\Desktop\\PG_CVIČENÍ\\quizGenerator\\QGenerator\\obj\\",
+      "outputPath": "C:\\Users\\jarom\\Desktop\\PG_EXER\\quizGenerator\\QGenerator\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
@@ -495,17 +495,17 @@
         "net8.0-windows7.0": {
           "targetAlias": "net8.0-windows",
           "projectReferences": {
-            "C:\\Users\\jarom\\Desktop\\PG_CVIČENÍ\\quizGenerator\\FileManagers\\QuizPersistence.csproj": {
-              "projectPath": "C:\\Users\\jarom\\Desktop\\PG_CVIČENÍ\\quizGenerator\\FileManagers\\QuizPersistence.csproj"
+            "C:\\Users\\jarom\\Desktop\\PG_EXER\\quizGenerator\\FileManagers\\QuizPersistence.csproj": {
+              "projectPath": "C:\\Users\\jarom\\Desktop\\PG_EXER\\quizGenerator\\FileManagers\\QuizPersistence.csproj"
             },
-            "C:\\Users\\jarom\\Desktop\\PG_CVIČENÍ\\quizGenerator\\QuizLogicalComponents\\AbstractChainStructure.csproj": {
-              "projectPath": "C:\\Users\\jarom\\Desktop\\PG_CVIČENÍ\\quizGenerator\\QuizLogicalComponents\\AbstractChainStructure.csproj"
+            "C:\\Users\\jarom\\Desktop\\PG_EXER\\quizGenerator\\QuizLogicalComponents\\AbstractChainStructure.csproj": {
+              "projectPath": "C:\\Users\\jarom\\Desktop\\PG_EXER\\quizGenerator\\QuizLogicalComponents\\AbstractChainStructure.csproj"
             },
-            "C:\\Users\\jarom\\Desktop\\PG_CVIČENÍ\\quizGenerator\\QuizStarting\\QuizStarting.csproj": {
-              "projectPath": "C:\\Users\\jarom\\Desktop\\PG_CVIČENÍ\\quizGenerator\\QuizStarting\\QuizStarting.csproj"
+            "C:\\Users\\jarom\\Desktop\\PG_EXER\\quizGenerator\\QuizStarting\\QuizStarting.csproj": {
+              "projectPath": "C:\\Users\\jarom\\Desktop\\PG_EXER\\quizGenerator\\QuizStarting\\QuizStarting.csproj"
             },
-            "C:\\Users\\jarom\\Desktop\\PG_CVIČENÍ\\quizGenerator\\TopicCreation\\TopicCreation.csproj": {
-              "projectPath": "C:\\Users\\jarom\\Desktop\\PG_CVIČENÍ\\quizGenerator\\TopicCreation\\TopicCreation.csproj"
+            "C:\\Users\\jarom\\Desktop\\PG_EXER\\quizGenerator\\TopicCreation\\TopicCreation.csproj": {
+              "projectPath": "C:\\Users\\jarom\\Desktop\\PG_EXER\\quizGenerator\\TopicCreation\\TopicCreation.csproj"
             }
           }
         }

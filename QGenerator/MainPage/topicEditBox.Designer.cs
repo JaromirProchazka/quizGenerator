@@ -29,20 +29,20 @@
         private void InitializeComponent()
         {
             components = new System.ComponentModel.Container();
-            textBox1 = new TextBox();
+            renameTextInput = new TextBox();
             contextMenuStrip1 = new ContextMenuStrip(components);
-            button1 = new Button();
-            button2 = new Button();
+            renameBtn = new Button();
+            deleteBtn = new Button();
             SuspendLayout();
             // 
             // textBox1
             // 
-            textBox1.Location = new Point(16, 54);
-            textBox1.Margin = new Padding(4, 5, 4, 5);
-            textBox1.Name = "textBox1";
-            textBox1.Size = new Size(257, 27);
-            textBox1.TabIndex = 0;
-            textBox1.Text = "NewQuiz";
+            renameTextInput.Location = new Point(16, 54);
+            renameTextInput.Margin = new Padding(4, 5, 4, 5);
+            renameTextInput.Name = "textBox1";
+            renameTextInput.Size = new Size(257, 27);
+            renameTextInput.TabIndex = 0;
+            renameTextInput.Text = "NewQuiz";
             // 
             // contextMenuStrip1
             // 
@@ -52,34 +52,34 @@
             // 
             // button1
             // 
-            button1.Location = new Point(283, 51);
-            button1.Margin = new Padding(4, 5, 4, 5);
-            button1.Name = "button1";
-            button1.Size = new Size(100, 35);
-            button1.TabIndex = 2;
-            button1.Text = "Rename\r\n";
-            button1.UseVisualStyleBackColor = true;
-            button1.Click += renameBtn_Click;
+            renameBtn.Location = new Point(283, 51);
+            renameBtn.Margin = new Padding(4, 5, 4, 5);
+            renameBtn.Name = "button1";
+            renameBtn.Size = new Size(100, 35);
+            renameBtn.TabIndex = 2;
+            renameBtn.Text = "Rename\r\n";
+            renameBtn.UseVisualStyleBackColor = true;
+            renameBtn.Click += renameBtn_Click;
             // 
             // button2
             // 
-            button2.Location = new Point(83, 126);
-            button2.Margin = new Padding(4, 5, 4, 5);
-            button2.Name = "button2";
-            button2.Size = new Size(233, 111);
-            button2.TabIndex = 3;
-            button2.Text = "Delete";
-            button2.UseVisualStyleBackColor = true;
-            button2.Click += deleteBtn_Click;
+            deleteBtn.Location = new Point(83, 126);
+            deleteBtn.Margin = new Padding(4, 5, 4, 5);
+            deleteBtn.Name = "button2";
+            deleteBtn.Size = new Size(233, 111);
+            deleteBtn.TabIndex = 3;
+            deleteBtn.Text = "Delete";
+            deleteBtn.UseVisualStyleBackColor = true;
+            deleteBtn.Click += deleteBtn_Click;
             // 
             // topicEditBox
             // 
             AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(399, 275);
-            Controls.Add(button2);
-            Controls.Add(button1);
-            Controls.Add(textBox1);
+            Controls.Add(deleteBtn);
+            Controls.Add(renameBtn);
+            Controls.Add(renameTextInput);
             Margin = new Padding(4, 5, 4, 5);
             Name = "topicEditBox";
             Text = "Topic Editor";
@@ -90,9 +90,9 @@
 
         #endregion
 
-        private System.Windows.Forms.TextBox textBox1;
+        private System.Windows.Forms.TextBox renameTextInput;
         private System.Windows.Forms.ContextMenuStrip contextMenuStrip1;
-        private System.Windows.Forms.Button button1;
-        private System.Windows.Forms.Button button2;
+        private System.Windows.Forms.Button renameBtn;
+        private System.Windows.Forms.Button deleteBtn;
     }
 }

@@ -80,11 +80,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\jarom\\Desktop\\PG_CVIČENÍ\\quizGenerator\\NotesParsing\\NotesParsing.csproj",
+      "projectUniqueName": "C:\\Users\\jarom\\Desktop\\PG_EXER\\quizGenerator\\NotesParsing\\NotesParsing.csproj",
       "projectName": "NotesParsing",
-      "projectPath": "C:\\Users\\jarom\\Desktop\\PG_CVIČENÍ\\quizGenerator\\NotesParsing\\NotesParsing.csproj",
+      "projectPath": "C:\\Users\\jarom\\Desktop\\PG_EXER\\quizGenerator\\NotesParsing\\NotesParsing.csproj",
       "packagesPath": "C:\\Users\\jarom\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\jarom\\Desktop\\PG_CVIČENÍ\\quizGenerator\\NotesParsing\\obj\\",
+      "outputPath": "C:\\Users\\jarom\\Desktop\\PG_EXER\\quizGenerator\\NotesParsing\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"

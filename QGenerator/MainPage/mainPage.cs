@@ -15,18 +15,38 @@ namespace QuizGeneratorPresentation.MainPage
 
         private void mainPage_Load(object sender, EventArgs e)
         {
-            button1.Text = "Create New Topic";
+            this.Text = "Quiz Generator";
+            createBtn.Text = "Create New Topic";
             TopicsList.Text = "List Of Topics";
+            #nullable disable
+            TopicsList.DoubleClick += new EventHandler(TopicsList_DoubleClick);
+            #nullable enable
+            openBtn.Enabled = false;
+            editBtn.Enabled = false;
+            
             populateListElement(TopicsList);
         }
 
         private void listBoxLinks_SelectedIndexChanged(object sender, EventArgs e)
         {
-            if (TopicsList.SelectedIndex == -1) return;
             if (TopicsList.SelectedItem == null) return;
-            
+            if (TopicsList.SelectedIndex == -1)
+            {
+                openBtn.Enabled = false;
+                editBtn.Enabled = false;
+                return;
+            }
+
+            openBtn.Enabled = true;
+            editBtn.Enabled = true;
+
             HyperLink selectedItem = (HyperLink)TopicsList.SelectedItem;
             Topics.OpenQuizPage(selectedItem.LinkToQuestions);
+        }
+
+        private void TopicsList_DoubleClick(object sender, EventArgs e)
+        {
+            openBtn_Click(sender, e);
         }
 
         private static void populateListElement(ListBox listToBePopulated)
@@ -52,7 +72,15 @@ namespace QuizGeneratorPresentation.MainPage
 
         private void Topics_SelectedIndexChanged(object sender, EventArgs e)
         {
+            if (TopicsList.SelectedItem == null) return;
+            if (TopicsList.SelectedIndex == -1)
+            {
+                openBtn.Enabled = false;
+                editBtn.Enabled = false;
+            }
 
+            openBtn.Enabled = true;
+            editBtn.Enabled = true;
         }
 
         private void openBtn_Click(object sender, EventArgs e)

@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "OS+UuOe0heOtRyzqR2fyF8RBGuwNZswulqh6kncegbQBP8WaEPp9GVXdjZ+RuTKWBZxHygFwmQ75mU1Bf4VFhQ==",
+  "dgSpecHash": "iIzP4UH4G9tbSOlcrnuqcmsCzFzktIy+WnQouaX0LZUgz/e3CnZ1auP+oRkEojXpsxfKjFBJ9ydPlcUUUTftTw==",
   "success": true,
-  "projectFilePath": "C:\\Users\\jarom\\Desktop\\PG_CVIČENÍ\\quizGenerator\\NotesParsing\\NotesParsing.csproj",
+  "projectFilePath": "C:\\Users\\jarom\\Desktop\\PG_EXER\\quizGenerator\\NotesParsing\\NotesParsing.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\jarom\\.nuget\\packages\\htmlagilitypack\\1.11.67\\htmlagilitypack.1.11.67.nupkg.sha512"
   ],

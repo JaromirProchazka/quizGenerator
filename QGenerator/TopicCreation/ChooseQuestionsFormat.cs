@@ -29,6 +29,7 @@ namespace QuizGeneratorPresentation.TopicCreation
         public ChooseQuestionsFormat()
         {
             InitializeComponent();
+            this.Text = "Choose Questions Format From Your Notes";
             comboBox1.SelectedIndex = 0;
         }
 
