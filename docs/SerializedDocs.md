@@ -69,18 +69,18 @@ At the Start of the App, you will be greeted by a list of your Quiz on top, and 
 
 After that a new topic is added to the topics list at the top, or a topic with the same name is updated. Then select topic in list, you can then either click
 
-- `Open` button and start the quiz,
+- `Open` button (or Doubleclick the list item) and start the quiz,
 - or click `Edit` button and an edit window will appear. You can **Rename** the topic or **Delete** it
 
 ### Quiz Creation
 
-Now a chain of configuration pages will be shown in this order:
+Now a chain of configuration pages will be shown in this order. Feel free to double click the options to choose them:
 
 #### Choose Notes Source
 
 You can either provide a local html file. In this case click the option and than press `Continue`. After that a file explorer window is shown where you can
 
-Or give a link of a Notion page into the text field next to the Notion page option. Note that the page must be at the time of Creation PUBLIC.
+Or give a link of a Notion page into the text field next to the Notion page option. Note that the page must be at the time of Creation PUBLIC. In case of problems consult this paragraph: [Troubleshooting](#troubleshooting).
 
 Press `Continue` to move on to the next step.
 
@@ -90,10 +90,10 @@ Then you can choose the _Question format_, which are the attributes that if the 
 
 First you can choose if the conditions you give are supposed to be all present in the question node (AND) or if the any condition is sufficient (OR). There are these options for formatting the question node in the html file node:
 
-- _Node name_: The name of the node. For instance stylistic nodes like `em` or `b`, or structural node names like lists
-- _Node Color_: The inline color style in the node, for instance `blue` or `#ff0000`
-- _Class_: Class names list that the node has separated with spaces, any of these classes present in node is will satisfy the condition
-- _Font-Family_: inline Font family field
+- **Node name**: The name of the node. For instance stylistic nodes like `em` or `b`, or structural node names like lists
+- **Node Color**: The inline color style in the node, for instance `blue` or `#ff0000`
+- **Class**: Class names list that the node has separated with spaces, any of these classes present in node is will satisfy the condition
+- **Font-Family**: inline Font family field
 
 if the text field isn't written in, it is not used in the node analyzing.
 

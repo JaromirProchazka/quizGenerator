@@ -14,6 +14,7 @@ var class_quiz_generator_presentation_1_1_topic_creation_1_1_choose_source_step 
     [ "ChooseLocalFile", "class_quiz_generator_presentation_1_1_topic_creation_1_1_choose_source_step.html#aa286f5a136e3f761a11b24b8efc27919", null ],
     [ "components", "class_quiz_generator_presentation_1_1_topic_creation_1_1_choose_source_step.html#a0ea86a8894e87e0074f6f5953a7eca9d", null ],
     [ "ContinueBtn", "class_quiz_generator_presentation_1_1_topic_creation_1_1_choose_source_step.html#a2e6936020b287c24fd99c61c74186bd8", null ],
+    [ "DescriptionLabel", "class_quiz_generator_presentation_1_1_topic_creation_1_1_choose_source_step.html#a382b6dbc1ddeb648f5aafd09b35c19da", null ],
     [ "finalize", "class_quiz_generator_presentation_1_1_topic_creation_1_1_choose_source_step.html#a761bae7b4a20559eee5e0674cf5c6a52", null ],
     [ "notesChooseOptions", "class_quiz_generator_presentation_1_1_topic_creation_1_1_choose_source_step.html#ae7d89de7640a3b4c9201085224f4817d", null ],
     [ "NotionLink", "class_quiz_generator_presentation_1_1_topic_creation_1_1_choose_source_step.html#aefd1c7c110ebceba271b1162ac2c3cd6", null ],

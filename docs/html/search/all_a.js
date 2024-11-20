@@ -24,6 +24,7 @@ var searchData=
   ['istateserializer_21',['IStateSerializer',['../interface_quiz_persistence_1_1_quiz_states_1_1_i_state_serializer.html',1,'QuizPersistence::QuizStates']]],
   ['istateserializer_3c_20qst_20_3e_22',['IStateSerializer&lt; QST &gt;',['../interface_quiz_persistence_1_1_quiz_states_1_1_i_state_serializer.html',1,'QuizPersistence::QuizStates']]],
   ['istopicfolder_23',['isTopicFolder',['../class_quiz_persistence_1_1_questions_file.html#ab24845729bc5e9361a12fe44d0487f44',1,'QuizPersistence::QuestionsFile']]],
-  ['item_24',['Item',['../class_quiz_persistence_1_1_data_structures_1_1_priority_queue_1_1_item.html',1,'QuizPersistence.DataStructures.PriorityQueue&lt; T &gt;.Item&lt; IT &gt;'],['../class_quiz_persistence_1_1_data_structures_1_1_priority_queue_1_1_item.html#a783a827ec175293dcee1455f7c3e6835',1,'QuizPersistence.DataStructures.PriorityQueue.Item.Item()']]],
-  ['item_25',['item',['../class_quiz_generator_presentation_1_1_main_page_1_1topic_edit_box.html#a915a9436b788f64c4dbea3edad616b5a',1,'QuizGeneratorPresentation::MainPage::topicEditBox']]]
+  ['item_24',['Item',['../class_quiz_persistence_1_1_data_structures_1_1_priority_queue_1_1_item.html',1,'QuizPersistence::DataStructures::PriorityQueue']]],
+  ['item_25',['item',['../class_quiz_generator_presentation_1_1_main_page_1_1topic_edit_box.html#a915a9436b788f64c4dbea3edad616b5a',1,'QuizGeneratorPresentation::MainPage::topicEditBox']]],
+  ['item_26',['Item',['../class_quiz_persistence_1_1_data_structures_1_1_priority_queue_1_1_item.html#a783a827ec175293dcee1455f7c3e6835',1,'QuizPersistence::DataStructures::PriorityQueue::Item']]]
 ];

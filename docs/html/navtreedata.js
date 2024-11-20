@@ -65,9 +65,9 @@ var NAVTREEINDEX =
 "__chain__builder__8cs_8js.html",
 "class_notes_parsing_1_1_or_question_node_params.html",
 "class_quiz_generator_presentation_1_1_quiz_starting_1_1_choose_quiz_beginning_from.html#abafae2ce54f392d6c4fd63469df0bd7f",
-"class_quiz_persistence_1_1_data_structures_1_1_priority_queue_1_1_item.html#a200c3dd4bce36bf9e1f449778f80404c",
-"class_topic_creation_1_1_topic_creation_chain_1_1_choose_notes_source.html#a852be82749f98a18eeab5ba33b80783c",
-"functions_func_d.html"
+"class_quiz_persistence_1_1_data_structures_1_1_priority_queue_1_1_item.html",
+"class_topic_creation_1_1_topic_creation_chain_1_1_choose_notes_source.html#a466e361aafca30164b33128749c4b3f0",
+"functions_func.html"
 ];
 
 var SYNCONMSG = 'click to disable panel synchronisation';

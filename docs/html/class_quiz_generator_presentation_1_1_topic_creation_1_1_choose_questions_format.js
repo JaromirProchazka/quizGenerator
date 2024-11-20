@@ -28,6 +28,7 @@ var class_quiz_generator_presentation_1_1_topic_creation_1_1_choose_questions_fo
     [ "color", "class_quiz_generator_presentation_1_1_topic_creation_1_1_choose_questions_format.html#a8d9af99b9e5481cd85b5cb06ee4d6335", null ],
     [ "comboBox1", "class_quiz_generator_presentation_1_1_topic_creation_1_1_choose_questions_format.html#a27bf24066aaadb7e601318f996e86562", null ],
     [ "components", "class_quiz_generator_presentation_1_1_topic_creation_1_1_choose_questions_format.html#a9745f4d026f6cb77dcb7c8107571e7b3", null ],
+    [ "DescriptionLabel", "class_quiz_generator_presentation_1_1_topic_creation_1_1_choose_questions_format.html#a7a10125a9023784201f58fae030be057", null ],
     [ "font", "class_quiz_generator_presentation_1_1_topic_creation_1_1_choose_questions_format.html#acc0cefbe9c42fb093b5936a43bb00b25", null ],
     [ "groupBox1", "class_quiz_generator_presentation_1_1_topic_creation_1_1_choose_questions_format.html#a096ea6e62d5c3f96752e2b9127b65905", null ],
     [ "label1", "class_quiz_generator_presentation_1_1_topic_creation_1_1_choose_questions_format.html#a82b3331371e9b5b2f47eb352a63616fa", null ],
