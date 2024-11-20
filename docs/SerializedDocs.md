@@ -69,7 +69,7 @@ At the Start of the App, you will be greeted by a list of your Quiz on top, and 
 
 ![Main page creation Quiz](https://github.com/JaromirProchazka/quizGenerator/blob/main/docs/tutor_folder/main_page.png)
 
-After that a new topic is added to the topics list at the top, or a topic with the same name is updated. Then select topic in list, you can then either click
+After that a new topic is added to the topics list at the top, or a topic with the same name and suffix copy. Then select topic in list, you can then either click
 
 - `Open` button (or Doubleclick the list item) and start the quiz,
 - or click `Edit` button and an edit window will appear. You can **Rename** the topic or **Delete** it
