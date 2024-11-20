@@ -4,7 +4,7 @@ var searchData=
   ['editbtn_5fclick_1',['editBtn_Click',['../class_quiz_generator_presentation_1_1_main_page_1_1main_page.html#acf8daba587d5c671c1125e9322dee897',1,'QuizGeneratorPresentation::MainPage::mainPage']]],
   ['em_2',['em',['../class_quiz_generator_presentation_1_1_topic_creation_1_1_choose_questions_format.html#a7b230707cb473c5e937744bbc8838ef6a47e2e8c3fdb7739e740b95345a803cac',1,'QuizGeneratorPresentation.TopicCreation.ChooseQuestionsFormat.em'],['../class_q_generator_1_1_u_i_components_1_1_choose_questions_format.html#aa02f1604e9f42d76408cee2de27b8889a47e2e8c3fdb7739e740b95345a803cac',1,'QGenerator.UIComponents.ChooseQuestionsFormat.em']]],
   ['end_3',['End',['../class_quiz_logical_components_1_1_abstract_chain_1_1_chain_builder.html#a19d9d97dd54a363732d18f483535c40b',1,'QuizLogicalComponents::AbstractChain::ChainBuilder']]],
-  ['enhancements_4',['Future Enhancements',['../index.html#autotoc_md38',1,'']]],
+  ['enhancements_4',['Future Enhancements',['../md__quiz_generator_serialized_docs.html#autotoc_md38',1,'']]],
   ['enque_5',['Enque',['../class_quiz_persistence_1_1_data_structures_1_1_priority_queue.html#a069a851002aa2aff81345b4133c2aa7c',1,'QuizPersistence::DataStructures::PriorityQueue']]],
   ['enums_5f0_2ejs_6',['enums_0.js',['../enums__0_8js.html',1,'']]],
   ['enums_5f1_2ejs_7',['enums_1.js',['../enums__1_8js.html',1,'']]],
@@ -21,6 +21,6 @@ var searchData=
   ['enumvalues_5f8_2ejs_18',['enumvalues_8.js',['../enumvalues__8_8js.html',1,'']]],
   ['enumvalues_5f9_2ejs_19',['enumvalues_9.js',['../enumvalues__9_8js.html',1,'']]],
   ['enumvalues_5fa_2ejs_20',['enumvalues_a.js',['../enumvalues__a_8js.html',1,'']]],
-  ['errors_20and_20solutions_21',['Common Errors and Solutions',['../index.html#autotoc_md34',1,'']]],
-  ['external_20systems_22',['External Systems',['../index.html#autotoc_md17',1,'']]]
+  ['errors_20and_20solutions_21',['Common Errors and Solutions',['../md__quiz_generator_serialized_docs.html#autotoc_md34',1,'']]],
+  ['external_20systems_22',['External Systems',['../md__quiz_generator_serialized_docs.html#autotoc_md17',1,'']]]
 ];

@@ -233,8 +233,8 @@ var NAVTREEINDEX0 =
 "class_notes_parsing_1_1_and_question_node_params.html#accb974446f88b3bff132e66c3920e837":[4,0,0,0,0],
 "class_notes_parsing_1_1_notes_parser.html":[4,0,0,1],
 "class_notes_parsing_1_1_notes_parser.html":[3,0,0,1],
-"class_notes_parsing_1_1_notes_parser.html#a246bd1a7078fc518ca3088d3969cb3fc":[4,0,0,1,2],
 "class_notes_parsing_1_1_notes_parser.html#a246bd1a7078fc518ca3088d3969cb3fc":[3,0,0,1,2],
+"class_notes_parsing_1_1_notes_parser.html#a246bd1a7078fc518ca3088d3969cb3fc":[4,0,0,1,2],
 "class_notes_parsing_1_1_notes_parser.html#a53597ed7b296916980b57bb235ab891e":[4,0,0,1,1],
 "class_notes_parsing_1_1_notes_parser.html#a53597ed7b296916980b57bb235ab891e":[3,0,0,1,1],
 "class_notes_parsing_1_1_notes_parser.html#a554b63c4a02c3f55ea9a098a367e3563":[3,0,0,1,5],
@@ -249,5 +249,5 @@ var NAVTREEINDEX0 =
 "class_notes_parsing_1_1_notes_parser.html#aa3a7ce5f537a8e720d1d9ef2a6e91c7a":[3,0,0,1,7],
 "class_notes_parsing_1_1_notes_parser.html#aa9393d5a683caaa96d391355cfb907d2":[3,0,0,1,4],
 "class_notes_parsing_1_1_notes_parser.html#aa9393d5a683caaa96d391355cfb907d2":[4,0,0,1,4],
-"class_notes_parsing_1_1_or_question_node_params.html":[3,0,0,2]
+"class_notes_parsing_1_1_or_question_node_params.html":[4,0,0,2]
 };

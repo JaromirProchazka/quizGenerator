@@ -10,13 +10,14 @@ var searchData=
   ['quiz_5fgenerator_2ecs_7',['quiz_generator.cs',['../quiz__generator_8cs.html',1,'']]],
   ['quizgeneratorpresentation_2eassemblyinfo_2ecs_8',['QuizGeneratorPresentation.AssemblyInfo.cs',['../_quiz_generator_presentation_8_assembly_info_8cs.html',1,'']]],
   ['quizgeneratorpresentation_2eglobalusings_2eg_2ecs_9',['QuizGeneratorPresentation.GlobalUsings.g.cs',['../_quiz_generator_presentation_8_global_usings_8g_8cs.html',1,'']]],
-  ['quizlogicalcomponents_2eassemblyinfo_2ecs_10',['QuizLogicalComponents.AssemblyInfo.cs',['../_quiz_logical_components_8_assembly_info_8cs.html',1,'']]],
-  ['quizlogicalcomponents_2eglobalusings_2eg_2ecs_11',['QuizLogicalComponents.GlobalUsings.g.cs',['../_quiz_logical_components_8_global_usings_8g_8cs.html',1,'']]],
-  ['quizpersistance_2eassemblyinfo_2ecs_12',['QuizPersistance.AssemblyInfo.cs',['../_quiz_persistance_8_assembly_info_8cs.html',1,'']]],
-  ['quizpersistance_2eglobalusings_2eg_2ecs_13',['QuizPersistance.GlobalUsings.g.cs',['../_quiz_persistance_8_global_usings_8g_8cs.html',1,'']]],
-  ['quizpersistence_2eassemblyinfo_2ecs_14',['QuizPersistence.AssemblyInfo.cs',['../_quiz_persistence_8_assembly_info_8cs.html',1,'']]],
-  ['quizpersistence_2eglobalusings_2eg_2ecs_15',['QuizPersistence.GlobalUsings.g.cs',['../_quiz_persistence_8_global_usings_8g_8cs.html',1,'']]],
-  ['quizstarting_2eassemblyinfo_2ecs_16',['QuizStarting.AssemblyInfo.cs',['../_quiz_starting_8_assembly_info_8cs.html',1,'']]],
-  ['quizstarting_2eglobalusings_2eg_2ecs_17',['QuizStarting.GlobalUsings.g.cs',['../_quiz_starting_8_global_usings_8g_8cs.html',1,'']]],
-  ['quizstate_2ecs_18',['QuizState.cs',['../_quiz_state_8cs.html',1,'']]]
+  ['quizgeneratorserializeddocs_2emd_10',['QuizGeneratorSerializedDocs.md',['../_quiz_generator_serialized_docs_8md.html',1,'']]],
+  ['quizlogicalcomponents_2eassemblyinfo_2ecs_11',['QuizLogicalComponents.AssemblyInfo.cs',['../_quiz_logical_components_8_assembly_info_8cs.html',1,'']]],
+  ['quizlogicalcomponents_2eglobalusings_2eg_2ecs_12',['QuizLogicalComponents.GlobalUsings.g.cs',['../_quiz_logical_components_8_global_usings_8g_8cs.html',1,'']]],
+  ['quizpersistance_2eassemblyinfo_2ecs_13',['QuizPersistance.AssemblyInfo.cs',['../_quiz_persistance_8_assembly_info_8cs.html',1,'']]],
+  ['quizpersistance_2eglobalusings_2eg_2ecs_14',['QuizPersistance.GlobalUsings.g.cs',['../_quiz_persistance_8_global_usings_8g_8cs.html',1,'']]],
+  ['quizpersistence_2eassemblyinfo_2ecs_15',['QuizPersistence.AssemblyInfo.cs',['../_quiz_persistence_8_assembly_info_8cs.html',1,'']]],
+  ['quizpersistence_2eglobalusings_2eg_2ecs_16',['QuizPersistence.GlobalUsings.g.cs',['../_quiz_persistence_8_global_usings_8g_8cs.html',1,'']]],
+  ['quizstarting_2eassemblyinfo_2ecs_17',['QuizStarting.AssemblyInfo.cs',['../_quiz_starting_8_assembly_info_8cs.html',1,'']]],
+  ['quizstarting_2eglobalusings_2eg_2ecs_18',['QuizStarting.GlobalUsings.g.cs',['../_quiz_starting_8_global_usings_8g_8cs.html',1,'']]],
+  ['quizstate_2ecs_19',['QuizState.cs',['../_quiz_state_8cs.html',1,'']]]
 ];

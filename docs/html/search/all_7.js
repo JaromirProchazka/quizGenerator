@@ -1,6 +1,6 @@
 var searchData=
 [
-  ['features_0',['Key Features',['../index.html#autotoc_md6',1,'']]],
+  ['features_0',['Key Features',['../md__quiz_generator_serialized_docs.html#autotoc_md6',1,'']]],
   ['fetchnotes_1',['fetchNotes',['../class_topic_creation_1_1_topic_creation_chain_1_1_choose_notion_notes.html#a6de1f03cdb7551dad00a52a313315aec',1,'TopicCreation::TopicCreationChain::ChooseNotionNotes']]],
   ['file_5fmanager_5fclasses_5f8cs_2ejs_2',['file_manager_classes_8cs.js',['../file__manager__classes__8cs_8js.html',1,'']]],
   ['filemanager_2eassemblyinfo_2ecs_3',['FileManager.AssemblyInfo.cs',['../_debug_2net8_80_2_file_manager_8_assembly_info_8cs.html',1,'(Global Namespace)'],['../_release_2net8_80_2_file_manager_8_assembly_info_8cs.html',1,'(Global Namespace)']]],
@@ -34,11 +34,11 @@ var searchData=
   ['finalize_31',['finalize',['../class_quiz_generator_presentation_1_1_topic_creation_1_1_choose_source_step.html#a761bae7b4a20559eee5e0674cf5c6a52',1,'QuizGeneratorPresentation.TopicCreation.ChooseSourceStep.finalize'],['../class_topic_creation_1_1_topic_creation_chain_1_1_choose_notes_source.html#abd3e096c1a29197d84ec4dae10e411e4',1,'TopicCreation.TopicCreationChain.ChooseNotesSource.finalize'],['../class_q_generator_1_1_u_i_components_1_1_choose_source_step.html#a27e7e78edb291d9c83c051c3f7bcc65c',1,'QGenerator.UIComponents.ChooseSourceStep.finalize']]],
   ['finalize_32',['Finalize',['../class_quiz_generator_presentation_1_1_chain_step_form.html#a0f99157bb27372838705ecb66f6efe84',1,'QuizGeneratorPresentation::ChainStepForm']]],
   ['finalizetopicstartingchain_33',['FinalizeTopicStartingChain',['../class_quiz_starting_1_1_topic_starting_chain_1_1_finalize_topic_starting_chain.html',1,'QuizStarting::TopicStartingChain']]],
-  ['flow_34',['Data Flow',['../index.html#autotoc_md26',1,'']]],
+  ['flow_34',['Data Flow',['../md__quiz_generator_serialized_docs.html#autotoc_md26',1,'']]],
   ['font_35',['font',['../class_quiz_generator_presentation_1_1_topic_creation_1_1_choose_questions_format.html#acc0cefbe9c42fb093b5936a43bb00b25',1,'QuizGeneratorPresentation.TopicCreation.ChooseQuestionsFormat.font'],['../class_q_generator_1_1_u_i_components_1_1_choose_questions_format.html#a86cae05121525627cf68463a0e857ac1',1,'QGenerator.UIComponents.ChooseQuestionsFormat.font']]],
   ['fontinput_5ftextchanged_36',['fontInput_TextChanged',['../class_quiz_generator_presentation_1_1_topic_creation_1_1_choose_questions_format.html#a17e1512c0d1b823fba2ffab60c55b1db',1,'QuizGeneratorPresentation.TopicCreation.ChooseQuestionsFormat.fontInput_TextChanged()'],['../class_q_generator_1_1_u_i_components_1_1_choose_questions_format.html#a7d97dc70a975de24fd78202f2599d806',1,'QGenerator.UIComponents.ChooseQuestionsFormat.fontInput_TextChanged()']]],
-  ['format_37',['Choose Question Format',['../index.html#autotoc_md11',1,'']]],
-  ['from_38',['Quiz Begging From',['../index.html#autotoc_md13',1,'']]],
+  ['format_37',['Choose Question Format',['../md__quiz_generator_serialized_docs.html#autotoc_md11',1,'']]],
+  ['from_38',['Quiz Begging From',['../md__quiz_generator_serialized_docs.html#autotoc_md13',1,'']]],
   ['functions_5f0_2ejs_39',['functions_0.js',['../functions__0_8js.html',1,'']]],
   ['functions_5f1_2ejs_40',['functions_1.js',['../functions__1_8js.html',1,'']]],
   ['functions_5f10_2ejs_41',['functions_10.js',['../functions__10_8js.html',1,'']]],
@@ -60,5 +60,5 @@ var searchData=
   ['functions_5fe_2ejs_57',['functions_e.js',['../functions__e_8js.html',1,'']]],
   ['functions_5ff_2ejs_58',['functions_f.js',['../functions__f_8js.html',1,'']]],
   ['functions_5ffunc_2ejs_59',['functions_func.js',['../functions__func_8js.html',1,'']]],
-  ['future_20enhancements_60',['Future Enhancements',['../index.html#autotoc_md38',1,'']]]
+  ['future_20enhancements_60',['Future Enhancements',['../md__quiz_generator_serialized_docs.html#autotoc_md38',1,'']]]
 ];

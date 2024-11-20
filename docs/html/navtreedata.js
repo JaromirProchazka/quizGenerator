@@ -25,7 +25,56 @@
 var NAVTREE =
 [
   [ "Quiz Generator", "index.html", [
-    [ "Table of Contents", "index.html", "index" ],
+    [ "Table of Contents", "md__quiz_generator_serialized_docs.html", [
+      [ "Introduction", "md__quiz_generator_serialized_docs.html#autotoc_md3", [
+        [ "Purpose", "md__quiz_generator_serialized_docs.html#autotoc_md4", null ],
+        [ "Scope", "md__quiz_generator_serialized_docs.html#autotoc_md5", null ],
+        [ "Key Features", "md__quiz_generator_serialized_docs.html#autotoc_md6", null ]
+      ] ],
+      [ "Quiz Generator User Documentation", "md__quiz_generator_serialized_docs.html#autotoc_md7", [
+        [ "Quiz Menu", "md__quiz_generator_serialized_docs.html#autotoc_md8", [
+          [ "Quiz Creation", "md__quiz_generator_serialized_docs.html#autotoc_md9", [
+            [ "Choose Notes Source", "md__quiz_generator_serialized_docs.html#autotoc_md10", null ],
+            [ "Choose Question Format", "md__quiz_generator_serialized_docs.html#autotoc_md11", null ]
+          ] ],
+          [ "Quiz Starting", "md__quiz_generator_serialized_docs.html#autotoc_md12", [
+            [ "Quiz Begging From", "md__quiz_generator_serialized_docs.html#autotoc_md13", null ]
+          ] ]
+        ] ],
+        [ "Quiz Window", "md__quiz_generator_serialized_docs.html#autotoc_md14", null ]
+      ] ],
+      [ "Quiz Generator Developer Documentation", "md__quiz_generator_serialized_docs.html#autotoc_md15", [
+        [ "Architecture", "md__quiz_generator_serialized_docs.html#autotoc_md16", [
+          [ "External Systems", "md__quiz_generator_serialized_docs.html#autotoc_md17", null ],
+          [ "Containers", "md__quiz_generator_serialized_docs.html#autotoc_md18", null ],
+          [ "Components", "md__quiz_generator_serialized_docs.html#autotoc_md19", null ],
+          [ "C4 Model", "md__quiz_generator_serialized_docs.html#autotoc_md20", null ]
+        ] ],
+        [ "Installation and Setup", "md__quiz_generator_serialized_docs.html#autotoc_md21", [
+          [ "Prerequisites", "md__quiz_generator_serialized_docs.html#autotoc_md22", null ],
+          [ "Step-by-Step Installation Guide", "md__quiz_generator_serialized_docs.html#autotoc_md23", null ]
+        ] ],
+        [ "Technical Details", "md__quiz_generator_serialized_docs.html#autotoc_md24", [
+          [ "Technologies", "md__quiz_generator_serialized_docs.html#autotoc_md25", null ],
+          [ "Data Flow", "md__quiz_generator_serialized_docs.html#autotoc_md26", null ]
+        ] ],
+        [ "Development Guidelines", "md__quiz_generator_serialized_docs.html#autotoc_md27", [
+          [ "Coding Standards", "md__quiz_generator_serialized_docs.html#autotoc_md28", null ],
+          [ "Version Control Practices", "md__quiz_generator_serialized_docs.html#autotoc_md29", null ]
+        ] ],
+        [ "Testing Strategy", "md__quiz_generator_serialized_docs.html#autotoc_md30", null ],
+        [ "Database Schema", "md__quiz_generator_serialized_docs.html#autotoc_md31", null ],
+        [ "Modules Documentation", "md__quiz_generator_serialized_docs.html#autotoc_md32", null ],
+        [ "Troubleshooting", "md__quiz_generator_serialized_docs.html#autotoc_md33", [
+          [ "Common Errors and Solutions", "md__quiz_generator_serialized_docs.html#autotoc_md34", null ]
+        ] ],
+        [ "Deployment", "md__quiz_generator_serialized_docs.html#autotoc_md35", null ],
+        [ "Glossary", "md__quiz_generator_serialized_docs.html#autotoc_md36", [
+          [ "Change Log", "md__quiz_generator_serialized_docs.html#autotoc_md37", null ]
+        ] ],
+        [ "Future Enhancements", "md__quiz_generator_serialized_docs.html#autotoc_md38", null ]
+      ] ]
+    ] ],
     [ "Html Agility Pack", "md__c_1_2_users_2jarom_2_desktop_2_p_g___e_x_e_r_2quiz_generator_2packages_2_html_agility_pack_81_811_867_2readme.html", null ],
     [ "Quiz Generator", "md__c_1_2_users_2jarom_2_desktop_2_p_g___e_x_e_r_2quiz_generator_2_r_e_a_d_m_e.html", [
       [ "Documentation", "md__c_1_2_users_2jarom_2_desktop_2_p_g___e_x_e_r_2quiz_generator_2_r_e_a_d_m_e.html#autotoc_md44", null ],

@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['of_20contents_0',['Table of Contents',['../index.html',1,'']]]
+  ['of_20contents_0',['Table of Contents',['../md__quiz_generator_serialized_docs.html',1,'']]]
 ];

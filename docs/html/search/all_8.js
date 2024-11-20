@@ -1,8 +1,8 @@
 var searchData=
 [
   ['generator_0',['Quiz Generator',['../md__c_1_2_users_2jarom_2_desktop_2_p_g___e_x_e_r_2quiz_generator_2_r_e_a_d_m_e.html',1,'']]],
-  ['generator_20developer_20documentation_1',['Quiz Generator Developer Documentation',['../index.html#autotoc_md15',1,'']]],
-  ['generator_20user_20documentation_2',['Quiz Generator User Documentation',['../index.html#autotoc_md7',1,'']]],
+  ['generator_20developer_20documentation_1',['Quiz Generator Developer Documentation',['../md__quiz_generator_serialized_docs.html#autotoc_md15',1,'']]],
+  ['generator_20user_20documentation_2',['Quiz Generator User Documentation',['../md__quiz_generator_serialized_docs.html#autotoc_md7',1,'']]],
   ['getcreationchain_3',['GetCreationChain',['../class_quiz_generator_presentation_1_1_chain_ui_init.html#a46c8406b03b1f9335117ef99b94b0be8',1,'QuizGeneratorPresentation::ChainUiInit']]],
   ['getcurrentquestion_4',['GetCurrentQuestion',['../class_quiz_persistence_1_1_quiz_states_1_1_quiz_state.html#abb91f9128abb38ff2cd781fde6684476',1,'QuizPersistence.QuizStates.QuizState.GetCurrentQuestion()'],['../class_quiz_persistence_1_1_quiz_states_1_1_reset_around_state.html#a8d51b019d54b0282a29e4e0dca29abc6',1,'QuizPersistence.QuizStates.ResetAroundState.GetCurrentQuestion()']]],
   ['getdatafilepath_5',['GetDataFilePath',['../class_quiz_persistence_1_1_questions_file.html#a501e5c4f80544356c2b5b7266610534b',1,'QuizPersistence::QuestionsFile']]],
@@ -24,9 +24,9 @@ var searchData=
   ['gettopics_21',['GetTopics',['../class_quiz_persistence_1_1_questions_file.html#ab16ca2fa70ca2f0da0c03312aceac36e',1,'QuizPersistence::QuestionsFile']]],
   ['gettopicspath_22',['GetTopicsPath',['../class_quiz_persistence_1_1_quiz_states_1_1_quiz_state.html#a264bf82a42b817d4287427ae923a5b78',1,'QuizPersistence::QuizStates::QuizState']]],
   ['getuniquename_23',['getUniqueName',['../class_quiz_persistence_1_1_questions_file.html#af84c61a78849ea9c70817c2882264a05',1,'QuizPersistence::QuestionsFile']]],
-  ['glossary_24',['Glossary',['../index.html#autotoc_md36',1,'']]],
+  ['glossary_24',['Glossary',['../md__quiz_generator_serialized_docs.html#autotoc_md36',1,'']]],
   ['gothrownodes_25',['goThrowNodes',['../class_notes_parsing_1_1_notes_parser.html#a69b70dff899adf1c5f7b56823440cfb7',1,'NotesParsing::NotesParser']]],
   ['groupbox1_26',['groupBox1',['../class_quiz_generator_presentation_1_1_topic_creation_1_1_choose_questions_format.html#a096ea6e62d5c3f96752e2b9127b65905',1,'QuizGeneratorPresentation.TopicCreation.ChooseQuestionsFormat.groupBox1'],['../class_q_generator_1_1_u_i_components_1_1_choose_questions_format.html#abca88138359bdc5a2870eaf189ad7f84',1,'QGenerator.UIComponents.ChooseQuestionsFormat.groupBox1']]],
-  ['guide_27',['Step-by-Step Installation Guide',['../index.html#autotoc_md23',1,'']]],
-  ['guidelines_28',['Development Guidelines',['../index.html#autotoc_md27',1,'']]]
+  ['guide_27',['Step-by-Step Installation Guide',['../md__quiz_generator_serialized_docs.html#autotoc_md23',1,'']]],
+  ['guidelines_28',['Development Guidelines',['../md__quiz_generator_serialized_docs.html#autotoc_md27',1,'']]]
 ];
