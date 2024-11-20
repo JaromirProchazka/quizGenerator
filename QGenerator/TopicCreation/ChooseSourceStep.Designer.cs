@@ -73,7 +73,6 @@
             NotionLinkLabel.Name = "label1";
             NotionLinkLabel.Size = new Size(288, 15);
             NotionLinkLabel.TabIndex = 3;
-            NotionLinkLabel.Text = "Notio page Url: Make shure that your page IS PUBLIC!";
             // 
             // ChooseSourceStep
             // 

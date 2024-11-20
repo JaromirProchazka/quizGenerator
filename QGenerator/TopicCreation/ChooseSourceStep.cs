@@ -33,6 +33,7 @@ namespace QuizGeneratorPresentation.TopicCreation
         {
             this.Text = "Choose Quiz Notes Source";
             ContinueBtn.Text = "Continue";
+            NotionLinkLabel.Text = "Notion page Url: Make sure that your page IS PUBLIC!";
             ContinueBtn.Enabled = false;
 
             NotionLink.Visible = false;
