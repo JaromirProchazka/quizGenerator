@@ -80,6 +80,7 @@ namespace QuizGeneratorPresentation.QuizStarting
         private void godNext_Click(object sender, EventArgs e)
         {
             NextQuestion();
+            serializer.StoreState((ResetAroundState)state);
         }
 
         /// <summary>
@@ -90,6 +91,8 @@ namespace QuizGeneratorPresentation.QuizStarting
             NextQuestion();
             state.MovePreviousAnsweredForward(movingDistanceOnBadAnswear);
             updateScore();
+
+            serializer.StoreState((ResetAroundState)state);
         }
 
         /// <summary>
@@ -106,6 +109,8 @@ namespace QuizGeneratorPresentation.QuizStarting
         private void backButton_Click(object sender, EventArgs e)
         {
             this.Close();
+
+            serializer.StoreState((ResetAroundState)state);
         }
 
         private void updateScore()
@@ -121,6 +126,9 @@ namespace QuizGeneratorPresentation.QuizStarting
 
         // UTILS ====================================================================================================================================================
 
+        /// <summary>
+        /// Sets next question as current WITHOUT SAVING STATE.
+        /// </summary>
         private void NextQuestion()
         {
             if (state.QuestionIndex < state.GetQuestionsCount())
@@ -143,8 +151,6 @@ namespace QuizGeneratorPresentation.QuizStarting
             {
                 showCurrentQuestion();
             }
-
-            serializer.StoreState((ResetAroundState)state);
         }
 
         private void showCurrentQuestion()
