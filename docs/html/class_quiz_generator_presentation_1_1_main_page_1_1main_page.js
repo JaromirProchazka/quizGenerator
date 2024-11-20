@@ -11,11 +11,12 @@ var class_quiz_generator_presentation_1_1_main_page_1_1main_page =
     [ "openBtn_Click", "class_quiz_generator_presentation_1_1_main_page_1_1main_page.html#a753fe8d7cc2440a5d7eae7974f6688e9", null ],
     [ "populateListElement", "class_quiz_generator_presentation_1_1_main_page_1_1main_page.html#a7c4fda6bf5e6bceddd23dabd35cb0f66", null ],
     [ "Topics_SelectedIndexChanged", "class_quiz_generator_presentation_1_1_main_page_1_1main_page.html#a9491fa69764a83ab3b339ea6c7a12dd9", null ],
+    [ "TopicsList_DoubleClick", "class_quiz_generator_presentation_1_1_main_page_1_1main_page.html#a94c83045a80482629f95533b52c29bfb", null ],
     [ "updateList", "class_quiz_generator_presentation_1_1_main_page_1_1main_page.html#ab37aaac28bfd4c8aaf9cefd85dc5e8dc", null ],
-    [ "button1", "class_quiz_generator_presentation_1_1_main_page_1_1main_page.html#a323eaafe8bca4411b0034c194d73116d", null ],
-    [ "button2", "class_quiz_generator_presentation_1_1_main_page_1_1main_page.html#afec8e872215480a5cfd622f9683ef924", null ],
-    [ "button3", "class_quiz_generator_presentation_1_1_main_page_1_1main_page.html#a2563fd1a7eab420f9d8e106eb7495a43", null ],
     [ "components", "class_quiz_generator_presentation_1_1_main_page_1_1main_page.html#a4c717b3af11a048c1f03dd04ccbf3b98", null ],
+    [ "createBtn", "class_quiz_generator_presentation_1_1_main_page_1_1main_page.html#ad0888fe7dee3836e08fd9241bebb5f7a", null ],
+    [ "editBtn", "class_quiz_generator_presentation_1_1_main_page_1_1main_page.html#ab249458b2db19394ebe88ab3dbaee5b0", null ],
+    [ "openBtn", "class_quiz_generator_presentation_1_1_main_page_1_1main_page.html#a7139bbcb41e3cd8472a021b4248b8083", null ],
     [ "openFileDialog1", "class_quiz_generator_presentation_1_1_main_page_1_1main_page.html#add4f787c480c0654373ca032c2e649e6", null ],
     [ "TopicsList", "class_quiz_generator_presentation_1_1_main_page_1_1main_page.html#a9a3a2cdadf2f22cf862fdc78a3a3bae6", null ]
 ];

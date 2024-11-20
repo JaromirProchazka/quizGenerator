@@ -1,6 +1,5 @@
 var searchData=
 [
-  ['filestreamfetcher_0',['FileStreamFetcher',['../class_topic_creation_1_1_topic_creation_chain_1_1_choose_local_html_file_option.html#a0abfe5c77b43fd16511874c275c4aca3',1,'TopicCreation::TopicCreationChain::ChooseLocalHtmlFileOption']]],
-  ['finalize_1',['finalize',['../class_quiz_generator_presentation_1_1_topic_creation_1_1_choose_source_step.html#a761bae7b4a20559eee5e0674cf5c6a52',1,'QuizGeneratorPresentation.TopicCreation.ChooseSourceStep.finalize'],['../class_topic_creation_1_1_topic_creation_chain_1_1_choose_notes_source.html#abd3e096c1a29197d84ec4dae10e411e4',1,'TopicCreation.TopicCreationChain.ChooseNotesSource.finalize'],['../class_q_generator_1_1_u_i_components_1_1_choose_source_step.html#a27e7e78edb291d9c83c051c3f7bcc65c',1,'QGenerator.UIComponents.ChooseSourceStep.finalize']]],
-  ['font_2',['font',['../class_quiz_generator_presentation_1_1_topic_creation_1_1_choose_questions_format.html#acc0cefbe9c42fb093b5936a43bb00b25',1,'QuizGeneratorPresentation.TopicCreation.ChooseQuestionsFormat.font'],['../class_q_generator_1_1_u_i_components_1_1_choose_questions_format.html#a86cae05121525627cf68463a0e857ac1',1,'QGenerator.UIComponents.ChooseQuestionsFormat.font']]]
+  ['editbtn_0',['editBtn',['../class_quiz_generator_presentation_1_1_main_page_1_1main_page.html#ab249458b2db19394ebe88ab3dbaee5b0',1,'QuizGeneratorPresentation::MainPage::mainPage']]],
+  ['end_1',['End',['../class_quiz_logical_components_1_1_abstract_chain_1_1_chain_builder.html#a19d9d97dd54a363732d18f483535c40b',1,'QuizLogicalComponents::AbstractChain::ChainBuilder']]]
 ];

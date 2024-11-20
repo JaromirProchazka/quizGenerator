@@ -124,7 +124,7 @@ Introduction</h1>
 <h2><a class="anchor" id="autotoc_md4"></a>
 Purpose</h2>
 <p>The Quiz Generator application is designed to make the learning process more efficient by transforming raw notes into interactive, personalized quizzes. Its primary purpose is to empower students and educators alike to create engaging, adaptive assessments that reinforce knowledge retention and comprehension.</p>
-<p>**Core Objectives: **</p>
+<p><b>Core Objectives:</b></p>
 <ol type="1">
 <li><em>Create a efficient learning workflow</em>:<ul>
 <li>Listen or Read</li>
@@ -199,6 +199,7 @@ Quiz Window</h2>
 <p>There is also a counter, which says “<code>number of answered questions / number of questions</code>”. If you answer incorrectly and press <code>Next 👎</code>, the counter doesn’t increment.</p>
 <h1><a class="anchor" id="autotoc_md14"></a>
 Quiz Generator Developer Documentation</h1>
+<p>Doxygen code Docs can be accessed <a href="https://jaromirprochazka.github.io/quizGenerator/">here</a>.</p>
 <h2><a class="anchor" id="autotoc_md15"></a>
 Architecture</h2>
 <p>The Quiz Generator is a Windows application. It follows modular architecture with clear separation of concerns:</p>
@@ -230,6 +231,14 @@ C4 Model</h3>
 <p><img src="https://github.com/JaromirProchazka/quizGenerator/blob/main/docs/ArchitectureDiagrams/L1.png?raw=true" alt="High level user-app-outside-dependencies diagram" class="inline"/> <img src="https://github.com/JaromirProchazka/quizGenerator/blob/main/docs/ArchitectureDiagrams/L2.png?raw=true" alt="Application containers diagram" class="inline"/> <img src="https://github.com/JaromirProchazka/quizGenerator/blob/main/docs/ArchitectureDiagrams/L3.png?raw=true" alt="Quiz components diagram" class="inline"/></p>
 <h2><a class="anchor" id="autotoc_md20"></a>
 Installation and Setup</h2>
+<ol type="1">
+<li>(Install Visual studio: <a href="https://learn.microsoft.com/en-us/visualstudio/install/install-visual-studio?view=vs-2022">https://learn.microsoft.com/en-us/visualstudio/install/install-visual-studio?view=vs-2022</a>)</li>
+<li>(Install git)</li>
+<li>clone the project repository to you computer</li>
+<li>Open it in Visual Studio</li>
+<li>Run in VS</li>
+</ol>
+<p><img src="https://github.com/JaromirProchazka/quizGenerator/blob/main/docs/tutor_folder/start_tut.png" alt="Shows how to run project in VS" class="inline"/></p>
 <h3><a class="anchor" id="autotoc_md21"></a>
 Prerequisites</h3>
 <ul>
@@ -328,12 +337,15 @@ Modules Documentation</h2>
 </ul>
 <h2><a class="anchor" id="autotoc_md32"></a>
 Troubleshooting</h2>
-<p>`</p>
 <h3><a class="anchor" id="autotoc_md33"></a>
 Common Errors and Solutions</h3>
 <ol type="1">
-<li><b>Error: Unable to parse notes file</b> Solution: Check if the notes file is in the correct format. Verify the question selector configuration.</li>
-<li><b>Error: Failed to connect to Notion API</b> Solution: Ensure the API key is valid and network connectivity is stable.</li>
+<li><b>Error: File not found. Check the file name and try again</b> This Error occures in file creation Notes source choosing. Check that the File you selected is accessible and has correct fomrmat.</li>
+<li><b>Error: The request for the Notion notes exited with code (401: Unauthorized)! Please make sure that YOUR NOTION PAGE IS PUBLIC!</b> Solution: Ensure that the Notion page you are linking is Published and Public and network connectivity is stable. You can manage these things on the notion page as on in the picture bellow.</li>
+</ol>
+<p><img src="https://github.com/JaromirProchazka/quizGenerator/blob/main/docs/tutor_folder/publis_page.png" alt="Image showing how to make notion page Public" class="inline"/></p>
+<ol type="1">
+<li><b>Error: no such host is known</b> Solution: Ensure that the your network connectivity is stable.</li>
 </ol>
 <h2><a class="anchor" id="autotoc_md34"></a>
 Deployment</h2>

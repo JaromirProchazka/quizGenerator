@@ -26,15 +26,10 @@ var NAVTREE =
 [
   [ "Quiz Generator", "index.html", [
     [ "Table of Contents", "index.html", "index" ],
-    [ "Html Agility Pack", "md__c_1_2_users_2jarom_2_desktop_2_p_g___c_v_i_x_c4_x8_c_e_n_x_c3_x8_d_2quiz_generator_2packagesd746762943b27c8acb80de6b87a95c8e.html", null ],
-    [ "Quiz Generator", "md__c_1_2_users_2jarom_2_desktop_2_p_g___c_v_i_x_c4_x8_c_e_n_x_c3_x8_d_2quiz_generator_2_r_e_a_d_m_e.html", [
-      [ "Documentation", "md__c_1_2_users_2jarom_2_desktop_2_p_g___c_v_i_x_c4_x8_c_e_n_x_c3_x8_d_2quiz_generator_2_r_e_a_d_m_e.html#autotoc_md43", null ],
-      [ "Basic Idea", "md__c_1_2_users_2jarom_2_desktop_2_p_g___c_v_i_x_c4_x8_c_e_n_x_c3_x8_d_2quiz_generator_2_r_e_a_d_m_e.html#autotoc_md44", [
-        [ "What is Quiz?", "md__c_1_2_users_2jarom_2_desktop_2_p_g___c_v_i_x_c4_x8_c_e_n_x_c3_x8_d_2quiz_generator_2_r_e_a_d_m_e.html#autotoc_md45", null ],
-        [ "What is Topic?", "md__c_1_2_users_2jarom_2_desktop_2_p_g___c_v_i_x_c4_x8_c_e_n_x_c3_x8_d_2quiz_generator_2_r_e_a_d_m_e.html#autotoc_md46", null ],
-        [ "What are Notes?", "md__c_1_2_users_2jarom_2_desktop_2_p_g___c_v_i_x_c4_x8_c_e_n_x_c3_x8_d_2quiz_generator_2_r_e_a_d_m_e.html#autotoc_md47", null ]
-      ] ],
-      [ "### Future Expansions", "md__c_1_2_users_2jarom_2_desktop_2_p_g___c_v_i_x_c4_x8_c_e_n_x_c3_x8_d_2quiz_generator_2_r_e_a_d_m_e.html#autotoc_md49", null ]
+    [ "Html Agility Pack", "md__c_1_2_users_2jarom_2_desktop_2_p_g___e_x_e_r_2quiz_generator_2packages_2_html_agility_pack_81_811_867_2readme.html", null ],
+    [ "Quiz Generator", "md__c_1_2_users_2jarom_2_desktop_2_p_g___e_x_e_r_2quiz_generator_2_r_e_a_d_m_e.html", [
+      [ "Documentation", "md__c_1_2_users_2jarom_2_desktop_2_p_g___e_x_e_r_2quiz_generator_2_r_e_a_d_m_e.html#autotoc_md43", null ],
+      [ "Basic Idea", "md__c_1_2_users_2jarom_2_desktop_2_p_g___e_x_e_r_2quiz_generator_2_r_e_a_d_m_e.html#autotoc_md44", null ]
     ] ],
     [ "Namespaces", "namespaces.html", [
       [ "Namespace List", "namespaces.html", "namespaces_dup" ],
@@ -69,10 +64,10 @@ var NAVTREEINDEX =
 [
 "__chain__builder__8cs_8js.html",
 "class_notes_parsing_1_1_or_question_node_params.html",
-"class_quiz_generator_presentation_1_1_quiz_starting_1_1_choose_quiz_beginning_from.html#a30739d2a281dc90243fed24e3361bb9a",
-"class_quiz_persistence_1_1_data_structures_1_1_priority_queue_1_1_item.html",
-"class_topic_creation_1_1_topic_creation_chain_1_1_choose_notes_source.html#a466e361aafca30164b33128749c4b3f0",
-"functions_func_b.html"
+"class_quiz_generator_presentation_1_1_quiz_starting_1_1_choose_quiz_beginning_from.html#abafae2ce54f392d6c4fd63469df0bd7f",
+"class_quiz_persistence_1_1_data_structures_1_1_priority_queue_1_1_item.html#a200c3dd4bce36bf9e1f449778f80404c",
+"class_topic_creation_1_1_topic_creation_chain_1_1_choose_notes_source.html#a852be82749f98a18eeab5ba33b80783c",
+"functions_func_d.html"
 ];
 
 var SYNCONMSG = 'click to disable panel synchronisation';

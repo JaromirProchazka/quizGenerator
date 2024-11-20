@@ -7,8 +7,8 @@ var dir_55fa3b2edf6da33274d16b787c238426 =
     [ "TopicCreation", "dir_ab64bbbab5a6c17378207c661cb1e9e0.html", "dir_ab64bbbab5a6c17378207c661cb1e9e0" ],
     [ "ChainUiInit.cs", "_chain_ui_init_8cs.html", "_chain_ui_init_8cs" ],
     [ "ChainUiStep.cs", "_chain_ui_step_8cs.html", "_chain_ui_step_8cs" ],
-    [ "Notification.cs", "_notification_8cs.html", "_notification_8cs" ],
-    [ "Notification.Designer.cs", "_notification_8_designer_8cs.html", "_notification_8_designer_8cs" ],
+    [ "Notification.cs", "_notification_8cs.html", null ],
+    [ "Notification.Designer.cs", "_notification_8_designer_8cs.html", null ],
     [ "quiz_generator.cs", "quiz__generator_8cs.html", "quiz__generator_8cs" ],
     [ "TopicsLoader.cs", "_topics_loader_8cs.html", "_topics_loader_8cs" ]
 ];

@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['end_0',['End',['../class_quiz_logical_components_1_1_abstract_chain_1_1_chain_builder.html#a19d9d97dd54a363732d18f483535c40b',1,'QuizLogicalComponents::AbstractChain::ChainBuilder']]]
+  ['deletebtn_0',['deleteBtn',['../class_quiz_generator_presentation_1_1_main_page_1_1topic_edit_box.html#a50285aeca417c5c5d854836396d238be',1,'QuizGeneratorPresentation::MainPage::topicEditBox']]]
 ];

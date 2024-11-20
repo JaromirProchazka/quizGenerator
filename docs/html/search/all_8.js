@@ -1,6 +1,6 @@
 var searchData=
 [
-  ['generator_0',['Quiz Generator',['../md__c_1_2_users_2jarom_2_desktop_2_p_g___c_v_i_x_c4_x8_c_e_n_x_c3_x8_d_2quiz_generator_2_r_e_a_d_m_e.html',1,'']]],
+  ['generator_0',['Quiz Generator',['../md__c_1_2_users_2jarom_2_desktop_2_p_g___e_x_e_r_2quiz_generator_2_r_e_a_d_m_e.html',1,'']]],
   ['generator_20developer_20documentation_1',['Quiz Generator Developer Documentation',['../index.html#autotoc_md14',1,'']]],
   ['generator_20user_20documentation_2',['Quiz Generator User Documentation',['../index.html#autotoc_md7',1,'']]],
   ['getcreationchain_3',['GetCreationChain',['../class_quiz_generator_presentation_1_1_chain_ui_init.html#a46c8406b03b1f9335117ef99b94b0be8',1,'QuizGeneratorPresentation::ChainUiInit']]],
@@ -11,7 +11,7 @@ var searchData=
   ['getlabel_8',['GetLabel',['../class_quiz_logical_components_1_1_abstract_chain_1_1_chain_step.html#a73792f4c5865048354c8f755fe4a8da8',1,'QuizLogicalComponents.AbstractChain.ChainStep.GetLabel()'],['../class_topic_creation_1_1_topic_creation_chain_1_1_choose_local_html_file_option.html#adbe59fb039b002b2fb43ed5bfa0b90a5',1,'TopicCreation.TopicCreationChain.ChooseLocalHtmlFileOption.GetLabel()'],['../class_topic_creation_1_1_topic_creation_chain_1_1_choose_notion_notes.html#a8c8cae2c09de172aa6219d35e4345730',1,'TopicCreation.TopicCreationChain.ChooseNotionNotes.GetLabel()']]],
   ['getlinkfortopic_9',['getLinkForTopic',['../class_quiz_generator_presentation_1_1_topics.html#a7b22aac80b727db7bbecbf0973d1e1fa',1,'QuizGeneratorPresentation::Topics']]],
   ['getlistoftopics_10',['getListOfTopics',['../class_quiz_generator_presentation_1_1_topics.html#afc93655bbedb73c7ecf0d4d73a624c95',1,'QuizGeneratorPresentation::Topics']]],
-  ['getlocalfile_11',['GetLocalFile',['../class_quiz_generator_presentation_1_1_topic_creation_1_1_choose_source_step.html#ab84b83d57e0576cb713eba10f39808fc',1,'QuizGeneratorPresentation.TopicCreation.ChooseSourceStep.GetLocalFile()'],['../class_q_generator_1_1_u_i_components_1_1_choose_source_step.html#a1f38ce9e9858c30673fc3d897fcffc15',1,'QGenerator.UIComponents.ChooseSourceStep.GetLocalFile()']]],
+  ['getlocalfile_11',['GetLocalFile',['../class_quiz_generator_presentation_1_1_topic_creation_1_1_choose_source_step.html#a94e15fa6e1ff9f8a9a477eede1adab73',1,'QuizGeneratorPresentation.TopicCreation.ChooseSourceStep.GetLocalFile()'],['../class_q_generator_1_1_u_i_components_1_1_choose_source_step.html#a1f38ce9e9858c30673fc3d897fcffc15',1,'QGenerator.UIComponents.ChooseSourceStep.GetLocalFile()']]],
   ['getmarkdown_12',['GetMarkDown',['../class_quiz_persistence_1_1_questions_file.html#a802733253dde2a3ca6762bf5ff20d2bb',1,'QuizPersistence::QuestionsFile']]],
   ['getnextquestion_13',['GetNextQuestion',['../class_quiz_persistence_1_1_quiz_states_1_1_quiz_state.html#ad94b4345020d1afe29c2459e59d24a47',1,'QuizPersistence.QuizStates.QuizState.GetNextQuestion()'],['../class_quiz_persistence_1_1_quiz_states_1_1_reset_around_state.html#aee6e8df04fa4ccb08ddf4b8b52e5da49',1,'QuizPersistence.QuizStates.ResetAroundState.GetNextQuestion()']]],
   ['getpage_14',['GetPage',['../interface_topic_creation_1_1_topic_creation_chain_1_1_choose_notion_notes_1_1_i_notion_page_a_p_i.html#a227b6837f490b7c76a1fa82079c05a57',1,'TopicCreation::TopicCreationChain::ChooseNotionNotes::INotionPageAPI']]],

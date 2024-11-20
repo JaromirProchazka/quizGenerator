@@ -260,7 +260,7 @@ The topics folder contains styling and quiz visualization scripts. Further for e
 2. **Error: The request for the Notion notes exited with code (401: Unauthorized)! Please make sure that YOUR NOTION PAGE IS PUBLIC!**
    Solution: Ensure that the Notion page you are linking is Published and Public and network connectivity is stable. You can manage these things on the notion page as on in the picture bellow.
 
-![Image showing how to make notion page Public](https://github.com/JaromirProchazka/quizGenerator/blob/main/docs/tutor_folder/start_tut.png)
+![Image showing how to make notion page Public](https://github.com/JaromirProchazka/quizGenerator/blob/main/docs/tutor_folder/publis_page.png)
 
 3. **Error: no such host is known**
    Solution: Ensure that the your network connectivity is stable.

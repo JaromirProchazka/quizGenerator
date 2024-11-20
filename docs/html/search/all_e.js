@@ -11,11 +11,8 @@ var searchData=
   ['menu_8',['Quiz Menu',['../index.html#autotoc_md8',1,'']]],
   ['menu_2ejs_9',['menu.js',['../menu_8js.html',1,'']]],
   ['menudata_2ejs_10',['menudata.js',['../menudata_8js.html',1,'']]],
-  ['messagelabel_11',['MessageLabel',['../class_quiz_generator_presentation_1_1_notification.html#aa0840a77a3e83962813eec57a4e0aa3b',1,'QuizGeneratorPresentation::Notification']]],
-  ['messagelabel_5fclick_12',['MessageLabel_Click',['../class_quiz_generator_presentation_1_1_notification.html#a9c965b67a56529dfc2e0f64f47661915',1,'QuizGeneratorPresentation::Notification']]],
-  ['messagetext_13',['MessageText',['../class_quiz_generator_presentation_1_1_notification.html#aff859d0b2a82be5edcb1f2889c7fae61',1,'QuizGeneratorPresentation::Notification']]],
-  ['min_14',['Min',['../class_quiz_persistence_1_1_data_structures_1_1_priority_queue.html#af980cc50cfb074cc47b164c4d601734b',1,'QuizPersistence::DataStructures::PriorityQueue']]],
-  ['model_15',['C4 Model',['../index.html#autotoc_md19',1,'']]],
-  ['modules_20documentation_16',['Modules Documentation',['../index.html#autotoc_md31',1,'']]],
-  ['movepreviousansweredforward_17',['MovePreviousAnsweredForward',['../class_quiz_persistence_1_1_quiz_states_1_1_quiz_state.html#a3de8ce3146bf5b2290f5e6c540d40443',1,'QuizPersistence.QuizStates.QuizState.MovePreviousAnsweredForward()'],['../class_quiz_persistence_1_1_quiz_states_1_1_reset_around_state.html#a5510cc6b5844271332c038571d531a5b',1,'QuizPersistence.QuizStates.ResetAroundState.MovePreviousAnsweredForward()']]]
+  ['min_11',['Min',['../class_quiz_persistence_1_1_data_structures_1_1_priority_queue.html#af980cc50cfb074cc47b164c4d601734b',1,'QuizPersistence::DataStructures::PriorityQueue']]],
+  ['model_12',['C4 Model',['../index.html#autotoc_md19',1,'']]],
+  ['modules_20documentation_13',['Modules Documentation',['../index.html#autotoc_md31',1,'']]],
+  ['movepreviousansweredforward_14',['MovePreviousAnsweredForward',['../class_quiz_persistence_1_1_quiz_states_1_1_quiz_state.html#a3de8ce3146bf5b2290f5e6c540d40443',1,'QuizPersistence.QuizStates.QuizState.MovePreviousAnsweredForward()'],['../class_quiz_persistence_1_1_quiz_states_1_1_reset_around_state.html#a5510cc6b5844271332c038571d531a5b',1,'QuizPersistence.QuizStates.ResetAroundState.MovePreviousAnsweredForward()']]]
 ];

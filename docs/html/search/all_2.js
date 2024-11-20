@@ -5,7 +5,7 @@ var searchData=
   ['abstractchainstructure_2eglobalusings_2eg_2ecs_2',['AbstractChainStructure.GlobalUsings.g.cs',['../_abstract_chain_structure_8_global_usings_8g_8cs.html',1,'']]],
   ['addcopytoname_3',['addCopyToName',['../class_quiz_persistence_1_1_questions_file.html#a3d3484e479c8eb63bd65241bb0966b08',1,'QuizPersistence::QuestionsFile']]],
   ['addstep_4',['AddStep',['../class_quiz_logical_components_1_1_abstract_chain_1_1_chain_builder.html#a887428173d5db00b9a372a9d7c0d1f13',1,'QuizLogicalComponents::AbstractChain::ChainBuilder']]],
-  ['agility_20pack_5',['Html Agility Pack',['../md__c_1_2_users_2jarom_2_desktop_2_p_g___c_v_i_x_c4_x8_c_e_n_x_c3_x8_d_2quiz_generator_2packagesd746762943b27c8acb80de6b87a95c8e.html',1,'']]],
+  ['agility_20pack_5',['Html Agility Pack',['../md__c_1_2_users_2jarom_2_desktop_2_p_g___e_x_e_r_2quiz_generator_2packages_2_html_agility_pack_81_811_867_2readme.html',1,'']]],
   ['all_5f0_2ejs_6',['all_0.js',['../all__0_8js.html',1,'']]],
   ['all_5f1_2ejs_7',['all_1.js',['../all__1_8js.html',1,'']]],
   ['all_5f10_2ejs_8',['all_10.js',['../all__10_8js.html',1,'']]],
@@ -39,6 +39,5 @@ var searchData=
   ['andoption_5fcheckedchanged_36',['AndOption_CheckedChanged',['../class_quiz_generator_presentation_1_1_topic_creation_1_1_choose_questions_format.html#a47b1b1a660e1320246de34f1040c760f',1,'QuizGeneratorPresentation.TopicCreation.ChooseQuestionsFormat.AndOption_CheckedChanged()'],['../class_q_generator_1_1_u_i_components_1_1_choose_questions_format.html#a96913929429b24e4b4e0936d9d4d840a',1,'QGenerator.UIComponents.ChooseQuestionsFormat.AndOption_CheckedChanged()']]],
   ['andquestionnodeparams_37',['AndQuestionNodeParams',['../class_notes_parsing_1_1_and_question_node_params.html',1,'NotesParsing']]],
   ['annotated_5fdup_2ejs_38',['annotated_dup.js',['../annotated__dup_8js.html',1,'']]],
-  ['architecture_39',['Architecture',['../index.html#autotoc_md15',1,'']]],
-  ['are_20notes_40',['What are Notes?',['../md__c_1_2_users_2jarom_2_desktop_2_p_g___c_v_i_x_c4_x8_c_e_n_x_c3_x8_d_2quiz_generator_2_r_e_a_d_m_e.html#autotoc_md47',1,'']]]
+  ['architecture_39',['Architecture',['../index.html#autotoc_md15',1,'']]]
 ];

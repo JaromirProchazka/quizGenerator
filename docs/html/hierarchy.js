@@ -43,8 +43,7 @@ var hierarchy =
     [ "Form", null, [
       [ "QuizGeneratorPresentation.ChainStepForm< StepT, ProductT, BuilderT >", "class_quiz_generator_presentation_1_1_chain_step_form.html", null ],
       [ "QuizGeneratorPresentation.MainPage.mainPage", "class_quiz_generator_presentation_1_1_main_page_1_1main_page.html", null ],
-      [ "QuizGeneratorPresentation.MainPage.topicEditBox", "class_quiz_generator_presentation_1_1_main_page_1_1topic_edit_box.html", null ],
-      [ "QuizGeneratorPresentation.Notification", "class_quiz_generator_presentation_1_1_notification.html", null ]
+      [ "QuizGeneratorPresentation.MainPage.topicEditBox", "class_quiz_generator_presentation_1_1_main_page_1_1topic_edit_box.html", null ]
     ] ],
     [ "QuizPersistence.HyperLink", "class_quiz_persistence_1_1_hyper_link.html", null ],
     [ "IDisposable", null, [

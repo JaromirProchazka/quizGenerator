@@ -1,5 +1,5 @@
 var searchData=
 [
-  ['webbrowser1_0',['webBrowser1',['../class_quiz_generator_presentation_1_1_quiz_starting_1_1questions_form.html#a3bda74fc48140444650ae496a796ccf9',1,'QuizGeneratorPresentation::QuizStarting::questionsForm']]],
-  ['webbrowser2_1',['webBrowser2',['../class_quiz_generator_presentation_1_1_quiz_starting_1_1questions_form.html#af097041e3b627cafb3cfb9a7718ad317',1,'QuizGeneratorPresentation::QuizStarting::questionsForm']]]
+  ['utilfoldername_0',['utilFolderName',['../class_quiz_persistence_1_1_questions_file.html#a5f3874fc3b42a281f3a4112f8999580c',1,'QuizPersistence::QuestionsFile']]],
+  ['utilfolderpath_1',['utilFolderPath',['../class_quiz_persistence_1_1_questions_file.html#abbe8a7c1a5497f7c4097e879eb4a2c16',1,'QuizPersistence::QuestionsFile']]]
 ];
