@@ -82,9 +82,9 @@ Now a chain of configuration pages will be shown in this order. Feel free to dou
 
 #### Choose Notes Source
 
-You can either provide a local html file. In this case click the option and than press `Continue`. After that a file explorer window is shown where you can
+You can either provide a local html file. In this case click the option and than press `Continue`. After that a file explorer window is shown where you can either provide a local file throw the file explorer window (will be shown after Dubleclicking the _Local File_ option).
 
-Or give a link of a Notion page into the text field next to the Notion page option. Note that the page must be at the time of Creation PUBLIC. In case of problems consult this paragraph: [Troubleshooting](#troubleshooting).
+Or give a link of a Notion page into the text field next to the Notion page option (will be shown after clicking the option). Note that the page must be at the time of Creation PUBLIC. In case of problems consult this paragraph: [Troubleshooting](#troubleshooting).
 
 Press `Continue` to move on to the next step.
 
@@ -130,7 +130,7 @@ When the quiz is started, user is greeted on bottom with the question and answer
 
 ![Quiz form - Start](https://github.com/JaromirProchazka/quizGenerator/blob/main/docs/tutor_folder/quiz_page.png)
 
-There is also a counter, which says “`number of answered questions / number of questions`”. If you answer incorrectly and press `Next 👎`, the counter doesn’t increment.
+There is also a counter, which says “`number of answered questions / number of questions`”. If you answer incorrectly and press `Next 👎`, the counter doesn’t increment. When you answeard each question Correctly at least once, the counter turns green. You can than continue (The questions will be automaticaly reshuffled), or you can `Quit` the quiz and start it again from the Main Page with the **Start new quiz from beginning** option.
 
 ![Quiz form - Answear and quiz End](https://github.com/JaromirProchazka/quizGenerator/blob/main/docs/tutor_folder/quiz_page_answear.png)
 

@@ -158,7 +158,7 @@ Quiz Generator User Documentation</h1>
 Quiz Menu</h2>
 <p>At the Start of the App, you will be greeted by a list of your Quiz on top, and a <code>Create New Topic</code> button at the bottom. If you want to add a new topic, press the button and choose the method of providing the notes.</p>
 <p><img src="https://github.com/JaromirProchazka/quizGenerator/blob/main/docs/tutor_folder/main_page.png" alt="Main page creation Quiz" class="inline"/></p>
-<p>After that a new topic is added to the topics list at the top, or a topic with the same name is updated. Then select topic in list, you can then either click</p>
+<p>After that a new topic is added to the topics list at the top, or a topic with the same name and suffix copy. Then select topic in list, you can then either click</p>
 <ul>
 <li><code>Open</code> button (or Doubleclick the list item) and start the quiz,</li>
 <li>or click <code>Edit</code> button and an edit window will appear. You can <b>Rename</b> the topic or <b>Delete</b> it</li>
@@ -169,8 +169,8 @@ Quiz Creation</h3>
 <p>Now a chain of configuration pages will be shown in this order. Feel free to double click the options to choose them:</p>
 <h4><a class="anchor" id="autotoc_md10"></a>
 Choose Notes Source</h4>
-<p>You can either provide a local html file. In this case click the option and than press <code>Continue</code>. After that a file explorer window is shown where you can</p>
-<p>Or give a link of a Notion page into the text field next to the Notion page option. Note that the page must be at the time of Creation PUBLIC. In case of problems consult this paragraph: Troubleshooting.</p>
+<p>You can either provide a local html file. In this case click the option and than press <code>Continue</code>. After that a file explorer window is shown where you can either provide a local file throw the file explorer window (will be shown after Dubleclicking the <em>Local File</em> option).</p>
+<p>Or give a link of a Notion page into the text field next to the Notion page option (will be shown after clicking the option). Note that the page must be at the time of Creation PUBLIC. In case of problems consult this paragraph: Troubleshooting.</p>
 <p>Press <code>Continue</code> to move on to the next step.</p>
 <p><img src="https://github.com/JaromirProchazka/quizGenerator/blob/main/docs/tutor_folder/notes_source.png" alt="Quiz creation form - Notes source" class="inline"/></p>
 <h4><a class="anchor" id="autotoc_md11"></a>
@@ -206,7 +206,7 @@ Quiz Window</h2>
 <li>when you are done and want to start a different quiz, simply press the <code>Quit</code> button, which closes this quiz.</li>
 </ul>
 <p><img src="https://github.com/JaromirProchazka/quizGenerator/blob/main/docs/tutor_folder/quiz_page.png" alt="Quiz form - Start" class="inline"/></p>
-<p>There is also a counter, which says “<code>number of answered questions / number of questions</code>”. If you answer incorrectly and press <code>Next 👎</code>, the counter doesn’t increment.</p>
+<p>There is also a counter, which says “<code>number of answered questions / number of questions</code>”. If you answer incorrectly and press <code>Next 👎</code>, the counter doesn’t increment. When you answeard each question Correctly at least once, the counter turns green. You can than continue (The questions will be automaticaly reshuffled), or you can <code>Quit</code> the quiz and start it again from the Main Page with the <b>Start new quiz from beginning</b> option.</p>
 <p><img src="https://github.com/JaromirProchazka/quizGenerator/blob/main/docs/tutor_folder/quiz_page_answear.png" alt="Quiz form - Answear and quiz End" class="inline"/></p>
 <h1><a class="anchor" id="autotoc_md15"></a>
 Quiz Generator Developer Documentation</h1>
