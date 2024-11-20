@@ -132,7 +132,6 @@ namespace QuizGeneratorPresentation.TopicCreation
                 {
                     Uri? outUri;
 
-
                     if (NotionLink.Text == "" || !Uri.TryCreate(NotionLink.Text, UriKind.Absolute, out outUri))
                         throw new Exception("Invalid Notion page Url! Make sure to copy the link to your PUBLIC Notion page correctly!");
 

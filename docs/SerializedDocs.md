@@ -67,10 +67,14 @@ It can also be used by anybody who wants to self-study from books on other sourc
 
 At the Start of the App, you will be greeted by a list of your Quiz on top, and a `Create New Topic` button at the bottom. If you want to add a new topic, press the button and choose the method of providing the notes.
 
+![Main page creation Quiz](https://github.com/JaromirProchazka/quizGenerator/blob/main/docs/tutor_folder/main_page.png)
+
 After that a new topic is added to the topics list at the top, or a topic with the same name is updated. Then select topic in list, you can then either click
 
 - `Open` button (or Doubleclick the list item) and start the quiz,
 - or click `Edit` button and an edit window will appear. You can **Rename** the topic or **Delete** it
+
+![Main page Open and Edit Quiz](https://github.com/JaromirProchazka/quizGenerator/blob/main/docs/tutor_folder/main_page_select_topic.png)
 
 ### Quiz Creation
 
@@ -83,6 +87,8 @@ You can either provide a local html file. In this case click the option and than
 Or give a link of a Notion page into the text field next to the Notion page option. Note that the page must be at the time of Creation PUBLIC. In case of problems consult this paragraph: [Troubleshooting](#troubleshooting).
 
 Press `Continue` to move on to the next step.
+
+![Quiz creation form - Notes source](https://github.com/JaromirProchazka/quizGenerator/blob/main/docs/tutor_folder/notes_source.png)
 
 #### Choose Question Format
 
@@ -99,6 +105,8 @@ if the text field isn't written in, it is not used in the node analyzing.
 
 After pressing `Continue`, new Topic is added to the Topics list where you can edit its name.
 
+![Quiz creation form - Questions format](https://github.com/JaromirProchazka/quizGenerator/blob/main/docs/tutor_folder/questions_format.png)
+
 ### Quiz Starting
 
 On press of the `Open` button, the Topic selected in the Topics list will be opened (Or on Doubleclicking the Topic).
@@ -107,6 +115,7 @@ On press of the `Open` button, the Topic selected in the Topics list will be ope
 
 You will be presented with options of either continuing where you ended in your last test, or the option of starting from the beginning with 0 in the current question counter.
 
+![Quiz starting form - Where to begin Quiz from](https://github.com/JaromirProchazka/quizGenerator/blob/main/docs/tutor_folder/start_quiz.png)
 
 After that your quiz is opened.
 
@@ -119,7 +128,11 @@ When the quiz is started, user is greeted on bottom with the question and answer
   - If you failed to answer correctly, press the `Next 👎` button. This one also shows new question, but it moves the incorrectly answered question ahead (max 10 question ahead depending on how many question there are in the quiz), so that it will be asked again and hopefully answered correctly.
 - when you are done and want to start a different quiz, simply press the `Quit` button, which closes this quiz.
 
+![Quiz form - Start](https://github.com/JaromirProchazka/quizGenerator/blob/main/docs/tutor_folder/quiz_page.png)
+
 There is also a counter, which says “`number of answered questions / number of questions`”. If you answer incorrectly and press `Next 👎`, the counter doesn’t increment.
+
+![Quiz form - Answear and quiz End](https://github.com/JaromirProchazka/quizGenerator/blob/main/docs/tutor_folder/quiz_page_answear.png)
 
 # Quiz Generator Developer Documentation
 
