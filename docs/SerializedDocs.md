@@ -160,7 +160,8 @@ The Quiz Generator is a Windows application. It follows modular architecture wit
 2. (Install git)
 3. clone the project repository to you computer
 4. Open it in Visual Studio
-5. Run in VS
+5. As the start-up project choose the **QuizGeneratorPresentation** project
+6. Run in VS
 
 ![Shows how to run project in VS](https://github.com/JaromirProchazka/quizGenerator/blob/main/docs/tutor_folder/start_tut.png)
 

@@ -24,9 +24,7 @@
       <SubType>Form</SubType>
     </Compile>
     <Compile Update="TopicCreation\ChooseQuestionsFormat.cs" />
-    <Compile Update="TopicCreation\ChooseSourceStep.cs">
-      <SubType>Form</SubType>
-    </Compile>
+    <Compile Update="TopicCreation\ChooseSourceStep.cs" />
     <Compile Update="MainPage\mainPage.cs">
       <SubType>Form</SubType>
     </Compile>

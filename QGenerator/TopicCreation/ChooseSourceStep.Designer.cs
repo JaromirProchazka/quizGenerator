@@ -33,23 +33,25 @@
             NotionLink = new TextBox();
             ChooseLocalFile = new OpenFileDialog();
             NotionLinkLabel = new Label();
+            DescriptionLabel = new Label();
             SuspendLayout();
             // 
             // notesChooseOptions
             // 
             notesChooseOptions.FormattingEnabled = true;
-            notesChooseOptions.ItemHeight = 15;
-            notesChooseOptions.Location = new Point(28, 17);
+            notesChooseOptions.Location = new Point(32, 43);
+            notesChooseOptions.Margin = new Padding(3, 4, 3, 4);
             notesChooseOptions.Name = "notesChooseOptions";
-            notesChooseOptions.Size = new Size(287, 334);
+            notesChooseOptions.Size = new Size(327, 424);
             notesChooseOptions.TabIndex = 0;
             notesChooseOptions.SelectedIndexChanged += ListBox1_SelectedIndexChanged;
             // 
             // ContinueBtn
             // 
-            ContinueBtn.Location = new Point(28, 390);
+            ContinueBtn.Location = new Point(32, 520);
+            ContinueBtn.Margin = new Padding(3, 4, 3, 4);
             ContinueBtn.Name = "ContinueBtn";
-            ContinueBtn.Size = new Size(105, 48);
+            ContinueBtn.Size = new Size(120, 64);
             ContinueBtn.TabIndex = 1;
             ContinueBtn.Text = "button1";
             ContinueBtn.UseVisualStyleBackColor = true;
@@ -57,32 +59,44 @@
             // 
             // NotionLink
             // 
-            NotionLink.Location = new Point(321, 61);
+            NotionLink.Location = new Point(367, 81);
+            NotionLink.Margin = new Padding(3, 4, 3, 4);
             NotionLink.Name = "NotionLink";
-            NotionLink.Size = new Size(226, 23);
+            NotionLink.Size = new Size(258, 27);
             NotionLink.TabIndex = 2;
             // 
             // ChooseLocalFile
             // 
             ChooseLocalFile.FileName = "openFileDialog1";
             // 
-            // label1
+            // NotionLinkLabel
             // 
             NotionLinkLabel.AutoSize = true;
-            NotionLinkLabel.Location = new Point(321, 43);
-            NotionLinkLabel.Name = "label1";
-            NotionLinkLabel.Size = new Size(288, 15);
+            NotionLinkLabel.Location = new Point(367, 57);
+            NotionLinkLabel.Name = "NotionLinkLabel";
+            NotionLinkLabel.Size = new Size(0, 20);
             NotionLinkLabel.TabIndex = 3;
+            // 
+            // label1
+            // 
+            DescriptionLabel.AutoSize = true;
+            DescriptionLabel.Location = new Point(32, 9);
+            DescriptionLabel.Name = "label1";
+            DescriptionLabel.Size = new Size(50, 20);
+            DescriptionLabel.TabIndex = 4;
+            DescriptionLabel.Text = "label1";
             // 
             // ChooseSourceStep
             // 
-            AutoScaleDimensions = new SizeF(7F, 15F);
+            AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
-            ClientSize = new Size(800, 450);
+            ClientSize = new Size(914, 600);
+            Controls.Add(DescriptionLabel);
             Controls.Add(NotionLinkLabel);
             Controls.Add(NotionLink);
             Controls.Add(ContinueBtn);
             Controls.Add(notesChooseOptions);
+            Margin = new Padding(3, 4, 3, 4);
             Name = "ChooseSourceStep";
             Text = "Form1";
             Load += ChooseSourceStep_Load;
@@ -97,5 +111,6 @@
         private TextBox NotionLink;
         private OpenFileDialog ChooseLocalFile;
         private Label NotionLinkLabel;
+        private Label DescriptionLabel;
     }
 }

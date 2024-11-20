@@ -30,6 +30,7 @@ namespace QuizGeneratorPresentation.TopicCreation
         {
             InitializeComponent();
             this.Text = "Choose Questions Format From Your Notes";
+            DescriptionLabel.Text = "Choose the styling of questions in Notes. The node elements in your notes that has the attributes you\nset bellow will be interpreted as questions.";
             comboBox1.SelectedIndex = 0;
         }
 

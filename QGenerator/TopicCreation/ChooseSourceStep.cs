@@ -18,7 +18,8 @@ using System.Reflection.Emit;
 
 namespace QuizGeneratorPresentation.TopicCreation
 {
-    public partial class ChooseSourceStep : ChainStepForm<TopicCreationStep, TopicProduct, ChainCreationBuilder>
+    public partial class ChooseSourceStep : //Form 
+        ChainStepForm<TopicCreationStep, TopicProduct, ChainCreationBuilder>
     {
         Action finalize;
         public string[] supportedFileFormatsExtensions = ["html"];
@@ -34,6 +35,7 @@ namespace QuizGeneratorPresentation.TopicCreation
             this.Text = "Choose Quiz Notes Source";
             ContinueBtn.Text = "Continue";
             NotionLinkLabel.Text = "Notion page Url: Make sure that your page IS PUBLIC!";
+            DescriptionLabel.Text = "Choose from where to take your notes and after that input them.";
             ContinueBtn.Enabled = false;
 
             NotionLink.Visible = false;
