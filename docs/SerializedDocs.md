@@ -101,7 +101,14 @@ After pressing `Continue`, new Topic is added to the Topics list where you can e
 
 ### Quiz Starting
 
-On press of the `Open` button, the Topic selected in the Topics list will be opened. You will be presented with options of either continuing where you ended in your last test, or the option of starting from the beginning with 0 in the current question counter. After that your quiz is opened.
+On press of the `Open` button, the Topic selected in the Topics list will be opened (Or on Doubleclicking the Topic).
+
+#### Quiz Begging From
+
+You will be presented with options of either continuing where you ended in your last test, or the option of starting from the beginning with 0 in the current question counter.
+
+
+After that your quiz is opened.
 
 ## Quiz Window
 
@@ -109,8 +116,8 @@ When the quiz is started, user is greeted on bottom with the question and answer
 
 - press `Answer` button, and read your notes, which are shown at the bottom.
   - If you answer matches, press `Next 👍` which simply shows new question and increment counter.
-  - If you failed to answer correctly, press the `Next 👎` button. This one also shows new question, but it moves the incorrectly answered question ahead, so that it will be asked again and hopefully answered correctly.
-- when you are done and want to start a different quiz, simply press the `Back` button, which closes this quiz.
+  - If you failed to answer correctly, press the `Next 👎` button. This one also shows new question, but it moves the incorrectly answered question ahead (max 10 question ahead depending on how many question there are in the quiz), so that it will be asked again and hopefully answered correctly.
+- when you are done and want to start a different quiz, simply press the `Quit` button, which closes this quiz.
 
 There is also a counter, which says “`number of answered questions / number of questions`”. If you answer incorrectly and press `Next 👎`, the counter doesn’t increment.
 
