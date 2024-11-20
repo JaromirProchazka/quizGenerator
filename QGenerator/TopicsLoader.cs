@@ -14,7 +14,7 @@ namespace QuizGeneratorPresentation
     public static class Topics
     {
         /// <summary>
-        /// In the currrent directory tries to find "utilFolderPath" folder and returns array of all topic names.
+        /// In the current directory tries to find "utilFolderPath" folder and returns array of all topic names.
         /// </summary>
         /// <returns></returns>
         public static HyperLink[] getListOfTopics()
@@ -24,7 +24,10 @@ namespace QuizGeneratorPresentation
 
             for (int i = 0; i < topics.Length; i++)
             {
-                links[i] = new HyperLink(Path.GetFileNameWithoutExtension(topics[i]), getLinkForTopic(topics[i]));
+                links[i] = new HyperLink(
+                    Path.GetFileNameWithoutExtension(topics[i]), 
+                    getLinkForTopic(topics[i])
+                    );
             }
 
             return links;

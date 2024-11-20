@@ -61,7 +61,10 @@ namespace QuizGeneratorPresentation.TopicCreation
             }
             catch (Exception ex)
             {
-                Notification.Notice(ex.Message);
+                //MessageBox.Show(ex.Message);
+                Console.Error.WriteLine(ex.ToString());
+                MessageBox.Show("Something went wrong, please try again!");
+                return;
             }
 
             this.Close();

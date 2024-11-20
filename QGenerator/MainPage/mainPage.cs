@@ -18,6 +18,7 @@ namespace QuizGeneratorPresentation.MainPage
             this.Text = "Quiz Generator";
             createBtn.Text = "Create New Topic";
             TopicsList.Text = "List Of Topics";
+            TopicsList.ItemHeight = 50;
             #nullable disable
             TopicsList.DoubleClick += new EventHandler(TopicsList_DoubleClick);
             #nullable enable

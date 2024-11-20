@@ -21,6 +21,7 @@ namespace QuizGeneratorPresentation.TopicCreation
     public partial class ChooseSourceStep : ChainStepForm<TopicCreationStep, TopicProduct, ChainCreationBuilder>
     {
         Action finalize;
+        public string[] supportedFileFormatsExtensions = ["html"];
 
         public ChooseSourceStep(Action finalize)
         {
@@ -141,26 +142,66 @@ namespace QuizGeneratorPresentation.TopicCreation
 
                 var res = Finalize();
             }
+            catch (FileLoadException ex)
+            {
+                MessageBox.Show(ex.Message);
+                return;
+            }
+            catch (HttpIOException ex)
+            {
+                MessageBox.Show(ex.Message);
+                return;
+            }
+            catch (InvalidOperationException ex)
+            {
+                MessageBox.Show(ex.Message);
+                return;
+            }
             catch (Exception ex)
             {
-                Notification.Notice(ex.Message);
+                //MessageBox.Show(ex.Message);
+                Console.Error.WriteLine(ex.ToString());
+                MessageBox.Show("Something went wrong, please try again!");
+                return;
             }
 
             this.Close();
         }
 
-
-
-        private FileStream? GetLocalFile()
+        /// <summary>
+        /// Is responsible for fetching local file of correct format
+        /// </summary>
+        /// <returns>Maybe an opened file stream of chosen file</returns>
+        /// <exception cref="FileNotFoundException">If the chosen file can't be found</exception>
+        /// <exception cref="FileFormatException">If the chosen file has unsupported format</exception>
+        /// <exception cref="ApplicationException">When the dialog couldn't be opened</exception>
+        private FileStream GetLocalFile()
         {
-            if (ChooseLocalFile.ShowDialog() != DialogResult.OK) return null;
+            // OpenFileDialog Config
+            var filter = "";
+            for (int i = 0; i < supportedFileFormatsExtensions.Length; i++)
+            {
+                filter += $"Notes File (*.{supportedFileFormatsExtensions[i]})|*.{supportedFileFormatsExtensions[i]}";
+                if (i != supportedFileFormatsExtensions.Length-1)
+                {
+                    filter += "|";
+                }
+            }
+            ChooseLocalFile.Filter = filter;
+            ChooseLocalFile.RestoreDirectory = true;
 
+            // Provide file dialog
+            if (ChooseLocalFile.ShowDialog() != DialogResult.OK) throw new ApplicationException("Notes file not Chosen!");
 
+            if (supportedFileFormatsExtensions
+                .Where((format) => $".{format}" == Path.GetExtension(ChooseLocalFile.FileName)).Count() == 0)
+            {
+                throw new FileFormatException($"The chosen file has unsupported format. Must be one of: {ChooseLocalFile.Filter.Replace("|", ",").Replace('*', ' ')}!");
+            }
 
             string notesPath = ChooseLocalFile.FileName;
 
-
-            if (!File.Exists(notesPath)) return null;
+            if (!File.Exists(notesPath)) throw new FileNotFoundException("The given file wasn't found!");
             return File.OpenRead(notesPath);
         }
     }

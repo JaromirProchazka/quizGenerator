@@ -8,6 +8,7 @@ using System.CodeDom.Compiler;
 using System.Text.Json;
 using Refit;
 using QuizLogicalComponents.AbstractChain;
+using System.Net.NetworkInformation;
 
 namespace TopicCreation.TopicCreationChain
 {
@@ -179,6 +180,22 @@ namespace TopicCreation.TopicCreationChain
         {
             _ = base.Step();
 
+            fetchNotes();
+
+            // give the notes temporary to the Product
+            if (BetweenStep == null) BetweenStep = new TopicProduct();
+            BetweenStep.pathToSource = source;
+
+            return BetweenStep;
+        }
+
+        /// <summary>
+        /// Fetches notes from Notion source and add path to the fetched data to <see cref="ChooseNotesSource.source"/>.
+        /// </summary>
+        /// <exception cref="Exception">The request couldn't be send</exception>
+        /// <exception cref="InvalidOperationException">The request for the Notion notes exited with status code indicating no success</exception>
+        private void fetchNotes()
+        {
             var notionAPI = RestService.For<INotionPageAPI>(NotionApiUrl);
             var dataResponse = notionAPI.GetPage(Id);
 
@@ -186,29 +203,23 @@ namespace TopicCreation.TopicCreationChain
             source = _tempFiles.AddExtension("html");
             createTemporaryFile(source);
 
-            var dataResponceResult = dataResponse.Result;
-            if (dataResponceResult == null) 
+            var dataResponseResult = dataResponse.Result;
+            if (dataResponseResult == null)
             {
-                throw new Exception("Something went wrong with request!");
-            } 
-            if (!dataResponceResult.IsSuccessStatusCode)
+                throw new HttpIOException(0, "Something went wrong with request!");
+            }
+            if (!dataResponseResult.IsSuccessStatusCode)
             {
-                throw new InvalidOperationException($"The request for the Notion notes exited with code ({(int)dataResponceResult.StatusCode}: {dataResponceResult.StatusCode})! Please make sure that YOUR NOTION PAGE IS PUBLIC! {dataResponceResult.Error.Message}!");
+                throw new InvalidOperationException($"The request for the Notion notes exited with code ({(int)dataResponseResult.StatusCode}: {dataResponseResult.StatusCode})! Please make sure that YOUR NOTION PAGE IS PUBLIC!");
             }
 
-            var data = dataResponceResult?.Content;
+            var data = dataResponseResult?.Content;
 
             // Copy data from API output stream to the temporary file
             using (var fileStream = new FileStream(source, FileMode.Open, FileAccess.Write))
             {
                 data?.CopyToAsync(fileStream).Wait();
             }
-
-            // give the notes temporary to the Product
-            if (BetweenStep == null) BetweenStep = new TopicProduct();
-            BetweenStep.pathToSource = source;
-
-            return BetweenStep;
         }
 
         public interface INotionPageAPI

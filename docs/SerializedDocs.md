@@ -156,6 +156,14 @@ The Quiz Generator is a Windows application. It follows modular architecture wit
 
 ## Installation and Setup
 
+1. (Install Visual studio: https://learn.microsoft.com/en-us/visualstudio/install/install-visual-studio?view=vs-2022)
+2. (Install git)
+3. clone the project repository to you computer
+4. Open it in Visual Studio
+5. Run in VS
+
+![Shows how to run project in VS](https://github.com/JaromirProchazka/quizGenerator/blob/main/docs/tutor_folder/start_tut.png)
+
 ### Prerequisites
 
 - .NET Framework 4.8 or later
@@ -244,15 +252,18 @@ The topics folder contains styling and quiz visualization scripts. Further for e
 
 ## Troubleshooting
 
-`
-
 ### Common Errors and Solutions
 
-1. **Error: Unable to parse notes file**
-   Solution: Check if the notes file is in the correct format. Verify the question selector configuration.
+1. **Error: File not found. Check the file name and try again**
+   This Error occures in file creation Notes source choosing. Check that the File you selected is accessible and has correct fomrmat.
 
-2. **Error: Failed to connect to Notion API**
-   Solution: Ensure the API key is valid and network connectivity is stable.
+2. **Error: The request for the Notion notes exited with code (401: Unauthorized)! Please make sure that YOUR NOTION PAGE IS PUBLIC!**
+   Solution: Ensure that the Notion page you are linking is Published and Public and network connectivity is stable. You can manage these things on the notion page as on in the picture bellow.
+
+![Image showing how to make notion page Public](https://github.com/JaromirProchazka/quizGenerator/blob/main/docs/tutor_folder/start_tut.png)
+
+3. **Error: no such host is known**
+   Solution: Ensure that the your network connectivity is stable.
 
 ## Deployment
 

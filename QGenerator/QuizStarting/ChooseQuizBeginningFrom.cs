@@ -90,8 +90,9 @@ namespace QuizGeneratorPresentation.QuizStarting
             }
             catch (Exception ex)
             {
-                var notice = new Notification(ex.Message);
-                notice.Show();
+                //var notice = new Notification(ex.Message);
+                //notice.Show();
+                MessageBox.Show(ex.Message);
             }
         }
     }
