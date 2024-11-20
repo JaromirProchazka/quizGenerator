@@ -34,10 +34,10 @@ var searchData=
   ['analyser_31',['Analyser',['../class_topic_creation_1_1_topic_creation_chain_1_1_choose_question_format.html#abcf05f07605d28f23705b19e50a61f65',1,'TopicCreation::TopicCreationChain::ChooseQuestionFormat']]],
   ['analyze_32',['Analyze',['../class_notes_parsing_1_1_question_node_params.html#aa62f162ebf3a2127174b378b1e962d3d',1,'NotesParsing.QuestionNodeParams.Analyze()'],['../class_notes_parsing_1_1_and_question_node_params.html#accb974446f88b3bff132e66c3920e837',1,'NotesParsing.AndQuestionNodeParams.Analyze()'],['../class_notes_parsing_1_1_or_question_node_params.html#a99b359ffa8160684b5509763a833315b',1,'NotesParsing.OrQuestionNodeParams.Analyze()']]],
   ['and_33',['AND',['../class_topic_creation_1_1_topic_creation_chain_1_1_choose_question_format.html#a85e0aa9807ab9d589035976e03f830cea558ffc8f5770d8e4f95f51d822685532',1,'TopicCreation::TopicCreationChain::ChooseQuestionFormat']]],
-  ['and_20setup_34',['Installation and Setup',['../index.html#autotoc_md20',1,'']]],
-  ['and_20solutions_35',['Common Errors and Solutions',['../index.html#autotoc_md33',1,'']]],
+  ['and_20setup_34',['Installation and Setup',['../index.html#autotoc_md21',1,'']]],
+  ['and_20solutions_35',['Common Errors and Solutions',['../index.html#autotoc_md34',1,'']]],
   ['andoption_5fcheckedchanged_36',['AndOption_CheckedChanged',['../class_quiz_generator_presentation_1_1_topic_creation_1_1_choose_questions_format.html#a47b1b1a660e1320246de34f1040c760f',1,'QuizGeneratorPresentation.TopicCreation.ChooseQuestionsFormat.AndOption_CheckedChanged()'],['../class_q_generator_1_1_u_i_components_1_1_choose_questions_format.html#a96913929429b24e4b4e0936d9d4d840a',1,'QGenerator.UIComponents.ChooseQuestionsFormat.AndOption_CheckedChanged()']]],
   ['andquestionnodeparams_37',['AndQuestionNodeParams',['../class_notes_parsing_1_1_and_question_node_params.html',1,'NotesParsing']]],
   ['annotated_5fdup_2ejs_38',['annotated_dup.js',['../annotated__dup_8js.html',1,'']]],
-  ['architecture_39',['Architecture',['../index.html#autotoc_md15',1,'']]]
+  ['architecture_39',['Architecture',['../index.html#autotoc_md16',1,'']]]
 ];

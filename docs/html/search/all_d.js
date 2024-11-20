@@ -18,6 +18,6 @@ var searchData=
   ['loadedstatetoken_15',['LoadedStateToken',['../class_quiz_persistence_1_1_questions_file.html#a17cf0fbea8a63d473e8411b43b248bad',1,'QuizPersistence::QuestionsFile']]],
   ['loadquizstatedata_16',['LoadQuizStateData',['../class_quiz_persistence_1_1_questions_file.html#a785f97d5ef58c1ba6c2a618232488eed',1,'QuizPersistence::QuestionsFile']]],
   ['loadstate_17',['LoadState',['../interface_quiz_persistence_1_1_quiz_states_1_1_i_state_serializer.html#ac0f8aa409118b9cc2faee73bcdc5bf78',1,'QuizPersistence.QuizStates.IStateSerializer.LoadState()'],['../class_quiz_persistence_1_1_quiz_states_1_1_base_state_serializer.html#a795d90122a4be6b86b40175314abe596',1,'QuizPersistence.QuizStates.BaseStateSerializer.LoadState()']]],
-  ['log_18',['Change Log',['../index.html#autotoc_md36',1,'']]],
+  ['log_18',['Change Log',['../index.html#autotoc_md37',1,'']]],
   ['logicaloperator_19',['LogicalOperator',['../class_quiz_generator_presentation_1_1_topic_creation_1_1_choose_questions_format.html#ab9605b7509412b8a609f887d4afa8b3c',1,'QuizGeneratorPresentation.TopicCreation.ChooseQuestionsFormat.LogicalOperator'],['../class_q_generator_1_1_u_i_components_1_1_choose_questions_format.html#a8b8fd3ed410bcc01e1e7de6fdbb70247',1,'QGenerator.UIComponents.ChooseQuestionsFormat.LogicalOperator']]]
 ];
