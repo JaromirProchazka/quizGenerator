@@ -36,13 +36,13 @@
             textBox1 = new TextBox();
             SuspendLayout();
             // 
-            // webBrowser2
+            // QuestionsHtmlVisualizer
             // 
             QuestionsHtmlVisualizer.Anchor = AnchorStyles.Top | AnchorStyles.Bottom | AnchorStyles.Left | AnchorStyles.Right;
             QuestionsHtmlVisualizer.Location = new Point(0, 75);
             QuestionsHtmlVisualizer.Margin = new Padding(2, 3, 2, 3);
             QuestionsHtmlVisualizer.MinimumSize = new Size(23, 23);
-            QuestionsHtmlVisualizer.Name = "webBrowser2";
+            QuestionsHtmlVisualizer.Name = "QuestionsHtmlVisualizer";
             QuestionsHtmlVisualizer.Size = new Size(919, 444);
             QuestionsHtmlVisualizer.TabIndex = 1;
             QuestionsHtmlVisualizer.DocumentCompleted += QuestionsHtmlVisualizer_DocumentCompleted;
