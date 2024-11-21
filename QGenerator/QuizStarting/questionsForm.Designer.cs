@@ -28,8 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
-            webBrowser1 = new WebBrowser();
-            webBrowser2 = new WebBrowser();
+            QuestionsHtmlVisualizer = new WebBrowser();
             nextGoodBtn = new Button();
             nextBadBtn = new Button();
             quitBtn = new Button();
@@ -37,27 +36,16 @@
             textBox1 = new TextBox();
             SuspendLayout();
             // 
-            // webBrowser1
-            // 
-            webBrowser1.Dock = DockStyle.Fill;
-            webBrowser1.Location = new Point(0, 0);
-            webBrowser1.Margin = new Padding(2, 3, 2, 3);
-            webBrowser1.MinimumSize = new Size(23, 23);
-            webBrowser1.Name = "webBrowser1";
-            webBrowser1.Size = new Size(933, 519);
-            webBrowser1.TabIndex = 0;
-            webBrowser1.DocumentCompleted += webBrowser1_DocumentCompleted;
-            // 
             // webBrowser2
             // 
-            webBrowser2.Anchor = AnchorStyles.Top | AnchorStyles.Bottom | AnchorStyles.Left | AnchorStyles.Right;
-            webBrowser2.Location = new Point(0, 75);
-            webBrowser2.Margin = new Padding(2, 3, 2, 3);
-            webBrowser2.MinimumSize = new Size(23, 23);
-            webBrowser2.Name = "webBrowser2";
-            webBrowser2.Size = new Size(919, 444);
-            webBrowser2.TabIndex = 1;
-            webBrowser2.DocumentCompleted += webBrowser2_DocumentCompleted;
+            QuestionsHtmlVisualizer.Anchor = AnchorStyles.Top | AnchorStyles.Bottom | AnchorStyles.Left | AnchorStyles.Right;
+            QuestionsHtmlVisualizer.Location = new Point(0, 75);
+            QuestionsHtmlVisualizer.Margin = new Padding(2, 3, 2, 3);
+            QuestionsHtmlVisualizer.MinimumSize = new Size(23, 23);
+            QuestionsHtmlVisualizer.Name = "webBrowser2";
+            QuestionsHtmlVisualizer.Size = new Size(919, 444);
+            QuestionsHtmlVisualizer.TabIndex = 1;
+            QuestionsHtmlVisualizer.DocumentCompleted += QuestionsHtmlVisualizer_DocumentCompleted;
             // 
             // button1
             // 
@@ -126,7 +114,7 @@
             Controls.Add(quitBtn);
             Controls.Add(nextBadBtn);
             Controls.Add(nextGoodBtn);
-            Controls.Add(webBrowser2);
+            Controls.Add(QuestionsHtmlVisualizer);
             Controls.Add(webBrowser1);
             Margin = new Padding(2, 3, 2, 3);
             Name = "questionsForm";
@@ -138,8 +126,7 @@
 
         #endregion
 
-        private System.Windows.Forms.WebBrowser webBrowser1;
-        private System.Windows.Forms.WebBrowser webBrowser2;
+        private System.Windows.Forms.WebBrowser QuestionsHtmlVisualizer;
         private System.Windows.Forms.Button nextGoodBtn;
         private System.Windows.Forms.Button nextBadBtn;
         private System.Windows.Forms.Button quitBtn;

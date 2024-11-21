@@ -45,7 +45,7 @@ namespace QuizGeneratorPresentation.QuizStarting
         {
             if (state.CurrentQuestionsPath == null) throw new Exception("Quiz State was not set correctly!");
             string uriPath = @"file:///" + Path.GetFullPath(state.CurrentQuestionsPath).Replace(@"\", "/").Replace("#", "%23");
-            webBrowser2.Url = new Uri(uriPath);
+            QuestionsHtmlVisualizer.Url = new Uri(uriPath);
 
             nextGoodBtn.Text = "Next 👍";
             Stylings.goodButtonStyle(nextGoodBtn);
@@ -61,9 +61,9 @@ namespace QuizGeneratorPresentation.QuizStarting
             updateScore();
         }
 
-        private void webBrowser2_DocumentCompleted(object sender, WebBrowserDocumentCompletedEventArgs e)
+        private void QuestionsHtmlVisualizer_DocumentCompleted(object sender, WebBrowserDocumentCompletedEventArgs e)
         {
-            webBrowser2.Navigating += webBrowser2_Navigating;
+            QuestionsHtmlVisualizer.Navigating += webBrowser2_Navigating;
             showCurrentQuestion();
         }
 
@@ -155,7 +155,7 @@ namespace QuizGeneratorPresentation.QuizStarting
 
         private void showCurrentQuestion()
         {
-            webBrowser2
+            QuestionsHtmlVisualizer
             .Document?
             .InvokeScript(
                 "ShowQuestion",
@@ -167,7 +167,7 @@ namespace QuizGeneratorPresentation.QuizStarting
 
         private void hideCurrentQuestion()
         {
-            webBrowser2
+            QuestionsHtmlVisualizer
             .Document?
             .InvokeScript(
                 "HideQuestion",
@@ -178,7 +178,7 @@ namespace QuizGeneratorPresentation.QuizStarting
         {
             if (state.QuestionIndex >= 0 && state.QuestionIndex < state.GetQuestionsCount())
             {
-                webBrowser2
+                QuestionsHtmlVisualizer
                 .Document?
                 .InvokeScript(
                     "ShowAnswear",
