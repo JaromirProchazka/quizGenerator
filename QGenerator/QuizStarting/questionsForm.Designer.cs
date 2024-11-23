@@ -115,7 +115,6 @@
             Controls.Add(nextBadBtn);
             Controls.Add(nextGoodBtn);
             Controls.Add(QuestionsHtmlVisualizer);
-            Controls.Add(webBrowser1);
             Margin = new Padding(2, 3, 2, 3);
             Name = "questionsForm";
             Text = "Quiz Generator";

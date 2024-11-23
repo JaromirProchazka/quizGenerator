@@ -5,6 +5,7 @@ using System.Drawing;
 using System.IO;
 using System.Windows.Forms;
 using QuizPersistence.QuizStates;
+using System.Diagnostics;
 
 namespace QuizGeneratorPresentation.QuizStarting
 {
@@ -41,11 +42,43 @@ namespace QuizGeneratorPresentation.QuizStarting
             state = givenState;
         }
 
+        private void QuestionsHtmlVisualizer_Navigating(object sender, WebBrowserNavigatingEventArgs e)
+        {
+            // Cancel the navigation in the WebView
+            e.Cancel = true;
+
+            // Open the URL in the default browser
+            var t = new Thread(() => {
+                Console.WriteLine($"URL: {e.Url?.ToString()}");
+                Process process = new Process();
+                ProcessStartInfo startInfo = new ProcessStartInfo();
+                //startInfo.WindowStyle = System.Diagnostics.ProcessWindowStyle.Hidden;
+                startInfo.FileName = "cmd.exe";
+                startInfo.Arguments = $"/c start {e.Url?.ToString()}";
+                process.StartInfo = startInfo;
+
+                process.Start();
+            });
+
+            try
+            {
+                t.Start();
+            }
+            catch (Exception ex)
+            {
+                Console.Error.WriteLine(ex);
+            }
+        }
+
         private void questionsForm_Load(object sender, EventArgs e)
         {
             if (state.CurrentQuestionsPath == null) throw new Exception("Quiz State was not set correctly!");
             string uriPath = @"file:///" + Path.GetFullPath(state.CurrentQuestionsPath).Replace(@"\", "/").Replace("#", "%23");
+
             QuestionsHtmlVisualizer.Url = new Uri(uriPath);
+            #nullable disable
+            QuestionsHtmlVisualizer.Navigating += QuestionsHtmlVisualizer_Navigating;
+            #nullable enable
 
             nextGoodBtn.Text = "Next 👍";
             Stylings.goodButtonStyle(nextGoodBtn);
@@ -63,13 +96,13 @@ namespace QuizGeneratorPresentation.QuizStarting
 
         private void QuestionsHtmlVisualizer_DocumentCompleted(object sender, WebBrowserDocumentCompletedEventArgs e)
         {
-            QuestionsHtmlVisualizer.Navigating += webBrowser2_Navigating;
+            //QuestionsHtmlVisualizer.Navigating += webBrowser2_Navigating;
             showCurrentQuestion();
         }
 
         private void webBrowser2_Navigating(object? sender, WebBrowserNavigatingEventArgs e)
         {
-            e.Cancel = true;
+            e.Cancel = false;
             if (e.Url == null) return;
             System.Diagnostics.Process.Start(e.Url.ToString());
         }

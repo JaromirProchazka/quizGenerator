@@ -41,6 +41,8 @@ namespace NotesParsing
         /// </summary>
         public QuestionNodeParams questionNodeAnalyzer;
 
+        private string[] excludedNotesClasses = ["table_of_contents"];
+
         public NotesParser()
         {
             resultState = new QuizFileResult(state);
@@ -57,6 +59,7 @@ namespace NotesParsing
             HtmlDocument notes = new HtmlDocument();
             HtmlDocument result = new HtmlDocument();
             notes.LoadHtml(notesMarkdown);
+            notes = preprocessNotes(notes);
             result.LoadHtml(baseMarkdown);
             resultState.resultCurrentPosition = result.DocumentNode.SelectSingleNode("//body");
 
@@ -67,6 +70,21 @@ namespace NotesParsing
             state.Reset();
             resultState.Reset();
             return resultText;
+        }
+        
+        private HtmlDocument preprocessNotes(HtmlDocument notesInput)
+        {
+            foreach (var excludedNodeClass in excludedNotesClasses) 
+            {
+                var unwanted = notesInput.DocumentNode.SelectNodes($"//*[contains(concat(' ', normalize-space(@class), ' '), ' {excludedNodeClass.Trim()} ')]");
+                if (unwanted == null) continue;
+                foreach (var unwantedNode in unwanted)
+                {
+                    unwantedNode.Remove();
+                }
+            }
+
+            return notesInput;
         }
 
         /// <summary>
