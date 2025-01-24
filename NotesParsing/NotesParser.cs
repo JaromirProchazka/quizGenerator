@@ -214,7 +214,7 @@ namespace NotesParsing
             if (heading == null) { return; }
             HtmlDocument headingBoxTemplate = new HtmlDocument();
             headingBoxTemplate.LoadHtml(NotesParser.headingTemplate);
-            addIdCounterToNodeInDoc(headingBoxTemplate);
+            //addIdCounterToNodeInDoc(headingBoxTemplate);
             int headingRank = getHeadingRank(heading);
 
             if (headingRank <= state.currentParentHeadingRank)
