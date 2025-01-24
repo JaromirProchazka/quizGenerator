@@ -77,7 +77,7 @@ namespace QuizPersistence.QuizStates
                 }
                 if (child.HasClass("heading_sections"))
                 {
-                    putInNodes.Add(child.Id);
+                    //putInNodes.Add(child.Id);     // inserts also the heading as question
                     insertChildren(child);
                 }
             }
