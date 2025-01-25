@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Net.Mail;
+using System.Reflection.Metadata;
 using System.Runtime.InteropServices;
 using System.Security.Cryptography;
 using System.Text;
@@ -40,8 +41,16 @@ namespace QuizPersistence.DataStructures
 
         Random rn = new Random();
 
-        public void insert(string label, string[] nodePredecessors)
+        /// <summary>
+        /// Insets new node to the Dag with its dependent nodes
+        /// </summary>
+        /// <param name="label">new node label</param>
+        /// <param name="nodePredecessors">labes of already added nodes, these will follow the label</param>
+        /// <exception cref="Exception"></exception>
+        public void insert(string label, string[]? nodePredecessors = null)
         {
+            nodePredecessors = nodePredecessors ?? Array.Empty<string>();
+
             uint nodeId = (uint)nodeName.Count;
             nodeName.Add(label);
             nodeIdByName.Add(label, nodeId);

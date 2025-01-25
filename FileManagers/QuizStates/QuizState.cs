@@ -198,7 +198,7 @@ namespace QuizPersistence.QuizStates
         public override ResetAroundState InitUntrackedFields()
         {
             if (CurrentQuestionsPath == null) throw new ArgumentException("Path to Questions wasn't set for the QuizState!");
-            sequenceFinder = new RandomDagSequence(new FileInfo(CurrentQuestionsPath));
+            sequenceFinder = new DefinitionDependentDagSequence(new FileInfo(CurrentQuestionsPath)); // RandomDagSequence
             return this;
         }
     }

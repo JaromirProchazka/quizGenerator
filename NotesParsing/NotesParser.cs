@@ -45,8 +45,8 @@ namespace NotesParsing
 
         public NotesParser()
         {
-            resultState = new QuizFileResult(state);
             questionNodeAnalyzer = DefaultAnalyzer; 
+            resultState = new QuizFileResult(state, questionNodeAnalyzer);
         }
         public static QuestionNodeParams DefaultAnalyzer { get => new AndQuestionNodeParams().SetName("em"); }
 
@@ -159,7 +159,7 @@ namespace NotesParsing
     }
 
     /// <summary>
-    /// Holds the state of the notes html parsing result. 
+    /// Holds state of the notes html parsing result. 
     /// </summary>
     internal record class QuizFileResult
     {
@@ -171,10 +171,15 @@ namespace NotesParsing
         /// The html parsing state.
         /// </summary>
         private NotesParsingState state;
+        /// <summary>
+        /// Analyses the html node and determines, if it is a question.
+        /// </summary>
+        public QuestionNodeParams questionNodeAnalyzer;
 
-        public QuizFileResult(NotesParsingState state)
+        public QuizFileResult(NotesParsingState state, QuestionNodeParams questionNodeAnalyzer)
         {
             this.state = state;
+            this.questionNodeAnalyzer = questionNodeAnalyzer;
             Reset();
         }
 
@@ -211,10 +216,12 @@ namespace NotesParsing
 
         internal void addHeading(HtmlNode heading)
         {
-            if (heading == null) { return; }
+            if (heading == null) return;
             HtmlDocument headingBoxTemplate = new HtmlDocument();
             headingBoxTemplate.LoadHtml(NotesParser.headingTemplate);
-            //addIdCounterToNodeInDoc(headingBoxTemplate);
+
+            if (holds_question(heading)) addIdCounterToNodeInDoc(headingBoxTemplate);
+
             int headingRank = getHeadingRank(heading);
 
             if (headingRank <= state.currentParentHeadingRank)
@@ -281,6 +288,20 @@ namespace NotesParsing
             }
 
             return rank;
+        }
+
+        /// <summary>
+        /// Recursively finds out if the given node has node in its child nodes tree, that has the properties of a question
+        /// </summary>
+        private bool holds_question(HtmlNode node)
+        {
+            if (questionNodeAnalyzer.Analyze(node)) return true;
+
+            foreach (var child in node.ChildNodes)
+                if (holds_question(child))
+                    return true;
+
+            return false;
         }
     }
 
