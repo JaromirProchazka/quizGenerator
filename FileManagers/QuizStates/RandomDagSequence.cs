@@ -128,8 +128,8 @@ namespace QuizPersistence.QuizStates
             }
             if (node.HasClass("heading_sections"))
             {
-                //if (node.Id != null && Regex.IsMatch(node.Id, @"^question_\d+$"))
-                    //sequenceInsertWithDependencies(node, headingDependenciesNodes);
+                if (node.Id != null && Regex.IsMatch(node.Id, @"^question_\d+$"))
+                    sequenceInsertWithDependencies(node, headingDependenciesNodes);
             }
         }
 
