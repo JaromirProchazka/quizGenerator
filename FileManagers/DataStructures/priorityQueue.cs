@@ -65,7 +65,7 @@ namespace QuizPersistence.DataStructures
             }
         }
 
-        public void Enque(int priority, T item)
+        public void Enqueue(int priority, T item)
         {
             Heap.Add(new Item<T>(priority, item));
             Heapify();

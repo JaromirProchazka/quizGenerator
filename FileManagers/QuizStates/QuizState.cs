@@ -138,7 +138,7 @@ namespace QuizPersistence.QuizStates
         public ResetAroundState(string currentQuestionsPath) :
             this(
                 currentQuestionsPath: currentQuestionsPath,
-                sequence: new RandomDagSequence(new FileInfo(currentQuestionsPath))
+                sequence: new DefinitionDependentDagSequence(new FileInfo(currentQuestionsPath))
             )
         { }
 

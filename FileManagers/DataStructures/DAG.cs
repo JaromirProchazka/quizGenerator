@@ -69,7 +69,7 @@ namespace QuizPersistence.DataStructures
                 }
                 else
                 {
-                    throw new Exception("Node conected to unknown predecessor!");
+                    throw new Exception("Node connected to unknown predecessor!");
                 }
                 largestPreciedingTier = (largestPreciedingTier < predecessorTier) ? predecessorTier : largestPreciedingTier;
 
@@ -97,7 +97,7 @@ namespace QuizPersistence.DataStructures
             foreach (uint n in tierZero) 
             {
                 rnNum = rn.Next(0, maxPriority);
-                q.Enque(rnNum, n);
+                q.Enqueue(rnNum, n);
             }
             while (q.Count > 0)
             {
@@ -117,7 +117,7 @@ namespace QuizPersistence.DataStructures
                     if (inDegrees[neighbours[node][neighbourId]].Counter == 0)
                     {
                         rnNum = rn.Next(0, maxPriority);
-                        q.Enque(rnNum, neighbours[node][neighbourId]);
+                        q.Enqueue(rnNum, neighbours[node][neighbourId]);
                     }
                 }
             }

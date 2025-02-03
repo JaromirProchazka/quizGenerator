@@ -86,11 +86,11 @@ namespace FileManagerTests1
             char[] alphabet = new char[] { 'a', 'b', 'c', 'd', 'e' };
             char[] result = new char[alphabet.Length];
 
-            q.Enque(1, alphabet[1]);
-            q.Enque(0, alphabet[0]);
-            q.Enque(4, alphabet[4]);
-            q.Enque(2, alphabet[2]);
-            q.Enque(3, alphabet[3]);
+            q.Enqueue(1, alphabet[1]);
+            q.Enqueue(0, alphabet[0]);
+            q.Enqueue(4, alphabet[4]);
+            q.Enqueue(2, alphabet[2]);
+            q.Enqueue(3, alphabet[3]);
 
             for (int i = 0; i < result.Length; i++)
             {

@@ -128,8 +128,8 @@ namespace QuizPersistence.QuizStates
             }
             if (node.HasClass("heading_sections"))
             {
-                if (node.Id != null && Regex.IsMatch(node.Id, @"^question_\d+$"))
-                    sequenceInsertWithDependencies(node, headingDependenciesNodes);
+                //if (node.Id != null && Regex.IsMatch(node.Id, @"^question_\d+$"))
+                    //sequenceInsertWithDependencies(node, headingDependenciesNodes);
             }
         }
 
@@ -141,11 +141,13 @@ namespace QuizPersistence.QuizStates
         private void sequenceInsertWithDependencies(HtmlNode question, List<string>? already_found = null)
         {
             // insert to Dag with found definitions as dependencies
-            questionSequence.insert(question.Id, findDependencies(question, already_found));
+            var dependencies = findDependencies(question, already_found);
+            var node_label = question.Id;
+            questionSequence.insert(node_label, dependencies);
 
             // create new definition
             string? newDef = findDefSubstring(question);
-            if (newDef != null) {
+            if (newDef != null && !DefinitionDependencies.Keys.Contains(newDef)) {
                 DefinitionDependencies.Add(newDef, question.Id);
             }
         }
@@ -162,24 +164,47 @@ namespace QuizPersistence.QuizStates
                     .First();
 
             if (res != null && res.StartsWith('\"') && res.Count() >= MinDefinitionLength + 2)
-                return res.Trim('"');
+            {
+                res = res.Trim().Trim('\"').Trim('\"');
+                return res;
+            }
             else
+            {
                 return null;
+            }
         } 
 
         private string[] findDependencies(HtmlNode question, List<string>? already_found = null)
         {
             List<string> dependencies = (already_found != null) ? already_found : new List<string>();
-            string text = question.InnerText;
+            string normalizedText = normalizeDef(question.InnerText);
             foreach (var def in DefinitionDependencies.Keys)
             {
-                if (text.ToLower().Contains(def.ToLower()))
+                if (normalizedText.Contains(normalizeDef(def)))
                 {
                     dependencies.Add(DefinitionDependencies[def]);
                 }
             }
 
             return dependencies.ToArray();
+        }
+
+        protected virtual string normalizeDef(string  def)
+        {
+            return def.ToLower()
+                .Replace("ˇ", "")
+                .Replace("˚", "")
+                .Replace("´", "")
+                .Replace("'", "")
+                .Replace("ě", "e")
+                .Replace("š", "s")
+                .Replace("č", "c")
+                .Replace("ř", "r")
+                .Replace("ž", "z")
+                .Replace("ý", "y")
+                .Replace("á", "a")
+                .Replace("í", "i")
+                .Replace("é", "e");
         }
     }
 }

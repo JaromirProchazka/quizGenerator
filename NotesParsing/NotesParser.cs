@@ -253,7 +253,7 @@ namespace NotesParsing
 
         private HtmlNode ParentTextNode(HtmlNode keySegment)
         {
-            string[] blockElements = { "p", "ul", "ol", "pre", "div", "blockquote", "dl", "figure", "hr" };
+            string[] blockElements = { "p", "ul", "li", "ol", "pre", "div", "blockquote", "dl", "figure", "hr" };
             HtmlNode parent = keySegment;
             while (!blockElements.Contains(parent.Name) && !isHeading(parent))
             {
