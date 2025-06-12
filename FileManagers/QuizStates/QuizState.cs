@@ -149,7 +149,7 @@ namespace QuizPersistence.QuizStates
         public override string GetCurrentQuestion()
         {
             if (QuestionIndex >= GetQuestionsCount() || QuestionIndex < 0 ) QuestionIndex = 0;
-            return QuestionIds[QuestionIndex];
+            return (GetQuestionsCount() > 0) ? QuestionIds[QuestionIndex] : "";
         }
 
         public override void SetNextQuestion()
@@ -170,13 +170,16 @@ namespace QuizPersistence.QuizStates
 
         public override string GetPreviousQuestion()
         {
+            if (QuestionIds.Count == 0) return "";
             if (QuestionIndex == 0) return QuestionIds[0];
+            if (QuestionIndex >= QuestionIds.Count) return QuestionIds[QuestionIds.Count - 1];
 
             return QuestionIds[QuestionIndex - 1];
         }
 
         public override void MovePreviousAnsweredForward(int distance)
         {
+            if (QuestionIds.Count == 0) return;
             string previousQuestionId = GetPreviousQuestion();
             QuestionIds.RemoveAt(QuestionIndex - 1);
             QuestionIds.Insert(
