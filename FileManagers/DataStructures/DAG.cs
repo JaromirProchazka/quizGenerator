@@ -42,6 +42,12 @@ namespace QuizPersistence.DataStructures
 
         public void insert(string label, string[] nodePredecessors)
         {
+            if (nodeIdByName.ContainsKey(label))
+            {
+                Console.WriteLine($"Label '{label}' was already found!");
+                return;
+            }
+
             uint nodeId = (uint)nodeName.Count;
             nodeName.Add(label);
             nodeIdByName.Add(label, nodeId);

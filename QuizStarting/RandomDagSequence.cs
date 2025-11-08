@@ -72,8 +72,8 @@ namespace QuizStarting
             {
                 if (child.HasClass("question_box"))
                 {
-                    putInNodes.Add(child.Id);
                     questionSequence.insert(child.Id, new string[] { });
+                    putInNodes.Add(child.Id);
                 }
                 if (child.HasClass("heading_sections"))
                 {
